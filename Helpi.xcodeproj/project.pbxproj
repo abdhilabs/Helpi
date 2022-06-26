@@ -13,6 +13,8 @@
 		9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F862864AB24000D3386 /* LaunchScreen.storyboard */; };
 		9AE05F922864B427000D3386 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F902864B427000D3386 /* MainViewController.swift */; };
 		9AE05F932864B427000D3386 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F912864B427000D3386 /* MainViewController.xib */; };
+		9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE05F982864B693000D3386 /* CloudKit.framework */; };
+		9AE05F9C28652D31000D3386 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F9B28652D31000D3386 /* Variables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		9AE05F8F2864AB58000D3386 /* Helpi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Helpi.entitlements; sourceTree = "<group>"; };
 		9AE05F902864B427000D3386 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9AE05F912864B427000D3386 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9AE05F982864B693000D3386 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		9AE05F9B28652D31000D3386 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +48,7 @@
 			children = (
 				9AE05F772864AB21000D3386 /* Helpi */,
 				9AE05F762864AB21000D3386 /* Products */,
+				9AE05F972864B693000D3386 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +63,7 @@
 		9AE05F772864AB21000D3386 /* Helpi */ = {
 			isa = PBXGroup;
 			children = (
+				9AE05F9A28652D22000D3386 /* Model */,
 				9AE05F962864B4C1000D3386 /* Features */,
 				9AE05F8F2864AB58000D3386 /* Helpi.entitlements */,
 				9AE05F812864AB21000D3386 /* Helpi.xcdatamodeld */,
@@ -91,6 +98,22 @@
 				9AE05F912864B427000D3386 /* MainViewController.xib */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		9AE05F972864B693000D3386 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AE05F982864B693000D3386 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AE05F9A28652D22000D3386 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AE05F9B28652D31000D3386 /* Variables.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +190,7 @@
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
+				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

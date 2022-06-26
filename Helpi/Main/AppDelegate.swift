@@ -7,11 +7,14 @@
 
 import UIKit
 import CoreData
+import CloudKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+  let publicDatabase = CKContainer.init(identifier: "iCloud.com.mc2.helpi.patient").publicCloudDatabase
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
@@ -20,6 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window.rootViewController = MainViewController()
     window.makeKeyAndVisible()
     self.window = window
+
+    UNUserNotificationCenter.current().delegate = self
+    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { authorized, error in
+      if authorized {
+        application.registerForRemoteNotifications()
+      }
+    }
+
     return true
   }
 
@@ -69,3 +80,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+  func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    let subscription = CKQuerySubscription(recordType: "Persons", predicate: NSPredicate(format: "TRUEPREDICATE"), options: .firesOnRecordCreation)
+
+    let info = CKSubscription.NotificationInfo()
+    info .alertBody = "A new notification has been posted!"
+    info.shouldBadge = true
+    info.soundName = "default"
+
+    subscription.notificationInfo = info
+
+    publicDatabase.save(subscription) { subscription, error in
+      if error == nil {
+        print("Subscription saved successfully")
+      } else {
+        print("Error: \(error?.localizedDescription)")
+      }
+    }
+  }
+
+  func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+    completionHandler([.alert, .sound])
+  }
+}
