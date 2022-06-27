@@ -43,6 +43,9 @@
 		EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */; };
 		EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */; };
 		EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04210286F3BA900A2B04D /* PlayView.swift */; };
+		A0A336892869AF5700988028 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A336872869AF5700988028 /* OnboardingCollectionViewCell.swift */; };
+		A0A3368A2869AF5700988028 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A336882869AF5700988028 /* OnboardingCollectionViewCell.xib */; };
+		A0A3368D2869B22700988028 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A3368C2869B22700988028 /* ModelOnboarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +88,9 @@
 		EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktapTutorialViewController.swift; sourceTree = "<group>"; };
 		EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BacktapTutorialViewController.xib; sourceTree = "<group>"; };
 		EEE04210286F3BA900A2B04D /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		A0A336872869AF5700988028 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0A336882869AF5700988028 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		A0A3368C2869B22700988028 /* ModelOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOnboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,8 @@
 			children = (
 				9A1F8B95286DEE3200F6E16C /* Service */,
 				9A1F8B8A286D20F300F6E16C /* Extension */,
+				A0A3368B2869B1F600988028 /* Onboarding */,
+				9AE05F9A28652D22000D3386 /* Model */,
 				9AE05F962864B4C1000D3386 /* Features */,
 				9AE05F952864B484000D3386 /* Main */,
 				9AE05F9A28652D22000D3386 /* Model */,
@@ -229,6 +237,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A0A3368B2869B1F600988028 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9A1F8B6B2868AAD400F6E16C /* OnboardViewController.swift */,
+				9A1F8B6C2868AAD400F6E16C /* OnboardViewController.xib */,
+				A0A336872869AF5700988028 /* OnboardingCollectionViewCell.swift */,
+				A0A336882869AF5700988028 /* OnboardingCollectionViewCell.xib */,
+				A0A3368C2869B22700988028 /* ModelOnboarding.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,6 +320,7 @@
 				9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */,
 				9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
+				A0A3368A2869AF5700988028 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +336,7 @@
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
+				A0A3368D2869B22700988028 /* ModelOnboarding.swift in Sources */,
 				9A1F8B6D2868AAD500F6E16C /* OnboardViewController.swift in Sources */,
 				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
@@ -331,6 +353,7 @@
 				EEE0420A286E9BD000A2B04D /* TutorialViewController.swift in Sources */,
 				EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */,
 				9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */,
+				A0A336892869AF5700988028 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,10 +491,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8H53AFJYM7;
+				DEVELOPMENT_TEAM = AL5KA4YBF7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpi/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -499,10 +522,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8H53AFJYM7;
+				DEVELOPMENT_TEAM = AL5KA4YBF7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpi/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
