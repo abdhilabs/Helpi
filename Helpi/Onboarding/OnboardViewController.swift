@@ -13,6 +13,7 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var skipButton: UIButton!
+    @IBOutlet weak var buttonSkipFix: UILabel!
     
     
     let onboarding: [dataOnboarding] = [dataOnboarding(image: "foto", title: "Alert Helper", description: "Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint."), dataOnboarding(image: "foto", title: "First Aid", description: "Helpi will show first responders how to give you first aid and how to reach your emergency contact."), dataOnboarding(image: "foto", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record.Tap the button below to grant permission to read the necessary data.")]
@@ -22,10 +23,11 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
         
         // to make the button rounded
                // register the custom CollectionViewCell and assign the delegates to the ViewController
-        self.skipButton.layer.cornerRadius = 40
-               self.collectionView.backgroundColor = .white
-               self.collectionView.dataSource = self
-               self.collectionView.delegate = self
+                self.skipButton.layer.cornerRadius = 40
+//    skipButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+                self.collectionView.backgroundColor = .white
+                self.collectionView.dataSource = self
+                self.collectionView.delegate = self
                 self.collectionView.register(UINib(nibName: OnboardingCollectionViewCell.identifier, bundle: Bundle.main),
                                             forCellWithReuseIdentifier: "OnboardingCollectionViewCell")
                
@@ -35,15 +37,34 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
 
 
     @IBAction func pageChanged(_ sender: Any) {
-        let pc = sender as! UIPageControl
-               
-               // scrolling the collectionView to the selected page
-               collectionView.scrollToItem(at: IndexPath(item: pc.currentPage, section: 0),
-                                           at: .centeredHorizontally, animated: true)
+//        let pc = sender as! UIPageControl
+//
+//               // scrolling the collectionView to the selected page
+//               collectionView.scrollToItem(at: IndexPath(item: pc.currentPage, section: 0),
+//                                           at: .centeredHorizontally, animated: true)
     }
     
     @IBAction func buttonSkip(_ sender: Any) {
-        print("Move to other view controller")
+//        guard let indexPath = collectionView.indexPathsForVisibleItems.first.flatMap({
+//            IndexPath(item: pageControl.currentPage, section: $0.section)
+//           }), collectionView.cellForItem(at: indexPath) != nil else {
+//               return
+//           }
+//
+//           collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+//
+//
+//
+        if  pageControl.currentPage == 1 {
+//            skipButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+            skipButton.setTitle("Grant Acces", for: .normal)
+        }
+        pageControl.currentPage = pageControl.currentPage + 1
+        let i = IndexPath(item: pageControl.currentPage, section: 0)
+        collectionView.scrollToItem(at: i as IndexPath, at: .centeredHorizontally, animated: true)
+        
+      
+        
     }
     
     // MARK:- collectionView dataSource & collectionView FlowLayout delegates
