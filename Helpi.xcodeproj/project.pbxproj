@@ -43,14 +43,14 @@
 		EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */; };
 		EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */; };
 		EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04210286F3BA900A2B04D /* PlayView.swift */; };
+		A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */; };
+		A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */; };
+		A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */; };
+		A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */; };
+		A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */; };
 		A0A336892869AF5700988028 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A336872869AF5700988028 /* OnboardingCollectionViewCell.swift */; };
 		A0A3368A2869AF5700988028 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A336882869AF5700988028 /* OnboardingCollectionViewCell.xib */; };
 		A0A3368D2869B22700988028 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A3368C2869B22700988028 /* ModelOnboarding.swift */; };
-		A0A33692286A17B800988028 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A33691286A17B800988028 /* ProfileDataSource.swift */; };
-		A0A33694286A17D800988028 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A33693286A17D800988028 /* HealthKitSetupAssistant.swift */; };
-		A0A33696286A183A00988028 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A33695286A183A00988028 /* UserHealthProfile.swift */; };
-		A0A33699286A190000988028 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A33698286A190000988028 /* HKBiologicalSex+StringRepresentation.swift */; };
-		A0A3369B286A191100988028 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A3369A286A191100988028 /* HKBloodType+StringRepresentation.swift */; };
 		A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A3369C286A1DD100988028 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,14 +94,14 @@
 		EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktapTutorialViewController.swift; sourceTree = "<group>"; };
 		EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BacktapTutorialViewController.xib; sourceTree = "<group>"; };
 		EEE04210286F3BA900A2B04D /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
+		A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
+		A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
 		A0A336872869AF5700988028 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A0A336882869AF5700988028 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		A0A3368C2869B22700988028 /* ModelOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOnboarding.swift; sourceTree = "<group>"; };
-		A0A33691286A17B800988028 /* ProfileDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileDataSource.swift; path = ../../../MC2/CobaHK/CobaHK/ProfileDataSource.swift; sourceTree = "<group>"; };
-		A0A33693286A17D800988028 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitSetupAssistant.swift; path = ../../../MC2/CobaHK/CobaHK/HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
-		A0A33695286A183A00988028 /* UserHealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserHealthProfile.swift; path = ../../../MC2/CobaHK/Model/UserHealthProfile.swift; sourceTree = "<group>"; };
-		A0A33698286A190000988028 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HKBiologicalSex+StringRepresentation.swift"; path = "../../../../Downloads/Prancercise Tracker Starter-3/Prancercise Tracker/HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
-		A0A3369A286A191100988028 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HKBloodType+StringRepresentation.swift"; path = "../../../../Downloads/Prancercise Tracker Starter-3/Prancercise Tracker/HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
 		A0A3369C286A1DD100988028 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -253,6 +253,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A07BB7A9286AF67600A3DE30 /* Health Kit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */,
+				A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */,
+			);
+			path = "Health Kit Extension";
+			sourceTree = "<group>";
+		};
 		A0A3368B2869B1F600988028 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,20 +277,12 @@
 		A0A3368E286A175D00988028 /* HealthKit */ = {
 			isa = PBXGroup;
 			children = (
-				A0A33691286A17B800988028 /* ProfileDataSource.swift */,
-				A0A33693286A17D800988028 /* HealthKitSetupAssistant.swift */,
-				A0A33695286A183A00988028 /* UserHealthProfile.swift */,
+				A07BB7A9286AF67600A3DE30 /* Health Kit Extension */,
+				A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */,
+				A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */,
+				A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */,
 			);
 			path = HealthKit;
-			sourceTree = "<group>";
-		};
-		A0A33697286A187A00988028 /* Health Kit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A0A33698286A190000988028 /* HKBiologicalSex+StringRepresentation.swift */,
-				A0A3369A286A191100988028 /* HKBloodType+StringRepresentation.swift */,
-			);
-			path = "Health Kit Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,11 +390,13 @@
 				9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */,
 				A0A33696286A183A00988028 /* UserHealthProfile.swift in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
+				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
 				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
-				A0A3369B286A191100988028 /* HKBloodType+StringRepresentation.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
-				A0A33699286A190000988028 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
-				A0A33692286A17B800988028 /* ProfileDataSource.swift in Sources */,
+				A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */,
+				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
+				A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
+				A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */,
 				A0A336892869AF5700988028 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
