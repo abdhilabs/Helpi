@@ -9,11 +9,37 @@ import UIKit
 
 class OnboardViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
+    
+    private let authorizeHealthKitSection = 2
+    
+    private func authorizeHealthKit() {
+        HealthKitSetupAssistant.authorizeHealthKit { (authorized, error) in
+              
+          guard authorized else {
+                
+            let baseMessage = "HealthKit Authorization Failed"
+                
+            if let error = error {
+              print("\(baseMessage). Reason: \(error.localizedDescription)")
+            } else {
+              print(baseMessage)
+            }
+                
+            return
+          }
+            print("Succes")
+        }
+    }
 
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var skipButton: UIButton!
-    @IBOutlet weak var buttonSkipFix: UILabel!
+    
+    @IBAction func skipButtonfix(_ sender: Any)
+    {
+        
+    }
     
     
     let onboarding: [dataOnboarding] = [dataOnboarding(image: "foto", title: "Alert Helper", description: "Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint."), dataOnboarding(image: "foto", title: "First Aid", description: "Helpi will show first responders how to give you first aid and how to reach your emergency contact."), dataOnboarding(image: "foto", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record.Tap the button below to grant permission to read the necessary data.")]
@@ -44,6 +70,11 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
 //                                           at: .centeredHorizontally, animated: true)
     }
     
+    @IBAction func skipButtonFix(_ sender: Any)
+    {
+        authorizeHealthKit()
+    }
+    
     @IBAction func buttonSkip(_ sender: Any) {
 //        guard let indexPath = collectionView.indexPathsForVisibleItems.first.flatMap({
 //            IndexPath(item: pageControl.currentPage, section: $0.section)
@@ -62,9 +93,6 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
         pageControl.currentPage = pageControl.currentPage + 1
         let i = IndexPath(item: pageControl.currentPage, section: 0)
         collectionView.scrollToItem(at: i as IndexPath, at: .centeredHorizontally, animated: true)
-        
-      
-        
     }
     
     // MARK:- collectionView dataSource & collectionView FlowLayout delegates

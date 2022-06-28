@@ -46,6 +46,12 @@
 		A0A336892869AF5700988028 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A336872869AF5700988028 /* OnboardingCollectionViewCell.swift */; };
 		A0A3368A2869AF5700988028 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A336882869AF5700988028 /* OnboardingCollectionViewCell.xib */; };
 		A0A3368D2869B22700988028 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A3368C2869B22700988028 /* ModelOnboarding.swift */; };
+		A0A33692286A17B800988028 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A33691286A17B800988028 /* ProfileDataSource.swift */; };
+		A0A33694286A17D800988028 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A33693286A17D800988028 /* HealthKitSetupAssistant.swift */; };
+		A0A33696286A183A00988028 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A33695286A183A00988028 /* UserHealthProfile.swift */; };
+		A0A33699286A190000988028 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A33698286A190000988028 /* HKBiologicalSex+StringRepresentation.swift */; };
+		A0A3369B286A191100988028 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A3369A286A191100988028 /* HKBloodType+StringRepresentation.swift */; };
+		A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A3369C286A1DD100988028 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +97,12 @@
 		A0A336872869AF5700988028 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A0A336882869AF5700988028 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		A0A3368C2869B22700988028 /* ModelOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOnboarding.swift; sourceTree = "<group>"; };
+		A0A33691286A17B800988028 /* ProfileDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileDataSource.swift; path = ../../../MC2/CobaHK/CobaHK/ProfileDataSource.swift; sourceTree = "<group>"; };
+		A0A33693286A17D800988028 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitSetupAssistant.swift; path = ../../../MC2/CobaHK/CobaHK/HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		A0A33695286A183A00988028 /* UserHealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserHealthProfile.swift; path = ../../../MC2/CobaHK/Model/UserHealthProfile.swift; sourceTree = "<group>"; };
+		A0A33698286A190000988028 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HKBiologicalSex+StringRepresentation.swift"; path = "../../../../Downloads/Prancercise Tracker Starter-3/Prancercise Tracker/HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
+		A0A3369A286A191100988028 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HKBloodType+StringRepresentation.swift"; path = "../../../../Downloads/Prancercise Tracker Starter-3/Prancercise Tracker/HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
+		A0A3369C286A1DD100988028 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,7 @@
 			files = (
 				EEE04207286E585F00A2B04D /* AuthenticationServices.framework in Frameworks */,
 				9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */,
+				A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +167,8 @@
 			children = (
 				9A1F8B95286DEE3200F6E16C /* Service */,
 				9A1F8B8A286D20F300F6E16C /* Extension */,
+				A0A33697286A187A00988028 /* Health Kit Extension */,
+				A0A3368E286A175D00988028 /* HealthKit */,
 				A0A3368B2869B1F600988028 /* Onboarding */,
 				9AE05F9A28652D22000D3386 /* Model */,
 				9AE05F962864B4C1000D3386 /* Features */,
@@ -222,6 +237,7 @@
 		9AE05F972864B693000D3386 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0A3369C286A1DD100988028 /* HealthKit.framework */,
 				9AE05F982864B693000D3386 /* CloudKit.framework */,
 				EEE04206286E579A00A2B04D /* AuthenticationServices.framework */,
 			);
@@ -247,6 +263,25 @@
 				A0A3368C2869B22700988028 /* ModelOnboarding.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A0A3368E286A175D00988028 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				A0A33691286A17B800988028 /* ProfileDataSource.swift */,
+				A0A33693286A17D800988028 /* HealthKitSetupAssistant.swift */,
+				A0A33695286A183A00988028 /* UserHealthProfile.swift */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		A0A33697286A187A00988028 /* Health Kit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A0A33698286A190000988028 /* HKBiologicalSex+StringRepresentation.swift */,
+				A0A3369A286A191100988028 /* HKBloodType+StringRepresentation.swift */,
+			);
+			path = "Health Kit Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +371,7 @@
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
+				A0A33694286A17D800988028 /* HealthKitSetupAssistant.swift in Sources */,
 				A0A3368D2869B22700988028 /* ModelOnboarding.swift in Sources */,
 				9A1F8B6D2868AAD500F6E16C /* OnboardViewController.swift in Sources */,
 				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
@@ -346,13 +382,18 @@
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
 				9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */,
-				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
-				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
 				9A1F8B93286DCF3B00F6E16C /* AddFriendViewController.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
 				EEE0420A286E9BD000A2B04D /* TutorialViewController.swift in Sources */,
 				EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */,
 				9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */,
+				A0A33696286A183A00988028 /* UserHealthProfile.swift in Sources */,
+				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
+				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
+				A0A3369B286A191100988028 /* HKBloodType+StringRepresentation.swift in Sources */,
+				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
+				A0A33699286A190000988028 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
+				A0A33692286A17B800988028 /* ProfileDataSource.swift in Sources */,
 				A0A336892869AF5700988028 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,12 +532,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AL5KA4YBF7;
+				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpi/Resources/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "AppExamples want to acces your health data in order to analyze your health and best";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AppExamples want to acces your health data in order to analyze your health and best";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -522,12 +565,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AL5KA4YBF7;
+				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpi/Resources/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "AppExamples want to acces your health data in order to analyze your health and best";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AppExamples want to acces your health data in order to analyze your health and best";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

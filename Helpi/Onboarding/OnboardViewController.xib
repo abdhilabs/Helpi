@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
-                <outlet property="buttonSkipFix" destination="oqc-Zb-CzN" id="iGF-TE-HxO"/>
                 <outlet property="collectionView" destination="fq2-cs-M9E" id="K8k-ag-Fva"/>
                 <outlet property="pageControl" destination="mA6-WZ-1eP" id="1gu-3b-tUj"/>
                 <outlet property="skipButton" destination="Afr-JW-WbK" id="pcE-dL-mD4"/>
@@ -56,29 +55,33 @@
                         <action selector="buttonSkip:" destination="-1" eventType="touchUpInside" id="LRI-cJ-x1H"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqc-Zb-CzN">
-                    <rect key="frame" x="30" y="848" width="354" height="18"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffT-BE-skd">
+                    <rect key="frame" x="30" y="843" width="354" height="28"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Skip"/>
+                    <connections>
+                        <action selector="skipButtonFix:" destination="-1" eventType="touchUpInside" id="DtG-uo-sje"/>
+                        <action selector="skipButtonfix:" destination="-1" eventType="touchUpInside" id="kjq-Zw-bba"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="mA6-WZ-1eP" firstAttribute="centerX" secondItem="Afr-JW-WbK" secondAttribute="centerX" id="5D8-ZJ-02e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ffT-BE-skd" secondAttribute="trailing" constant="30" id="7FN-Og-pTh"/>
+                <constraint firstItem="ffT-BE-skd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7iJ-DD-01n"/>
                 <constraint firstItem="Afr-JW-WbK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="8z1-iq-pzc"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="COe-6J-dMe"/>
-                <constraint firstItem="oqc-Zb-CzN" firstAttribute="top" secondItem="Afr-JW-WbK" secondAttribute="bottom" constant="10" id="I4I-H2-fQD"/>
                 <constraint firstItem="Afr-JW-WbK" firstAttribute="top" secondItem="mA6-WZ-1eP" secondAttribute="bottom" constant="10" id="NsV-sA-ALh"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.77" id="P6B-xL-LoM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fq2-cs-M9E" secondAttribute="trailing" id="VqW-Wf-NNo"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fca-Br-TQG"/>
-                <constraint firstAttribute="bottom" secondItem="oqc-Zb-CzN" secondAttribute="bottom" constant="30" id="jxp-TI-Deh"/>
-                <constraint firstItem="oqc-Zb-CzN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="pIB-0t-jif"/>
                 <constraint firstAttribute="bottom" secondItem="Afr-JW-WbK" secondAttribute="bottom" constant="58" id="qnk-Pa-SRL"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="centerX" secondItem="mA6-WZ-1eP" secondAttribute="centerX" id="vcX-wB-PBK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oqc-Zb-CzN" secondAttribute="trailing" constant="30" id="vzd-qb-CKB"/>
+                <constraint firstAttribute="bottom" secondItem="ffT-BE-skd" secondAttribute="bottom" constant="25" id="x8d-6X-fHT"/>
+                <constraint firstItem="ffT-BE-skd" firstAttribute="top" secondItem="Afr-JW-WbK" secondAttribute="bottom" constant="5" id="xE0-Ue-OtP"/>
             </constraints>
             <point key="canvasLocation" x="132" y="89"/>
         </view>
