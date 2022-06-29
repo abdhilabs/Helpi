@@ -42,7 +42,7 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     
-    let onboarding: [dataOnboarding] = [dataOnboarding(image: "foto", title: "Alert Helper", description: "Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint."), dataOnboarding(image: "foto", title: "First Aid", description: "Helpi will show first responders how to give you first aid and how to reach your emergency contact."), dataOnboarding(image: "foto", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record.Tap the button below to grant permission to read the necessary data.")]
+    let onboarding: [dataOnboarding] = [dataOnboarding(animationName: "notif", title: "Alert Helper", description: "Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint."), dataOnboarding(animationName: "firstaid", title: "First Aid", description: "Helpi will show first responders how to give you first aid and how to reach your emergency contact."), dataOnboarding(animationName: "medical", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record.Tap the button below to grant permission to read the necessary data.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,11 +63,12 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
 
 
     @IBAction func pageChanged(_ sender: Any) {
-//        let pc = sender as! UIPageControl
-//
-//               // scrolling the collectionView to the selected page
-//               collectionView.scrollToItem(at: IndexPath(item: pc.currentPage, section: 0),
-//                                           at: .centeredHorizontally, animated: true)
+        let pc = sender as! UIPageControl
+
+               // scrolling the collectionView to the selected page
+               collectionView.scrollToItem(at: IndexPath(item: pc.currentPage, section: 0),
+                                           at: .centeredHorizontally, animated: true)
+        
     }
     
     @IBAction func skipButtonFix(_ sender: Any)
@@ -90,6 +91,8 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
 //            skipButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
             skipButton.setTitle("Grant Acces", for: .normal)
         }
+        
+        
         pageControl.currentPage = pageControl.currentPage + 1
         let i = IndexPath(item: pageControl.currentPage, section: 0)
         collectionView.scrollToItem(at: i as IndexPath, at: .centeredHorizontally, animated: true)
