@@ -22,13 +22,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjT-7w-Unn">
-                        <rect key="frame" x="24" y="460" width="252" height="23"/>
+                        <rect key="frame" x="24" y="430" width="252" height="23"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHb-7r-18P">
-                        <rect key="frame" x="24" y="493" width="252" height="47"/>
+                        <rect key="frame" x="24" y="463" width="252" height="47"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                 <constraint firstItem="Q4p-rn-EE8" firstAttribute="centerX" secondItem="GHb-7r-18P" secondAttribute="centerX" id="KW8-PJ-be4"/>
                 <constraint firstItem="Q4p-rn-EE8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="M6u-yn-bLt"/>
                 <constraint firstAttribute="bottom" secondItem="Q4p-rn-EE8" secondAttribute="bottom" constant="240" id="MXD-c4-gJ2"/>
-                <constraint firstItem="CjT-7w-Unn" firstAttribute="top" secondItem="Q4p-rn-EE8" secondAttribute="bottom" constant="100" id="NRt-if-9aS"/>
+                <constraint firstItem="CjT-7w-Unn" firstAttribute="top" secondItem="Q4p-rn-EE8" secondAttribute="bottom" constant="70" id="NRt-if-9aS"/>
                 <constraint firstItem="GHb-7r-18P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="W7J-M1-nqi"/>
                 <constraint firstAttribute="trailing" secondItem="GHb-7r-18P" secondAttribute="trailing" constant="24" id="Wce-Wy-h1a"/>
                 <constraint firstItem="CjT-7w-Unn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="kDG-dR-vbx"/>

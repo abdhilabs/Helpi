@@ -10,9 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
+                <outlet property="btnConnectHealth" destination="uV8-Zt-iFl" id="fbA-Mk-AGP"/>
+                <outlet property="btnSkip" destination="ffT-BE-skd" id="Xk7-hd-R5g"/>
                 <outlet property="collectionView" destination="fq2-cs-M9E" id="K8k-ag-Fva"/>
                 <outlet property="pageControl" destination="mA6-WZ-1eP" id="1gu-3b-tUj"/>
-                <outlet property="skipButton" destination="Afr-JW-WbK" id="pcE-dL-mD4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,57 +33,54 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mA6-WZ-1eP">
-                    <rect key="frame" x="149" y="756" width="116" height="26"/>
+                    <rect key="frame" x="149" y="753" width="116" height="26"/>
                     <color key="pageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" systemColor="systemIndigoColor"/>
                     <connections>
                         <action selector="pageChanged:" destination="-1" eventType="valueChanged" id="ODV-xO-C6y"/>
                     </connections>
                 </pageControl>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afr-JW-WbK">
-                    <rect key="frame" x="30" y="792" width="354" height="46"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="46" id="L33-kz-TlI"/>
-                    </constraints>
-                    <color key="tintColor" red="0.64434248670000005" green="0.57541086070000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="capsule">
-                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                        <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="buttonSkip:" destination="-1" eventType="touchUpInside" id="LRI-cJ-x1H"/>
-                    </connections>
-                </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffT-BE-skd">
-                    <rect key="frame" x="30" y="843" width="354" height="28"/>
+                    <rect key="frame" x="30" y="840" width="354" height="31"/>
                     <color key="tintColor" systemColor="systemBlueColor"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Connect To Health App">
-                        <color key="baseForegroundColor" red="0.1647058874" green="0.14901961389999999" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Skip">
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="skipButtonFix:" destination="-1" eventType="touchUpInside" id="DtG-uo-sje"/>
-                        <action selector="skipButtonfix:" destination="-1" eventType="touchUpInside" id="kjq-Zw-bba"/>
+                        <action selector="skipBtn:" destination="-1" eventType="touchUpInside" id="GH1-ve-hDf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-Zt-iFl">
+                    <rect key="frame" x="20" y="789" width="374" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="M7D-it-O6o"/>
+                        <constraint firstAttribute="width" constant="374" id="wox-wj-v1v"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Next">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="btnConnectHealth:" destination="-1" eventType="touchUpInside" id="XKs-DM-oeh"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="mA6-WZ-1eP" firstAttribute="centerX" secondItem="Afr-JW-WbK" secondAttribute="centerX" id="5D8-ZJ-02e"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ffT-BE-skd" secondAttribute="trailing" constant="30" id="7FN-Og-pTh"/>
                 <constraint firstItem="ffT-BE-skd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7iJ-DD-01n"/>
-                <constraint firstItem="Afr-JW-WbK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="8z1-iq-pzc"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="COe-6J-dMe"/>
-                <constraint firstItem="Afr-JW-WbK" firstAttribute="top" secondItem="mA6-WZ-1eP" secondAttribute="bottom" constant="10" id="NsV-sA-ALh"/>
+                <constraint firstItem="ffT-BE-skd" firstAttribute="top" secondItem="uV8-Zt-iFl" secondAttribute="bottom" constant="5" id="Iwb-JS-R0K"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.77" id="P6B-xL-LoM"/>
+                <constraint firstItem="uV8-Zt-iFl" firstAttribute="top" secondItem="mA6-WZ-1eP" secondAttribute="bottom" constant="10" id="QhA-Fc-KgX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fq2-cs-M9E" secondAttribute="trailing" id="VqW-Wf-NNo"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fca-Br-TQG"/>
-                <constraint firstAttribute="bottom" secondItem="Afr-JW-WbK" secondAttribute="bottom" constant="58" id="qnk-Pa-SRL"/>
+                <constraint firstItem="uV8-Zt-iFl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="iPT-MO-I0o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uV8-Zt-iFl" secondAttribute="trailing" constant="20" id="roK-pr-Phh"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="centerX" secondItem="mA6-WZ-1eP" secondAttribute="centerX" id="vcX-wB-PBK"/>
                 <constraint firstAttribute="bottom" secondItem="ffT-BE-skd" secondAttribute="bottom" constant="25" id="x8d-6X-fHT"/>
-                <constraint firstItem="ffT-BE-skd" firstAttribute="top" secondItem="Afr-JW-WbK" secondAttribute="bottom" constant="5" id="xE0-Ue-OtP"/>
             </constraints>
             <point key="canvasLocation" x="132" y="89"/>
         </view>
