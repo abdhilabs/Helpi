@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BacktapTutorialViewController" customModule="Helpi" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Up Back Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-mE-pxe">
+                    <rect key="frame" x="118.5" y="194" width="177" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure you have the latest version of iOS on your iPhone 8 or later." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sui-Uf-Pkb">
+                    <rect key="frame" x="105" y="278" width="259" height="61"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to Settings &gt; Accessibility &gt; Touch, and tap Back Tap." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-he-Jyj">
+                    <rect key="frame" x="105" y="369" width="259" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Double Tap or Triple Tap and choose an action." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kI-rk-1AS">
+                    <rect key="frame" x="105" y="440" width="259" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double or triple tap on the back of your iPhone to trigger the action you set." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xb-GU-MVL">
+                    <rect key="frame" x="101" y="511" width="263" height="61"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle.Number1" translatesAutoresizingMaskIntoConstraints="NO" id="fAi-hH-XBh">
+                    <rect key="frame" x="40" y="288.5" width="40" height="40"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle.Number2" translatesAutoresizingMaskIntoConstraints="NO" id="eu4-Mf-Tqh">
+                    <rect key="frame" x="40" y="369.5" width="40" height="40"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle.Number4" translatesAutoresizingMaskIntoConstraints="NO" id="gZ3-H2-eUK">
+                    <rect key="frame" x="36" y="521.5" width="40" height="40"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle.Number3" translatesAutoresizingMaskIntoConstraints="NO" id="Y9M-EX-nlI">
+                    <rect key="frame" x="40" y="440.5" width="40" height="40"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3kI-rk-1AS" firstAttribute="top" secondItem="0aa-he-Jyj" secondAttribute="bottom" constant="30" id="18u-q4-Ga7"/>
+                <constraint firstItem="7Xb-GU-MVL" firstAttribute="top" secondItem="3kI-rk-1AS" secondAttribute="bottom" constant="30" id="3Sf-L5-5GX"/>
+                <constraint firstItem="0aa-he-Jyj" firstAttribute="leading" secondItem="eu4-Mf-Tqh" secondAttribute="trailing" constant="25" id="3wt-sI-bCd"/>
+                <constraint firstItem="gZ3-H2-eUK" firstAttribute="centerY" secondItem="7Xb-GU-MVL" secondAttribute="centerY" id="DEm-Nr-kUb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sui-Uf-Pkb" secondAttribute="trailing" constant="50" id="DJZ-hZ-8bH"/>
+                <constraint firstItem="7Xb-GU-MVL" firstAttribute="leading" secondItem="gZ3-H2-eUK" secondAttribute="trailing" constant="25" id="Fso-ki-5b7"/>
+                <constraint firstItem="0aa-he-Jyj" firstAttribute="top" secondItem="Sui-Uf-Pkb" secondAttribute="bottom" constant="30" id="Giw-o6-h0q"/>
+                <constraint firstItem="0aa-he-Jyj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="105" id="Sss-3u-YUg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Xb-GU-MVL" secondAttribute="trailing" constant="50" id="U5W-wK-EOn"/>
+                <constraint firstItem="Sui-Uf-Pkb" firstAttribute="leading" secondItem="fAi-hH-XBh" secondAttribute="trailing" constant="25" id="af2-St-gdB"/>
+                <constraint firstItem="8qD-mE-pxe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="ahK-y5-n7A"/>
+                <constraint firstItem="Y9M-EX-nlI" firstAttribute="centerY" secondItem="3kI-rk-1AS" secondAttribute="centerY" id="bhC-qe-e4e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3kI-rk-1AS" secondAttribute="trailing" constant="50" id="cNV-qP-Hb9"/>
+                <constraint firstItem="8qD-mE-pxe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cRC-hO-7fr"/>
+                <constraint firstItem="Sui-Uf-Pkb" firstAttribute="top" secondItem="8qD-mE-pxe" secondAttribute="bottom" constant="55" id="dSe-yq-6b5"/>
+                <constraint firstItem="Sui-Uf-Pkb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="105" id="jfM-pZ-ycD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0aa-he-Jyj" secondAttribute="trailing" constant="50" id="rJC-cz-Td0"/>
+                <constraint firstItem="3kI-rk-1AS" firstAttribute="leading" secondItem="Y9M-EX-nlI" secondAttribute="trailing" constant="25" id="sKM-Al-5rF"/>
+                <constraint firstItem="fAi-hH-XBh" firstAttribute="centerY" secondItem="Sui-Uf-Pkb" secondAttribute="centerY" id="ua4-ba-SvB"/>
+                <constraint firstItem="7Xb-GU-MVL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="101" id="wSL-lf-BT1"/>
+                <constraint firstItem="3kI-rk-1AS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="105" id="wcj-WA-FXC"/>
+                <constraint firstItem="0aa-he-Jyj" firstAttribute="top" secondItem="Sui-Uf-Pkb" secondAttribute="bottom" constant="30" id="yAI-kP-4fv"/>
+                <constraint firstItem="eu4-Mf-Tqh" firstAttribute="centerY" secondItem="0aa-he-Jyj" secondAttribute="centerY" id="yco-jF-p15"/>
+            </constraints>
+            <point key="canvasLocation" x="-149.27536231884059" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Circle.Number1" width="40" height="40"/>
+        <image name="Circle.Number2" width="40" height="40"/>
+        <image name="Circle.Number3" width="40" height="40"/>
+        <image name="Circle.Number4" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

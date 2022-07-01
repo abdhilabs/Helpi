@@ -76,7 +76,7 @@ class MainViewController: UIViewController {
       if error == nil {
         print("Record Deleted")
       } else {
-        print("Error: \(error?.localizedDescription)")
+          print("Error: \(String(describing: error?.localizedDescription))")
       }
     }
   }

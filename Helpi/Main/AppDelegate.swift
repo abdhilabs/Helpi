@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
 
     let window = UIWindow(frame: UIScreen.main.bounds)
-    window.rootViewController = UINavigationController(rootViewController: OnboardViewController())
+    window.rootViewController = UINavigationController(rootViewController: ActivationViewController())
     window.makeKeyAndVisible()
     self.window = window
 
@@ -82,10 +82,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
   func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    let subscription = CKQuerySubscription(recordType: "Persons", predicate: NSPredicate(format: "TRUEPREDICATE"), options: .firesOnRecordCreation)
+    let subscription = CKQuerySubscription(recordType: "Persons", predicate: NSPredicate(format: "name == %@", "huda"), options: .firesOnRecordCreation)
 
     let info = CKSubscription.NotificationInfo()
-    info .alertBody = "A new notification has been posted!"
+    info.titleLocalizationKey = "%1$@"
+    info.titleLocalizationArgs = ["name"]
+    info.alertBody = "A new notification has been posted!"
     info.shouldBadge = true
     info.soundName = "default"
 
@@ -95,12 +97,12 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
       if error == nil {
         print("Subscription saved successfully")
       } else {
-        print("Error: \(error?.localizedDescription)")
+          print("Error: \(String(describing: error?.localizedDescription))")
       }
     }
   }
 
   func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-    completionHandler([.alert, .sound])
+      //completionHandler([.alert, .sound])
   }
 }
