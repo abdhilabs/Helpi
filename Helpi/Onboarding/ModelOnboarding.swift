@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct dataOnboarding {
+struct Onboarding {
     let animationName: String
     let title: String
     let description: String

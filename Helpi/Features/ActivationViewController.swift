@@ -224,7 +224,7 @@ class ActivationViewController: UIViewController {
     }
     
     @objc func buttonTapped() {
-        navigationController?.pushViewController(TutorialViewController(), animated: true)
+//        navigationController?.pushViewController(TutorialViewController(), animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {

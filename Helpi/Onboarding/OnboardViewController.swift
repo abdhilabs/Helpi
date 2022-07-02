@@ -33,7 +33,10 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var btnConnectHealth: UIButton!
     @IBOutlet weak var btnSkip: UIButton!
     
-    let onboarding: [dataOnboarding] = [dataOnboarding(animationName: "notif", title: "Alert Helper", description: "Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint."), dataOnboarding(animationName: "firstaid", title: "First Aid", description: "Helpi will show first responders how to give you first aid and how to reach your emergency contact."), dataOnboarding(animationName: "medical", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record.Tap the button below to grant permission to read the necessary data.")]
+    let onboarding: [Onboarding] = [
+      Onboarding(animationName: "notif", title: "Alert Helper", description: "Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint."),
+      Onboarding(animationName: "firstaid", title: "First Aid", description: "Helpi will show first responders how to give you first aid and how to reach your emergency contact."),
+      Onboarding(animationName: "medical", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record.Tap the button below to grant permission to read the necessary data.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

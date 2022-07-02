@@ -19,7 +19,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     var animation = AnimationView()
     
     // Instance of the Lottie AnimationView
-    func configureCell(onboarding: dataOnboarding){
+    func configureCell(onboarding: Onboarding){
         animation = AnimationView(name: onboarding.animationName)
         animation.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height * 0.8)
         
