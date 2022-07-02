@@ -17,6 +17,19 @@
 		9AE05F932864B427000D3386 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F912864B427000D3386 /* MainViewController.xib */; };
 		9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE05F982864B693000D3386 /* CloudKit.framework */; };
 		9AE05F9C28652D31000D3386 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F9B28652D31000D3386 /* Variables.swift */; };
+		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
+		EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */; };
+		EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */; };
+		EEE04200286D315500A2B04D /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041FE286D315500A2B04D /* ProfileSetupViewController.swift */; };
+		EEE04201286D315500A2B04D /* ProfileSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041FF286D315500A2B04D /* ProfileSetupViewController.xib */; };
+		EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04202286D398700A2B04D /* KeychainItem.swift */; };
+		EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04204286D3A9500A2B04D /* ResultViewController.swift */; };
+		EEE04207286E585F00A2B04D /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE04206286E579A00A2B04D /* AuthenticationServices.framework */; };
+		EEE0420A286E9BD000A2B04D /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04208286E9BD000A2B04D /* TutorialViewController.swift */; };
+		EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE04209286E9BD000A2B04D /* TutorialViewController.xib */; };
+		EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */; };
+		EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */; };
+		EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04210286F3BA900A2B04D /* PlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +46,19 @@
 		9AE05F912864B427000D3386 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9AE05F982864B693000D3386 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9AE05F9B28652D31000D3386 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
+		EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivationViewController.xib; sourceTree = "<group>"; };
+		EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		EEE041FE286D315500A2B04D /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
+		EEE041FF286D315500A2B04D /* ProfileSetupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileSetupViewController.xib; sourceTree = "<group>"; };
+		EEE04202286D398700A2B04D /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		EEE04204286D3A9500A2B04D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		EEE04206286E579A00A2B04D /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		EEE04208286E9BD000A2B04D /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		EEE04209286E9BD000A2B04D /* TutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
+		EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktapTutorialViewController.swift; sourceTree = "<group>"; };
+		EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BacktapTutorialViewController.xib; sourceTree = "<group>"; };
+		EEE04210286F3BA900A2B04D /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE04207286E585F00A2B04D /* AuthenticationServices.framework in Frameworks */,
 				9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +109,8 @@
 			children = (
 				9AE05F842864AB24000D3386 /* Assets.xcassets */,
 				9AE05F892864AB24000D3386 /* Info.plist */,
+				EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */,
+				EEE04202286D398700A2B04D /* KeychainItem.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -102,6 +131,15 @@
 				9AE05F912864B427000D3386 /* MainViewController.xib */,
 				9A1F8B6B2868AAD400F6E16C /* OnboardViewController.swift */,
 				9A1F8B6C2868AAD400F6E16C /* OnboardViewController.xib */,
+				EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */,
+				EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */,
+				EEE041FE286D315500A2B04D /* ProfileSetupViewController.swift */,
+				EEE041FF286D315500A2B04D /* ProfileSetupViewController.xib */,
+				EEE04204286D3A9500A2B04D /* ResultViewController.swift */,
+				EEE04208286E9BD000A2B04D /* TutorialViewController.swift */,
+				EEE04209286E9BD000A2B04D /* TutorialViewController.xib */,
+				EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */,
+				EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -110,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE05F982864B693000D3386 /* CloudKit.framework */,
+				EEE04206286E579A00A2B04D /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE05F9B28652D31000D3386 /* Variables.swift */,
+				EEE04210286F3BA900A2B04D /* PlayView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,8 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */,
+				EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */,
 				9AE05F932864B427000D3386 /* MainViewController.xib in Resources */,
 				9A1F8B6E2868AAD500F6E16C /* OnboardViewController.xib in Resources */,
+				EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */,
+				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
+				EEE04201286D315500A2B04D /* ProfileSetupViewController.xib in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,11 +238,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE04200286D315500A2B04D /* ProfileSetupViewController.swift in Sources */,
+				EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */,
+				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
+				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
 				9A1F8B6D2868AAD500F6E16C /* OnboardViewController.swift in Sources */,
+				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
+				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
+				EEE0420A286E9BD000A2B04D /* TutorialViewController.swift in Sources */,
+				EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +388,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -353,6 +406,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -365,7 +419,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -382,6 +437,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
