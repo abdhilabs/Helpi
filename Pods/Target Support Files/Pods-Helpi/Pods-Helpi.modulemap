@@ -1,0 +1,6 @@
+module Pods_Helpi {
+  umbrella header "Pods-Helpi-umbrella.h"
+
+  export *
+  module * { export * }
+}

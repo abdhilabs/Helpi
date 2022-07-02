@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A1F8B6D2868AAD500F6E16C /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B6B2868AAD400F6E16C /* OnboardViewController.swift */; };
-		9A1F8B6E2868AAD500F6E16C /* OnboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B6C2868AAD400F6E16C /* OnboardViewController.xib */; };
+		621A9ACD1577FF09810FF3C2 /* libPods-Helpi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */; };
 		9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */; };
 		9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */; };
 		9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */; };
@@ -22,6 +21,7 @@
 		9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */; };
 		9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */; };
 		9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */; };
+		9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F812864AB21000D3386 /* Helpi.xcdatamodeld */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
@@ -30,6 +30,30 @@
 		9AE05F932864B427000D3386 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F912864B427000D3386 /* MainViewController.xib */; };
 		9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE05F982864B693000D3386 /* CloudKit.framework */; };
 		9AE05F9C28652D31000D3386 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F9B28652D31000D3386 /* Variables.swift */; };
+		A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D66BE286DF36F00C43D83 /* DoneViewController.swift */; };
+		A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04D66BF286DF36F00C43D83 /* DoneViewController.xib */; };
+		A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF3F286C4B6B006D686F /* ContactViewController.swift */; };
+		A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF40286C4B6B006D686F /* ContactViewController.xib */; };
+		A078FF45286C5B75006D686F /* PersonalNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */; };
+		A078FF46286C5B75006D686F /* PersonalNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF44286C5B75006D686F /* PersonalNotesViewController.xib */; };
+		A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */; };
+		A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */; };
+		A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */; };
+		A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */; };
+		A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */; };
+		A07BB7C3286B622000A3DE30 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A07BB7C2286B622000A3DE30 /* Podfile */; };
+		A07BB94E286B696B00A3DE30 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB948286B696B00A3DE30 /* OnboardingCollectionViewCell.swift */; };
+		A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07BB949286B696B00A3DE30 /* OnboardingCollectionViewCell.xib */; };
+		A07BB950286B696B00A3DE30 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB94A286B696B00A3DE30 /* OnboardViewController.swift */; };
+		A07BB951286B696B00A3DE30 /* OnboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07BB94C286B696B00A3DE30 /* OnboardViewController.xib */; };
+		A0802D80286C854F004A22CB /* FirstAidScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D7E286C854F004A22CB /* FirstAidScreen.swift */; };
+		A0802D81286C854F004A22CB /* FirstAidScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0802D7F286C854F004A22CB /* FirstAidScreen.xib */; };
+		A0802D83286C8594004A22CB /* ModelFirstAid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D82286C8594004A22CB /* ModelFirstAid.swift */; };
+		A0802D8A286C8653004A22CB /* FirstAidCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D88286C8653004A22CB /* FirstAidCollectionViewCell.swift */; };
+		A0802D8B286C8653004A22CB /* FirstAidCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */; };
+		A09E03B1286EC0CD005391F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E03AF286EC0CD005391F0 /* HomeViewController.swift */; };
+		A09E03B2286EC0CD005391F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09E03B0286EC0CD005391F0 /* HomeViewController.xib */; };
+		A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A3369C286A1DD100988028 /* HealthKit.framework */; };
 		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
 		EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */; };
 		EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */; };
@@ -38,7 +62,6 @@
 		EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04202286D398700A2B04D /* KeychainItem.swift */; };
 		EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04204286D3A9500A2B04D /* ResultViewController.swift */; };
 		EEE04207286E585F00A2B04D /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE04206286E579A00A2B04D /* AuthenticationServices.framework */; };
-		EEE0420A286E9BD000A2B04D /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04208286E9BD000A2B04D /* TutorialViewController.swift */; };
 		EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE04209286E9BD000A2B04D /* TutorialViewController.xib */; };
 		EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */; };
 		EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */; };
@@ -46,6 +69,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B14154B70A04060AC6C4DE4 /* Pods-Helpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.debug.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.debug.xcconfig"; sourceTree = "<group>"; };
 		9A1F8B6B2868AAD400F6E16C /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		9A1F8B6C2868AAD400F6E16C /* OnboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardViewController.xib; sourceTree = "<group>"; };
 		9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +96,33 @@
 		9AE05F912864B427000D3386 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9AE05F982864B693000D3386 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9AE05F9B28652D31000D3386 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		A04D66BE286DF36F00C43D83 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		A04D66BF286DF36F00C43D83 /* DoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneViewController.xib; sourceTree = "<group>"; };
+		A078FF3F286C4B6B006D686F /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		A078FF40286C4B6B006D686F /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalNotesViewController.swift; sourceTree = "<group>"; };
+		A078FF44286C5B75006D686F /* PersonalNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalNotesViewController.xib; sourceTree = "<group>"; };
+		A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
+		A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
+		A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
+		A07BB7C2286B622000A3DE30 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A07BB948286B696B00A3DE30 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A07BB949286B696B00A3DE30 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		A07BB94A286B696B00A3DE30 /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		A07BB94C286B696B00A3DE30 /* OnboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardViewController.xib; sourceTree = "<group>"; };
+		A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelOnboarding.swift; sourceTree = "<group>"; };
+		A0802D7E286C854F004A22CB /* FirstAidScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidScreen.swift; sourceTree = "<group>"; };
+		A0802D7F286C854F004A22CB /* FirstAidScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAidScreen.xib; sourceTree = "<group>"; };
+		A0802D82286C8594004A22CB /* ModelFirstAid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFirstAid.swift; sourceTree = "<group>"; };
+		A0802D88286C8653004A22CB /* FirstAidCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAidCollectionViewCell.xib; sourceTree = "<group>"; };
+		A09E03AF286EC0CD005391F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A09E03B0286EC0CD005391F0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A0A3369C286A1DD100988028 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		A38C454D9E81CC18B52A5DC2 /* Pods-Helpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.release.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.release.xcconfig"; sourceTree = "<group>"; };
+		E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Helpi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivationViewController.xib; sourceTree = "<group>"; };
 		EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
@@ -94,12 +145,24 @@
 			files = (
 				EEE04207286E585F00A2B04D /* AuthenticationServices.framework in Frameworks */,
 				9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */,
+				A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */,
+				621A9ACD1577FF09810FF3C2 /* libPods-Helpi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DD0B9C8DAC59494BBB8837B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A07BB7C2286B622000A3DE30 /* Podfile */,
+				0B14154B70A04060AC6C4DE4 /* Pods-Helpi.debug.xcconfig */,
+				A38C454D9E81CC18B52A5DC2 /* Pods-Helpi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9A1F8B832869F2B000F6E16C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +195,7 @@
 				9AE05F772864AB21000D3386 /* Helpi */,
 				9AE05F762864AB21000D3386 /* Products */,
 				9AE05F972864B693000D3386 /* Frameworks */,
+				7DD0B9C8DAC59494BBB8837B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,7 +212,18 @@
 			children = (
 				9A1F8B95286DEE3200F6E16C /* Service */,
 				9A1F8B8A286D20F300F6E16C /* Extension */,
+				A0802D6D286C8469004A22CB /* FirstAidScreen */,
+				A078FF3F286C4B6B006D686F /* ContactViewController.swift */,
+				A078FF40286C4B6B006D686F /* ContactViewController.xib */,
+				A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */,
+				A078FF44286C5B75006D686F /* PersonalNotesViewController.xib */,
+				A04D66BE286DF36F00C43D83 /* DoneViewController.swift */,
+				A04D66BF286DF36F00C43D83 /* DoneViewController.xib */,
+				A09E03AF286EC0CD005391F0 /* HomeViewController.swift */,
+				A09E03B0286EC0CD005391F0 /* HomeViewController.xib */,
+				A0A3368E286A175D00988028 /* HealthKit */,
 				9AE05F962864B4C1000D3386 /* Features */,
+				A07BB947286B696B00A3DE30 /* Onboarding */,
 				9AE05F952864B484000D3386 /* Main */,
 				9AE05F9A28652D22000D3386 /* Model */,
 				9AE05F942864B470000D3386 /* Resources */,
@@ -182,10 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				9A1F8B832869F2B000F6E16C /* Views */,
-				9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */,
-				9A1F8B802869EF5000F6E16C /* AssistanceViewController.xib */,
-				9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */,
-				9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */,
 				9AE05F902864B427000D3386 /* MainViewController.swift */,
 				9AE05F912864B427000D3386 /* MainViewController.xib */,
 				9A1F8B6B2868AAD400F6E16C /* OnboardViewController.swift */,
@@ -214,8 +285,10 @@
 		9AE05F972864B693000D3386 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0A3369C286A1DD100988028 /* HealthKit.framework */,
 				9AE05F982864B693000D3386 /* CloudKit.framework */,
 				EEE04206286E579A00A2B04D /* AuthenticationServices.framework */,
+				E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,6 +302,50 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A07BB7A9286AF67600A3DE30 /* Health Kit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */,
+				A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */,
+			);
+			path = "Health Kit Extension";
+			sourceTree = "<group>";
+		};
+		A07BB947286B696B00A3DE30 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A07BB948286B696B00A3DE30 /* OnboardingCollectionViewCell.swift */,
+				A07BB949286B696B00A3DE30 /* OnboardingCollectionViewCell.xib */,
+				A07BB94A286B696B00A3DE30 /* OnboardViewController.swift */,
+				A07BB94C286B696B00A3DE30 /* OnboardViewController.xib */,
+				A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A0802D6D286C8469004A22CB /* FirstAidScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A0802D7E286C854F004A22CB /* FirstAidScreen.swift */,
+				A0802D7F286C854F004A22CB /* FirstAidScreen.xib */,
+				A0802D82286C8594004A22CB /* ModelFirstAid.swift */,
+				A0802D88286C8653004A22CB /* FirstAidCollectionViewCell.swift */,
+				A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */,
+			);
+			name = FirstAidScreen;
+			sourceTree = "<group>";
+		};
+		A0A3368E286A175D00988028 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				A07BB7A9286AF67600A3DE30 /* Health Kit Extension */,
+				A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */,
+				A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */,
+				A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,6 +353,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AE05F8C2864AB24000D3386 /* Build configuration list for PBXNativeTarget "Helpi" */;
 			buildPhases = (
+				BCF33A408603F1CD004B98E0 /* [CP] Check Pods Manifest.lock */,
 				9AE05F712864AB21000D3386 /* Sources */,
 				9AE05F722864AB21000D3386 /* Frameworks */,
 				9AE05F732864AB21000D3386 /* Resources */,
@@ -287,23 +405,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07BB951286B696B00A3DE30 /* OnboardViewController.xib in Resources */,
 				9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */,
 				EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */,
 				9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */,
 				9A1F8B822869EF5000F6E16C /* AssistanceViewController.xib in Resources */,
 				9AE05F932864B427000D3386 /* MainViewController.xib in Resources */,
 				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
-				9A1F8B6E2868AAD500F6E16C /* OnboardViewController.xib in Resources */,
 				EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
 				EEE04201286D315500A2B04D /* ProfileSetupViewController.xib in Resources */,
 				9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */,
 				9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */,
+				A07BB7C3286B622000A3DE30 /* Podfile in Resources */,
+				A078FF46286C5B75006D686F /* PersonalNotesViewController.xib in Resources */,
+				A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
+				A0802D8B286C8653004A22CB /* FirstAidCollectionViewCell.xib in Resources */,
+				A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */,
+				A0802D81286C854F004A22CB /* FirstAidScreen.xib in Resources */,
+				A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */,
+				A09E03B2286EC0CD005391F0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BCF33A408603F1CD004B98E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Helpi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AE05F712864AB21000D3386 /* Sources */ = {
@@ -315,7 +466,6 @@
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
-				9A1F8B6D2868AAD500F6E16C /* OnboardViewController.swift in Sources */,
 				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
 				9A1F8B8F286D264F00F6E16C /* PersonalNoteViewController.swift in Sources */,
@@ -324,13 +474,28 @@
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
 				9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */,
-				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
-				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
 				9A1F8B93286DCF3B00F6E16C /* AddFriendViewController.swift in Sources */,
+				9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
-				EEE0420A286E9BD000A2B04D /* TutorialViewController.swift in Sources */,
 				EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */,
 				9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */,
+				A09E03B1286EC0CD005391F0 /* HomeViewController.swift in Sources */,
+				A078FF45286C5B75006D686F /* PersonalNotesViewController.swift in Sources */,
+				A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */,
+				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
+				A0802D83286C8594004A22CB /* ModelFirstAid.swift in Sources */,
+				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
+				A0802D8A286C8653004A22CB /* FirstAidCollectionViewCell.swift in Sources */,
+				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
+				A07BB950286B696B00A3DE30 /* OnboardViewController.swift in Sources */,
+				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
+				A0802D80286C854F004A22CB /* FirstAidScreen.swift in Sources */,
+				A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */,
+				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
+				A07BB94E286B696B00A3DE30 /* OnboardingCollectionViewCell.swift in Sources */,
+				A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
+				A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */,
+				A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +629,7 @@
 		};
 		9AE05F8D2864AB24000D3386 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B14154B70A04060AC6C4DE4 /* Pods-Helpi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,8 +638,15 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/lottie-ios",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpi/Resources/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "AppExamples want to acces your health data in order to analyze your health and best";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AppExamples want to acces your health data in order to analyze your health and best";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -495,6 +668,7 @@
 		};
 		9AE05F8E2864AB24000D3386 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38C454D9E81CC18B52A5DC2 /* Pods-Helpi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -503,8 +677,15 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/lottie-ios",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpi/Resources/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "AppExamples want to acces your health data in order to analyze your health and best";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AppExamples want to acces your health data in order to analyze your health and best";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
