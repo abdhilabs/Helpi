@@ -6,30 +6,27 @@
 //
 
 import UIKit
+import CloudKit
+import UserNotifications
 
 class OnboardViewController: UIViewController {
 
   @IBOutlet weak var btnGotoMain: UIButton!
 
+  let publicDatabase = CKContainer.init(identifier: "iCloud.com.mc2.helpi.patient").publicCloudDatabase
+
   override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+    // Do any additional setup after loading the view.
+  }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
   @IBAction func didTapGotoMainButton(_ sender: Any) {
-    let nextViewController = MainViewController()
+    let nextViewController = HelpViewController()
     navigationController?.pushViewController(nextViewController, animated: true)
   }
 
+  @IBAction func didTapSubscribeButton(_ sender: Any) {
+    
+  }
 }

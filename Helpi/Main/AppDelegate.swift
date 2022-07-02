@@ -20,14 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
 
     let window = UIWindow(frame: UIScreen.main.bounds)
-    window.rootViewController = UINavigationController(rootViewController: ActivationViewController())
+    window.rootViewController = UINavigationController(rootViewController: MainViewController())
     window.makeKeyAndVisible()
     self.window = window
 
     UNUserNotificationCenter.current().delegate = self
     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { authorized, error in
       if authorized {
-        application.registerForRemoteNotifications()
+        DispatchQueue.main.async {
+          application.registerForRemoteNotifications()
+        }
       }
     }
 
@@ -81,26 +83,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
-  func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    let subscription = CKQuerySubscription(recordType: "Persons", predicate: NSPredicate(format: "name == %@", "huda"), options: .firesOnRecordCreation)
-
-    let info = CKSubscription.NotificationInfo()
-    info.titleLocalizationKey = "%1$@"
-    info.titleLocalizationArgs = ["name"]
-    info.alertBody = "A new notification has been posted!"
-    info.shouldBadge = true
-    info.soundName = "default"
-
-    subscription.notificationInfo = info
-
-    publicDatabase.save(subscription) { subscription, error in
-      if error == nil {
-        print("Subscription saved successfully")
-      } else {
-          print("Error: \(String(describing: error?.localizedDescription))")
-      }
-    }
-  }
 
   func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
       //completionHandler([.alert, .sound])
