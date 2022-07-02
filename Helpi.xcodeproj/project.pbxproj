@@ -22,6 +22,7 @@
 		9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */; };
 		9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */; };
 		9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */; };
+		9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5476F2870B42100E3B603 /* TutorialViewController.swift */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F812864AB21000D3386 /* Helpi.xcdatamodeld */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
@@ -70,8 +71,6 @@
 
 /* Begin PBXFileReference section */
 		0B14154B70A04060AC6C4DE4 /* Pods-Helpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.debug.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.debug.xcconfig"; sourceTree = "<group>"; };
-		9A1F8B6B2868AAD400F6E16C /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
-		9A1F8B6C2868AAD400F6E16C /* OnboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardViewController.xib; sourceTree = "<group>"; };
 		9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
 		9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistanceViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
 		9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		9AA5476F2870B42100E3B603 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		9AE05F752864AB21000D3386 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE05F782864AB21000D3386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE05F822864AB21000D3386 /* Helpi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Helpi.xcdatamodel; sourceTree = "<group>"; };
@@ -131,7 +131,6 @@
 		EEE04202286D398700A2B04D /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
 		EEE04204286D3A9500A2B04D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		EEE04206286E579A00A2B04D /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
-		EEE04208286E9BD000A2B04D /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		EEE04209286E9BD000A2B04D /* TutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
 		EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktapTutorialViewController.swift; sourceTree = "<group>"; };
 		EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BacktapTutorialViewController.xib; sourceTree = "<group>"; };
@@ -176,6 +175,8 @@
 		9A1F8B8A286D20F300F6E16C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */,
+				A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */,
 				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
 			);
 			path = Extension;
@@ -212,18 +213,7 @@
 			children = (
 				9A1F8B95286DEE3200F6E16C /* Service */,
 				9A1F8B8A286D20F300F6E16C /* Extension */,
-				A0802D6D286C8469004A22CB /* FirstAidScreen */,
-				A078FF3F286C4B6B006D686F /* ContactViewController.swift */,
-				A078FF40286C4B6B006D686F /* ContactViewController.xib */,
-				A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */,
-				A078FF44286C5B75006D686F /* PersonalNotesViewController.xib */,
-				A04D66BE286DF36F00C43D83 /* DoneViewController.swift */,
-				A04D66BF286DF36F00C43D83 /* DoneViewController.xib */,
-				A09E03AF286EC0CD005391F0 /* HomeViewController.swift */,
-				A09E03B0286EC0CD005391F0 /* HomeViewController.xib */,
-				A0A3368E286A175D00988028 /* HealthKit */,
 				9AE05F962864B4C1000D3386 /* Features */,
-				A07BB947286B696B00A3DE30 /* Onboarding */,
 				9AE05F952864B484000D3386 /* Main */,
 				9AE05F9A28652D22000D3386 /* Model */,
 				9AE05F942864B470000D3386 /* Resources */,
@@ -256,28 +246,37 @@
 		9AE05F962864B4C1000D3386 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				9A1F8B832869F2B000F6E16C /* Views */,
-				9AE05F902864B427000D3386 /* MainViewController.swift */,
-				9AE05F912864B427000D3386 /* MainViewController.xib */,
-				9A1F8B6B2868AAD400F6E16C /* OnboardViewController.swift */,
-				9A1F8B6C2868AAD400F6E16C /* OnboardViewController.xib */,
+				A0802D6D286C8469004A22CB /* FirstAidScreen */,
+				A0A3368E286A175D00988028 /* HealthKit */,
+				A07BB947286B696B00A3DE30 /* Onboarding */,
 				EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */,
 				EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */,
+				9A1F8B91286DCF3B00F6E16C /* AddFriendViewController.swift */,
+				9A1F8B92286DCF3B00F6E16C /* AddFriendViewController.xib */,
+				9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */,
+				9A1F8B802869EF5000F6E16C /* AssistanceViewController.xib */,
+				EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */,
+				EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */,
+				A078FF3F286C4B6B006D686F /* ContactViewController.swift */,
+				A078FF40286C4B6B006D686F /* ContactViewController.xib */,
+				A04D66BE286DF36F00C43D83 /* DoneViewController.swift */,
+				A04D66BF286DF36F00C43D83 /* DoneViewController.xib */,
+				9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */,
+				9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */,
+				A09E03AF286EC0CD005391F0 /* HomeViewController.swift */,
+				A09E03B0286EC0CD005391F0 /* HomeViewController.xib */,
+				9AE05F902864B427000D3386 /* MainViewController.swift */,
+				9AE05F912864B427000D3386 /* MainViewController.xib */,
+				A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */,
+				A078FF44286C5B75006D686F /* PersonalNotesViewController.xib */,
+				9A1F8B8D286D264F00F6E16C /* PersonalNoteViewController.swift */,
+				9A1F8B8E286D264F00F6E16C /* PersonalNoteViewController.xib */,
 				EEE041FE286D315500A2B04D /* ProfileSetupViewController.swift */,
 				EEE041FF286D315500A2B04D /* ProfileSetupViewController.xib */,
 				EEE04204286D3A9500A2B04D /* ResultViewController.swift */,
-				EEE04208286E9BD000A2B04D /* TutorialViewController.swift */,
+				9AA5476F2870B42100E3B603 /* TutorialViewController.swift */,
 				EEE04209286E9BD000A2B04D /* TutorialViewController.xib */,
-				EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */,
-				EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */,
-				9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */,
-				9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */,
-				9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */,
-				9A1F8B802869EF5000F6E16C /* AssistanceViewController.xib */,
-				9A1F8B8D286D264F00F6E16C /* PersonalNoteViewController.swift */,
-				9A1F8B8E286D264F00F6E16C /* PersonalNoteViewController.xib */,
-				9A1F8B91286DCF3B00F6E16C /* AddFriendViewController.swift */,
-				9A1F8B92286DCF3B00F6E16C /* AddFriendViewController.xib */,
+				9A1F8B832869F2B000F6E16C /* Views */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -302,15 +301,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A07BB7A9286AF67600A3DE30 /* Health Kit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */,
-				A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */,
-			);
-			path = "Health Kit Extension";
-			sourceTree = "<group>";
-		};
 		A07BB947286B696B00A3DE30 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,12 +323,12 @@
 				A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */,
 			);
 			name = FirstAidScreen;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A0A3368E286A175D00988028 /* HealthKit */ = {
 			isa = PBXGroup;
 			children = (
-				A07BB7A9286AF67600A3DE30 /* Health Kit Extension */,
 				A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */,
 				A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */,
 				A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */,
@@ -471,6 +461,7 @@
 				9A1F8B8F286D264F00F6E16C /* PersonalNoteViewController.swift in Sources */,
 				9A1F8B8C286D211400F6E16C /* UIViewController.swift in Sources */,
 				9A1F8B852869F2CA00F6E16C /* CircularProgressBarView.swift in Sources */,
+				9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */,
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
 				9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */,
