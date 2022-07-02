@@ -28,6 +28,22 @@ extension UIViewController {
     backButton.imageInsets = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 0)
     return backButton
   }
+
+  func addTapGestureToHideKeyboard() {
+    let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+    tap.cancelsTouchesInView = false
+    view.addGestureRecognizer(tap)
+  }
+
+  @objc func hideKeyboard() {
+    view.endEditing(true)
+  }
+
+  func showGeneralAlert(title: String = "Peringatan", message: String) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "Ok", style: .default))
+    self.present(alert, animated: true)
+  }
 }
 
 protocol NavigationBarButtonHandler {

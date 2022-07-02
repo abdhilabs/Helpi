@@ -27,26 +27,6 @@ class OnboardViewController: UIViewController {
   }
 
   @IBAction func didTapSubscribeButton(_ sender: Any) {
-    //    abdhikun & abdhe
-    let subscription = CKQuerySubscription(recordType: "Persons", predicate: NSPredicate(format: "name == %@", "abdhe"), options: .firesOnRecordCreation)
-
-    //    let subscription = CKQuerySubscription(recordType: "Persons", predicate: NSPredicate(format: "TRUEPREDICATE"), options: .firesOnRecordCreation)
-
-    let info = CKSubscription.NotificationInfo()
-    info.titleLocalizationKey = "%1$@"
-    info.titleLocalizationArgs = ["name"]
-    info.alertBody = "A new notification has been posted!"
-    info.shouldBadge = true
-    info.soundName = "default"
-
-    subscription.notificationInfo = info
-
-    publicDatabase.save(subscription) { subscription, error in
-      if error == nil {
-        print("Subscription saved successfully")
-      } else {
-        print("Error: \(error?.localizedDescription)")
-      }
-    }
+    
   }
 }

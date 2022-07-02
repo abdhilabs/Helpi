@@ -59,6 +59,6 @@ class HelpViewController: UIViewController {
 
   @IBAction func didTapCancelButton(_ sender: Any) {
     timer?.invalidate()
-    navigationController?.popViewController(animated: true)
+    dismiss(animated: true)
   }
 }

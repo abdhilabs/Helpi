@@ -19,7 +19,7 @@ class AssistanceViewController: UIViewController {
   }
 
   @objc func didTapRightBarButton() {
-    navigationController?.popToRootViewController(animated: true)
+    dismiss(animated: true)
   }
 
   override func viewDidLoad() {

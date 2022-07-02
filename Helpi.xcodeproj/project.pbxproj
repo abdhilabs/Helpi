@@ -17,6 +17,11 @@
 		9A1F8B8C286D211400F6E16C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B8B286D211400F6E16C /* UIViewController.swift */; };
 		9A1F8B8F286D264F00F6E16C /* PersonalNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B8D286D264F00F6E16C /* PersonalNoteViewController.swift */; };
 		9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B8E286D264F00F6E16C /* PersonalNoteViewController.xib */; };
+		9A1F8B93286DCF3B00F6E16C /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B91286DCF3B00F6E16C /* AddFriendViewController.swift */; };
+		9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B92286DCF3B00F6E16C /* AddFriendViewController.xib */; };
+		9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */; };
+		9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */; };
+		9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F812864AB21000D3386 /* Helpi.xcdatamodeld */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
@@ -51,6 +56,11 @@
 		9A1F8B8B286D211400F6E16C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		9A1F8B8D286D264F00F6E16C /* PersonalNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalNoteViewController.swift; sourceTree = "<group>"; };
 		9A1F8B8E286D264F00F6E16C /* PersonalNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalNoteViewController.xib; sourceTree = "<group>"; };
+		9A1F8B91286DCF3B00F6E16C /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		9A1F8B92286DCF3B00F6E16C /* AddFriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFriendViewController.xib; sourceTree = "<group>"; };
+		9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		9AE05F752864AB21000D3386 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE05F782864AB21000D3386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE05F822864AB21000D3386 /* Helpi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Helpi.xcdatamodel; sourceTree = "<group>"; };
@@ -94,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				9A1F8B842869F2CA00F6E16C /* CircularProgressBarView.swift */,
+				9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */,
+				9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +116,14 @@
 				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		9A1F8B95286DEE3200F6E16C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		9AE05F6C2864AB21000D3386 = {
@@ -126,6 +146,7 @@
 		9AE05F772864AB21000D3386 /* Helpi */ = {
 			isa = PBXGroup;
 			children = (
+				9A1F8B95286DEE3200F6E16C /* Service */,
 				9A1F8B8A286D20F300F6E16C /* Extension */,
 				9AE05F962864B4C1000D3386 /* Features */,
 				9AE05F952864B484000D3386 /* Main */,
@@ -184,6 +205,8 @@
 				9A1F8B802869EF5000F6E16C /* AssistanceViewController.xib */,
 				9A1F8B8D286D264F00F6E16C /* PersonalNoteViewController.swift */,
 				9A1F8B8E286D264F00F6E16C /* PersonalNoteViewController.xib */,
+				9A1F8B91286DCF3B00F6E16C /* AddFriendViewController.swift */,
+				9A1F8B92286DCF3B00F6E16C /* AddFriendViewController.xib */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -269,11 +292,13 @@
 				9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */,
 				9A1F8B822869EF5000F6E16C /* AssistanceViewController.xib in Resources */,
 				9AE05F932864B427000D3386 /* MainViewController.xib in Resources */,
+				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
 				9A1F8B6E2868AAD500F6E16C /* OnboardViewController.xib in Resources */,
 				EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
 				EEE04201286D315500A2B04D /* ProfileSetupViewController.xib in Resources */,
 				9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */,
+				9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +314,7 @@
 				EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */,
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
+				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
 				9A1F8B6D2868AAD500F6E16C /* OnboardViewController.swift in Sources */,
 				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
@@ -297,8 +323,10 @@
 				9A1F8B852869F2CA00F6E16C /* CircularProgressBarView.swift in Sources */,
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
+				9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
+				9A1F8B93286DCF3B00F6E16C /* AddFriendViewController.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
 				EEE0420A286E9BD000A2B04D /* TutorialViewController.swift in Sources */,
 				EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */,

@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(false, animated: true)
     setNavigationBar()
   }
 
@@ -30,6 +31,14 @@ class MainViewController: UIViewController {
 
   @objc func didTapHelpButton() {
     let nextViewController = HelpViewController()
-    navigationController?.pushViewController(nextViewController, animated: true)
+    let navigation = UINavigationController(rootViewController: nextViewController)
+    navigation.modalPresentationStyle = .fullScreen
+    present(navigation, animated: true)
+  }
+
+  override func leftNavigationBarButtonTapped(sender: UIBarButtonItem?) {
+    let nextViewController = AddFriendViewController()
+    let navigation = UINavigationController(rootViewController: nextViewController)
+    present(navigation, animated: true)
   }
 }
