@@ -19,7 +19,7 @@ class AddFriendViewController: UIViewController {
     super.viewWillAppear(animated)
     navigationItem.title = "Tambahkan teman"
     let barButton = UIBarButtonItem(image: UIImage(systemName: "xmark")!, style: .plain, target: self, action: #selector(didTapCloseButton))
-    barButton.tintColor = .white
+    barButton.tintColor = .black
     navigationItem.rightBarButtonItem = barButton
   }
 
@@ -66,10 +66,12 @@ extension AddFriendViewController: UITableViewDelegate, UITableViewDataSource {
       alert.addAction(UIAlertAction(title: "Cancel", style: .destructive))
       alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { _ in
         self.cloudKitService.subscribeToDatabase(for: friend.appleId) { isSuccess in
-          if isSuccess {
-            self.showGeneralAlert(message: "Berhasil menambahkan helpee")
-          } else {
-            self.showGeneralAlert(message: "Gagal menambahkan helpee")
+          DispatchQueue.main.async {
+            if isSuccess {
+              self.showGeneralAlert(message: "Berhasil menambahkan helpee")
+            } else {
+              self.showGeneralAlert(message: "Gagal menambahkan helpee")
+            }
           }
         }
       }))

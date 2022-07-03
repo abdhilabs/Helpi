@@ -16,7 +16,7 @@ struct FriendAccount {
   var emergencyPhonePrimary: String
   var emergencyPhoneSecondary: String
   var notes: String
-  var notification: Int = 0
+  var notification: String = "0"
 }
 
 extension FriendAccount {
@@ -65,7 +65,7 @@ class CloudKitService {
            let emergencyPhonePrimary = record["emergencyPhonePrimary"] as? String,
            let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
            let notes = record["notes"] as? String,
-           let notification = record["notification"] as? Int {
+           let notification = record["notification"] as? String {
           accounts.append(FriendAccount(recordId: recordId, name: name, appleId: appleId,
                                         emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
                                         emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
@@ -107,14 +107,9 @@ class CloudKitService {
   }
 
   func subscribeToDatabase(for appleId: String, completion: @escaping (_ isSuccess: Bool) -> ()) {
-    //    abdhikun & abdhe
-    let subscription = CKQuerySubscription(recordType: FriendAccount.recordType, predicate: NSPredicate(format: "appleId == %@", appleId), options: .firesOnRecordCreation)
-
-    //    let subscription = CKQuerySubscription(recordType: "Persons", predicate: NSPredicate(format: "TRUEPREDICATE"), options: .firesOnRecordCreation)
+    let subscription = CKQuerySubscription(recordType: FriendAccount.recordType, predicate: NSPredicate(format: "appleId == %@", appleId), options: .firesOnRecordUpdate)
 
     let info = CKSubscription.NotificationInfo()
-    //    info.titleLocalizationKey = "%1$@"
-    //    info.titleLocalizationArgs = "\(["name"]) need "
     info.alertBody = "I got fainted"
     info.shouldBadge = true
     info.soundName = "default"
