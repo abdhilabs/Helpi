@@ -34,14 +34,14 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var btnSkip: UIButton!
     
     let onboarding: [Onboarding] = [
-      Onboarding(animationName: "notif", title: "Alert Helper", description: "Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint."),
-      Onboarding(animationName: "firstaid", title: "First Aid", description: "Helpi will show first responders how to give you first aid and how to reach your emergency contact."),
-      Onboarding(animationName: "medical", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record.Tap the button below to grant permission to read the necessary data.")]
+      Onboarding(animationName: "dua", title: "Alert Surroundings", description: "Helpi will alert your surroundings and guide first responders on giving you first aid."),
+      Onboarding(animationName: "satu", title: "Notify Emergency Contacts", description: "Helpi will notify your emergency contacts when you’re about to faint."),
+      Onboarding(animationName: "tiga", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record. \n \n Tap the button below to grant us permission to read the necessary data.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        btnSkip.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
+        btnSkip.titleLabel?.font = .rounded(ofSize: 17, weight: .regular)
         btnConnectHealth.layer.cornerRadius = 20
         
         //Set Collection View
@@ -68,7 +68,7 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     @IBAction func skipBtn(_ sender: Any) {
-        let nextContactController = ContactViewController()
+        let nextContactController = ProfileSetupViewController()
         self.navigationController?.pushViewController(nextContactController, animated: true)
     }
     

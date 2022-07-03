@@ -27,8 +27,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func btnHome(_ sender: Any) {
-        let nextOnboarding = OnboardViewController()
-        self.navigationController?.pushViewController(nextOnboarding, animated: true)
+        let nextMainController = MainViewController()
+        self.navigationController?.pushViewController(nextMainController, animated: true)
     }
     
     

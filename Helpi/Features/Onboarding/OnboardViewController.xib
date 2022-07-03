@@ -33,7 +33,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mA6-WZ-1eP">
-                    <rect key="frame" x="149" y="753" width="116" height="26"/>
+                    <rect key="frame" x="149" y="748" width="116" height="26"/>
                     <color key="pageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="currentPageIndicatorTintColor" systemColor="systemIndigoColor"/>
                     <connections>
@@ -41,7 +41,7 @@
                     </connections>
                 </pageControl>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffT-BE-skd">
-                    <rect key="frame" x="30" y="840" width="354" height="31"/>
+                    <rect key="frame" x="30" y="835" width="354" height="31"/>
                     <color key="tintColor" systemColor="systemBlueColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Skip">
@@ -52,7 +52,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-Zt-iFl">
-                    <rect key="frame" x="20" y="789" width="374" height="46"/>
+                    <rect key="frame" x="20" y="784" width="374" height="46"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="46" id="M7D-it-O6o"/>
                         <constraint firstAttribute="width" constant="374" id="wox-wj-v1v"/>
@@ -80,7 +80,7 @@
                 <constraint firstItem="uV8-Zt-iFl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="iPT-MO-I0o"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uV8-Zt-iFl" secondAttribute="trailing" constant="20" id="roK-pr-Phh"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="centerX" secondItem="mA6-WZ-1eP" secondAttribute="centerX" id="vcX-wB-PBK"/>
-                <constraint firstAttribute="bottom" secondItem="ffT-BE-skd" secondAttribute="bottom" constant="25" id="x8d-6X-fHT"/>
+                <constraint firstAttribute="bottom" secondItem="ffT-BE-skd" secondAttribute="bottom" constant="30" id="x8d-6X-fHT"/>
             </constraints>
             <point key="canvasLocation" x="132" y="89"/>
         </view>

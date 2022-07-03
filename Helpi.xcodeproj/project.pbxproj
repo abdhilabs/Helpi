@@ -34,6 +34,7 @@
 		9AE05F9C28652D31000D3386 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F9B28652D31000D3386 /* Variables.swift */; };
 		A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D66BE286DF36F00C43D83 /* DoneViewController.swift */; };
 		A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04D66BF286DF36F00C43D83 /* DoneViewController.xib */; };
+		A054125F28717A1E00529401 /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = A054125E28717A1E00529401 /* sound.wav */; };
 		A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF3F286C4B6B006D686F /* ContactViewController.swift */; };
 		A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF40286C4B6B006D686F /* ContactViewController.xib */; };
 		A078FF45286C5B75006D686F /* PersonalNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */; };
@@ -100,6 +101,7 @@
 		9AE05F9B28652D31000D3386 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		A04D66BE286DF36F00C43D83 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		A04D66BF286DF36F00C43D83 /* DoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneViewController.xib; sourceTree = "<group>"; };
+		A054125E28717A1E00529401 /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
 		A078FF3F286C4B6B006D686F /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		A078FF40286C4B6B006D686F /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
 		A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalNotesViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 		9AE05F772864AB21000D3386 /* Helpi */ = {
 			isa = PBXGroup;
 			children = (
+				A054125D28717A0F00529401 /* sound */,
 				9A1F8B95286DEE3200F6E16C /* Service */,
 				9A1F8B8A286D20F300F6E16C /* Extension */,
 				9AE05F962864B4C1000D3386 /* Features */,
@@ -254,26 +257,16 @@
 				A07BB947286B696B00A3DE30 /* Onboarding */,
 				EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */,
 				EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */,
-				9A1F8B91286DCF3B00F6E16C /* AddFriendViewController.swift */,
-				9A1F8B92286DCF3B00F6E16C /* AddFriendViewController.xib */,
-				9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */,
-				9A1F8B802869EF5000F6E16C /* AssistanceViewController.xib */,
 				EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */,
 				EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */,
 				A078FF3F286C4B6B006D686F /* ContactViewController.swift */,
 				A078FF40286C4B6B006D686F /* ContactViewController.xib */,
 				A04D66BE286DF36F00C43D83 /* DoneViewController.swift */,
 				A04D66BF286DF36F00C43D83 /* DoneViewController.xib */,
-				9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */,
-				9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */,
 				A09E03AF286EC0CD005391F0 /* HomeViewController.swift */,
 				A09E03B0286EC0CD005391F0 /* HomeViewController.xib */,
-				9AE05F902864B427000D3386 /* MainViewController.swift */,
-				9AE05F912864B427000D3386 /* MainViewController.xib */,
 				A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */,
 				A078FF44286C5B75006D686F /* PersonalNotesViewController.xib */,
-				9A1F8B8D286D264F00F6E16C /* PersonalNoteViewController.swift */,
-				9A1F8B8E286D264F00F6E16C /* PersonalNoteViewController.xib */,
 				EEE041FE286D315500A2B04D /* ProfileSetupViewController.swift */,
 				EEE041FF286D315500A2B04D /* ProfileSetupViewController.xib */,
 				EEE04204286D3A9500A2B04D /* ResultViewController.swift */,
@@ -304,6 +297,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A054125C2871771800529401 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				9AE05F902864B427000D3386 /* MainViewController.swift */,
+				9AE05F912864B427000D3386 /* MainViewController.xib */,
+				9A1F8B91286DCF3B00F6E16C /* AddFriendViewController.swift */,
+				9A1F8B92286DCF3B00F6E16C /* AddFriendViewController.xib */,
+				9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */,
+				9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */,
+				9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */,
+				9A1F8B802869EF5000F6E16C /* AssistanceViewController.xib */,
+				9A1F8B8D286D264F00F6E16C /* PersonalNoteViewController.swift */,
+				9A1F8B8E286D264F00F6E16C /* PersonalNoteViewController.xib */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		A054125D28717A0F00529401 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				A054125E28717A1E00529401 /* sound.wav */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
 		A07BB947286B696B00A3DE30 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +330,7 @@
 				A07BB94A286B696B00A3DE30 /* OnboardViewController.swift */,
 				A07BB94C286B696B00A3DE30 /* OnboardViewController.xib */,
 				A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */,
+				A054125C2871771800529401 /* MainView */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -402,6 +421,7 @@
 				9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */,
 				EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */,
 				9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */,
+				A054125F28717A1E00529401 /* sound.wav in Resources */,
 				9A1F8B822869EF5000F6E16C /* AssistanceViewController.xib in Resources */,
 				9AE05F932864B427000D3386 /* MainViewController.xib in Resources */,
 				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
