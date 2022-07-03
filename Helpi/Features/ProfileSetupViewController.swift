@@ -9,14 +9,22 @@ import UIKit
 import AuthenticationServices
 
 class ProfileSetupViewController: UIViewController {
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var skipButton: UIButton!
-    @IBOutlet weak var loginProviderStackView: UIStackView!
+    @IBOutlet weak var loginProviderStackView: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupProviderLoginView()
+        
+        loginProviderStackView.layer.cornerRadius = 20
+        titleLabel.font = .rounded(ofSize: 24, weight: .semibold)
+        loginLabel.font = .rounded(ofSize: 17, weight: .regular)
+        skipButton.titleLabel?.font = .rounded(ofSize: 17, weight: .regular)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -24,12 +32,17 @@ class ProfileSetupViewController: UIViewController {
         performExistingAccountSetupFlows()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     /// - Tag: add_appleid_button
     func setupProviderLoginView() {
         let authorizationButton = ASAuthorizationAppleIDButton()
         authorizationButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
-        authorizationButton.cornerRadius = 23
-        self.loginProviderStackView.addArrangedSubview(authorizationButton)
+        //        authorizationButton.cornerRadius = 20
+        //        self.loginProviderStackView.addArrangedSubview(authorizationButton)
     }
     
     // - Tag: perform_appleid_password_request
@@ -58,6 +71,12 @@ class ProfileSetupViewController: UIViewController {
         authorizationController.presentationContextProvider = self
         authorizationController.performRequests()
     }
+    
+    @IBAction func btnSkip(_ sender: Any) {
+        let nextContactController = ContactViewController()
+               self.navigationController?.pushViewController(nextContactController, animated: true)
+    }
+    
 }
 
 extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
@@ -76,9 +95,9 @@ extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
             
             // For the purpose of this demo app, show the Apple ID credential information in the `ResultViewController`.
             self.showResultViewController(userIdentifier: userIdentifier, fullName: fullName, email: email)
-        
+            
         case let passwordCredential as ASPasswordCredential:
-        
+            
             // Sign in using an existing iCloud Keychain credential.
             let username = passwordCredential.user
             let password = passwordCredential.password
@@ -103,8 +122,8 @@ extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
     
     private func showResultViewController(userIdentifier: String, fullName: PersonNameComponents?, email: String?) {
         guard let viewController = self.presentingViewController as? ResultViewController
-            else { return }
-
+        else { return }
+        
         DispatchQueue.main.async {
             viewController.userIdentifierLabel.text = userIdentifier
             if let givenName = fullName?.givenName {

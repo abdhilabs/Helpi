@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL2-sS-up3">
-                    <rect key="frame" x="20" y="114" width="374" height="30"/>
+                    <rect key="frame" x="20" y="84" width="374" height="30"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -77,11 +77,11 @@
                 <constraint firstItem="I5p-Po-vKP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="EfM-Go-TNP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lvh-k2-LX7" secondAttribute="trailing" constant="20" id="H3C-x5-BdM"/>
                 <constraint firstItem="Lvh-k2-LX7" firstAttribute="top" secondItem="uxs-Vk-MzB" secondAttribute="bottom" constant="60" id="N44-LB-CtQ"/>
-                <constraint firstItem="aL2-sS-up3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="NPG-9C-5Hd"/>
+                <constraint firstItem="aL2-sS-up3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="NPG-9C-5Hd"/>
                 <constraint firstAttribute="bottom" secondItem="I5p-Po-vKP" secondAttribute="bottom" constant="25" id="ZWa-PA-xFd"/>
                 <constraint firstItem="aL2-sS-up3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fch-Oj-NyU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aL2-sS-up3" secondAttribute="trailing" constant="20" id="gCg-0z-gmE"/>
-                <constraint firstItem="uxs-Vk-MzB" firstAttribute="top" secondItem="aL2-sS-up3" secondAttribute="bottom" constant="30" id="gVd-JE-rGJ"/>
+                <constraint firstItem="uxs-Vk-MzB" firstAttribute="top" secondItem="aL2-sS-up3" secondAttribute="bottom" constant="60" id="gVd-JE-rGJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Lvh-k2-LX7" secondAttribute="bottom" constant="300" id="mnC-wr-iSn"/>
                 <constraint firstItem="I5p-Po-vKP" firstAttribute="top" secondItem="sPD-3A-F7w" secondAttribute="bottom" constant="5" id="uqd-IW-dfh"/>
             </constraints>

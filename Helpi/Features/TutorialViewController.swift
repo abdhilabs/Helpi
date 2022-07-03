@@ -40,7 +40,8 @@ class TutorialViewController: UIViewController {
             tutorialImageView.image = UIImage(named: tutorialImage[currentTutorIndex])
         }else{
             //to Main screen
-            navigationController?.pushViewController(next as! UIViewController, animated: true)
+            let nextHomeController = HomeViewController()
+                   self.navigationController?.pushViewController(nextHomeController, animated: true)
         }
     }
 

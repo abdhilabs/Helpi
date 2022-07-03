@@ -32,7 +32,7 @@ class PersonalNotesViewController: UIViewController {
             showAlert()
         }
         
-        let nextFirstAid = FirstAidScreen()
+        let nextFirstAid = ActivationViewController()
         self.navigationController?.pushViewController(nextFirstAid, animated: true)
     }
     
@@ -43,7 +43,7 @@ class PersonalNotesViewController: UIViewController {
         }))
         
         alert.addAction(UIAlertAction(title: "Confirm", style: .destructive , handler: {  action in
-            let nextFirstAid = FirstAidScreen()
+            let nextFirstAid = ActivationViewController()
             self.navigationController?.pushViewController(nextFirstAid, animated: true)
         }))
         
@@ -51,7 +51,7 @@ class PersonalNotesViewController: UIViewController {
     }
     
     @IBAction func skipBtn(_ sender: Any) {
-        let nextFirstAid = FirstAidScreen()
+        let nextFirstAid = ActivationViewController()
         self.navigationController?.pushViewController(nextFirstAid, animated: true)
     }
     

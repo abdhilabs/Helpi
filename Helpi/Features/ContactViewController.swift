@@ -22,10 +22,12 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
     @IBOutlet weak var phoneNumber2: UITextField!
     @IBOutlet weak var phoneNumber1: UITextField!
     @IBOutlet weak var fullName2: UITextField!
+    
     @IBOutlet weak var btnContact1: UIButton!
     @IBOutlet weak var titleJudul1: UILabel!
     
     @IBOutlet weak var btnSave: UIButton!
+    
     @IBOutlet weak var btnContact2: UIButton!
     @IBOutlet weak var btnSkip: UIButton!
     
@@ -48,7 +50,7 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
         phoneNumber2.font = .rounded(ofSize: 17, weight: .regular)
         btnContact1.titleLabel?.font = .rounded(ofSize: 17, weight: .regular)
         btnContact2.titleLabel?.font = .rounded(ofSize: 17, weight: .regular)
-        btnSkip.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
+        btnSkip.titleLabel?.font = .rounded(ofSize: 17, weight: .regular)
         btnSave.backgroundColor = #colorLiteral(red: 0.2392156863, green: 0.2352941176, blue: 0.5137254902, alpha: 1)
         btnSave.layer.cornerRadius = 20
     }
@@ -88,13 +90,13 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
     }
     
     @IBAction func btnContact1(_ sender: Any) {
-        contactFrom = .contactPrimary
-        didAddContact()
+        showAlertContact1()
     }
     
+    
+    
     @IBAction func btnContact2(_ sender: Any) {
-        contactFrom = .contactSecondary
-        didAddContact()
+        showAlertContact2()
     }
     
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
@@ -110,6 +112,37 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
         }
         
     }
+    
+    func showAlertContact1(){
+        let alert = UIAlertController(title: "“Helpi” Would Like to Access Your Contacts", message: "Upload your emergency contacts to Helpi so first responders know who to reach out in case of emergency.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { [self] action in
+        }))
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: {  action in
+            self.contactFrom = .contactPrimary
+            self.didAddContact()
+        }))
+        
+        
+        present(alert, animated: true)
+    }
+    
+    func showAlertContact2(){
+        let alert = UIAlertController(title: "“Helpi” Would Like to Access Your Contacts", message: "Upload your emergency contacts to Helpi so first responders know who to reach out in case of emergency.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { [self] action in
+        }))
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: {  action in
+            self.contactFrom = .contactSecondary
+            self.didAddContact()
+        }))
+        
+        
+        present(alert, animated: true)
+    }
+    
     
     
     @IBAction func btnSkip(_ sender: Any) {

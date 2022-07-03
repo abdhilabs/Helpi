@@ -29,14 +29,11 @@ class ActivationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = UIView()
-        view.backgroundColor = .clear
-        
         // Do any additional setup after loading the view.
         
         title1Label1 = UILabel()
         title1Label1.translatesAutoresizingMaskIntoConstraints = false
-        title1Label1.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        title1Label1.font = .rounded(ofSize: 24, weight: .semibold)
         title1Label1.text = "How to Activate Alert"
         title1Label1.numberOfLines = 0
         title1Label1.textAlignment = .center
@@ -45,7 +42,7 @@ class ActivationViewController: UIViewController {
         
         title2Label1 = UILabel()
         title2Label1.translatesAutoresizingMaskIntoConstraints = false
-        title2Label1.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+        title2Label1.font = .rounded(ofSize: 17, weight: .semibold)
         title2Label1.text = "In App Emergency Button"
         title2Label1.numberOfLines = 0
         title2Label1.textAlignment = .center
@@ -59,7 +56,7 @@ class ActivationViewController: UIViewController {
         
         descLabel1 = UILabel()
         descLabel1.translatesAutoresizingMaskIntoConstraints = false
-        descLabel1.font = UIFont.systemFont(ofSize: 17)
+        descLabel1.font = .rounded(ofSize: 17, weight: .regular)
         descLabel1.text = "Activate the alert using the in app emergency button."
         descLabel1.numberOfLines = 0
         descLabel1.textAlignment = .justified
@@ -68,7 +65,7 @@ class ActivationViewController: UIViewController {
         
         title2Label2 = UILabel()
         title2Label2.translatesAutoresizingMaskIntoConstraints = false
-        title2Label2.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+        title2Label2.font = .rounded(ofSize: 17, weight: .medium)
         title2Label2.text = "Siri Shortcut"
         title2Label2.numberOfLines = 0
         title2Label2.textAlignment = .center
@@ -82,7 +79,7 @@ class ActivationViewController: UIViewController {
         
         descLabel2 = UILabel()
         descLabel2.translatesAutoresizingMaskIntoConstraints = false
-        descLabel2.font = UIFont.systemFont(ofSize: 17)
+        descLabel2.font = .rounded(ofSize: 17, weight: .regular)
         descLabel2.text = "Activate alert by saying “Hey Siri, get help”"
         descLabel2.numberOfLines = 0
         descLabel2.textAlignment = .justified
@@ -90,7 +87,7 @@ class ActivationViewController: UIViewController {
         
         descLabel3 = UILabel()
         descLabel3.translatesAutoresizingMaskIntoConstraints = false
-        descLabel3.font = UIFont.systemFont(ofSize: 17)
+        descLabel3.font = .rounded(ofSize: 17, weight: .regular)
         descLabel3.text = "Activate Siri Shortcut by tapping button below"
         descLabel3.numberOfLines = 0
         descLabel3.textAlignment = .justified
@@ -104,7 +101,7 @@ class ActivationViewController: UIViewController {
         
         title2Label3 = UILabel()
         title2Label3.translatesAutoresizingMaskIntoConstraints = false
-        title2Label3.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+        title2Label3.font = .rounded(ofSize: 17, weight: .medium)
         title2Label3.text = "Back Tap"
         title2Label3.numberOfLines = 0
         title2Label3.textAlignment = .center
@@ -118,7 +115,7 @@ class ActivationViewController: UIViewController {
         
         descLabel4 = UILabel()
         descLabel4.translatesAutoresizingMaskIntoConstraints = false
-        descLabel4.font = UIFont.systemFont(ofSize: 17)
+        descLabel4.font = .rounded(ofSize: 17, weight: .regular)
         descLabel4.text = "Set up Back Tap to activate alert by tapping the back of your phone."
         descLabel4.numberOfLines = 0
         descLabel4.textAlignment = .justified
@@ -126,11 +123,13 @@ class ActivationViewController: UIViewController {
         
         backtapTutorialButton = UIButton()
         backtapTutorialButton.translatesAutoresizingMaskIntoConstraints = false
-        backtapTutorialButton.backgroundColor = .clear
+        backtapTutorialButton.backgroundColor = UIColor.white
+//        backtapTutorialButton.backgroundColor = .clear
         backtapTutorialButton.titleLabel?.textAlignment = .left
-        backtapTutorialButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .regular)
-        backtapTutorialButton.setTitle("How to Set Up Back Tap", for: .highlighted)
+        backtapTutorialButton.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
+        backtapTutorialButton.setTitle("How to Set Up Back Tap", for: .normal)
         backtapTutorialButton.setTitleColor(UIColor(red: 0.0258, green: 0.3152, blue: 0.6589, alpha: 1), for: .normal)
+        backtapTutorialButton.titleLabel?.textColor = UIColor.blue
         backtapTutorialButton.addTarget(self, action: #selector(showMyViewControllerInACustomizedSheet), for: .touchDown)
         view.addSubview(backtapTutorialButton)
         
@@ -139,10 +138,11 @@ class ActivationViewController: UIViewController {
         startButton.translatesAutoresizingMaskIntoConstraints = false
         startButton.backgroundColor = UIColor(red: 0.2421, green: 0.2381, blue: 0.5198, alpha: 1)
         startButton.titleLabel?.textAlignment = .center
+        startButton.titleLabel?.font = .rounded(ofSize: 17, weight: .medium)
         startButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         startButton.titleLabel?.textColor = UIColor.white
         startButton.setTitle("Let's Start!", for: .normal)
-        startButton.layer.cornerRadius = 8
+        startButton.layer.cornerRadius = 15
         startButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         view.addSubview(startButton)
         
@@ -196,12 +196,13 @@ class ActivationViewController: UIViewController {
             descLabel4.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: -35),
             
             backtapTutorialButton.topAnchor.constraint(equalTo: descLabel4.bottomAnchor, constant: 10),
-            backtapTutorialButton.leftAnchor.constraint(equalTo: view.layoutMarginsGuide.leftAnchor, constant: 75),
-            backtapTutorialButton.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: -35),
+            backtapTutorialButton.leftAnchor.constraint(equalTo: view.layoutMarginsGuide.leftAnchor, constant: 45),
+            backtapTutorialButton.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: -70),
             
+            startButton.heightAnchor.constraint(equalToConstant: 46),
             startButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20),
-            startButton.leftAnchor.constraint(equalTo: view.layoutMarginsGuide.leftAnchor, constant: 35),
-            startButton.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: -35),
+            startButton.leftAnchor.constraint(equalTo: view.layoutMarginsGuide.leftAnchor, constant: 20),
+            startButton.rightAnchor.constraint(equalTo: view.layoutMarginsGuide.rightAnchor, constant: -20),
         ])
     }
     

@@ -11,8 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileSetupViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="loginLabel" destination="GRf-y8-ey7" id="Inh-eG-Xvv"/>
-                <outlet property="loginProviderStackView" destination="bBR-nB-2D9" id="iNz-Rl-aNB"/>
+                <outlet property="loginProviderStackView" destination="ExG-bt-r5v" id="iP9-ev-qoK"/>
                 <outlet property="skipButton" destination="HqR-Ih-7P0" id="WNA-6s-yMM"/>
+                <outlet property="titleLabel" destination="Wfs-d5-iFc" id="rdJ-AA-Cd9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,7 +36,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqR-Ih-7P0">
-                    <rect key="frame" x="165" y="751" width="60" height="59"/>
+                    <rect key="frame" x="20" y="775" width="350" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain">
                         <attributedString key="attributedTitle">
@@ -48,30 +49,43 @@
                         </attributedString>
                         <color key="baseForegroundColor" systemColor="labelColor"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="btnSkip:" destination="-1" eventType="touchUpInside" id="xKE-G3-gec"/>
+                    </connections>
                 </button>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="bBR-nB-2D9">
-                    <rect key="frame" x="35" y="701" width="320" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <viewLayoutGuide key="safeArea" id="8Fg-fK-dBR"/>
-                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExG-bt-r5v">
+                    <rect key="frame" x="20" y="724" width="350" height="46"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="cbi-4F-tai"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="applelogo" catalog="system" title="  Continue with Apple">
+                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="HqR-Ih-7P0" firstAttribute="top" secondItem="bBR-nB-2D9" secondAttribute="bottom" constant="10" id="23p-WJ-4gZ"/>
                 <constraint firstItem="GRf-y8-ey7" firstAttribute="top" secondItem="Wfs-d5-iFc" secondAttribute="bottom" constant="180" id="Bgt-6Y-ASH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ExG-bt-r5v" secondAttribute="trailing" constant="20" id="FiE-Xn-WMA"/>
+                <constraint firstItem="HqR-Ih-7P0" firstAttribute="top" secondItem="ExG-bt-r5v" secondAttribute="bottom" constant="5" id="H1S-bw-ByE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GRf-y8-ey7" secondAttribute="trailing" constant="42" id="HCc-Fa-PyW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HqR-Ih-7P0" secondAttribute="bottom" id="Jx2-Mz-7gB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HqR-Ih-7P0" secondAttribute="trailing" constant="20" id="JGt-71-7qR"/>
                 <constraint firstItem="Wfs-d5-iFc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RcV-vj-QbC"/>
-                <constraint firstItem="HqR-Ih-7P0" firstAttribute="centerX" secondItem="bBR-nB-2D9" secondAttribute="centerX" id="W5I-y2-W1A"/>
+                <constraint firstItem="HqR-Ih-7P0" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Urf-5P-R1v"/>
                 <constraint firstItem="GRf-y8-ey7" firstAttribute="centerX" secondItem="Wfs-d5-iFc" secondAttribute="centerX" id="Yws-L1-3f9"/>
+                <constraint firstItem="HqR-Ih-7P0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hM4-0D-aZD"/>
                 <constraint firstItem="Wfs-d5-iFc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="qRj-T8-Nua"/>
                 <constraint firstItem="GRf-y8-ey7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="42" id="rCR-XE-dyV"/>
+                <constraint firstItem="ExG-bt-r5v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xID-38-8zp"/>
             </constraints>
             <point key="canvasLocation" x="136.92307692307691" y="80.33175355450237"/>
         </view>
     </objects>
     <resources>
+        <image name="applelogo" catalog="system" width="103" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
