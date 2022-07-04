@@ -85,7 +85,7 @@ class CloudKitService {
 
     operation.queryResultBlock = { result in
       DispatchQueue.main.async {
-        completion(accounts.filter { $0.name.contains(name) })
+        completion(accounts.filter { $0.name.lowercased().contains(name) })
       }
     }
 
