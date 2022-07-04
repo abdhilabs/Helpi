@@ -27,7 +27,9 @@ class PersonalNoteViewController: UIViewController {
   private func observeValue() {
     let recordId = SessionManager.shared.getRecordId()
     cloudKitService.fetchAccount(by: .init(recordName: recordId)) { account in
-      self.lblNote.text = account.notes
+      DispatchQueue.main.async {
+        self.lblNote.text = account.notes
+      }
     }
   }
 
