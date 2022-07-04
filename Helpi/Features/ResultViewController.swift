@@ -32,8 +32,8 @@ class ResultViewController: UIViewController {
         emailLabel.text = ""
         
         // Display the login controller again.
-        DispatchQueue.main.async {
-            self.showLoginViewController()
-        }
+//        DispatchQueue.main.async {
+//            self.showLoginViewController()
+//        }
     }
 }

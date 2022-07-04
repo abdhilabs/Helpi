@@ -13,7 +13,7 @@ class AddFriendViewController: UIViewController {
   @IBOutlet weak var tblFriend: UITableView!
 
   private let cloudKitService = CloudKitService()
-  private var accountFriends: [FriendAccount] = []
+  private var accountFriends: [UserAccount] = []
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)

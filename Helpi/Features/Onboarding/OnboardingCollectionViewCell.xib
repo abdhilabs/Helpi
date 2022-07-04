@@ -11,24 +11,27 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="Helpi" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="300" height="378"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                <rect key="frame" x="0.0" y="0.0" width="300" height="378"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4p-rn-EE8">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="360"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="WCe-0H-lJw"/>
+                        </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjT-7w-Unn">
-                        <rect key="frame" x="24" y="410" width="252" height="23"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjT-7w-Unn">
+                        <rect key="frame" x="24" y="270" width="252" height="23"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helpi will alert your surroundings and immediately send notification to your helper when you are about to faint." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHb-7r-18P">
-                        <rect key="frame" x="24" y="443" width="252" height="47"/>
+                        <rect key="frame" x="24" y="303" width="252" height="47"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -38,22 +41,23 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="CjT-7w-Unn" secondAttribute="trailing" constant="24" id="3RI-rk-7Nq"/>
+                <constraint firstAttribute="bottom" secondItem="GHb-7r-18P" secondAttribute="bottom" priority="250" symbolic="YES" id="5bp-rS-P59"/>
                 <constraint firstItem="Q4p-rn-EE8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C4q-z6-Fu3"/>
-                <constraint firstItem="Q4p-rn-EE8" firstAttribute="centerX" secondItem="GHb-7r-18P" secondAttribute="centerX" id="KW8-PJ-be4"/>
+                <constraint firstItem="CjT-7w-Unn" firstAttribute="top" secondItem="Q4p-rn-EE8" secondAttribute="bottom" constant="20" id="Iel-xm-9fN"/>
                 <constraint firstItem="Q4p-rn-EE8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="M6u-yn-bLt"/>
-                <constraint firstAttribute="bottom" secondItem="Q4p-rn-EE8" secondAttribute="bottom" constant="240" id="MXD-c4-gJ2"/>
-                <constraint firstItem="CjT-7w-Unn" firstAttribute="top" secondItem="Q4p-rn-EE8" secondAttribute="bottom" constant="50" id="NRt-if-9aS"/>
                 <constraint firstItem="GHb-7r-18P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="W7J-M1-nqi"/>
                 <constraint firstAttribute="trailing" secondItem="GHb-7r-18P" secondAttribute="trailing" constant="24" id="Wce-Wy-h1a"/>
+                <constraint firstAttribute="trailing" secondItem="Q4p-rn-EE8" secondAttribute="trailing" id="eKE-Dj-aRO"/>
                 <constraint firstItem="CjT-7w-Unn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="kDG-dR-vbx"/>
                 <constraint firstItem="GHb-7r-18P" firstAttribute="top" secondItem="CjT-7w-Unn" secondAttribute="bottom" constant="10" id="l4o-8S-s66"/>
             </constraints>
+            <size key="customSize" width="300" height="378"/>
             <connections>
                 <outlet property="animationContainer" destination="Q4p-rn-EE8" id="utq-G1-eMw"/>
                 <outlet property="descriptionText" destination="GHb-7r-18P" id="B1W-Fe-b2A"/>
                 <outlet property="title" destination="CjT-7w-Unn" id="vJQ-Go-nGb"/>
             </connections>
-            <point key="canvasLocation" x="-315.94202898550725" y="70.982142857142847"/>
+            <point key="canvasLocation" x="-315.94202898550725" y="-3.3482142857142856"/>
         </collectionViewCell>
     </objects>
     <resources>

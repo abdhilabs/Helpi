@@ -18,8 +18,7 @@ class ProfileSetupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupProviderLoginView()
-        
+
         loginProviderStackView.layer.cornerRadius = 20
         titleLabel.font = .rounded(ofSize: 24, weight: .semibold)
         loginLabel.font = .rounded(ofSize: 17, weight: .regular)
@@ -29,20 +28,12 @@ class ProfileSetupViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        performExistingAccountSetupFlows()
+//        performExistingAccountSetupFlows()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    /// - Tag: add_appleid_button
-    func setupProviderLoginView() {
-        let authorizationButton = ASAuthorizationAppleIDButton()
-        authorizationButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
-        //        authorizationButton.cornerRadius = 20
-        //        self.loginProviderStackView.addArrangedSubview(authorizationButton)
     }
     
     // - Tag: perform_appleid_password_request
@@ -60,115 +51,52 @@ class ProfileSetupViewController: UIViewController {
     }
     
     /// - Tag: perform_appleid_request
-    @objc
-    func handleAuthorizationAppleIDButtonPress() {
-        let appleIDProvider = ASAuthorizationAppleIDProvider()
-        let request = appleIDProvider.createRequest()
-        request.requestedScopes = [.fullName, .email]
-        
-        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-        authorizationController.delegate = self
-        authorizationController.presentationContextProvider = self
-        authorizationController.performRequests()
+    @IBAction func didTapSignInButton() {
+        let provider = ASAuthorizationAppleIDProvider()
+        let request = provider.createRequest()
+        request.requestedScopes = [.email, .fullName]
+
+        let controller = ASAuthorizationController(authorizationRequests: [request])
+        controller.delegate = self
+        controller.presentationContextProvider = self
+        controller.performRequests()
     }
     
     @IBAction func btnSkip(_ sender: Any) {
         let nextContactController = ContactViewController()
-               self.navigationController?.pushViewController(nextContactController, animated: true)
+        self.navigationController?.pushViewController(nextContactController, animated: true)
     }
     
 }
 
 extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
-    /// - Tag: did_complete_authorization
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-        switch authorization.credential {
-        case let appleIDCredential as ASAuthorizationAppleIDCredential:
-            
-            // Create an account in your system.
-            let userIdentifier = appleIDCredential.user
-            let fullName = appleIDCredential.fullName
-            let email = appleIDCredential.email
-            
-            // For the purpose of this demo app, store the `userIdentifier` in the keychain.
-            self.saveUserInKeychain(userIdentifier)
-            
-            // For the purpose of this demo app, show the Apple ID credential information in the `ResultViewController`.
-            self.showResultViewController(userIdentifier: userIdentifier, fullName: fullName, email: email)
-            
-        case let passwordCredential as ASPasswordCredential:
-            
-            // Sign in using an existing iCloud Keychain credential.
-            let username = passwordCredential.user
-            let password = passwordCredential.password
-            
-            // For the purpose of this demo app, show the password credential as an alert.
-            DispatchQueue.main.async {
-                self.showPasswordCredentialAlert(username: username, password: password)
-            }
-            
-        default:
-            break
-        }
+  func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+    switch authorization.credential {
+    case let appleIDCredential as ASAuthorizationAppleIDCredential:
+      if let email = appleIDCredential.email, let fullName = appleIDCredential.fullName {
+        SessionManager.shared.setLoggedIn()
+        let nextContactController = ContactViewController()
+        nextContactController.appleId = email
+        nextContactController.name = displayName(name: fullName)
+        self.navigationController?.pushViewController(nextContactController, animated: true)
+      }
+    default:
+      break
     }
-    
-    private func saveUserInKeychain(_ userIdentifier: String) {
-        do {
-            try KeychainItem(service: "com.example.apple-samplecode.juice", account: "userIdentifier").saveItem(userIdentifier)
-        } catch {
-            print("Unable to save userIdentifier to keychain.")
-        }
-    }
-    
-    private func showResultViewController(userIdentifier: String, fullName: PersonNameComponents?, email: String?) {
-        guard let viewController = self.presentingViewController as? ResultViewController
-        else { return }
-        
-        DispatchQueue.main.async {
-            viewController.userIdentifierLabel.text = userIdentifier
-            if let givenName = fullName?.givenName {
-                viewController.givenNameLabel.text = givenName
-            }
-            if let familyName = fullName?.familyName {
-                viewController.familyNameLabel.text = familyName
-            }
-            if let email = email {
-                viewController.emailLabel.text = email
-            }
-            self.dismiss(animated: true, completion: nil)
-        }
-    }
-    
-    private func showPasswordCredentialAlert(username: String, password: String) {
-        let message = "The app has received your selected credential from the keychain. \n\n Username: \(username)\n Password: \(password)"
-        let alertController = UIAlertController(title: "Keychain Credential Received",
-                                                message: message,
-                                                preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-    /// - Tag: did_complete_error
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
-        // Handle error.
-    }
+  }
+
+  private func displayName(name: PersonNameComponents, style: PersonNameComponentsFormatter.Style = .default) -> String {
+    PersonNameComponentsFormatter.localizedString(from: name, style: style)
+  }
+
+  func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+    print("Error: \(error.localizedDescription)")
+  }
 }
 
 extension ProfileSetupViewController: ASAuthorizationControllerPresentationContextProviding {
     /// - Tag: provide_presentation_anchor
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
-    }
-}
-
-extension UIViewController {
-    
-    func showLoginViewController() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let ProfileSetupViewController = storyboard.instantiateViewController(withIdentifier: "ProfileSetupViewController") as? ProfileSetupViewController {
-            ProfileSetupViewController.modalPresentationStyle = .formSheet
-            ProfileSetupViewController.isModalInPresentation = true
-            self.present(ProfileSetupViewController, animated: true, completion: nil)
-        }
     }
 }

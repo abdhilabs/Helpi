@@ -13,16 +13,11 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     
     private func authorizeHealthKit() {
         HealthKitSetupAssistant.authorizeHealthKit { (authorized, error) in
-            guard authorized else {
-                let baseMessage = "HealthKit Authorization Failed"
-                if let error = error {
-                    print("\(baseMessage). Reason: \(error.localizedDescription)")
-                } else {
-                    print(baseMessage)
-                }
-                return
-            }
-            print("Succes")
+          if authorized {
+            self.navigateToProfileSetup()
+          } else {
+            print("HealthKit Authorization Failed. Reason: \(error?.localizedDescription)")
+          }
         }
     }
     
@@ -68,14 +63,23 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     @IBAction func skipBtn(_ sender: Any) {
-        let nextContactController = ProfileSetupViewController()
-        self.navigationController?.pushViewController(nextContactController, animated: true)
+      navigateToProfileSetup()
+    }
+
+    func navigateToProfileSetup() {
+      SessionManager.shared.setShowOnboard()
+      let nextContactController = ProfileSetupViewController()
+      self.navigationController?.pushViewController(nextContactController, animated: true)
     }
     
     @IBAction func btnConnectHealth(_ sender: Any) {
-        if  pageControl.currentPage == 1 {
-            btnConnectHealth.setTitle("Connect with Health App", for: .normal)
-            authorizeHealthKit()
+        switch pageControl.currentPage {
+        case 1:
+          btnConnectHealth.setTitle("Connect with Health App", for: .normal)
+        case 2:
+          authorizeHealthKit()
+        default:
+          break
         }
         
         pageControl.currentPage = pageControl.currentPage + 1

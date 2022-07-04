@@ -14,13 +14,18 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-  let publicDatabase = CKContainer.init(identifier: "iCloud.com.mc2.helpi.patient").publicCloudDatabase
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 
     let window = UIWindow(frame: UIScreen.main.bounds)
-    window.rootViewController = UINavigationController(rootViewController: OnboardViewController())
+    if SessionManager.shared.isLoggedIn() {
+      window.rootViewController = UINavigationController(rootViewController: MainViewController())
+    } else if SessionManager.shared.isShowOnboard() {
+      window.rootViewController = UINavigationController(rootViewController: ProfileSetupViewController())
+    } else {
+      window.rootViewController = UINavigationController(rootViewController: OnboardViewController())
+    }
     window.makeKeyAndVisible()
     self.window = window
 
@@ -85,6 +90,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: UNUserNotificationCenterDelegate {
 
   func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-      //completionHandler([.alert, .sound])
+      completionHandler([.alert, .sound])
   }
 }

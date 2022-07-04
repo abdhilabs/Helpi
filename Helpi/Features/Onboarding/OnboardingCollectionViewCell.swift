@@ -21,7 +21,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     // Instance of the Lottie AnimationView
     func configureCell(onboarding: Onboarding){
         animation = AnimationView(name: onboarding.animationName)
-        animation.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height * 0.8)
+      animation.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: animationContainer.frame.height)
         
         //Customize the animation
         animation.animationSpeed = 1

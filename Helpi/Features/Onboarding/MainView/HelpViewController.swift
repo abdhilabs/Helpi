@@ -6,12 +6,8 @@
 //
 
 import UIKit
-import AVFoundation
 
 class HelpViewController: UIViewController {
-    
-    var soundURI: URL?
-    var audioPlayer: AVAudioPlayer?
     
     @IBOutlet weak var titleLabel: UILabel!
   
@@ -54,13 +50,10 @@ class HelpViewController: UIViewController {
             count -= 1
             
             if count < 0 {
-                self.timer?.invalidate()
-                self.audioPlayer?.stop()
+                self.timer?.invalidate()                
                 let nextViewController = AssistanceViewController()
                 self.navigationController?.pushViewController(nextViewController, animated: true)
-            } else {
-                self.playSoundTimer()
-                self.audioPlayer?.play()
+            } else {                
                 self.lblHelpAndCount.text = "00:0\(count)"
             }
         }
@@ -70,20 +63,6 @@ class HelpViewController: UIViewController {
         lblHelpAndCount.textColor = #colorLiteral(red: 1, green: 0.1058823529, blue: 0.4196078431, alpha: 1)
         viewHelpButton.backgroundColor = .white
         
-    }
-    
-    public func playSound(file: String, fileExtension: String, isLoop: Bool = false){
-        soundURI = URL(fileURLWithPath: Bundle.main.path(forResource: file, ofType: fileExtension)!)
-        do {
-            guard let uri = soundURI else {return}
-            audioPlayer = try AVAudioPlayer(contentsOf: uri)
-        } catch {
-            // couldn't load file :(
-        }
-    }
-    
-    public func playSoundTimer(){
-        self.playSound(file: "sound", fileExtension: "wav")
     }
     
     @IBAction func didTapCancelButton(_ sender: Any) {

@@ -7,23 +7,23 @@
 
 import CloudKit
 
-struct FriendAccount {
-  var recordId: CKRecord.ID
+struct UserAccount {
+  var recordId: CKRecord.ID = .init()
   var name: String
   var appleId: String
   var emergencyNamePrimary: String
   var emergencyNameSecondary: String
   var emergencyPhonePrimary: String
   var emergencyPhoneSecondary: String
-  var notes: String
+  var notes: String = ""
   var notification: String = "0"
 }
 
-extension FriendAccount {
+extension UserAccount {
   static let recordType = "Helpi"
 
   var record: CKRecord {
-    let record = CKRecord(recordType: FriendAccount.recordType)
+    let record = CKRecord(recordType: UserAccount.recordType)
     record["appleId"] = appleId
     record["name"] = name
     record["emergencyNamePrimary"] = emergencyNamePrimary
@@ -40,21 +40,25 @@ class CloudKitService {
 
   private let publicDatabase: CKDatabase = CKContainer(identifier: "iCloud.com.mc2.helpi").publicCloudDatabase
 
-  func register(by param: FriendAccount) {
+  func register(by param: UserAccount, completion: @escaping (_ isSuccess: Bool) -> ()) {
     publicDatabase.save(param.record) { record, error in
       if error == nil {
+        SessionManager.shared.setRecordId(recordId: record?.recordID ?? .init())
+        completion(true)
         print("Success register")
+      } else {
+        completion(false)
       }
     }
   }
 
-  func fetchFriend(by name: String, completion: @escaping (_ accounts: [FriendAccount]) -> ()) {
-    let query = CKQuery(recordType: FriendAccount.recordType, predicate: NSPredicate(value: true))
+  func fetchFriend(by name: String, completion: @escaping (_ accounts: [UserAccount]) -> ()) {
+    let query = CKQuery(recordType: UserAccount.recordType, predicate: NSPredicate(value: true))
     //    query.sortDescriptors = [NSSortDescriptor(key: "recordName", ascending: false)]
 
     let operation = CKQueryOperation(query: query)
 
-    var accounts: [FriendAccount] = []
+    var accounts: [UserAccount] = []
     operation.recordMatchedBlock = { (recordId, result) in
       switch result {
       case .success(let record):
@@ -66,7 +70,7 @@ class CloudKitService {
            let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
            let notes = record["notes"] as? String,
            let notification = record["notification"] as? String {
-          accounts.append(FriendAccount(recordId: recordId, name: name, appleId: appleId,
+          accounts.append(UserAccount(recordId: recordId, name: name, appleId: appleId,
                                         emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
                                         emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
                                         notes: notes, notification: notification))
@@ -88,9 +92,36 @@ class CloudKitService {
     publicDatabase.add(operation)
   }
 
-  func updateDataFriend(by account: FriendAccount) {
+  func fetchAccount(by recordId: CKRecord.ID, completion: @escaping (_ account: UserAccount) -> ()) {
+    publicDatabase.fetch(withRecordID: recordId) { record, error in
+      if error == nil {
+        if let record = record,
+           let name = record["name"] as? String,
+           let appleId = record["appleId"] as? String,
+           let emergencyNamePrimary = record["emergencyNamePrimary"] as? String,
+           let emergencyNameSecondary = record["emergencyNameSecondary"] as? String,
+           let emergencyPhonePrimary = record["emergencyPhonePrimary"] as? String,
+           let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
+           let notes = record["notes"] as? String,
+           let notification = record["notification"] as? String {
+          let account = UserAccount(recordId: recordId, name: name, appleId: appleId,
+                                    emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
+                                    emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
+                                    notes: notes, notification: notification)
+          completion(account)
+          print("Name: \(name)")
+          print("AppleId: \(appleId)")
+          print("RecordIDs: \(recordId)")
+        }
+      } else {
+        print("Could not fetch record")
+      }
+    }
+  }
+
+  func updateDataFriend(by recordId: CKRecord.ID) {
     let randomValue = Int.random(in: 1...1000)
-    publicDatabase.fetch(withRecordID: account.recordId) { record, error in
+    publicDatabase.fetch(withRecordID: recordId) { record, error in
       if error == nil {
         record?.setValue(randomValue, forKey: "notification")
         self.publicDatabase.save(record!) { newRecord, error in
@@ -107,7 +138,7 @@ class CloudKitService {
   }
 
   func subscribeToDatabase(for appleId: String, completion: @escaping (_ isSuccess: Bool) -> ()) {
-    let subscription = CKQuerySubscription(recordType: FriendAccount.recordType, predicate: NSPredicate(format: "appleId == %@", appleId), options: .firesOnRecordUpdate)
+    let subscription = CKQuerySubscription(recordType: UserAccount.recordType, predicate: NSPredicate(format: "appleId == %@", appleId), options: .firesOnRecordUpdate)
 
     let info = CKSubscription.NotificationInfo()
     info.alertBody = "I got fainted"
