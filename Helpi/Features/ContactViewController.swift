@@ -86,7 +86,7 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
   func showAlert(){
     let alert = UIAlertController(title: "The Field Couldn’t Empty", message: "Need to input at least 1 Emergency Contact", preferredStyle: .alert)
 
-    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { [self] action in
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [self] action in
     }))
 
     present(alert, animated: true)
@@ -122,7 +122,7 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { [self] action in
     }))
 
-    alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: {  action in
+    alert.addAction(UIAlertAction(title: "OK", style: .default , handler: {  action in
       self.contactFrom = .contactPrimary
       self.didAddContact()
     }))
@@ -132,18 +132,8 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
   }
 
   func showAlertContact2(){
-    let alert = UIAlertController(title: "“Helpi” Would Like to Access Your Contacts", message: "Upload your emergency contacts to Helpi so first responders know who to reach out in case of emergency.", preferredStyle: .alert)
-
-    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { [self] action in
-    }))
-
-    alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: {  action in
-      self.contactFrom = .contactSecondary
-      self.didAddContact()
-    }))
-
-
-    present(alert, animated: true)
+    self.contactFrom = .contactSecondary
+    self.didAddContact()
   }
 
   @IBAction func btnSkip(_ sender: Any) {

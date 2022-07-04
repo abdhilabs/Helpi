@@ -31,46 +31,92 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-yT-HJi">
-                    <rect key="frame" x="20" y="84" width="374" height="30"/>
+                    <rect key="frame" x="20" y="64" width="374" height="30"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding your family, relatives or friends as emergency contact can help first responders know who to reach out." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc7-Ml-ppP">
-                    <rect key="frame" x="30" y="174" width="354" height="54"/>
+                    <rect key="frame" x="30" y="114" width="354" height="54"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contact 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9Z-oN-BVX">
-                    <rect key="frame" x="20" y="288" width="374" height="21"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-y3-u1h">
-                    <rect key="frame" x="20" y="360" width="374" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="255" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k20-Se-blV">
-                    <rect key="frame" x="20" y="394" width="374" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contact 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-Os-Hct">
-                    <rect key="frame" x="27" y="498" width="374" height="21"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5B-3c-zZX">
-                    <rect key="frame" x="20" y="604" width="374" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-a7-YMd">
+                    <rect key="frame" x="20" y="198" width="374" height="315"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v91-4H-W3z">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="147.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contact 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9Z-oN-BVX">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-Sh-XEU">
+                                    <rect key="frame" x="0.0" y="30.5" width="374" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Add From Contact"/>
+                                    <connections>
+                                        <action selector="btnContact1:" destination="-1" eventType="touchUpInside" id="EYb-rB-m03"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ifj-Ur-8xE">
+                                    <rect key="frame" x="0.0" y="71.5" width="374" height="76"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-y3-u1h">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="255" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k20-Se-blV">
+                                            <rect key="frame" x="0.0" y="42" width="374" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qMa-0x-d2X">
+                            <rect key="frame" x="0.0" y="167.5" width="374" height="147.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contact 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-Os-Hct">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44L-vr-XTp">
+                                    <rect key="frame" x="0.0" y="30.5" width="374" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Add From Contact"/>
+                                    <connections>
+                                        <action selector="btnContact2:" destination="-1" eventType="touchUpInside" id="5Kf-Uk-b5Y"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6W4-yI-Mha">
+                                    <rect key="frame" x="0.0" y="71.5" width="374" height="76"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EOc-sW-tdm">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5B-3c-zZX">
+                                            <rect key="frame" x="0.0" y="42" width="374" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
                 <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oe-AF-hCt">
-                    <rect key="frame" x="20" y="835" width="374" height="31"/>
+                    <rect key="frame" x="20" y="811" width="374" height="31"/>
                     <color key="tintColor" red="0.1647058874" green="0.14901961389999999" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Skip"/>
@@ -79,7 +125,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGw-Zw-rKs">
-                    <rect key="frame" x="20" y="784" width="374" height="46"/>
+                    <rect key="frame" x="20" y="760" width="374" height="46"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="46" id="nCY-hx-8vo"/>
                     </constraints>
@@ -91,71 +137,28 @@
                         <action selector="btnSave:" destination="-1" eventType="touchUpInside" id="Lgb-PX-F3A"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-Sh-XEU">
-                    <rect key="frame" x="20" y="319" width="374" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Add From Contact"/>
-                    <connections>
-                        <action selector="btnContact1:" destination="-1" eventType="touchUpInside" id="EYb-rB-m03"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44L-vr-XTp">
-                    <rect key="frame" x="20" y="529" width="374" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Add From Contact"/>
-                    <connections>
-                        <action selector="btnContact2:" destination="-1" eventType="touchUpInside" id="5Kf-Uk-b5Y"/>
-                    </connections>
-                </button>
-                <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EOc-sW-tdm">
-                    <rect key="frame" x="10" y="570" width="384" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HC7-Sh-XEU" secondAttribute="trailing" constant="20" id="1eH-De-pO0"/>
-                <constraint firstItem="k20-Se-blV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2h5-o9-cPJ"/>
-                <constraint firstItem="HC7-Sh-XEU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="30x-Pv-PqM"/>
                 <constraint firstItem="nc7-Ml-ppP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="5n3-cI-n9u"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X5B-3c-zZX" secondAttribute="trailing" constant="20" id="9aL-Wc-LD5"/>
                 <constraint firstItem="RGw-Zw-rKs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="CFB-xg-aEm"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x1u-y3-u1h" secondAttribute="trailing" constant="20" id="FbM-Z7-tBO"/>
-                <constraint firstItem="EOc-sW-tdm" firstAttribute="top" secondItem="44L-vr-XTp" secondAttribute="bottom" constant="10" id="Gpk-Iy-tV2"/>
-                <constraint firstItem="44L-vr-XTp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JGj-gh-TkO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RGw-Zw-rKs" secondAttribute="trailing" constant="20" id="KNZ-yq-275"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nc7-Ml-ppP" secondAttribute="trailing" constant="30" id="NI3-a8-gLV"/>
-                <constraint firstItem="44L-vr-XTp" firstAttribute="top" secondItem="ux2-Os-Hct" secondAttribute="bottom" constant="10" id="NzV-Fz-CvZ"/>
-                <constraint firstItem="ux2-Os-Hct" firstAttribute="top" secondItem="k20-Se-blV" secondAttribute="bottom" constant="70" id="OvG-98-tvo"/>
-                <constraint firstItem="U9Z-oN-BVX" firstAttribute="top" secondItem="nc7-Ml-ppP" secondAttribute="bottom" constant="60" id="P0I-rL-zcQ"/>
-                <constraint firstItem="EOc-sW-tdm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Pli-x1-OFK"/>
-                <constraint firstItem="X5B-3c-zZX" firstAttribute="top" secondItem="EOc-sW-tdm" secondAttribute="bottom" id="QEQ-xx-sV5"/>
-                <constraint firstItem="X5B-3c-zZX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Smd-Hm-FcF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="44L-vr-XTp" secondAttribute="trailing" constant="20" id="Wbl-1b-8mM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iiG-a7-YMd" secondAttribute="trailing" constant="20" id="OxL-oF-73E"/>
+                <constraint firstItem="iiG-a7-YMd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UgW-hG-sOd"/>
                 <constraint firstItem="9oe-AF-hCt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WgA-9X-v2J"/>
                 <constraint firstItem="9oe-AF-hCt" firstAttribute="top" secondItem="RGw-Zw-rKs" secondAttribute="bottom" constant="5" id="YSu-tq-xQM"/>
-                <constraint firstItem="ux2-Os-Hct" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="bIm-9X-Nco"/>
-                <constraint firstItem="dX1-yT-HJi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="bry-gY-fcR"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EOc-sW-tdm" secondAttribute="trailing" constant="20" id="eqp-70-O9t"/>
-                <constraint firstItem="nc7-Ml-ppP" firstAttribute="top" secondItem="dX1-yT-HJi" secondAttribute="bottom" constant="60" id="fw9-bi-esS"/>
-                <constraint firstItem="x1u-y3-u1h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="h5E-nT-fXU"/>
-                <constraint firstItem="k20-Se-blV" firstAttribute="top" secondItem="x1u-y3-u1h" secondAttribute="bottom" id="hwL-me-iE5"/>
-                <constraint firstItem="k20-Se-blV" firstAttribute="top" secondItem="x1u-y3-u1h" secondAttribute="bottom" id="iSP-7y-Q1E"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k20-Se-blV" secondAttribute="trailing" constant="20" id="jNm-Lq-j3F"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ux2-Os-Hct" secondAttribute="trailing" constant="13" id="jfc-eD-bNa"/>
+                <constraint firstItem="dX1-yT-HJi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="bry-gY-fcR"/>
+                <constraint firstItem="iiG-a7-YMd" firstAttribute="top" secondItem="nc7-Ml-ppP" secondAttribute="bottom" constant="30" id="cpk-rU-Xex"/>
+                <constraint firstItem="RGw-Zw-rKs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iiG-a7-YMd" secondAttribute="bottom" constant="20" id="ffo-1R-fQV"/>
+                <constraint firstItem="nc7-Ml-ppP" firstAttribute="top" secondItem="dX1-yT-HJi" secondAttribute="bottom" constant="20" id="fw9-bi-esS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9oe-AF-hCt" secondAttribute="trailing" constant="20" id="jha-ab-7oD"/>
-                <constraint firstItem="HC7-Sh-XEU" firstAttribute="top" secondItem="U9Z-oN-BVX" secondAttribute="bottom" constant="10" id="lfG-do-msa"/>
-                <constraint firstItem="U9Z-oN-BVX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mld-bZ-axr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U9Z-oN-BVX" secondAttribute="trailing" constant="20" id="muQ-9Q-AdE"/>
-                <constraint firstAttribute="bottom" secondItem="9oe-AF-hCt" secondAttribute="bottom" constant="30" id="vHC-Np-8Ax"/>
-                <constraint firstItem="x1u-y3-u1h" firstAttribute="top" secondItem="HC7-Sh-XEU" secondAttribute="bottom" constant="10" id="xcw-fT-rcJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9oe-AF-hCt" secondAttribute="bottom" constant="20" id="vHC-Np-8Ax"/>
                 <constraint firstItem="dX1-yT-HJi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xmL-L0-KtU"/>
-                <constraint firstItem="X5B-3c-zZX" firstAttribute="top" secondItem="EOc-sW-tdm" secondAttribute="bottom" id="xqh-ZM-4Kf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dX1-yT-HJi" secondAttribute="trailing" constant="20" id="yOL-ev-WzZ"/>
             </constraints>
-            <point key="canvasLocation" x="131.8840579710145" y="67.633928571428569"/>
+            <point key="canvasLocation" x="168" y="68"/>
         </view>
     </objects>
     <resources>
