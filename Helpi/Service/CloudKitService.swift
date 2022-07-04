@@ -43,7 +43,7 @@ class CloudKitService {
   func register(by param: UserAccount, completion: @escaping (_ isSuccess: Bool) -> ()) {
     publicDatabase.save(param.record) { record, error in
       if error == nil {
-        SessionManager.shared.setRecordId(recordId: record?.recordID ?? .init())
+        SessionManager.shared.setRecordId(with: record?.recordID.recordName ?? "")
         completion(true)
         print("Success register")
       } else {
@@ -123,7 +123,7 @@ class CloudKitService {
     let randomValue = Int.random(in: 1...1000)
     publicDatabase.fetch(withRecordID: recordId) { record, error in
       if error == nil {
-        record?.setValue(randomValue, forKey: "notification")
+        record?.setValue("Change with value \(randomValue)", forKey: "notification")
         self.publicDatabase.save(record!) { newRecord, error in
           if error == nil {
             print("Record Updated")

@@ -44,7 +44,7 @@ class AssistanceViewController: UIViewController {
 
     playSoundTimer()
     let recordId = SessionManager.shared.getRecordId()
-    cloudKitService.updateDataFriend(by: recordId)
+    cloudKitService.updateDataFriend(by: .init(recordName: recordId))
   }
 
   func playSound(file: String, fileExtension: String, isLoop: Bool = false){

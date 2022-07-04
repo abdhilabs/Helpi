@@ -14,7 +14,9 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     private func authorizeHealthKit() {
         HealthKitSetupAssistant.authorizeHealthKit { (authorized, error) in
           if authorized {
-            self.navigateToProfileSetup()
+            DispatchQueue.main.async {
+              self.navigateToProfileSetup()
+            }
           } else {
             print("HealthKit Authorization Failed. Reason: \(error?.localizedDescription)")
           }

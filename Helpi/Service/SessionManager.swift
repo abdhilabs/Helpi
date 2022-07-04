@@ -28,11 +28,11 @@ struct SessionManager {
     UserDefaults.standard.setValue(true, forKey: "is_logged_in")
   }
 
-  func setRecordId(recordId: CKRecord.ID) {
-    UserDefaults.standard.setValue(recordId, forKey: "set_record_id")
+  func setRecordId(with recordName: String) {
+    UserDefaults.standard.setValue(recordName, forKey: "set_record_id")
   }
 
-  func getRecordId() -> CKRecord.ID {
-    UserDefaults.standard.value(forKey: "set_record_id") as? CKRecord.ID ?? .init()
+  func getRecordId() -> String {
+    UserDefaults.standard.value(forKey: "set_record_id") as? String ?? ""
   }
 }

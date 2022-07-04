@@ -46,7 +46,7 @@ class PersonalNotesViewController: UIViewController {
             showAlert()
             return
         }
-
+        account.notes = notes.text ?? ""
         cloudKitService.register(by: account) { isSuccess in
           DispatchQueue.main.async {
             if isSuccess {
