@@ -44,7 +44,11 @@ class AssistanceViewController: UIViewController {
 
     playSoundTimer()
     let recordId = SessionManager.shared.getRecordId()
-    cloudKitService.updateDataFriend(by: .init(recordName: recordId))
+    cloudKitService.updateDataFriend(by: .init(recordName: recordId)) { name in
+      DispatchQueue.main.async {
+        self.descText.text = "Help! My name is \(name) and I fainted. Please don’t panic and tap on Start Assistance to help me."
+      }
+    }
   }
 
   func playSound(file: String, fileExtension: String, isLoop: Bool = false){

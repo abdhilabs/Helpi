@@ -29,8 +29,7 @@ class DoneViewController: UIViewController {
     }
     
     @IBAction func btnHome(_ sender: Any) {
-        let nextHome = HomeViewController()
-        self.navigationController?.pushViewController(nextHome, animated: true)
+        dismiss(animated: true)
     }
     
 }

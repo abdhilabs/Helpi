@@ -119,13 +119,14 @@ class CloudKitService {
     }
   }
 
-  func updateDataFriend(by recordId: CKRecord.ID) {
+  func updateDataFriend(by recordId: CKRecord.ID, completion: @escaping (_ name: String) -> ()) {
     let randomValue = Int.random(in: 1...1000)
     publicDatabase.fetch(withRecordID: recordId) { record, error in
       if error == nil {
         record?.setValue("Change with value \(randomValue)", forKey: "notification")
         self.publicDatabase.save(record!) { newRecord, error in
           if error == nil {
+            completion(newRecord?["name"] as? String ?? "")
             print("Record Updated")
           } else {
             print("Record Not Saved")
