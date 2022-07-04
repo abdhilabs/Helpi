@@ -33,7 +33,7 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     let onboarding: [Onboarding] = [
       Onboarding(animationName: "dua", title: "Alert Surroundings", description: "Helpi will alert your surroundings and guide first responders on giving you first aid."),
       Onboarding(animationName: "satu", title: "Notify Emergency Contacts", description: "Helpi will notify your emergency contacts when you’re about to faint."),
-      Onboarding(animationName: "tiga", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record. \n \n Tap the button below to grant us permission to read the necessary data.")]
+      Onboarding(animationName: "tiga", title: "Health App Access", description: "Helpi needs permission to read/access data from Apple Health in order to manage your health record. \n Tap the button below to grant us permission to read the necessary data.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
