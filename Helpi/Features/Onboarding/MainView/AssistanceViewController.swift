@@ -62,7 +62,7 @@ class AssistanceViewController: UIViewController {
   }
 
   func playSoundTimer(){
-    playSound(file: "sound", fileExtension: "wav")
+    playSound(file: "sound", fileExtension: "mp3")
     audioPlayer?.play()
   }
 

@@ -32,8 +32,8 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         //Set Title
         self.descriptionText.text = onboarding.description
         self.title.text = onboarding.title
-        self.title.font = .rounded(ofSize: 20, weight: .semibold)
-        self.descriptionText.font = .rounded(ofSize: 15, weight: .regular)
+        self.title.font = .rounded(ofSize:24, weight: .bold)
+        self.descriptionText.font = .rounded(ofSize: 16, weight: .regular)
         
     }
     
