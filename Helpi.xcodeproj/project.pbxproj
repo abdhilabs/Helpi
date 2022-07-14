@@ -21,6 +21,17 @@
 		9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */; };
 		9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */; };
 		9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */; };
+		9A3585A9287FA8800006EF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3585A8287FA8800006EF21 /* Assets.xcassets */; };
+		9A3585AF287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A3585AE287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A3585B6287FA8810006EF21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3585B5287FA8810006EF21 /* ContentView.swift */; };
+		9A3585B8287FA8810006EF21 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3585B7287FA8810006EF21 /* NotificationController.swift */; };
+		9A3585BA287FA8810006EF21 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3585B9287FA8810006EF21 /* NotificationView.swift */; };
+		9A3585BC287FA8810006EF21 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3585BB287FA8810006EF21 /* ComplicationController.swift */; };
+		9A3585BE287FA8820006EF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3585BD287FA8820006EF21 /* Assets.xcassets */; };
+		9A3585C1287FA8820006EF21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3585C0287FA8820006EF21 /* Preview Assets.xcassets */; };
+		9A3585C6287FA8820006EF21 /* Helpi.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9A3585A6287FA87F0006EF21 /* Helpi.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A3E59A8287FB3EB00A45ED9 /* HelpiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3E59A7287FB3EB00A45ED9 /* HelpiApp.swift */; };
+		9A3E59AA287FE07600A45ED9 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3E59A9287FE07600A45ED9 /* CountdownView.swift */; };
 		9A9120C62872EE3E005B8C0B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9120C52872EE3E005B8C0B /* String.swift */; };
 		9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */; };
 		9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5476F2870B42100E3B603 /* TutorialViewController.swift */; };
@@ -72,6 +83,48 @@
 		EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04210286F3BA900A2B04D /* PlayView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9A3585B0287FA8810006EF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE05F6D2864AB21000D3386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A3585AD287FA8810006EF21;
+			remoteInfo = "WatchHelpi WatchKit Extension";
+		};
+		9A3585C4287FA8820006EF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE05F6D2864AB21000D3386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A3585A5287FA87F0006EF21;
+			remoteInfo = WatchHelpi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A3585C7287FA8820006EF21 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9A3585C6287FA8820006EF21 /* Helpi.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A3585CA287FA8820006EF21 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A3585AF287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0B14154B70A04060AC6C4DE4 /* Pods-Helpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.debug.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.debug.xcconfig"; sourceTree = "<group>"; };
 		9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +140,19 @@
 		9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
 		9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		9A3585A6287FA87F0006EF21 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3585A8287FA8800006EF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A3585AE287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchHelpi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3585B5287FA8810006EF21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A3585B7287FA8810006EF21 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9A3585B9287FA8810006EF21 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		9A3585BB287FA8810006EF21 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		9A3585BD287FA8820006EF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A3585C0287FA8820006EF21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A3585C2287FA8820006EF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A3585C3287FA8820006EF21 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9A3E59A7287FB3EB00A45ED9 /* HelpiApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpiApp.swift; sourceTree = "<group>"; };
+		9A3E59A9287FE07600A45ED9 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		9A9120C52872EE3E005B8C0B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		9AA5476F2870B42100E3B603 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		9AA5477128713E5000E3B603 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
@@ -144,6 +210,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9A3585AB287FA8810006EF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AE05F722864AB21000D3386 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,10 +271,77 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		9A3585A7287FA87F0006EF21 /* WatchHelpi */ = {
+			isa = PBXGroup;
+			children = (
+				9A3585A8287FA8800006EF21 /* Assets.xcassets */,
+			);
+			path = WatchHelpi;
+			sourceTree = "<group>";
+		};
+		9A3585B2287FA8810006EF21 /* WatchHelpi WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A3E59AB287FE56000A45ED9 /* Features */,
+				9A3E59AD287FE58B00A45ED9 /* Main */,
+				9A3585BF287FA8820006EF21 /* Preview Content */,
+				9A3585C3287FA8820006EF21 /* PushNotificationPayload.apns */,
+				9A3E59AC287FE57000A45ED9 /* Resources */,
+			);
+			path = "WatchHelpi WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9A3585BF287FA8820006EF21 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A3585C0287FA8820006EF21 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A3E59AB287FE56000A45ED9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9A3E59AE287FE5A500A45ED9 /* Notification */,
+				9A3585B5287FA8810006EF21 /* ContentView.swift */,
+				9A3E59A9287FE07600A45ED9 /* CountdownView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9A3E59AC287FE57000A45ED9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A3585BD287FA8820006EF21 /* Assets.xcassets */,
+				9A3585C2287FA8820006EF21 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9A3E59AD287FE58B00A45ED9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9A3E59A7287FB3EB00A45ED9 /* HelpiApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9A3E59AE287FE5A500A45ED9 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				9A3585B7287FA8810006EF21 /* NotificationController.swift */,
+				9A3585B9287FA8810006EF21 /* NotificationView.swift */,
+				9A3585BB287FA8810006EF21 /* ComplicationController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		9AE05F6C2864AB21000D3386 = {
 			isa = PBXGroup;
 			children = (
 				9AE05F772864AB21000D3386 /* Helpi */,
+				9A3585A7287FA87F0006EF21 /* WatchHelpi */,
+				9A3585B2287FA8810006EF21 /* WatchHelpi WatchKit Extension */,
 				9AE05F762864AB21000D3386 /* Products */,
 				9AE05F972864B693000D3386 /* Frameworks */,
 				7DD0B9C8DAC59494BBB8837B /* Pods */,
@@ -212,6 +352,8 @@
 			isa = PBXGroup;
 			children = (
 				9AE05F752864AB21000D3386 /* Helpi.app */,
+				9A3585A6287FA87F0006EF21 /* Helpi.app */,
+				9A3585AE287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -364,6 +506,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9A3585A5287FA87F0006EF21 /* WatchHelpi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A3585CE287FA8820006EF21 /* Build configuration list for PBXNativeTarget "WatchHelpi" */;
+			buildPhases = (
+				9A3585A4287FA87F0006EF21 /* Resources */,
+				9A3585CA287FA8820006EF21 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A3585B1287FA8810006EF21 /* PBXTargetDependency */,
+			);
+			name = WatchHelpi;
+			productName = WatchHelpi;
+			productReference = 9A3585A6287FA87F0006EF21 /* Helpi.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9A3585AD287FA8810006EF21 /* WatchHelpi WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A3585CD287FA8820006EF21 /* Build configuration list for PBXNativeTarget "WatchHelpi WatchKit Extension" */;
+			buildPhases = (
+				9A3585AA287FA8810006EF21 /* Sources */,
+				9A3585AB287FA8810006EF21 /* Frameworks */,
+				9A3585AC287FA8810006EF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchHelpi WatchKit Extension";
+			productName = "WatchHelpi WatchKit Extension";
+			productReference = 9A3585AE287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		9AE05F742864AB21000D3386 /* Helpi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AE05F8C2864AB24000D3386 /* Build configuration list for PBXNativeTarget "Helpi" */;
@@ -372,10 +548,12 @@
 				9AE05F712864AB21000D3386 /* Sources */,
 				9AE05F722864AB21000D3386 /* Frameworks */,
 				9AE05F732864AB21000D3386 /* Resources */,
+				9A3585C7287FA8820006EF21 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9A3585C5287FA8820006EF21 /* PBXTargetDependency */,
 			);
 			name = Helpi;
 			productName = Helpi;
@@ -392,6 +570,12 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					9A3585A5287FA87F0006EF21 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					9A3585AD287FA8810006EF21 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					9AE05F742864AB21000D3386 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -411,11 +595,30 @@
 			projectRoot = "";
 			targets = (
 				9AE05F742864AB21000D3386 /* Helpi */,
+				9A3585A5287FA87F0006EF21 /* WatchHelpi */,
+				9A3585AD287FA8810006EF21 /* WatchHelpi WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9A3585A4287FA87F0006EF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3585A9287FA8800006EF21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A3585AC287FA8810006EF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3585C1287FA8820006EF21 /* Preview Assets.xcassets in Resources */,
+				9A3585BE287FA8820006EF21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AE05F732864AB21000D3386 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,6 +676,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9A3585AA287FA8810006EF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3E59AA287FE07600A45ED9 /* CountdownView.swift in Sources */,
+				9A3585B8287FA8810006EF21 /* NotificationController.swift in Sources */,
+				9A3585B6287FA8810006EF21 /* ContentView.swift in Sources */,
+				9A3E59A8287FB3EB00A45ED9 /* HelpiApp.swift in Sources */,
+				9A3585BC287FA8810006EF21 /* ComplicationController.swift in Sources */,
+				9A3585BA287FA8810006EF21 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AE05F712864AB21000D3386 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +736,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9A3585B1287FA8810006EF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A3585AD287FA8810006EF21 /* WatchHelpi WatchKit Extension */;
+			targetProxy = 9A3585B0287FA8810006EF21 /* PBXContainerItemProxy */;
+		};
+		9A3585C5287FA8820006EF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A3585A5287FA87F0006EF21 /* WatchHelpi */;
+			targetProxy = 9A3585C4287FA8820006EF21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9AE05F862864AB24000D3386 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -532,6 +761,122 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9A3585C8287FA8820006EF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8H53AFJYM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchHelpi_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.mc2.Helpi;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp;
+				PRODUCT_NAME = Helpi;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		9A3585C9287FA8820006EF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8H53AFJYM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchHelpi_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.mc2.Helpi;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp;
+				PRODUCT_NAME = Helpi;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		9A3585CB287FA8820006EF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8H53AFJYM7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		9A3585CC287FA8820006EF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8H53AFJYM7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 		9AE05F8A2864AB24000D3386 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -729,6 +1074,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9A3585CD287FA8820006EF21 /* Build configuration list for PBXNativeTarget "WatchHelpi WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3585CB287FA8820006EF21 /* Debug */,
+				9A3585CC287FA8820006EF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A3585CE287FA8820006EF21 /* Build configuration list for PBXNativeTarget "WatchHelpi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3585C8287FA8820006EF21 /* Debug */,
+				9A3585C9287FA8820006EF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9AE05F702864AB21000D3386 /* Build configuration list for PBXProject "Helpi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
