@@ -35,7 +35,7 @@ struct NotesView: View {
           }
 
           NavigationLink {
-
+            ConfirmAlertView()
           } label: {
             Text("Continue")
               .foregroundColor(.white)

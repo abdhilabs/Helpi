@@ -1,29 +1,24 @@
 //
-//  CancelConfirmation.swift
+//  AlertCancelView.swift
 //  WatchHelpi WatchKit Extension
 //
-//  Created by PUTRI RAHMADEWI on 15/07/22.
+//  Created by Abdhi P (Work) on 15/07/22.
 //
 
 import SwiftUI
 
-struct CancelConfirmation: View {
+struct ConfirmAlertView: View {
 
   @Environment(\.presentationMode) var presentationMode
 
   var body: some View {
-    ZStack {
-      VStack {
-        VStack {
-          Text("Are you sure you want to cancel the alert?")
-            .fontWeight(.semibold)
-            .padding(.bottom, 10)
-            .multilineTextAlignment(.center)
-        }
+    VStack {
+      Text("Has this person got help?")
 
-        NavigationLink{
-          ScreenNotesView()
-        }label: {
+      VStack {
+        NavigationLink {
+          GratitudeView()
+        } label: {
           Text("Yes")
             .font(.system(size: 17, weight: .medium, design: .rounded))
             .foregroundColor(Color.black)
@@ -46,8 +41,8 @@ struct CancelConfirmation: View {
   }
 }
 
-struct CancelConfirmation_Previews: PreviewProvider {
+struct GeneralAlertView_Previews: PreviewProvider {
   static var previews: some View {
-    CancelConfirmation()
+    ConfirmAlertView()
   }
 }

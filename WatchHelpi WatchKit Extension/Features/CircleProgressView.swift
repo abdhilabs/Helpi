@@ -11,7 +11,7 @@ let imer = Timer
     .publish(every: 1, on: .main, in: .common)
     .autoconnect()
 
-struct lock: View {
+struct LockView: View {
     var counter: Int
     var countTo: Int
     @State var jump = false
@@ -68,7 +68,7 @@ struct ProgressBar: View {
     }
 }
 
-struct CircleProgress: View {
+struct CircleProgressView: View {
     //    @ObservedObject var model: SoundEffectModel
     //    @Binding var rootIsActive : Bool
     @State var counter: Int = 0
@@ -84,7 +84,7 @@ struct CircleProgress: View {
                     ZStack{
                         ProgressTrack()
                         ProgressBar(counter: counter, countTo: countTo)
-                        lock(counter: counter, countTo: countTo)
+                        LockView(counter: counter, countTo: countTo)
                     }
                 }.onReceive(imer) { time in
                     if (self.counter < self.countTo) {
@@ -97,7 +97,7 @@ struct CircleProgress: View {
             }
             
             NavigationLink(isActive: $jump) {
-                ScreenNotes()
+                ScreenNotesView()
             } label: {
                 EmptyView()
             }.buttonStyle(PlainButtonStyle())
@@ -123,6 +123,6 @@ struct CircleProgress: View {
 
 struct CircleProgress_Previews: PreviewProvider {
     static var previews: some View {
-        CircleProgress()
+        CircleProgressView()
     }
 }

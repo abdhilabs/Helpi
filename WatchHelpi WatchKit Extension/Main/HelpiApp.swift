@@ -12,7 +12,7 @@ struct HelpiApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-              NotesView()
+              ContentView()
             }
         }
 
