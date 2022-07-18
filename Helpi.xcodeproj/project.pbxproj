@@ -77,6 +77,8 @@
 		A0BCAF732872BB4E00C5C053 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0BCAF722872BB4E00C5C053 /* sound.mp3 */; };
 		A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
 		A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
+		EE2CDA992880EE8800C0FAFD /* HelpConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */; };
+		EE2CDA9B2880F3C800C0FAFD /* GratitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */; };
 		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
 		EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */; };
 		EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */; };
@@ -209,6 +211,8 @@
 		A0E4C3AA28851CFF00D15760 /* AVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVService.swift; sourceTree = "<group>"; };
 		A38C454D9E81CC18B52A5DC2 /* Pods-Helpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.release.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.release.xcconfig"; sourceTree = "<group>"; };
 		E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Helpi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpConfirmationView.swift; sourceTree = "<group>"; };
+		EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeView.swift; sourceTree = "<group>"; };
 		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivationViewController.xib; sourceTree = "<group>"; };
 		EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 				9A3585B7287FA8810006EF21 /* NotificationController.swift */,
 				9A3585B9287FA8810006EF21 /* NotificationView.swift */,
 				9A3585BB287FA8810006EF21 /* ComplicationController.swift */,
+				EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */,
+				EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -722,10 +728,12 @@
 				9A3585B8287FA8810006EF21 /* NotificationController.swift in Sources */,
 				A079C2DC2881632700F566E5 /* CancelConfirmation.swift in Sources */,
 				A039CAFF28806F57009F1F40 /* CircleProgress.swift in Sources */,
+				EE2CDA9B2880F3C800C0FAFD /* GratitudeView.swift in Sources */,
 				9A3585B6287FA8810006EF21 /* ContentView.swift in Sources */,
 				A079C2DE2881B7A500F566E5 /* ScreenNotes.swift in Sources */,
 				9A3E59A8287FB3EB00A45ED9 /* HelpiApp.swift in Sources */,
 				A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */,
+				EE2CDA992880EE8800C0FAFD /* HelpConfirmationView.swift in Sources */,
 				9A3585BC287FA8810006EF21 /* ComplicationController.swift in Sources */,
 				A0717A9928844F0A00B347AE /* PlaySound.swift in Sources */,
 				9A3585BA287FA8810006EF21 /* NotificationView.swift in Sources */,
