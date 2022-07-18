@@ -19,34 +19,34 @@ struct NotesView: View {
       ScrollView {
         VStack(alignment: .leading, spacing: 8) {
           Text("Help, this person fainted!")
-            .font(.title2)
-            .bold()
+            .font(.system(size: 27, weight: .semibold, design: .rounded))
             .foregroundColor(.white)
 
           VStack {
             Text("Personal notes:\n")
-              .font(.subheadline)
-              .bold()
+              .font(.system(size: 16, weight: .semibold, design: .rounded))
+              .foregroundColor(.white)
 
             +
 
             Text(notes)
-              .font(.caption)
+              .font(.system(size: 16, weight: .regular, design: .rounded))
+              .foregroundColor(.gray)
           }
 
           NavigationLink {
             ConfirmAlertView()
           } label: {
             Text("Continue")
-              .foregroundColor(.white)
-              .bold()
+              .font(.system(size: 16, weight: .semibold, design: .rounded))
+              .foregroundColor(.black)
           }
-          .background(.red)
+          .background(Color(UIColor(red: 1.00, green: 0.11, blue: 0.42, alpha: 1.00)))
           .cornerRadius(9)
-
         }
       }
     }
+    .navigationBarHidden(true)
     .onAppear {
       connectivityHandler.startSession()
       notesCoordinator = NotesCoordinator(notesHandler: { note in
@@ -76,8 +76,6 @@ class NotesCoordinator: NSObject, WatchOSDelegate {
       }
     }
   }
-
-
 }
 
 struct NotesView_Previews: PreviewProvider {

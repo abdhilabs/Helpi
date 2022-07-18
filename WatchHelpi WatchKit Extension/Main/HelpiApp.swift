@@ -9,13 +9,11 @@ import SwiftUI
 
 @main
 struct HelpiApp: App {
-    @SceneBuilder var body: some Scene {
-        WindowGroup {
-            NavigationView {
-              ContentView()
-            }
-        }
-
-        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
+  @SceneBuilder var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+
+    WKNotificationScene(controller: NotificationController.self, category: "myCategory")
+  }
 }

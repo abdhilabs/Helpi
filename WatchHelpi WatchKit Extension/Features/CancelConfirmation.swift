@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CancelConfirmation: View {
 
+  @Environment(\.rootPresentationMode) var rootPresentationMode
   @Environment(\.presentationMode) var presentationMode
 
   var body: some View {
@@ -21,15 +22,14 @@ struct CancelConfirmation: View {
             .multilineTextAlignment(.center)
         }
 
-        NavigationLink{
-          ScreenNotesView()
-        }label: {
+        Button {
+          self.rootPresentationMode.wrappedValue.dismiss()
+        } label: {
           Text("Yes")
             .font(.system(size: 17, weight: .medium, design: .rounded))
             .foregroundColor(Color.black)
             .fontWeight(.semibold)
         }
-        .frame(height: 50)
         .background(Color(UIColor(red: 1.00, green: 0.11, blue: 0.42, alpha: 1.00)))
         .cornerRadius(20)
 

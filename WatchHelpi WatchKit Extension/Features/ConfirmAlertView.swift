@@ -12,8 +12,12 @@ struct ConfirmAlertView: View {
   @Environment(\.presentationMode) var presentationMode
 
   var body: some View {
-    VStack {
+    VStack(alignment: .center, spacing: 20) {
       Text("Has this person got help?")
+        .font(.system(size: 19, weight: .medium, design: .rounded))
+        .foregroundColor(.white)
+        .fontWeight(.semibold)
+        .multilineTextAlignment(.center)
 
       VStack {
         NavigationLink {
@@ -24,7 +28,6 @@ struct ConfirmAlertView: View {
             .foregroundColor(Color.black)
             .fontWeight(.semibold)
         }
-        .frame(height: 50)
         .background(Color(UIColor(red: 1.00, green: 0.11, blue: 0.42, alpha: 1.00)))
         .cornerRadius(20)
 

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GratitudeView: View {
 
+  @Environment(\.rootPresentationMode) var rootPresentationMode
+
   var body: some View {
     VStack {
       Text("Thank you for saving me!")
@@ -21,21 +23,19 @@ struct GratitudeView: View {
       Spacer()
 
       Button(action: {
-
-        //action to the next view
-
+        rootPresentationMode.wrappedValue.dismiss()
       }, label: {
         Text("Close")
           .font(.system(.body, design: .rounded))
           .fontWeight(.semibold)
           .foregroundColor(.black)
       })
-      .frame(height: 35)
-      .background(Color(.sRGB, red: 0.6555, green: 0.0694, blue: 0.2751, opacity: 1))
-      .cornerRadius(21)
+      .background(Color(UIColor(red: 1.00, green: 0.11, blue: 0.42, alpha: 1.00)))
+      .cornerRadius(20)
       .padding(.horizontal, 2)
       .padding(.vertical, 20)
     }
+    .navigationBarHidden(true)
   }
 }
 

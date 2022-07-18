@@ -38,6 +38,7 @@
 		9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */; };
 		9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5476F2870B42100E3B603 /* TutorialViewController.swift */; };
 		9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5477128713E5000E3B603 /* SessionManager.swift */; };
+		9ABD800B288598C5009300BC /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD800A288598C5009300BC /* RootPresentationMode.swift */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F812864AB21000D3386 /* Helpi.xcdatamodeld */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
@@ -172,6 +173,7 @@
 		9A92EA132881160C00C606FE /* ConfirmAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAlertView.swift; sourceTree = "<group>"; };
 		9AA5476F2870B42100E3B603 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		9AA5477128713E5000E3B603 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		9ABD800A288598C5009300BC /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
 		9AE05F752864AB21000D3386 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE05F782864AB21000D3386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE05F822864AB21000D3386 /* Helpi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Helpi.xcdatamodel; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		9A3585B2287FA8810006EF21 /* WatchHelpi WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9ABD8009288598AB009300BC /* Utils */,
 				9A3E59AB287FE56000A45ED9 /* Features */,
 				9A3E59AD287FE58B00A45ED9 /* Main */,
 				9A3585BF287FA8820006EF21 /* Preview Content */,
@@ -371,6 +374,14 @@
 				9A3585BB287FA8810006EF21 /* ComplicationController.swift */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		9ABD8009288598AB009300BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9ABD800A288598C5009300BC /* RootPresentationMode.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9AE05F6C2864AB21000D3386 = {
@@ -720,6 +731,7 @@
 			files = (
 				9A3E59AA287FE07600A45ED9 /* CountdownView.swift in Sources */,
 				9A92EA142881160C00C606FE /* ConfirmAlertView.swift in Sources */,
+				9ABD800B288598C5009300BC /* RootPresentationMode.swift in Sources */,
 				9A3585B8287FA8810006EF21 /* NotificationController.swift in Sources */,
 				A079C2DC2881632700F566E5 /* CancelConfirmation.swift in Sources */,
 				A039CAFF28806F57009F1F40 /* CircleProgressView.swift in Sources */,
