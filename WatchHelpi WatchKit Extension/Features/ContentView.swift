@@ -8,22 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+//    @State var isPlaying: Bool
+    @State private var animationAmount = 1.0
     var body: some View {
-      NavigationLink(destination: CountdownView()) {
-        ZStack {
-          Circle()
-          .foregroundColor(.red)
 
-          Text("Help")
-            .foregroundColor(.white)
+        NavigationLink(destination: CircleProgress()) {
+            ZStack {
+                Circle()
+                    .frame(width: 160, height: 160)
+                    .foregroundColor(Color(UIColor(red: 0.31, green: 0.03, blue: 0.13, alpha: 1.00)))
+                    .scaleEffect(animationAmount)
+                    .opacity(2 - animationAmount)
+                    .animation(Animation.easeOut(duration: 1)
+                        .repeatForever(autoreverses: false), value: animationAmount)
+                
+                Image("button")
+                    .resizable()
+                    .frame(width: 160, height: 160)
+                    .padding()
+                
+                
+                Text("Help")
+                    .foregroundColor(.white)
+                    .font(.system(size: 30, weight: .medium, design: .default))
+                    .fontWeight(.bold)
+            } .onAppear(){
+                animationAmount = 2
+            }
         }
-      }
-      .frame(width: 100, height: 100)
-      .background(
-        Circle()
-          .foregroundColor(.red)
-      )
+        .buttonStyle(PlainButtonStyle())
+        .background(
+           
+        )
+        .navigationBarHidden(true)
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

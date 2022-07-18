@@ -44,12 +44,18 @@
 		9AE05F932864B427000D3386 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F912864B427000D3386 /* MainViewController.xib */; };
 		9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE05F982864B693000D3386 /* CloudKit.framework */; };
 		9AE05F9C28652D31000D3386 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F9B28652D31000D3386 /* Variables.swift */; };
+		A039CAFF28806F57009F1F40 /* CircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039CAFE28806F57009F1F40 /* CircleProgress.swift */; };
 		A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D66BE286DF36F00C43D83 /* DoneViewController.swift */; };
 		A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04D66BF286DF36F00C43D83 /* DoneViewController.xib */; };
+		A0717A952883C64B00B347AE /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0BCAF722872BB4E00C5C053 /* sound.mp3 */; };
+		A0717A972883CBB400B347AE /* iphone_alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0717A962883CBB400B347AE /* iphone_alarm.mp3 */; };
+		A0717A9928844F0A00B347AE /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0717A9828844F0A00B347AE /* PlaySound.swift */; };
 		A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF3F286C4B6B006D686F /* ContactViewController.swift */; };
 		A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF40286C4B6B006D686F /* ContactViewController.xib */; };
 		A078FF45286C5B75006D686F /* PersonalNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */; };
 		A078FF46286C5B75006D686F /* PersonalNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF44286C5B75006D686F /* PersonalNotesViewController.xib */; };
+		A079C2DC2881632700F566E5 /* CancelConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079C2DB2881632700F566E5 /* CancelConfirmation.swift */; };
+		A079C2DE2881B7A500F566E5 /* ScreenNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079C2DD2881B7A500F566E5 /* ScreenNotes.swift */; };
 		A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */; };
 		A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */; };
 		A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */; };
@@ -69,6 +75,8 @@
 		A09E03B2286EC0CD005391F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09E03B0286EC0CD005391F0 /* HomeViewController.xib */; };
 		A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A3369C286A1DD100988028 /* HealthKit.framework */; };
 		A0BCAF732872BB4E00C5C053 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0BCAF722872BB4E00C5C053 /* sound.mp3 */; };
+		A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
+		A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
 		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
 		EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */; };
 		EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */; };
@@ -167,12 +175,17 @@
 		9AE05F912864B427000D3386 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9AE05F982864B693000D3386 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9AE05F9B28652D31000D3386 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		A039CAFE28806F57009F1F40 /* CircleProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgress.swift; sourceTree = "<group>"; };
 		A04D66BE286DF36F00C43D83 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		A04D66BF286DF36F00C43D83 /* DoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneViewController.xib; sourceTree = "<group>"; };
+		A0717A962883CBB400B347AE /* iphone_alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone_alarm.mp3; sourceTree = "<group>"; };
+		A0717A9828844F0A00B347AE /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		A078FF3F286C4B6B006D686F /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		A078FF40286C4B6B006D686F /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
 		A078FF43286C5B75006D686F /* PersonalNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalNotesViewController.swift; sourceTree = "<group>"; };
 		A078FF44286C5B75006D686F /* PersonalNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalNotesViewController.xib; sourceTree = "<group>"; };
+		A079C2DB2881632700F566E5 /* CancelConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelConfirmation.swift; sourceTree = "<group>"; };
+		A079C2DD2881B7A500F566E5 /* ScreenNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenNotes.swift; sourceTree = "<group>"; };
 		A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
 		A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
 		A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
@@ -193,6 +206,7 @@
 		A09E03B0286EC0CD005391F0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A0A3369C286A1DD100988028 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		A0BCAF722872BB4E00C5C053 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		A0E4C3AA28851CFF00D15760 /* AVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVService.swift; sourceTree = "<group>"; };
 		A38C454D9E81CC18B52A5DC2 /* Pods-Helpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.release.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.release.xcconfig"; sourceTree = "<group>"; };
 		E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Helpi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
@@ -282,6 +296,7 @@
 		9A3585B2287FA8810006EF21 /* WatchHelpi WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A0864DA5288277EB003B83C4 /* sound */,
 				9A3E59AB287FE56000A45ED9 /* Features */,
 				9A3E59AD287FE58B00A45ED9 /* Main */,
 				9A3585BF287FA8820006EF21 /* Preview Content */,
@@ -305,6 +320,10 @@
 				9A3E59AE287FE5A500A45ED9 /* Notification */,
 				9A3585B5287FA8810006EF21 /* ContentView.swift */,
 				9A3E59A9287FE07600A45ED9 /* CountdownView.swift */,
+				A039CAFE28806F57009F1F40 /* CircleProgress.swift */,
+				A079C2DB2881632700F566E5 /* CancelConfirmation.swift */,
+				A079C2DD2881B7A500F566E5 /* ScreenNotes.swift */,
+				A0717A9828844F0A00B347AE /* PlaySound.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -361,6 +380,7 @@
 		9AE05F772864AB21000D3386 /* Helpi */ = {
 			isa = PBXGroup;
 			children = (
+				A0E4C3A928851CDC00D15760 /* shared */,
 				A054125D28717A0F00529401 /* sound */,
 				9A1F8B95286DEE3200F6E16C /* Service */,
 				9A1F8B8A286D20F300F6E16C /* Extension */,
@@ -493,6 +513,14 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		A0864DA5288277EB003B83C4 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				A0717A962883CBB400B347AE /* iphone_alarm.mp3 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
 		A0A3368E286A175D00988028 /* HealthKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,6 +529,14 @@
 				A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */,
 			);
 			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		A0E4C3A928851CDC00D15760 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				A0E4C3AA28851CFF00D15760 /* AVService.swift */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,6 +651,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3585C1287FA8820006EF21 /* Preview Assets.xcassets in Resources */,
+				A0717A972883CBB400B347AE /* iphone_alarm.mp3 in Resources */,
+				A0717A952883C64B00B347AE /* sound.mp3 in Resources */,
 				9A3585BE287FA8820006EF21 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,9 +720,14 @@
 			files = (
 				9A3E59AA287FE07600A45ED9 /* CountdownView.swift in Sources */,
 				9A3585B8287FA8810006EF21 /* NotificationController.swift in Sources */,
+				A079C2DC2881632700F566E5 /* CancelConfirmation.swift in Sources */,
+				A039CAFF28806F57009F1F40 /* CircleProgress.swift in Sources */,
 				9A3585B6287FA8810006EF21 /* ContentView.swift in Sources */,
+				A079C2DE2881B7A500F566E5 /* ScreenNotes.swift in Sources */,
 				9A3E59A8287FB3EB00A45ED9 /* HelpiApp.swift in Sources */,
+				A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */,
 				9A3585BC287FA8810006EF21 /* ComplicationController.swift in Sources */,
+				A0717A9928844F0A00B347AE /* PlaySound.swift in Sources */,
 				9A3585BA287FA8810006EF21 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,6 +767,7 @@
 				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
 				A07BB950286B696B00A3DE30 /* OnboardViewController.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
+				A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */,
 				A0802D80286C854F004A22CB /* FirstAidScreen.swift in Sources */,
 				A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */,
 				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
@@ -767,8 +811,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -778,6 +822,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp;
 				PRODUCT_NAME = Helpi;
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -793,8 +838,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -804,6 +849,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp;
 				PRODUCT_NAME = Helpi;
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -817,13 +863,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -836,6 +883,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watch App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -849,13 +897,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -868,6 +917,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watch App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -998,8 +1048,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1024,7 +1074,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1038,8 +1088,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1064,7 +1114,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

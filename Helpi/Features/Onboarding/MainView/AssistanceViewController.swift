@@ -51,7 +51,7 @@ class AssistanceViewController: UIViewController {
     }
   }
 
-  func playSound(file: String, fileExtension: String, isLoop: Bool = false){
+func playSound(file: String, fileExtension: String, isLoop: Bool = false){
     soundURI = URL(fileURLWithPath: Bundle.main.path(forResource: file, ofType: fileExtension)!)
     do {
       guard let uri = soundURI else {return}
