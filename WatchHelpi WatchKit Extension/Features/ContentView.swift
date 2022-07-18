@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ClockKit
 
 struct ContentView: View {
 //    @State var isPlaying: Bool
@@ -44,6 +45,15 @@ struct ContentView: View {
     }
     
     
+
+  func getData() {
+    let server = CLKComplicationServer.sharedInstance()
+    if let complications = server.activeComplications {
+      for complication in complications {
+        server.reloadTimeline(for: complication)
+      }
+    }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

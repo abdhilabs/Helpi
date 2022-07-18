@@ -42,7 +42,24 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
+      if let template = getComplicationTemplate(for: complication){
+        let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+        handler(entry)
+      }else{
         handler(nil)
+      }
+    }
+
+    func getComplicationTemplate(for complication: CLKComplication) -> CLKComplicationTemplate?{
+      switch complication.family{
+      case .graphicCircular:
+        return CLKComplicationTemplateGraphicCircularImage(imageProvider: CLKFullColorImageProvider(fullColorImage: UIImage(systemName: "play.circle.fill")!))
+        //        case .graphicRectangular:
+        //            return CLKComplicationTemplateGraphicRectangularFullView(ComplicationViewRectangular(playingSong: Song.getDummyData()))
+        //            return CLKComplicationTemplateGraphicRectangularStandardBody(headerTextProvider: CLKTextProvider(format: "Now Playing"), body1TextProvider: CLKTextProvider(format: "Song Title"))
+      default:
+        return nil
+      }
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {

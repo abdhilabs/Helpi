@@ -15,6 +15,7 @@ class PersonalNotesViewController: UIViewController {
     @IBOutlet weak var btnSave: UIButton!
 
   private let cloudKitService = CloudKitService()
+  private let connectivityHandler = WatchSessionManager.shared
 
   var account: UserAccount
 
@@ -42,11 +43,20 @@ class PersonalNotesViewController: UIViewController {
     }
     
     @IBAction func btnSave(_ sender: Any) {
-        if notes.text?.isEmpty == true {
+        let notes = notes.text ?? ""
+        if notes.isEmpty == true {
             showAlert()
             return
         }
-        account.notes = notes.text ?? ""
+      
+        account.notes = notes
+
+        do {
+            try connectivityHandler.updateApplicationContext(applicationContext: ["notes": notes])
+        } catch {
+            print("Error: \(error)")
+        }
+
         cloudKitService.register(by: account) { isSuccess in
           DispatchQueue.main.async {
             if isSuccess {
