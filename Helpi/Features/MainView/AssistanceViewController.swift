@@ -36,13 +36,13 @@ class AssistanceViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    AVService.shared.playSoundTimer()
 
     titleLabel1.font = .rounded(ofSize: 90, weight: .black)
     titleLabel2.font = .rounded(ofSize: 60, weight: .semibold)
     descText.font = .rounded(ofSize: 18, weight: .medium)
     btnStart.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
 
-    playSoundTimer()
     let recordId = SessionManager.shared.getRecordId()
     cloudKitService.updateDataFriend(by: .init(recordName: recordId)) { name in
       DispatchQueue.main.async {
@@ -51,23 +51,9 @@ class AssistanceViewController: UIViewController {
     }
   }
 
-func playSound(file: String, fileExtension: String, isLoop: Bool = false){
-    soundURI = URL(fileURLWithPath: Bundle.main.path(forResource: file, ofType: fileExtension)!)
-    do {
-      guard let uri = soundURI else {return}
-      audioPlayer = try AVAudioPlayer(contentsOf: uri)
-    } catch {
-      // couldn't load file :(
-    }
-  }
-
-  func playSoundTimer(){
-    playSound(file: "sound", fileExtension: "mp3")
-    audioPlayer?.play()
-  }
-
   @IBAction func didTapStartButton(_ sender: Any) {
-    self.audioPlayer?.stop()
+    AVService.shared.audioPlayer?.stop()
+    
     let nextViewController = PersonalNoteViewController()
     navigationController?.pushViewController(nextViewController, animated: true)
   }

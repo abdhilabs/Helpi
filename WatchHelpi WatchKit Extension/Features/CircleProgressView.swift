@@ -75,7 +75,7 @@ struct CircleProgressView: View {
   @State var counter: Int = 0
   @State var jump = false
 
-  let countTo: Int = 3
+  let countTo: Int = 5
 
   var body: some View {
 
@@ -97,7 +97,7 @@ struct CircleProgressView: View {
         }
 
         NavigationLink(isActive: $jump) {
-          ScreenNotesView()
+          NotesView()
         } label: {
           EmptyView()
         }

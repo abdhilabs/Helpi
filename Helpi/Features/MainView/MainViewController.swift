@@ -10,10 +10,13 @@ import UIKit
 class MainViewController: UIViewController {
 
   @IBOutlet weak var viewHelpButton: UIView!
-    @IBOutlet weak var labelBtn: UILabel!
-    @IBOutlet weak var descText: UILabel!
-    
-    override func viewWillAppear(_ animated: Bool) {
+  @IBOutlet weak var labelBtn: UILabel!
+  @IBOutlet weak var descText: UILabel!
+
+  private let cloudKitService = CloudKitService()
+  private let connectivityHandler = WatchSessionManager.shared
+
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(false, animated: true)
     setNavigationBar()
@@ -22,8 +25,25 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureViews()
-      labelBtn.font = .rounded(ofSize: 48, weight: .semibold)
-      descText.font = .rounded(ofSize: 18, weight: .regular)
+    labelBtn.font = .rounded(ofSize: 48, weight: .semibold)
+    descText.font = .rounded(ofSize: 18, weight: .regular)
+
+    observeValue()
+  }
+
+  private func observeValue() {
+    let recordId = SessionManager.shared.getRecordId()
+    cloudKitService.fetchAccount(by: .init(recordName: recordId)) { account in
+      DispatchQueue.main.async {
+        SessionManager.shared.setPersonalNote(with: account.notes)
+
+        do {
+          try self.connectivityHandler.updateApplicationContext(applicationContext: ["notes": account.notes])
+        } catch {
+          print("Error: \(error)")
+        }
+      }
+    }
   }
 
   private func configureViews() {

@@ -76,7 +76,7 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
     if let emergencyNamePrimary = fullName1.text, let emergencyPhonePrimary = phoneNumber1.text  {
       let account = getAccountData(emergencyNamePrimary: emergencyNamePrimary, emergencyPhonePrimary: emergencyPhonePrimary)
 
-      let nextNotesController = PersonalNotesViewController(account: account)
+      let nextNotesController = AddNoteViewController(account: account)
       self.navigationController?.pushViewController(nextNotesController, animated: true)
     } else {
       showAlert()
@@ -136,7 +136,7 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
 
   @IBAction func btnSkip(_ sender: Any) {
     let account = getAccountData(emergencyNamePrimary: "", emergencyPhonePrimary: "")
-    let nextNotesController = PersonalNotesViewController(account: account)
+    let nextNotesController = AddNoteViewController(account: account)
     self.navigationController?.pushViewController(nextNotesController, animated: true)
   }
 

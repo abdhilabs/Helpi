@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonalNotesViewController: UIViewController {
+class AddNoteViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textNotes: UILabel!
@@ -21,7 +21,7 @@ class PersonalNotesViewController: UIViewController {
 
   init(account: UserAccount) {
     self.account = account
-    super.init(nibName: String(describing: PersonalNotesViewController.self), bundle: nil)
+    super.init(nibName: String(describing: AddNoteViewController.self), bundle: nil)
   }
 
   required init?(coder: NSCoder) {
@@ -60,6 +60,7 @@ class PersonalNotesViewController: UIViewController {
         cloudKitService.register(by: account) { isSuccess in
           DispatchQueue.main.async {
             if isSuccess {
+              SessionManager.shared.setPersonalNote(with: notes)
               let nextFirstAid = ActivationViewController()
               self.navigationController?.pushViewController(nextFirstAid, animated: true)
             } else {
@@ -72,8 +73,7 @@ class PersonalNotesViewController: UIViewController {
     func showAlert(){
         let alert = UIAlertController(title: "Empty Notes", message: "Are you sure you want to leave the notes empty? you can edit it later", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { [self] action in
-        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         
         alert.addAction(UIAlertAction(title: "Confirm", style: .destructive , handler: {  action in
             let nextFirstAid = ActivationViewController()

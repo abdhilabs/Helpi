@@ -35,4 +35,12 @@ struct SessionManager {
   func getRecordId() -> String {
     UserDefaults.standard.value(forKey: "set_record_id") as? String ?? ""
   }
+
+  func setPersonalNote(with note: String) {
+    UserDefaults.standard.setValue(note, forKey: "personal_note")
+  }
+
+  func getPersonalNote() -> String {
+    UserDefaults.standard.value(forKey: "personal_note") as? String ?? ""
+  }
 }

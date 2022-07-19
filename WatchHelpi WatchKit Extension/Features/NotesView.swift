@@ -48,11 +48,15 @@ struct NotesView: View {
     }
     .navigationBarHidden(true)
     .onAppear {
+      AVService.shared.playSoundTimer()
       connectivityHandler.startSession()
       notesCoordinator = NotesCoordinator(notesHandler: { note in
         self.notes = note
       })
       connectivityHandler.watchOSDelegate = notesCoordinator
+    }
+    .onDisappear {
+      AVService.shared.audioPlayer?.stop()
     }
   }
 }

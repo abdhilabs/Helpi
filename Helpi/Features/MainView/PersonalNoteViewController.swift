@@ -23,17 +23,8 @@ class PersonalNoteViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    observeValue()
-  }
-
-  private func observeValue() {
-    let recordId = SessionManager.shared.getRecordId()
-    cloudKitService.fetchAccount(by: .init(recordName: recordId)) { account in
-      DispatchQueue.main.async {
-        self.lblNote.text = account.notes
-        self.account = account
-      }
-    }
+    let notes = SessionManager.shared.getPersonalNote()
+    lblNote.text = notes
   }
 
   @IBAction func didTapStartButton(_ sender: Any) {
