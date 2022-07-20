@@ -32,7 +32,6 @@ struct LockView: View {
     let seconds = currentTime % 60
     return "\(seconds)"
   }
-
 }
 
 struct ProgressTrack: View {
@@ -69,14 +68,11 @@ struct ProgressBar: View {
 }
 
 struct CircleProgressView: View {
-
   @Environment(\.dismiss) var dismiss
-
   @State var counter: Int = 0
   @State var jump = false
 
   let countTo: Int = 5
-
   var body: some View {
 
     if #available(watchOSApplicationExtension 7.0, *) {

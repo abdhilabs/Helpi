@@ -7,7 +7,36 @@
 
 import ClockKit
 
+import WatchKit
+import Combine
+import SwiftUI
 
+
+
+class ExtentionDelegate: NSObject,WKExtensionDelegate,ObservableObject{
+    @Published var isFromComplication = false
+    @Environment(\.appDelegate) static var shared
+    
+    func handleUserActivity(_ userInfo: [AnyHashable : Any]?) {
+        if userInfo?[CLKLaunchedTimelineEntryDateKey] is Date{
+            //dari complicationw
+            isFromComplication = true
+        }else{
+            //dari yg lain
+            isFromComplication = false
+        }
+    }
+    func handle(_ userActivity: NSUserActivity) {
+        
+        if userActivity.userInfo?[CLKLaunchedTimelineEntryDateKey] is Date{
+            //dari complicationw
+            isFromComplication = true
+        }else{
+            //dari yg lain
+            isFromComplication = false
+        }
+    }
+}
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
     // MARK: - Complication Configuration
@@ -15,10 +44,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
             CLKComplicationDescriptor(identifier: "complication", displayName: "Helpi", supportedFamilies: CLKComplicationFamily.allCases)
-            // Multiple complication support can be added here with more descriptors
         ]
         
-        // Call the handler with the currently supported complication descriptors
         handler(descriptors)
     }
     
@@ -74,3 +101,4 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler(nil)
     }
 }
+
