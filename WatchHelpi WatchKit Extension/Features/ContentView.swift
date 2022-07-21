@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
 
+  var connectivityHandler = WatchSessionManager.shared
+
   @State private var animationAmount = 1.0
   @State private var isShowNext = false
 
@@ -42,6 +44,9 @@ struct ContentView: View {
         }
       }
       .buttonStyle(PlainButtonStyle())
+    }
+    .onAppear {
+      connectivityHandler.startSession()
     }
     .navigationBarHidden(true)
     .environment(\.rootPresentationMode, $isShowNext)

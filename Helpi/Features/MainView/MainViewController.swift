@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(false, animated: true)
     setNavigationBar()
+    getPersonalNotes()
   }
 
   override func viewDidLoad() {
@@ -27,21 +28,16 @@ class MainViewController: UIViewController {
     configureViews()
     labelBtn.font = .rounded(ofSize: 48, weight: .semibold)
     descText.font = .rounded(ofSize: 18, weight: .regular)
-
-    observeValue()
   }
 
-  private func observeValue() {
+  private func getPersonalNotes() {
     let recordId = SessionManager.shared.getRecordId()
     cloudKitService.fetchAccount(by: .init(recordName: recordId)) { account in
-      DispatchQueue.main.async {
-        SessionManager.shared.setPersonalNote(with: account.notes)
-
-        do {
-          try self.connectivityHandler.updateApplicationContext(applicationContext: ["notes": account.notes])
-        } catch {
-          print("Error: \(error)")
-        }
+      SessionManager.shared.setPersonalNote(with: account.notes)
+      do {
+        try self.connectivityHandler.updateApplicationContext(applicationContext: ["notes": account.notes])
+      } catch {
+        print("Error: \(error)")
       }
     }
   }

@@ -49,11 +49,20 @@ struct NotesView: View {
     .navigationBarHidden(true)
     .onAppear {
       AVService.shared.playSoundTimer()
-      connectivityHandler.startSession()
       notesCoordinator = NotesCoordinator(notesHandler: { note in
         self.notes = note
       })
       connectivityHandler.watchOSDelegate = notesCoordinator
+      connectivityHandler.sendMessage(message: ["notes": "wiuwiu"]) { replyHandler in
+        DispatchQueue.main.async {
+          if let notes = replyHandler["notes"] as? String {
+            self.notes = notes
+          }
+        }
+      } errorHandler: { error in
+        print("Error: \(error.localizedDescription)")
+      }
+
     }
     .onDisappear {
       AVService.shared.audioPlayer?.stop()

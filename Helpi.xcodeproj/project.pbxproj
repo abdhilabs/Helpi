@@ -30,6 +30,9 @@
 		9A3585BE287FA8820006EF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3585BD287FA8820006EF21 /* Assets.xcassets */; };
 		9A3585C1287FA8820006EF21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3585C0287FA8820006EF21 /* Preview Assets.xcassets */; };
 		9A3585C6287FA8820006EF21 /* Helpi.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9A3585A6287FA87F0006EF21 /* Helpi.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A35C2262887C4F7001B5877 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5477128713E5000E3B603 /* SessionManager.swift */; };
+		9A5679532887AD0D00891964 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5679522887AD0D00891964 /* ExtensionDelegate.swift */; };
+		9A5679552887AE7200891964 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5679542887AE7200891964 /* Notifications.swift */; };
 		9A705146288123090085DE71 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A705145288123090085DE71 /* CloudKit.framework */; };
 		9A9120C62872EE3E005B8C0B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9120C52872EE3E005B8C0B /* String.swift */; };
 		9A92EA142881160C00C606FE /* ConfirmAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92EA132881160C00C606FE /* ConfirmAlertView.swift */; };
@@ -164,6 +167,8 @@
 		9A3585C2287FA8820006EF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3585C3287FA8820006EF21 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		9A3E59A7287FB3EB00A45ED9 /* HelpiApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpiApp.swift; sourceTree = "<group>"; };
+		9A5679522887AD0D00891964 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9A5679542887AE7200891964 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		9A705144288122FF0085DE71 /* WatchHelpi WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchHelpi WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		9A705145288123090085DE71 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		9A9120C52872EE3E005B8C0B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -364,6 +369,8 @@
 				9A3585B7287FA8810006EF21 /* NotificationController.swift */,
 				9A3585B9287FA8810006EF21 /* NotificationView.swift */,
 				9A3585BB287FA8810006EF21 /* ComplicationController.swift */,
+				9A5679542887AE7200891964 /* Notifications.swift */,
+				9A5679522887AD0D00891964 /* ExtensionDelegate.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -724,6 +731,7 @@
 			files = (
 				9A92EA142881160C00C606FE /* ConfirmAlertView.swift in Sources */,
 				9ABD800B288598C5009300BC /* RootPresentationMode.swift in Sources */,
+				9A35C2262887C4F7001B5877 /* SessionManager.swift in Sources */,
 				9A3585B8287FA8810006EF21 /* NotificationController.swift in Sources */,
 				A079C2DC2881632700F566E5 /* CancelConfirmation.swift in Sources */,
 				A039CAFF28806F57009F1F40 /* CircleProgressView.swift in Sources */,
@@ -732,8 +740,10 @@
 				A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */,
 				EE2CDA992880EE8800C0FAFD /* HelpConfirmationView.swift in Sources */,
 				9A3585BC287FA8810006EF21 /* ComplicationController.swift in Sources */,
+				9A5679532887AD0D00891964 /* ExtensionDelegate.swift in Sources */,
 				9AFC084E2884E3F2001F13CD /* WatchSessionManager.swift in Sources */,
 				9A92EA1528811C1C00C606FE /* HelpiApp.swift in Sources */,
+				9A5679552887AE7200891964 /* Notifications.swift in Sources */,
 				9A3585BC287FA8810006EF21 /* ComplicationController.swift in Sources */,
 				9AFC084A28845987001F13CD /* NotesView.swift in Sources */,
 				9A3585BA287FA8810006EF21 /* NotificationView.swift in Sources */,
@@ -885,7 +895,8 @@
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -921,7 +932,8 @@
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
