@@ -15,9 +15,6 @@ class AssistanceViewController: UIViewController {
   @IBOutlet weak var btnStart: UIButton!
   @IBOutlet weak var descText: UILabel!
 
-  var soundURI: URL?
-  var audioPlayer: AVAudioPlayer?
-
   private let cloudKitService = CloudKitService()
 
   override func viewWillAppear(_ animated: Bool) {
@@ -30,7 +27,7 @@ class AssistanceViewController: UIViewController {
   }
 
   @objc func didTapRightBarButton() {
-    self.audioPlayer?.stop()
+    AVService.shared.audioPlayer?.stop()
     dismiss(animated: true)
   }
 

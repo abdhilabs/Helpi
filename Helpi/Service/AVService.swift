@@ -26,7 +26,7 @@ class AVService{
   }
 
   func playSoundTimer(){
-    playSound(file: "Fainted_AI_Sound", fileExtension: "mp3")
+    playSound(file: "Sound_Alert", fileExtension: "mp3")
     audioPlayer?.numberOfLoops = 5
     audioPlayer?.volume = 1.0
     audioPlayer?.play()

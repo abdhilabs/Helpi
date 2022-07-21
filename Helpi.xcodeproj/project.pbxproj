@@ -23,6 +23,8 @@
 		9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */; };
 		9A21308228891520004A28AA /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */; };
 		9A21308428891BB8004A28AA /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A21308328891BB8004A28AA /* JWT.swift */; };
+		9A2130862889205B004A28AA /* Sound_Alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A2130852889205B004A28AA /* Sound_Alert.mp3 */; };
+		9A2130872889205F004A28AA /* Sound_Alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A2130852889205B004A28AA /* Sound_Alert.mp3 */; };
 		9A3585A9287FA8800006EF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3585A8287FA8800006EF21 /* Assets.xcassets */; };
 		9A3585AF287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A3585AE287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9A3585B6287FA8810006EF21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3585B5287FA8810006EF21 /* ContentView.swift */; };
@@ -43,7 +45,6 @@
 		9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5476F2870B42100E3B603 /* TutorialViewController.swift */; };
 		9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5477128713E5000E3B603 /* SessionManager.swift */; };
 		9ABD800B288598C5009300BC /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD800A288598C5009300BC /* RootPresentationMode.swift */; };
-		9ABD800C288662EC009300BC /* Fainted_AI_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC085328852FE0001F13CD /* Fainted_AI_Sound.mp3 */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F812864AB21000D3386 /* Helpi.xcdatamodeld */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
@@ -55,7 +56,6 @@
 		9AFC0848288456D2001F13CD /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC0847288456D2001F13CD /* WatchSessionManager.swift */; };
 		9AFC084A28845987001F13CD /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC084928845987001F13CD /* NotesView.swift */; };
 		9AFC084E2884E3F2001F13CD /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC0847288456D2001F13CD /* WatchSessionManager.swift */; };
-		9AFC085428852FE0001F13CD /* Fainted_AI_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC085328852FE0001F13CD /* Fainted_AI_Sound.mp3 */; };
 		A039CAFF28806F57009F1F40 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039CAFE28806F57009F1F40 /* CircleProgressView.swift */; };
 		A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D66BE286DF36F00C43D83 /* DoneViewController.swift */; };
 		A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04D66BF286DF36F00C43D83 /* DoneViewController.xib */; };
@@ -158,6 +158,7 @@
 		9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		9A21308328891BB8004A28AA /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		9A2130852889205B004A28AA /* Sound_Alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound_Alert.mp3; sourceTree = "<group>"; };
 		9A3585A6287FA87F0006EF21 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3585A8287FA8800006EF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A3585AE287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchHelpi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,7 +193,6 @@
 		9AE05F9B28652D31000D3386 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		9AFC0847288456D2001F13CD /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		9AFC084928845987001F13CD /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
-		9AFC085328852FE0001F13CD /* Fainted_AI_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fainted_AI_Sound.mp3; sourceTree = "<group>"; };
 		A039CAFE28806F57009F1F40 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		A04D66BE286DF36F00C43D83 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		A04D66BF286DF36F00C43D83 /* DoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneViewController.xib; sourceTree = "<group>"; };
@@ -515,7 +515,7 @@
 		A054125D28717A0F00529401 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				9AFC085328852FE0001F13CD /* Fainted_AI_Sound.mp3 */,
+				9A2130852889205B004A28AA /* Sound_Alert.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -666,7 +666,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AFC085428852FE0001F13CD /* Fainted_AI_Sound.mp3 in Resources */,
+				9A2130872889205F004A28AA /* Sound_Alert.mp3 in Resources */,
 				9A3585C1287FA8820006EF21 /* Preview Assets.xcassets in Resources */,
 				9A3585BE287FA8820006EF21 /* Assets.xcassets in Resources */,
 			);
@@ -680,7 +680,6 @@
 				9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */,
 				EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */,
 				9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */,
-				9ABD800C288662EC009300BC /* Fainted_AI_Sound.mp3 in Resources */,
 				9A1F8B822869EF5000F6E16C /* AssistanceViewController.xib in Resources */,
 				9AE05F932864B427000D3386 /* MainViewController.xib in Resources */,
 				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
@@ -692,6 +691,7 @@
 				A07BB7C3286B622000A3DE30 /* Podfile in Resources */,
 				A078FF46286C5B75006D686F /* AddNoteViewController.xib in Resources */,
 				A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */,
+				9A2130862889205B004A28AA /* Sound_Alert.mp3 in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
 				A0802D8B286C8653004A22CB /* FirstAidCollectionViewCell.xib in Resources */,
 				A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */,
