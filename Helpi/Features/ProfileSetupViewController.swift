@@ -5,8 +5,9 @@
 //  Created by Miftakhul Huda on 30/06/22.
 //
 
-import UIKit
 import AuthenticationServices
+import JWTDecode
+import UIKit
 
 class ProfileSetupViewController: UIViewController {
     
@@ -14,7 +15,8 @@ class ProfileSetupViewController: UIViewController {
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var skipButton: UIButton!
     @IBOutlet weak var loginProviderStackView: UIButton!
-    
+
+    private let cloudKitService = CloudKitService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,18 +75,53 @@ extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
   func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
     switch authorization.credential {
     case let appleIDCredential as ASAuthorizationAppleIDCredential:
-      if let email = appleIDCredential.email, let fullName = appleIDCredential.fullName {
-        SessionManager.shared.setLoggedIn()
-        let nextContactController = ContactViewController()
-        nextContactController.appleId = email
-        nextContactController.name = displayName(name: fullName)
-        self.navigationController?.pushViewController(nextContactController, animated: true)
+      if let _ = appleIDCredential.email, let _ = appleIDCredential.fullName {
+        registerNewAccount(credential: appleIDCredential)
+      } else {
+        print("Existing Account...")
+        signInWithExistingAccount(credential: appleIDCredential)
       }
     default:
       break
     }
   }
 
+  private func registerNewAccount(credential: ASAuthorizationAppleIDCredential) {
+    if let identityTokenData = credential.identityToken, let identityTokenString = String(data: identityTokenData, encoding: .utf8) {
+      SessionManager.shared.setLoggedIn()
+
+      let name = displayName(name: credential.fullName!)
+      let appleId = credential.email!
+      let nextContactController = ContactViewController()
+      nextContactController.identityTokenString = identityTokenString
+      nextContactController.appleId = appleId
+      nextContactController.name = name
+      self.navigationController?.pushViewController(nextContactController, animated: true)
+    }
+  }
+
+  private func signInWithExistingAccount(credential: ASAuthorizationAppleIDCredential) {
+    if let identityTokenData = credential.identityToken, let identityTokenString = String(data: identityTokenData, encoding: .utf8) {
+      let decodedToken = try? decode(jwt: identityTokenString)
+      let appleId = decodedToken?.email ?? ""
+      cloudKitService.fetchAllAccount(filterBy: appleId) { accounts in
+        if let account = accounts.first {
+          SessionManager.shared.setLoggedIn()
+          SessionManager.shared.setRecordId(with: account.recordId.recordName)
+          SessionManager.shared.setPersonalNote(with: account.notes)
+
+          DispatchQueue.main.async {
+            let nextViewController = MainViewController()
+            self.view.window?.rootViewController = nextViewController
+          }
+        } else {
+          print("User not found...")
+        }
+      }
+    }
+  }
+
+  /// - Parameter style: The `PersonNameComponentsFormatter.Style` to use for the display.
   private func displayName(name: PersonNameComponents, style: PersonNameComponentsFormatter.Style = .default) -> String {
     PersonNameComponentsFormatter.localizedString(from: name, style: style)
   }

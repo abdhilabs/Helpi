@@ -9,6 +9,7 @@ import CloudKit
 
 struct UserAccount {
   var recordId: CKRecord.ID = .init()
+  var identityTokenString: String
   var name: String
   var appleId: String
   var emergencyNamePrimary: String
@@ -24,6 +25,7 @@ extension UserAccount {
 
   var record: CKRecord {
     let record = CKRecord(recordType: UserAccount.recordType)
+    record["identityTokenString"] = identityTokenString
     record["appleId"] = appleId
     record["name"] = name
     record["emergencyNamePrimary"] = emergencyNamePrimary
@@ -52,7 +54,47 @@ class CloudKitService {
     }
   }
 
-  func fetchFriend(by name: String, completion: @escaping (_ accounts: [UserAccount]) -> ()) {
+  func fetchAllAccount(filterBy appleId: String, completion: @escaping (_ accounts: [UserAccount]) -> ()) {
+    let query = CKQuery(recordType: UserAccount.recordType, predicate: NSPredicate(value: true))
+
+    let operation = CKQueryOperation(query: query)
+
+    var accounts: [UserAccount] = []
+    operation.recordMatchedBlock = { (recordId, result) in
+      switch result {
+      case .success(let record):
+        if let identityTokenString = record["identityTokenString"] as? String,
+           let name = record["name"] as? String,
+           let appleId = record["appleId"] as? String,
+           let emergencyNamePrimary = record["emergencyNamePrimary"] as? String,
+           let emergencyNameSecondary = record["emergencyNameSecondary"] as? String,
+           let emergencyPhonePrimary = record["emergencyPhonePrimary"] as? String,
+           let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
+           let notes = record["notes"] as? String,
+           let notification = record["notification"] as? String {
+          accounts.append(UserAccount(recordId: recordId, identityTokenString: identityTokenString, name: name, appleId: appleId,
+                                        emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
+                                        emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
+                                        notes: notes, notification: notification))
+          print("Name: \(name)")
+          print("AppleId: \(appleId)")
+          print("RecordIDs: \(recordId)")
+        }
+      case .failure(let error):
+        print("Error: \(error.localizedDescription)")
+      }
+    }
+
+    operation.queryResultBlock = { result in
+      DispatchQueue.main.async {
+        completion(accounts.filter { $0.appleId == appleId })
+      }
+    }
+
+    publicDatabase.add(operation)
+  }
+
+  func fetchAccount(by name: String, completion: @escaping (_ accounts: [UserAccount]) -> ()) {
     let query = CKQuery(recordType: UserAccount.recordType, predicate: NSPredicate(value: true))
     //    query.sortDescriptors = [NSSortDescriptor(key: "recordName", ascending: false)]
 
@@ -62,7 +104,8 @@ class CloudKitService {
     operation.recordMatchedBlock = { (recordId, result) in
       switch result {
       case .success(let record):
-        if let name = record["name"] as? String,
+        if let identityTokenString = record["identityTokenString"] as? String,
+           let name = record["name"] as? String,
            let appleId = record["appleId"] as? String,
            let emergencyNamePrimary = record["emergencyNamePrimary"] as? String,
            let emergencyNameSecondary = record["emergencyNameSecondary"] as? String,
@@ -70,7 +113,7 @@ class CloudKitService {
            let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
            let notes = record["notes"] as? String,
            let notification = record["notification"] as? String {
-          accounts.append(UserAccount(recordId: recordId, name: name, appleId: appleId,
+          accounts.append(UserAccount(recordId: recordId, identityTokenString: identityTokenString, name: name, appleId: appleId,
                                         emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
                                         emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
                                         notes: notes, notification: notification))
@@ -96,6 +139,7 @@ class CloudKitService {
     publicDatabase.fetch(withRecordID: recordId) { record, error in
       if error == nil {
         if let record = record,
+           let identityTokenString = record["identityTokenString"] as? String,
            let name = record["name"] as? String,
            let appleId = record["appleId"] as? String,
            let emergencyNamePrimary = record["emergencyNamePrimary"] as? String,
@@ -104,7 +148,7 @@ class CloudKitService {
            let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
            let notes = record["notes"] as? String,
            let notification = record["notification"] as? String {
-          let account = UserAccount(recordId: recordId, name: name, appleId: appleId,
+          let account = UserAccount(recordId: recordId, identityTokenString: identityTokenString, name: name, appleId: appleId,
                                     emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
                                     emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
                                     notes: notes, notification: notification)
@@ -151,10 +195,10 @@ class CloudKitService {
     publicDatabase.save(subscription) { subscription, error in
       if error == nil {
         completion(true)
-        print("Subscription saved successfully with id \(subscription?.subscriptionID)")
+        print("Subscription saved successfully with id \(String(describing: subscription?.subscriptionID))")
       } else {
         completion(false)
-        print("Error: \(error?.localizedDescription)")
+        print("Error: \(String(describing: error?.localizedDescription))")
       }
     }
   }

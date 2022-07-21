@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
     cloudKitService.fetchAccount(by: .init(recordName: recordId)) { account in
       SessionManager.shared.setPersonalNote(with: account.notes)
       do {
-        try self.connectivityHandler.updateApplicationContext(applicationContext: ["notes": account.notes])
+        try self.connectivityHandler.updateApplicationContext(applicationContext: ["notes": account.notes, "recordName": account.recordId.recordName])
       } catch {
         print("Error: \(error)")
       }

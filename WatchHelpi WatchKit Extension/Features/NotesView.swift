@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NotesView: View {
 
+  var cloudKitService = CloudKitService()
   var connectivityHandler = WatchSessionManager.shared
 
   @State private var notesCoordinator: NotesCoordinator! = nil
@@ -49,14 +50,16 @@ struct NotesView: View {
     .navigationBarHidden(true)
     .onAppear {
       AVService.shared.playSoundTimer()
-      notesCoordinator = NotesCoordinator(notesHandler: { note in
+      notesCoordinator = NotesCoordinator(notesHandler: { note, recordName in
         self.notes = note
+        self.sendPushNotif(by: recordName)
       })
       connectivityHandler.watchOSDelegate = notesCoordinator
       connectivityHandler.sendMessage(message: ["notes": "wiuwiu"]) { replyHandler in
         DispatchQueue.main.async {
-          if let notes = replyHandler["notes"] as? String {
+          if let notes = replyHandler["notes"] as? String, let recordName = replyHandler["recordName"] as? String {
             self.notes = notes
+            self.sendPushNotif(by: recordName)
           }
         }
       } errorHandler: { error in
@@ -68,13 +71,19 @@ struct NotesView: View {
       AVService.shared.audioPlayer?.stop()
     }
   }
+
+  private func sendPushNotif(by recordName: String) {
+    cloudKitService.updateDataFriend(by: .init(recordName: recordName)) { name in
+      print("Success push notif...")
+    }
+  }
 }
 
 class NotesCoordinator: NSObject, WatchOSDelegate {
 
-  private let notesHandler: (String) -> Void
+  private let notesHandler: (String, String) -> Void
 
-  init(notesHandler: @escaping (String) -> Void) {
+  init(notesHandler: @escaping (String, String) -> Void) {
     self.notesHandler = notesHandler
   }
   
@@ -84,8 +93,10 @@ class NotesCoordinator: NSObject, WatchOSDelegate {
 
   func applicationContextReceived(tuple: ApplicationContextReceived) {
     DispatchQueue.main.async {
-      if let notes = tuple.applicationContext["notes"] as? String {
-        self.notesHandler(notes)
+      if let notes = tuple.applicationContext["notes"] as? String, let recordName = tuple.applicationContext["recordName"] as? String {
+        self.notesHandler(notes, recordName)
+      } else if let notes = tuple.applicationContext["notes"] as? String {
+        self.notesHandler(notes, "")
       }
     }
   }

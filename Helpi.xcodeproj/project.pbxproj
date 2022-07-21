@@ -21,6 +21,8 @@
 		9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */; };
 		9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */; };
 		9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */; };
+		9A21308228891520004A28AA /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */; };
+		9A21308428891BB8004A28AA /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A21308328891BB8004A28AA /* JWT.swift */; };
 		9A3585A9287FA8800006EF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3585A8287FA8800006EF21 /* Assets.xcassets */; };
 		9A3585AF287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A3585AE287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9A3585B6287FA8810006EF21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3585B5287FA8810006EF21 /* ContentView.swift */; };
@@ -155,6 +157,7 @@
 		9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
 		9A1F8B98286EA03B00F6E16C /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		9A1F8B99286EA03B00F6E16C /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		9A21308328891BB8004A28AA /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
 		9A3585A6287FA87F0006EF21 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3585A8287FA8800006EF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A3585AE287FA8810006EF21 /* WatchHelpi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchHelpi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,6 +289,7 @@
 				A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */,
 				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
 				9A9120C52872EE3E005B8C0B /* String.swift */,
+				9A21308328891BB8004A28AA /* JWT.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -747,6 +751,7 @@
 				9A3585BC287FA8810006EF21 /* ComplicationController.swift in Sources */,
 				9AFC084A28845987001F13CD /* NotesView.swift in Sources */,
 				9A3585BA287FA8810006EF21 /* NotificationView.swift in Sources */,
+				9A21308228891520004A28AA /* CloudKitService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A21308428891BB8004A28AA /* JWT.swift in Sources */,
 				9A9120C62872EE3E005B8C0B /* String.swift in Sources */,
 				EEE04200286D315500A2B04D /* ProfileSetupViewController.swift in Sources */,
 				EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */,

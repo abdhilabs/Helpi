@@ -51,16 +51,26 @@ class AddNoteViewController: UIViewController {
       
         account.notes = notes
 
-        do {
-            try connectivityHandler.updateApplicationContext(applicationContext: ["notes": notes])
-        } catch {
-            print("Error: \(error)")
-        }
+//        do {
+//            try connectivityHandler.updateApplicationContext(applicationContext: ["notes": account.notes, "recordName": account.recordId.recordName])
+//        } catch {
+//            print("Error: \(error)")
+//        }
 
         cloudKitService.register(by: account) { isSuccess in
           DispatchQueue.main.async {
             if isSuccess {
               SessionManager.shared.setPersonalNote(with: notes)
+
+              do {
+                try self.connectivityHandler.updateApplicationContext(applicationContext: [
+                  "notes": notes,
+                  "recordName": SessionManager.shared.getRecordId()
+                ])
+              } catch {
+                  print("Error: \(error)")
+              }
+
               let nextFirstAid = ActivationViewController()
               self.navigationController?.pushViewController(nextFirstAid, animated: true)
             } else {

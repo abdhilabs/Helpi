@@ -40,7 +40,7 @@ class AddFriendViewController: UIViewController {
 
   @IBAction func didTapSearchButton(_ sender: Any) {
     let name = txtSearch.text ?? ""
-    cloudKitService.fetchFriend(by: name.lowercased()) { accounts in
+    cloudKitService.fetchAccount(by: name.lowercased()) { accounts in
       self.accountFriends.removeAll()
       self.accountFriends.append(contentsOf: accounts)
       self.tblFriend.reloadData()

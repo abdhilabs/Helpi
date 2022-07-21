@@ -85,7 +85,7 @@ extension WatchSessionManager {
   }
 
   func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-    replyHandler(["notes": SessionManager.shared.getPersonalNote()])
+    replyHandler(["notes": SessionManager.shared.getPersonalNote(), "recordName": SessionManager.shared.getRecordId()])
   }
 
   func handleSession(_ session: WCSession, didReceiveMessage message: [String: Any], replyHandler: (([String: Any]) -> Void)? = nil) {

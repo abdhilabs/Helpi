@@ -1,16 +1,20 @@
 PODS:
+  - JWTDecode (2.6.3)
   - lottie-ios (3.3.0)
 
 DEPENDENCIES:
+  - JWTDecode
   - lottie-ios
 
 SPEC REPOS:
   trunk:
+    - JWTDecode
     - lottie-ios
 
 SPEC CHECKSUMS:
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
 
-PODFILE CHECKSUM: 77b0738f2a9433433da0c084244c6e657ec06109
+PODFILE CHECKSUM: 02a268a746c12cfe88569e452d945dffdc7bf948
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.11.2
