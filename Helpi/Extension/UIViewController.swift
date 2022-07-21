@@ -12,7 +12,7 @@ extension UIViewController {
   func setNavigationBar() {
     navigationItem.hidesBackButton = true
     navigationItem.leftBarButtonItem = createLeftButton(color: .white, image: UIImage(systemName: "person.badge.plus")!)
-    navigationItem.rightBarButtonItem = createRightButton(color: .white, image: UIImage(systemName: "line.3.horizontal")!)
+//    navigationItem.rightBarButtonItem = createRightButton(color: .white, image: UIImage(systemName: "line.3.horizontal")!)
   }
 
   private func createLeftButton(color: UIColor, image: UIImage) -> UIBarButtonItem {

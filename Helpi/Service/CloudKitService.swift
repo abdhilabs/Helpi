@@ -186,7 +186,9 @@ class CloudKitService {
     let subscription = CKQuerySubscription(recordType: UserAccount.recordType, predicate: NSPredicate(format: "appleId == %@", appleId), options: .firesOnRecordUpdate)
 
     let info = CKSubscription.NotificationInfo()
-    info.alertBody = "I got fainted"
+    info.titleLocalizationKey = "%1$@"
+    info.titleLocalizationArgs = ["name"]
+    info.alertBody = "Help, I fainted"
     info.shouldBadge = true
     info.soundName = "default"
 

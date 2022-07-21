@@ -838,7 +838,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchHelpi_WatchKit_Extension;
@@ -865,7 +865,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchHelpi_WatchKit_Extension;
@@ -891,7 +891,7 @@
 				CODE_SIGN_ENTITLEMENTS = "WatchHelpi WatchKit Extension/WatchHelpi WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				ENABLE_PREVIEWS = YES;
@@ -900,8 +900,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = WatchHelpi_WatchKit_Extension.ExtensionDelegate;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -928,7 +927,7 @@
 				CODE_SIGN_ENTITLEMENTS = "WatchHelpi WatchKit Extension/WatchHelpi WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				ENABLE_PREVIEWS = YES;
@@ -937,8 +936,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = WatchHelpi_WatchKit_Extension.ExtensionDelegate;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1081,7 +1079,7 @@
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1121,7 +1119,7 @@
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
