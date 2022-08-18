@@ -35,6 +35,7 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
 
   var name: String = ""
   var appleId: String = ""
+  var userId: String = ""
   var identityTokenString: String = ""
 
   override func viewDidLoad() {
@@ -146,7 +147,7 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
     let emergencyPhoneSecondary = phoneNumber2.text ?? ""
 
     let account = UserAccount(identityTokenString: identityTokenString,
-                              name: name, appleId: appleId,
+                              userId: userId, name: name, appleId: appleId,
                               emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
                               emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary)
     return account

@@ -90,11 +90,15 @@ extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
     if let identityTokenData = credential.identityToken, let identityTokenString = String(data: identityTokenData, encoding: .utf8) {
       SessionManager.shared.setLoggedIn()
 
+      let decodedToken = try? decode(jwt: identityTokenString)
+      let userId = decodedToken?.idUser ?? ""
+
       let name = displayName(name: credential.fullName!)
       let appleId = credential.email!
       let nextContactController = ContactViewController()
       nextContactController.identityTokenString = identityTokenString
       nextContactController.appleId = appleId
+      nextContactController.userId = userId
       nextContactController.name = name
       self.navigationController?.pushViewController(nextContactController, animated: true)
     }
@@ -103,8 +107,8 @@ extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
   private func signInWithExistingAccount(credential: ASAuthorizationAppleIDCredential) {
     if let identityTokenData = credential.identityToken, let identityTokenString = String(data: identityTokenData, encoding: .utf8) {
       let decodedToken = try? decode(jwt: identityTokenString)
-      let appleId = decodedToken?.email ?? ""
-      cloudKitService.fetchAllAccount(filterBy: appleId) { accounts in
+      let userId = decodedToken?.idUser ?? ""
+      cloudKitService.fetchAllAccount(filterBy: userId) { accounts in
         if let account = accounts.first {
           SessionManager.shared.setLoggedIn()
           SessionManager.shared.setRecordId(with: account.recordId.recordName)

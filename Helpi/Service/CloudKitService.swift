@@ -10,6 +10,7 @@ import CloudKit
 struct UserAccount {
   var recordId: CKRecord.ID = .init()
   var identityTokenString: String
+  var userId: String
   var name: String
   var appleId: String
   var emergencyNamePrimary: String
@@ -26,6 +27,7 @@ extension UserAccount {
   var record: CKRecord {
     let record = CKRecord(recordType: UserAccount.recordType)
     record["identityTokenString"] = identityTokenString
+    record["idUser"] = userId
     record["appleId"] = appleId
     record["name"] = name
     record["emergencyNamePrimary"] = emergencyNamePrimary
@@ -54,7 +56,7 @@ class CloudKitService {
     }
   }
 
-  func fetchAllAccount(filterBy appleId: String, completion: @escaping (_ accounts: [UserAccount]) -> ()) {
+  func fetchAllAccount(filterBy userId: String, completion: @escaping (_ accounts: [UserAccount]) -> ()) {
     let query = CKQuery(recordType: UserAccount.recordType, predicate: NSPredicate(value: true))
 
     let operation = CKQueryOperation(query: query)
@@ -64,6 +66,7 @@ class CloudKitService {
       switch result {
       case .success(let record):
         if let identityTokenString = record["identityTokenString"] as? String,
+           let userId = record["idUser"] as? String,
            let name = record["name"] as? String,
            let appleId = record["appleId"] as? String,
            let emergencyNamePrimary = record["emergencyNamePrimary"] as? String,
@@ -72,7 +75,7 @@ class CloudKitService {
            let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
            let notes = record["notes"] as? String,
            let notification = record["notification"] as? String {
-          accounts.append(UserAccount(recordId: recordId, identityTokenString: identityTokenString, name: name, appleId: appleId,
+          accounts.append(UserAccount(recordId: recordId, identityTokenString: identityTokenString, userId: userId, name: name, appleId: appleId,
                                         emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
                                         emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
                                         notes: notes, notification: notification))
@@ -87,7 +90,7 @@ class CloudKitService {
 
     operation.queryResultBlock = { result in
       DispatchQueue.main.async {
-        completion(accounts.filter { $0.appleId == appleId })
+        completion(accounts.filter { $0.userId == userId })
       }
     }
 
@@ -105,6 +108,7 @@ class CloudKitService {
       switch result {
       case .success(let record):
         if let identityTokenString = record["identityTokenString"] as? String,
+           let userId = record["idUser"] as? String,
            let name = record["name"] as? String,
            let appleId = record["appleId"] as? String,
            let emergencyNamePrimary = record["emergencyNamePrimary"] as? String,
@@ -113,7 +117,7 @@ class CloudKitService {
            let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
            let notes = record["notes"] as? String,
            let notification = record["notification"] as? String {
-          accounts.append(UserAccount(recordId: recordId, identityTokenString: identityTokenString, name: name, appleId: appleId,
+          accounts.append(UserAccount(recordId: recordId, identityTokenString: identityTokenString, userId: userId, name: name, appleId: appleId,
                                         emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
                                         emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
                                         notes: notes, notification: notification))
@@ -140,6 +144,7 @@ class CloudKitService {
       if error == nil {
         if let record = record,
            let identityTokenString = record["identityTokenString"] as? String,
+           let userId = record["idUser"] as? String,
            let name = record["name"] as? String,
            let appleId = record["appleId"] as? String,
            let emergencyNamePrimary = record["emergencyNamePrimary"] as? String,
@@ -148,7 +153,7 @@ class CloudKitService {
            let emergencyPhoneSecondary = record["emergencyPhoneSecondary"] as? String,
            let notes = record["notes"] as? String,
            let notification = record["notification"] as? String {
-          let account = UserAccount(recordId: recordId, identityTokenString: identityTokenString, name: name, appleId: appleId,
+          let account = UserAccount(recordId: recordId, identityTokenString: identityTokenString, userId: userId, name: name, appleId: appleId,
                                     emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
                                     emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
                                     notes: notes, notification: notification)
