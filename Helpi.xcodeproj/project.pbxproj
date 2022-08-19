@@ -45,6 +45,27 @@
 		9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5476F2870B42100E3B603 /* TutorialViewController.swift */; };
 		9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5477128713E5000E3B603 /* SessionManager.swift */; };
 		9ABD800B288598C5009300BC /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD800A288598C5009300BC /* RootPresentationMode.swift */; };
+		9ADBC7B928AF057F0083F6D5 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7B828AF057F0083F6D5 /* HomeTabBarViewController.swift */; };
+		9ADBC7C428AF1DAB0083F6D5 /* SF-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BB28AF1DAA0083F6D5 /* SF-Medium.ttf */; };
+		9ADBC7C528AF1DAB0083F6D5 /* SF-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BB28AF1DAA0083F6D5 /* SF-Medium.ttf */; };
+		9ADBC7C628AF1DAB0083F6D5 /* SF-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BC28AF1DAA0083F6D5 /* SF-Ultralight.ttf */; };
+		9ADBC7C728AF1DAB0083F6D5 /* SF-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BC28AF1DAA0083F6D5 /* SF-Ultralight.ttf */; };
+		9ADBC7C828AF1DAB0083F6D5 /* SF-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BD28AF1DAA0083F6D5 /* SF-Semibold.ttf */; };
+		9ADBC7C928AF1DAB0083F6D5 /* SF-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BD28AF1DAA0083F6D5 /* SF-Semibold.ttf */; };
+		9ADBC7CA28AF1DAB0083F6D5 /* SF-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BE28AF1DAB0083F6D5 /* SF-Black.ttf */; };
+		9ADBC7CB28AF1DAB0083F6D5 /* SF-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BE28AF1DAB0083F6D5 /* SF-Black.ttf */; };
+		9ADBC7CC28AF1DAB0083F6D5 /* SF-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BF28AF1DAB0083F6D5 /* SF-Bold.ttf */; };
+		9ADBC7CD28AF1DAB0083F6D5 /* SF-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7BF28AF1DAB0083F6D5 /* SF-Bold.ttf */; };
+		9ADBC7CE28AF1DAB0083F6D5 /* SF-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C028AF1DAB0083F6D5 /* SF-Light.ttf */; };
+		9ADBC7CF28AF1DAB0083F6D5 /* SF-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C028AF1DAB0083F6D5 /* SF-Light.ttf */; };
+		9ADBC7D028AF1DAB0083F6D5 /* SF-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C128AF1DAB0083F6D5 /* SF-Regular.ttf */; };
+		9ADBC7D128AF1DAB0083F6D5 /* SF-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C128AF1DAB0083F6D5 /* SF-Regular.ttf */; };
+		9ADBC7D228AF1DAB0083F6D5 /* SF-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C228AF1DAB0083F6D5 /* SF-Heavy.ttf */; };
+		9ADBC7D328AF1DAB0083F6D5 /* SF-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C228AF1DAB0083F6D5 /* SF-Heavy.ttf */; };
+		9ADBC7D428AF1DAB0083F6D5 /* SF-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C328AF1DAB0083F6D5 /* SF-Thin.ttf */; };
+		9ADBC7D528AF1DAB0083F6D5 /* SF-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C328AF1DAB0083F6D5 /* SF-Thin.ttf */; };
+		9ADBC7D728AF1DE40083F6D5 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */; };
+		9ADBC7D928AF1F550083F6D5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7D828AF1F550083F6D5 /* UIColor.swift */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F812864AB21000D3386 /* Helpi.xcdatamodeld */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
@@ -180,6 +201,18 @@
 		9AA5476F2870B42100E3B603 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		9AA5477128713E5000E3B603 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		9ABD800A288598C5009300BC /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
+		9ADBC7B828AF057F0083F6D5 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		9ADBC7BB28AF1DAA0083F6D5 /* SF-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Medium.ttf"; sourceTree = "<group>"; };
+		9ADBC7BC28AF1DAA0083F6D5 /* SF-Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Ultralight.ttf"; sourceTree = "<group>"; };
+		9ADBC7BD28AF1DAA0083F6D5 /* SF-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Semibold.ttf"; sourceTree = "<group>"; };
+		9ADBC7BE28AF1DAB0083F6D5 /* SF-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Black.ttf"; sourceTree = "<group>"; };
+		9ADBC7BF28AF1DAB0083F6D5 /* SF-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Bold.ttf"; sourceTree = "<group>"; };
+		9ADBC7C028AF1DAB0083F6D5 /* SF-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Light.ttf"; sourceTree = "<group>"; };
+		9ADBC7C128AF1DAB0083F6D5 /* SF-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Regular.ttf"; sourceTree = "<group>"; };
+		9ADBC7C228AF1DAB0083F6D5 /* SF-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Heavy.ttf"; sourceTree = "<group>"; };
+		9ADBC7C328AF1DAB0083F6D5 /* SF-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Thin.ttf"; sourceTree = "<group>"; };
+		9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		9ADBC7D828AF1F550083F6D5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9AE05F752864AB21000D3386 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE05F782864AB21000D3386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE05F822864AB21000D3386 /* Helpi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Helpi.xcdatamodel; sourceTree = "<group>"; };
@@ -290,6 +323,8 @@
 				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
 				9A9120C52872EE3E005B8C0B /* String.swift */,
 				9A21308328891BB8004A28AA /* JWT.swift */,
+				9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */,
+				9ADBC7D828AF1F550083F6D5 /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -387,6 +422,30 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		9ADBC7B728AF053E0083F6D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9ADBC7B828AF057F0083F6D5 /* HomeTabBarViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9ADBC7BA28AF1CEF0083F6D5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9ADBC7BE28AF1DAB0083F6D5 /* SF-Black.ttf */,
+				9ADBC7BF28AF1DAB0083F6D5 /* SF-Bold.ttf */,
+				9ADBC7C228AF1DAB0083F6D5 /* SF-Heavy.ttf */,
+				9ADBC7C028AF1DAB0083F6D5 /* SF-Light.ttf */,
+				9ADBC7BB28AF1DAA0083F6D5 /* SF-Medium.ttf */,
+				9ADBC7C128AF1DAB0083F6D5 /* SF-Regular.ttf */,
+				9ADBC7BD28AF1DAA0083F6D5 /* SF-Semibold.ttf */,
+				9ADBC7C328AF1DAB0083F6D5 /* SF-Thin.ttf */,
+				9ADBC7BC28AF1DAA0083F6D5 /* SF-Ultralight.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		9AE05F6C2864AB21000D3386 = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +486,7 @@
 		9AE05F942864B470000D3386 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9ADBC7BA28AF1CEF0083F6D5 /* Fonts */,
 				9AE05F842864AB24000D3386 /* Assets.xcassets */,
 				9AE05F892864AB24000D3386 /* Info.plist */,
 				EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */,
@@ -448,6 +508,7 @@
 		9AE05F962864B4C1000D3386 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				9ADBC7B728AF053E0083F6D5 /* Home */,
 				A0802D6D286C8469004A22CB /* FirstAidScreen */,
 				A0A3368E286A175D00988028 /* HealthKit */,
 				A054125C2871771800529401 /* MainView */,
@@ -666,8 +727,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADBC7C928AF1DAB0083F6D5 /* SF-Semibold.ttf in Resources */,
+				9ADBC7C528AF1DAB0083F6D5 /* SF-Medium.ttf in Resources */,
+				9ADBC7D128AF1DAB0083F6D5 /* SF-Regular.ttf in Resources */,
 				9A2130872889205F004A28AA /* Sound_Alert.mp3 in Resources */,
+				9ADBC7D528AF1DAB0083F6D5 /* SF-Thin.ttf in Resources */,
+				9ADBC7C728AF1DAB0083F6D5 /* SF-Ultralight.ttf in Resources */,
 				9A3585C1287FA8820006EF21 /* Preview Assets.xcassets in Resources */,
+				9ADBC7D328AF1DAB0083F6D5 /* SF-Heavy.ttf in Resources */,
+				9ADBC7CB28AF1DAB0083F6D5 /* SF-Black.ttf in Resources */,
+				9ADBC7CD28AF1DAB0083F6D5 /* SF-Bold.ttf in Resources */,
+				9ADBC7CF28AF1DAB0083F6D5 /* SF-Light.ttf in Resources */,
 				9A3585BE287FA8820006EF21 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,6 +747,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07BB951286B696B00A3DE30 /* OnboardViewController.xib in Resources */,
+				9ADBC7CA28AF1DAB0083F6D5 /* SF-Black.ttf in Resources */,
 				9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */,
 				EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */,
 				9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */,
@@ -684,19 +755,27 @@
 				9AE05F932864B427000D3386 /* MainViewController.xib in Resources */,
 				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
 				EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */,
+				9ADBC7D228AF1DAB0083F6D5 /* SF-Heavy.ttf in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
 				EEE04201286D315500A2B04D /* ProfileSetupViewController.xib in Resources */,
 				9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */,
 				9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */,
+				9ADBC7D428AF1DAB0083F6D5 /* SF-Thin.ttf in Resources */,
 				A07BB7C3286B622000A3DE30 /* Podfile in Resources */,
 				A078FF46286C5B75006D686F /* AddNoteViewController.xib in Resources */,
+				9ADBC7CC28AF1DAB0083F6D5 /* SF-Bold.ttf in Resources */,
 				A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */,
+				9ADBC7C428AF1DAB0083F6D5 /* SF-Medium.ttf in Resources */,
+				9ADBC7C828AF1DAB0083F6D5 /* SF-Semibold.ttf in Resources */,
 				9A2130862889205B004A28AA /* Sound_Alert.mp3 in Resources */,
+				9ADBC7D028AF1DAB0083F6D5 /* SF-Regular.ttf in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
 				A0802D8B286C8653004A22CB /* FirstAidCollectionViewCell.xib in Resources */,
+				9ADBC7C628AF1DAB0083F6D5 /* SF-Ultralight.ttf in Resources */,
 				A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */,
 				A0802D81286C854F004A22CB /* FirstAidScreen.xib in Resources */,
 				A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */,
+				9ADBC7CE28AF1DAB0083F6D5 /* SF-Light.ttf in Resources */,
 				A09E03B2286EC0CD005391F0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,6 +851,7 @@
 				9A1F8B8C286D211400F6E16C /* UIViewController.swift in Sources */,
 				9A1F8B852869F2CA00F6E16C /* CircularProgressBarView.swift in Sources */,
 				9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */,
+				9ADBC7D728AF1DE40083F6D5 /* UIFont.swift in Sources */,
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
 				9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */,
@@ -780,12 +860,14 @@
 				9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
 				EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */,
+				9ADBC7B928AF057F0083F6D5 /* HomeTabBarViewController.swift in Sources */,
 				9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */,
 				A09E03B1286EC0CD005391F0 /* HomeViewController.swift in Sources */,
 				A078FF45286C5B75006D686F /* AddNoteViewController.swift in Sources */,
 				A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				A0802D83286C8594004A22CB /* ModelFirstAid.swift in Sources */,
+				9ADBC7D928AF1F550083F6D5 /* UIColor.swift in Sources */,
 				9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */,
 				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
 				A0802D8A286C8653004A22CB /* FirstAidCollectionViewCell.swift in Sources */,
