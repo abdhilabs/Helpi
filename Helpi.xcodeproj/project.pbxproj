@@ -66,6 +66,7 @@
 		9ADBC7D528AF1DAB0083F6D5 /* SF-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7C328AF1DAB0083F6D5 /* SF-Thin.ttf */; };
 		9ADBC7D728AF1DE40083F6D5 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */; };
 		9ADBC7D928AF1F550083F6D5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7D828AF1F550083F6D5 /* UIColor.swift */; };
+		9ADBC7DB28AF36DA0083F6D5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F812864AB21000D3386 /* Helpi.xcdatamodeld */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
@@ -213,6 +214,7 @@
 		9ADBC7C328AF1DAB0083F6D5 /* SF-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Thin.ttf"; sourceTree = "<group>"; };
 		9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		9ADBC7D828AF1F550083F6D5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9AE05F752864AB21000D3386 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE05F782864AB21000D3386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE05F822864AB21000D3386 /* Helpi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Helpi.xcdatamodel; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				9A21308328891BB8004A28AA /* JWT.swift */,
 				9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */,
 				9ADBC7D828AF1F550083F6D5 /* UIColor.swift */,
+				9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -844,6 +847,7 @@
 				EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */,
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
+				9ADBC7DB28AF36DA0083F6D5 /* UIImage.swift in Sources */,
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
 				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
