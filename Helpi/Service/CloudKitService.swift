@@ -40,9 +40,31 @@ extension UserAccount {
   }
 }
 
+struct HistoryLog {
+  var recordId: CKRecord.ID = .init()
+  var additionalInfo: String
+  var symptom: String
+  var time: String
+  var date: String
+}
+
+extension HistoryLog {
+  static let recordType = "ArrhythmiaLog"
+
+  var record: CKRecord {
+    let record = CKRecord(recordType: HistoryLog.recordType)
+    record["additionalInfo"] = additionalInfo
+    record["symptom"] = symptom
+    record["time"] = time
+    record["date"] = date
+    return record
+  }
+}
+
 class CloudKitService {
 
   private let publicDatabase: CKDatabase = CKContainer(identifier: "iCloud.com.mc2.helpi").publicCloudDatabase
+  private let privateDatabase: CKDatabase = CKContainer(identifier: "iCloud.com.mc2.helpi").privateCloudDatabase
 
   func register(by param: UserAccount, completion: @escaping (_ isSuccess: Bool) -> ()) {
     publicDatabase.save(param.record) { record, error in
@@ -76,9 +98,9 @@ class CloudKitService {
            let notes = record["notes"] as? String,
            let notification = record["notification"] as? String {
           accounts.append(UserAccount(recordId: recordId, identityTokenString: identityTokenString, userId: userId, name: name, appleId: appleId,
-                                        emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
-                                        emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
-                                        notes: notes, notification: notification))
+                                      emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
+                                      emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
+                                      notes: notes, notification: notification))
           print("Name: \(name)")
           print("AppleId: \(appleId)")
           print("RecordIDs: \(recordId)")
@@ -118,9 +140,9 @@ class CloudKitService {
            let notes = record["notes"] as? String,
            let notification = record["notification"] as? String {
           accounts.append(UserAccount(recordId: recordId, identityTokenString: identityTokenString, userId: userId, name: name, appleId: appleId,
-                                        emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
-                                        emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
-                                        notes: notes, notification: notification))
+                                      emergencyNamePrimary: emergencyNamePrimary, emergencyNameSecondary: emergencyNameSecondary,
+                                      emergencyPhonePrimary: emergencyPhonePrimary, emergencyPhoneSecondary: emergencyPhoneSecondary,
+                                      notes: notes, notification: notification))
           print("Name: \(name)")
           print("AppleId: \(appleId)")
           print("RecordIDs: \(recordId)")
@@ -208,5 +230,49 @@ class CloudKitService {
         print("Error: \(String(describing: error?.localizedDescription))")
       }
     }
+  }
+
+  func saveLogHistory(with param: HistoryLog, completion: @escaping (_ isSuccess: Bool, _ isRegistered: Bool) -> ()) {
+    CKContainer.default().accountStatus { [self] accountStatus, error in
+      if accountStatus == .noAccount {
+        completion(false, false)
+      } else {
+        privateDatabase.save(param.record) { record, error in
+          if error == nil {
+            completion(true, true)
+          } else {
+            completion(false, true)
+          }
+        }
+      }
+    }
+  }
+
+  func fetchLogHistory(completion: @escaping (_ logs: [HistoryLog]) -> ()) {
+    let query = CKQuery(recordType: HistoryLog.recordType, predicate: NSPredicate(value: true))
+
+    let operation = CKQueryOperation(query: query)
+
+    var logs: [HistoryLog] = []
+    operation.recordMatchedBlock = { (recordId, result) in
+      switch result {
+      case .success(let record):
+        if let additionalInfo = record["additionalInfo"] as? String,
+           let symptom = record["symptom"] as? String,
+           let time = record["time"] as? String,
+           let date = record["date"] as? String {
+
+          logs.append(HistoryLog(additionalInfo: additionalInfo, symptom: symptom, time: time, date: date))
+        }
+      case .failure(let error):
+        print("Error: \(error.localizedDescription)")
+      }
+    }
+
+    operation.queryResultBlock = { result in
+      completion(logs)
+    }
+
+    privateDatabase.add(operation)
   }
 }

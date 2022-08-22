@@ -54,6 +54,7 @@
 		9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */; };
 		9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5476F2870B42100E3B603 /* TutorialViewController.swift */; };
 		9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5477128713E5000E3B603 /* SessionManager.swift */; };
+		9AB6973F28B3C9EC00673A58 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6973E28B3C9EC00673A58 /* Date.swift */; };
 		9ABD800B288598C5009300BC /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD800A288598C5009300BC /* RootPresentationMode.swift */; };
 		9ADBC7B928AF057F0083F6D5 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7B828AF057F0083F6D5 /* HomeTabBarViewController.swift */; };
 		9ADBC7D728AF1DE40083F6D5 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */; };
@@ -223,6 +224,7 @@
 		9A92EA132881160C00C606FE /* ConfirmAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAlertView.swift; sourceTree = "<group>"; };
 		9AA5476F2870B42100E3B603 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		9AA5477128713E5000E3B603 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		9AB6973E28B3C9EC00673A58 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		9ABD800A288598C5009300BC /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
 		9ADBC7B828AF057F0083F6D5 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 				9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */,
 				9ADBC7D828AF1F550083F6D5 /* UIColor.swift */,
 				9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */,
+				9AB6973E28B3C9EC00673A58 /* Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -944,6 +947,7 @@
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
 				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
+				9AB6973F28B3C9EC00673A58 /* Date.swift in Sources */,
 				9A1F8B8F286D264F00F6E16C /* PersonalNoteViewController.swift in Sources */,
 				9A1F8B8C286D211400F6E16C /* UIViewController.swift in Sources */,
 				9A1F8B852869F2CA00F6E16C /* CircularProgressBarView.swift in Sources */,

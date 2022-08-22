@@ -9,8 +9,14 @@ import UIKit
 
 class AddHistoryViewController: UIViewController {
 
+  @IBOutlet weak var txtSymptom: UITextField!
   @IBOutlet weak var viewTimeBackground: UIStackView!
   @IBOutlet weak var pickerTime: UIDatePicker!
+  @IBOutlet weak var txtAdditionalInfo: UITextField!
+
+  private let cloudKitService = CloudKitService()
+
+  var historyDate: Date = .now
 
   override func viewWillAppear(_ animated: Bool) {
     navigationItem.title = "Riwayat Baru"
@@ -24,6 +30,8 @@ class AddHistoryViewController: UIViewController {
   }
 
   private func setupViews() {
+    addTapGestureToHideKeyboard()
+
     viewTimeBackground.layer.cornerRadius = 10
     pickerTime.largeContentTitle = "Time"
   }
@@ -34,6 +42,32 @@ class AddHistoryViewController: UIViewController {
 
   @objc func didTapSaveButton() {
 
+    guard let additionalInfo = txtAdditionalInfo.text, let syptom = txtSymptom.text else { return }
+    let time = pickerTime.date.string(format: "HH:mm a")
+
+    cloudKitService.saveLogHistory(with: .init(additionalInfo: additionalInfo, symptom: syptom, time: time, date: historyDate.string())) { [weak self] isSuccess, isRegistered in
+      if isSuccess {
+        DispatchQueue.main.async {
+          self?.dismiss(animated: true)
+        }
+      } else {
+        if !isRegistered {
+          let message = """
+                            Sign in to your iCloud account to write records.
+                            On the Home screen, launch Settings, tap Sign in to your
+                            iPhone/iPad, and enter your Apple ID. Turn iCloud Drive on.
+                            """
+          let alert = UIAlertController(
+            title: "Sign in to iCloud",
+            message: message,
+            preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+          self?.present(alert, animated: true)
+        } else {
+          
+        }
+      }
+    }
   }
 
 }
