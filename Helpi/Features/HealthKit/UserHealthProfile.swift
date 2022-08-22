@@ -9,10 +9,10 @@ import HealthKit
 
 class UserHealthProfile {
   
-    var age: Int?
-    var biologicalSex: HKBiologicalSex?
-    var bloodType: HKBloodType?
-    var heightInMeters: Double?
-    var weightInKilograms: Double?
-    var birthday: Date?
+  var age: Int?
+  var biologicalSex: HKBiologicalSex?
+  var bloodType: HKBloodType?
+  var heightInMeters: Double?
+  var weightInKilograms: Double?
+  var birthday: Date?
 }

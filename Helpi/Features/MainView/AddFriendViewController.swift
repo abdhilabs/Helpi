@@ -8,13 +8,13 @@
 import UIKit
 
 class AddFriendViewController: UIViewController {
-
+  
   @IBOutlet weak var txtSearch: UITextField!
   @IBOutlet weak var tblFriend: UITableView!
-
+  
   private let cloudKitService = CloudKitService()
   private var accountFriends: [UserAccount] = []
-
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationItem.title = "Tambahkan teman"
@@ -22,22 +22,22 @@ class AddFriendViewController: UIViewController {
     barButton.tintColor = .black
     navigationItem.rightBarButtonItem = barButton
   }
-
+  
   @objc func didTapCloseButton() {
     dismiss(animated: true)
   }
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     tblFriend.register(UINib(nibName: "FriendTableViewCell", bundle: nil),
                        forCellReuseIdentifier: String(describing: FriendTableViewCell.self))
     tblFriend.delegate = self
     tblFriend.dataSource = self
-
+    
     addTapGestureToHideKeyboard()
   }
-
+  
   @IBAction func didTapSearchButton(_ sender: Any) {
     let name = txtSearch.text ?? ""
     cloudKitService.fetchAccount(by: name.lowercased()) { accounts in
@@ -49,16 +49,16 @@ class AddFriendViewController: UIViewController {
 }
 
 extension AddFriendViewController: UITableViewDelegate, UITableViewDataSource {
-
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     accountFriends.count
   }
-
+  
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FriendTableViewCell.self), for: indexPath) as? FriendTableViewCell else {
       return UITableViewCell()
     }
-
+    
     let friend = accountFriends[indexPath.row]
     cell.lblTitle.text = friend.name
     cell.addHandler = {

@@ -11,7 +11,7 @@ extension JWT {
   var email: String? {
     return claim(name: "email").string
   }
-
+  
   var idUser: String? {
     return claim(name: "sub").string
   }

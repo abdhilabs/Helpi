@@ -9,38 +9,41 @@ import UIKit
 import Lottie
 
 class OnboardingCollectionViewCell: UICollectionViewCell {
+  
+  @IBOutlet weak var imageOnboarding: UIImageView!
+  @IBOutlet weak var title: UILabel!
+  @IBOutlet weak var descriptionText: UILabel!
+  
+  static let identifier = "OnboardingCollectionViewCell"
+  
+  var animation = AnimationView()
+  var image = UIImageView()
+  
+  // Instance of the Lottie AnimationView
+  func configureCell(onboarding: Onboarding){
+    animation = AnimationView(name: onboarding.image)
+    animation.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: imageOnboarding.frame.height)
     
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var animationContainer: UIView!
-    @IBOutlet weak var descriptionText: UILabel!
+    //Customize the animation
+    animation.animationSpeed = 1
+    animation.loopMode = .loop
+    animation.play()
+    imageOnboarding.addSubview(animation)
     
-    static let identifier = "OnboardingCollectionViewCell"
+    self.imageOnboarding.image = UIImage(named: onboarding.image)
     
-    var animation = AnimationView()
+    //Set Title
+    self.descriptionText.text = onboarding.description
+    self.title.text = onboarding.title
+    self.title.font = .rounded(ofSize:24, weight: .semibold)
+    self.descriptionText.font = .rounded(ofSize: 17, weight: .regular)
     
-    // Instance of the Lottie AnimationView
-    func configureCell(onboarding: Onboarding){
-        animation = AnimationView(name: onboarding.animationName)
-      animation.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: animationContainer.frame.height)
-        
-        //Customize the animation
-        animation.animationSpeed = 1
-        animation.loopMode = .loop
-        animation.play()
-        animationContainer.addSubview(animation)
-        
-        //Set Title
-        self.descriptionText.text = onboarding.description
-        self.title.text = onboarding.title
-        self.title.font = .rounded(ofSize:24, weight: .bold)
-        self.descriptionText.font = .rounded(ofSize: 16, weight: .regular)
-        
-    }
+  }
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    // Initialization code
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-        
-    }
-    
+  }
+  
 }

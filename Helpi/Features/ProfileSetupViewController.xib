@@ -10,10 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileSetupViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
-                <outlet property="loginLabel" destination="GRf-y8-ey7" id="Inh-eG-Xvv"/>
+                <outlet property="loginLabel" destination="U7T-3E-5es" id="f0C-qA-RAE"/>
                 <outlet property="loginProviderStackView" destination="ExG-bt-r5v" id="iP9-ev-qoK"/>
-                <outlet property="skipButton" destination="HqR-Ih-7P0" id="WNA-6s-yMM"/>
-                <outlet property="titleLabel" destination="Wfs-d5-iFc" id="rdJ-AA-Cd9"/>
+                <outlet property="skipButton" destination="5gb-SA-Cms" id="tme-Xq-EZL"/>
+                <outlet property="titleLabel" destination="nss-o5-mrg" id="0Hk-sV-kkC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,75 +22,82 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up your profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfs-d5-iFc">
-                    <rect key="frame" x="93" y="84" width="204" height="29"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-y8-ey7">
-                    <rect key="frame" x="42" y="133" width="306" height="81.333333333333314"/>
-                    <string key="text">Sign in using Apple ID to add helpee, so you can send and receive notification from your helpee or helper once the alert button is pressed</string>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_signin" translatesAutoresizingMaskIntoConstraints="NO" id="H0J-Q2-tEn">
+                    <rect key="frame" x="0.0" y="74" width="390" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="qaq-wO-Bo0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siapkan Profil Anda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nss-o5-mrg">
+                    <rect key="frame" x="20" y="533" width="350" height="20.333333333333371"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqR-Ih-7P0">
-                    <rect key="frame" x="20" y="755" width="350" height="35"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Skip">
-                                <attributes>
-                                    <font key="NSFont" size="18" name="Helvetica"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <color key="baseForegroundColor" systemColor="labelColor"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="btnSkip:" destination="-1" eventType="touchUpInside" id="xKE-G3-gec"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExG-bt-r5v">
-                    <rect key="frame" x="20" y="701" width="350" height="46"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7T-3E-5es">
+                    <rect key="frame" x="20" y="573.33333333333337" width="350" height="101.66666666666663"/>
+                    <string key="text">Mendaftar menggunakan ID Apple untuk menambahkan helpee, sehingga Anda dapat mengirim dan menerima pemberitahuan dari helpee atau helper Anda setelah tombol peringatan ditekan</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.24705882352941178" green="0.24705882352941178" blue="0.24705882352941178" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-uq-ATo">
+                    <rect key="frame" x="20" y="715" width="350" height="99"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExG-bt-r5v">
+                            <rect key="frame" x="5" y="0.0" width="340" height="60"/>
+                            <color key="backgroundColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="agh-nR-aYn"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="applelogo" catalog="system" title="  Masuk dengan Apple">
+                                <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="didTapSignInButton" destination="-1" eventType="touchUpInside" id="GwL-1t-blD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gb-SA-Cms">
+                            <rect key="frame" x="142.33333333333334" y="68" width="65.666666666666657" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Lewati">
+                                <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="btnSkip:" destination="-1" eventType="touchUpInside" id="CXV-wE-WZK"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="46" id="cbi-4F-tai"/>
+                        <constraint firstAttribute="trailing" secondItem="ExG-bt-r5v" secondAttribute="trailing" constant="5" id="HeC-eL-Jqw"/>
+                        <constraint firstItem="ExG-bt-r5v" firstAttribute="leading" secondItem="MpA-uq-ATo" secondAttribute="leading" constant="5" id="gSz-af-INe"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="applelogo" catalog="system" title="  Continue with Apple">
-                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="didTapSignInButton" destination="-1" eventType="touchUpInside" id="GwL-1t-blD"/>
-                    </connections>
-                </button>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="GRf-y8-ey7" firstAttribute="top" secondItem="Wfs-d5-iFc" secondAttribute="bottom" constant="20" id="Bgt-6Y-ASH"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HqR-Ih-7P0" secondAttribute="bottom" constant="20" id="EmM-9V-Cbi"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ExG-bt-r5v" secondAttribute="trailing" constant="20" id="FiE-Xn-WMA"/>
-                <constraint firstItem="HqR-Ih-7P0" firstAttribute="top" secondItem="ExG-bt-r5v" secondAttribute="bottom" constant="8" id="H1S-bw-ByE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GRf-y8-ey7" secondAttribute="trailing" constant="42" id="HCc-Fa-PyW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HqR-Ih-7P0" secondAttribute="trailing" constant="20" id="JGt-71-7qR"/>
-                <constraint firstItem="Wfs-d5-iFc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RcV-vj-QbC"/>
-                <constraint firstItem="HqR-Ih-7P0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hM4-0D-aZD"/>
-                <constraint firstItem="Wfs-d5-iFc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="qRj-T8-Nua"/>
-                <constraint firstItem="GRf-y8-ey7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="42" id="rCR-XE-dyV"/>
-                <constraint firstItem="ExG-bt-r5v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xID-38-8zp"/>
+                <constraint firstItem="nss-o5-mrg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1fa-d3-2H4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MpA-uq-ATo" secondAttribute="trailing" constant="20" id="7Fz-2d-FF3"/>
+                <constraint firstItem="MpA-uq-ATo" firstAttribute="top" secondItem="U7T-3E-5es" secondAttribute="bottom" constant="40" id="7Pu-8q-OWr"/>
+                <constraint firstItem="H0J-Q2-tEn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Dtz-bX-Oh7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U7T-3E-5es" secondAttribute="trailing" constant="20" id="OxQ-4Y-cdY"/>
+                <constraint firstAttribute="bottom" secondItem="MpA-uq-ATo" secondAttribute="bottom" constant="30" id="Ptj-D4-q4B"/>
+                <constraint firstItem="U7T-3E-5es" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="S3v-Hb-6gM"/>
+                <constraint firstItem="H0J-Q2-tEn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Sk6-p1-sw9"/>
+                <constraint firstItem="MpA-uq-ATo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Tcc-Ja-rfJ"/>
+                <constraint firstItem="U7T-3E-5es" firstAttribute="top" secondItem="nss-o5-mrg" secondAttribute="bottom" constant="20" id="cAN-5X-x0Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nss-o5-mrg" secondAttribute="trailing" constant="20" id="sbd-bV-jVM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H0J-Q2-tEn" secondAttribute="trailing" id="tHE-s0-H5I"/>
             </constraints>
             <point key="canvasLocation" x="136.92307692307691" y="80.33175355450237"/>
         </view>
     </objects>
     <resources>
         <image name="applelogo" catalog="system" width="103" height="128"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="image_signin" width="393" height="399"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

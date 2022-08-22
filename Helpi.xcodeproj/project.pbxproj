@@ -114,11 +114,13 @@
 		A0802D83286C8594004A22CB /* ModelFirstAid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D82286C8594004A22CB /* ModelFirstAid.swift */; };
 		A0802D8A286C8653004A22CB /* FirstAidCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D88286C8653004A22CB /* FirstAidCollectionViewCell.swift */; };
 		A0802D8B286C8653004A22CB /* FirstAidCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */; };
+		A087D41128AFE73500FFA26C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087D41028AFE73500FFA26C /* CircularProgressView.swift */; };
 		A09E03B1286EC0CD005391F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E03AF286EC0CD005391F0 /* HomeViewController.swift */; };
 		A09E03B2286EC0CD005391F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09E03B0286EC0CD005391F0 /* HomeViewController.xib */; };
 		A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A3369C286A1DD100988028 /* HealthKit.framework */; };
 		A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
 		A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
+		A0FA501328B28AEB00C60B41 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA501228B28AEB00C60B41 /* customButton.swift */; };
 		EE2CDA992880EE8800C0FAFD /* HelpConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */; };
 		EE2CDA9B2880F3C800C0FAFD /* GratitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */; };
 		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
@@ -278,12 +280,16 @@
 		A0802D82286C8594004A22CB /* ModelFirstAid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFirstAid.swift; sourceTree = "<group>"; };
 		A0802D88286C8653004A22CB /* FirstAidCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidCollectionViewCell.swift; sourceTree = "<group>"; };
 		A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAidCollectionViewCell.xib; sourceTree = "<group>"; };
+		A087D41028AFE73500FFA26C /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		A09E03AF286EC0CD005391F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A09E03B0286EC0CD005391F0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A0A3369C286A1DD100988028 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		A0E4C3AA28851CFF00D15760 /* AVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVService.swift; sourceTree = "<group>"; };
 		A2A32FE3A867F8EE26DA796B /* Pods-Helpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.release.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.release.xcconfig"; sourceTree = "<group>"; };
 		E7442EA0904F85209C905669 /* Pods-Helpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.debug.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.debug.xcconfig"; sourceTree = "<group>"; };
+		A0FA501228B28AEB00C60B41 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		A38C454D9E81CC18B52A5DC2 /* Pods-Helpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.release.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.release.xcconfig"; sourceTree = "<group>"; };
+		E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Helpi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpConfirmationView.swift; sourceTree = "<group>"; };
 		EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeView.swift; sourceTree = "<group>"; };
 		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
@@ -643,6 +649,7 @@
 				9A1F8B802869EF5000F6E16C /* AssistanceViewController.xib */,
 				9A1F8B8D286D264F00F6E16C /* PersonalNoteViewController.swift */,
 				9A1F8B8E286D264F00F6E16C /* PersonalNoteViewController.xib */,
+				A087D41028AFE73500FFA26C /* CircularProgressView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -663,6 +670,7 @@
 				A07BB94A286B696B00A3DE30 /* OnboardViewController.swift */,
 				A07BB94C286B696B00A3DE30 /* OnboardViewController.xib */,
 				A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */,
+				A0FA501228B28AEB00C60B41 /* customButton.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -942,6 +950,7 @@
 				EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */,
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
 				9A4E0C0028B332B20099B8FD /* DetailSummaryViewController.swift in Sources */,
+				A0FA501328B28AEB00C60B41 /* customButton.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
 				9ADBC7DB28AF36DA0083F6D5 /* UIImage.swift in Sources */,
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
@@ -949,6 +958,7 @@
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
 				9AB6973F28B3C9EC00673A58 /* Date.swift in Sources */,
 				9A1F8B8F286D264F00F6E16C /* PersonalNoteViewController.swift in Sources */,
+				A087D41128AFE73500FFA26C /* CircularProgressView.swift in Sources */,
 				9A1F8B8C286D211400F6E16C /* UIViewController.swift in Sources */,
 				9A1F8B852869F2CA00F6E16C /* CircularProgressBarView.swift in Sources */,
 				9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */,

@@ -18,47 +18,47 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Up Back Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-mE-pxe">
-                    <rect key="frame" x="118.5" y="114" width="177" height="29"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cara aktifasi back tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-mE-pxe">
+                    <rect key="frame" x="90" y="94" width="234" height="29"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure you have the latest version of iOS on your iPhone 8 or later." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sui-Uf-Pkb">
-                    <rect key="frame" x="105" y="198" width="259" height="61"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pastikan Anda memiliki iOS versi terbaru di iPhone 8 atau lebih baru." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sui-Uf-Pkb">
+                    <rect key="frame" x="105" y="163" width="259" height="61"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to Settings &gt; Accessibility &gt; Touch, and tap Back Tap." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-he-Jyj">
-                    <rect key="frame" x="105" y="289" width="259" height="41"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buka Pengaturan &gt; Aksesibilitas &gt; Sentuh, lalu ketuk Kembali Ketuk." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-he-Jyj">
+                    <rect key="frame" x="105" y="254" width="259" height="61"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Double Tap or Triple Tap and choose an action." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kI-rk-1AS">
-                    <rect key="frame" x="105" y="360" width="259" height="41"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ketuk Ketuk Dua Kali atau Ketuk Tiga Kali dan pilih tindakan." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kI-rk-1AS">
+                    <rect key="frame" x="105" y="345" width="259" height="41"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double or triple tap on the back of your iPhone to trigger the action you set." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xb-GU-MVL">
-                    <rect key="frame" x="101" y="431" width="263" height="61"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ketuk dua kali atau tiga kali di bagian belakang iPhone Anda untuk memicu tindakan yang Anda atur." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xb-GU-MVL">
+                    <rect key="frame" x="101" y="416" width="263" height="61"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle.Number1" translatesAutoresizingMaskIntoConstraints="NO" id="fAi-hH-XBh">
-                    <rect key="frame" x="40" y="208.5" width="40" height="40"/>
+                    <rect key="frame" x="40" y="173.5" width="40" height="40"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle.Number2" translatesAutoresizingMaskIntoConstraints="NO" id="eu4-Mf-Tqh">
-                    <rect key="frame" x="40" y="289.5" width="40" height="40"/>
+                    <rect key="frame" x="40" y="264.5" width="40" height="40"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle.Number4" translatesAutoresizingMaskIntoConstraints="NO" id="gZ3-H2-eUK">
-                    <rect key="frame" x="36" y="441.5" width="40" height="40"/>
+                    <rect key="frame" x="36" y="426.5" width="40" height="40"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle.Number3" translatesAutoresizingMaskIntoConstraints="NO" id="Y9M-EX-nlI">
-                    <rect key="frame" x="40" y="360.5" width="40" height="40"/>
+                    <rect key="frame" x="40" y="345.5" width="40" height="40"/>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -74,11 +74,11 @@
                 <constraint firstItem="0aa-he-Jyj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="105" id="Sss-3u-YUg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Xb-GU-MVL" secondAttribute="trailing" constant="50" id="U5W-wK-EOn"/>
                 <constraint firstItem="Sui-Uf-Pkb" firstAttribute="leading" secondItem="fAi-hH-XBh" secondAttribute="trailing" constant="25" id="af2-St-gdB"/>
-                <constraint firstItem="8qD-mE-pxe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="ahK-y5-n7A"/>
+                <constraint firstItem="8qD-mE-pxe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="ahK-y5-n7A"/>
                 <constraint firstItem="Y9M-EX-nlI" firstAttribute="centerY" secondItem="3kI-rk-1AS" secondAttribute="centerY" id="bhC-qe-e4e"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3kI-rk-1AS" secondAttribute="trailing" constant="50" id="cNV-qP-Hb9"/>
                 <constraint firstItem="8qD-mE-pxe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cRC-hO-7fr"/>
-                <constraint firstItem="Sui-Uf-Pkb" firstAttribute="top" secondItem="8qD-mE-pxe" secondAttribute="bottom" constant="55" id="dSe-yq-6b5"/>
+                <constraint firstItem="Sui-Uf-Pkb" firstAttribute="top" secondItem="8qD-mE-pxe" secondAttribute="bottom" constant="40" id="dSe-yq-6b5"/>
                 <constraint firstItem="Sui-Uf-Pkb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="105" id="jfM-pZ-ycD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0aa-he-Jyj" secondAttribute="trailing" constant="50" id="rJC-cz-Td0"/>
                 <constraint firstItem="3kI-rk-1AS" firstAttribute="leading" secondItem="Y9M-EX-nlI" secondAttribute="trailing" constant="25" id="sKM-Al-5rF"/>

@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,8 +12,6 @@
             <connections>
                 <outlet property="btnDone" destination="1id-7f-0jc" id="lex-yM-sWy"/>
                 <outlet property="btnEmergency" destination="l2q-rZ-7M3" id="fvC-4l-9at"/>
-                <outlet property="btnNext" destination="2Ke-vS-5up" id="0NB-d0-ZCM"/>
-                <outlet property="btnPrevious" destination="WPD-8y-3nQ" id="ij5-OY-x62"/>
                 <outlet property="collectionView" destination="l5C-Qu-yER" id="GT6-Yk-GHo"/>
                 <outlet property="label1" destination="Voj-ia-syC" id="Nwb-dE-2hv"/>
                 <outlet property="label2" destination="Qjf-Ka-awW" id="dRQ-dB-jBv"/>
@@ -33,8 +30,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="l5C-Qu-yER">
-                    <rect key="frame" x="0.0" y="174" width="414" height="572"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="l5C-Qu-yER">
+                    <rect key="frame" x="0.0" y="174" width="414" height="587"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6nf-ZO-YQp">
                         <size key="itemSize" width="128" height="128"/>
@@ -43,28 +40,18 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Bpy-79-9Io">
+                    <rect key="frame" x="29" y="822" width="365" height="24"/>
+                    <color key="pageIndicatorTintColor" red="1" green="0.1843137255" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="pageChanged:" destination="-1" eventType="valueChanged" id="3bA-mj-LCF"/>
+                    </connections>
+                </pageControl>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-22-X0O">
-                    <rect key="frame" x="20" y="766" width="374" height="46"/>
+                    <rect key="frame" x="20" y="781" width="374" height="31"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPD-8y-3nQ">
-                            <rect key="frame" x="0.0" y="0.0" width="60" height="46"/>
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="46" id="a5c-cE-dt8"/>
-                                <constraint firstAttribute="width" constant="60" id="f8n-Dr-0nB"/>
-                            </constraints>
-                            <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
-                                <imageReference key="image" image="arrowtriangle.backward.fill" catalog="system" symbolScale="small"/>
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="btnPrevious:" destination="-1" eventType="touchUpInside" id="q5b-WC-lT1"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2q-rZ-7M3">
-                            <rect key="frame" x="72" y="0.0" width="230" height="46"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
                             <color key="tintColor" red="0.23921568627450979" green="0.23529411764705882" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Emergency Call" cornerStyle="capsule"/>
@@ -72,31 +59,8 @@
                                 <action selector="btnEmergency:" destination="-1" eventType="touchUpInside" id="vrx-UX-db3"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ke-vS-5up">
-                            <rect key="frame" x="314" y="0.0" width="60" height="46"/>
-                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="60" id="V8G-JX-qGg"/>
-                                <constraint firstAttribute="height" constant="46" id="uuk-Av-6n4"/>
-                            </constraints>
-                            <color key="tintColor" red="0.64434248670000005" green="0.57541086070000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
-                                <imageReference key="image" image="arrowtriangle.right.fill" catalog="system" symbolScale="small"/>
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="btnNext:" destination="-1" eventType="touchUpInside" id="GAk-nO-Rom"/>
-                            </connections>
-                        </button>
                     </subviews>
                 </stackView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Bpy-79-9Io">
-                    <rect key="frame" x="29" y="822" width="365" height="24"/>
-                    <connections>
-                        <action selector="pageChanged:" destination="-1" eventType="valueChanged" id="3bA-mj-LCF"/>
-                    </connections>
-                </pageControl>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kdx-Rf-FMd">
                     <rect key="frame" x="80" y="74" width="224" height="50"/>
                     <subviews>
@@ -110,7 +74,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="1" green="0.10588235294117647" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="JJT-a5-wdl"/>
                                 <constraint firstAttribute="height" constant="50" id="QXk-Bi-LPV"/>
@@ -219,16 +183,8 @@
         </view>
     </objects>
     <resources>
-        <image name="arrowtriangle.backward.fill" catalog="system" width="128" height="113"/>
-        <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

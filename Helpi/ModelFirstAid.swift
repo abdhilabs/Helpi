@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 
 struct FirstAid {
-    let image: String
-    let title: String
-    let description: String
+  let title: String
+  let guide: [Guide]
+}
+
+struct Guide{
+  let image: String
+  let description: String
 }
