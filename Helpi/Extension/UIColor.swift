@@ -11,6 +11,7 @@ extension UIColor {
   static let primaryOrange = UIColor(hexString: "#FF2F07")
   static let primarylightBlue = UIColor(hexString: "#999999")
 
+  static let lightOrange = UIColor(hexString: "#FFD6CF")
 }
 
 extension UIColor {

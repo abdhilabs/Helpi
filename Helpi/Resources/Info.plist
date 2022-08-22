@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ATSApplicationFontsPath</key>
+	<string>Resources/Fonts</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -16,6 +18,18 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 		</dict>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Compact-Rounded-Black.ttf</string>
+		<string>SF-Compact-Rounded-Bold.ttf</string>
+		<string>SF-Compact-Rounded-Heavy.ttf</string>
+		<string>SF-Compact-Rounded-Light.ttf</string>
+		<string>SF-Compact-Rounded-Medium.ttf</string>
+		<string>SF-Compact-Rounded-Semibold.ttf</string>
+		<string>SF-Compact-Rounded-Thin.ttf</string>
+		<string>SF-Compact-Rounded-Ultralight.ttf</string>
+		<string>SF-Compact-Rounded-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

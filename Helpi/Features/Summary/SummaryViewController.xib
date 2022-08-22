@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SummaryViewController" customModule="Helpi" customModuleProvider="target">
+            <connections>
+                <outlet property="tblSummary" destination="q6T-lc-zSe" id="Vne-FX-eDM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zd-P6-WXb">
+                    <rect key="frame" x="16" y="60" width="382" height="81.5"/>
+                    <string key="text">Ringkasan 
+Kesehatan</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6T-lc-zSe">
+                    <rect key="frame" x="0.0" y="157.5" width="414" height="704.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6Zd-P6-WXb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="3fE-ac-Wup"/>
+                <constraint firstItem="6Zd-P6-WXb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="R3O-o7-6Th"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Zd-P6-WXb" secondAttribute="trailing" constant="16" id="TqE-db-eSR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="q6T-lc-zSe" secondAttribute="bottom" id="bRb-zv-4LM"/>
+                <constraint firstItem="q6T-lc-zSe" firstAttribute="top" secondItem="6Zd-P6-WXb" secondAttribute="bottom" constant="16" id="lVi-IS-Pcj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q6T-lc-zSe" secondAttribute="trailing" id="ntp-Za-TfV"/>
+                <constraint firstItem="q6T-lc-zSe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rZ8-8v-rNI"/>
+            </constraints>
+            <point key="canvasLocation" x="228" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
