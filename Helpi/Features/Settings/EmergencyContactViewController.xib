@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmergencyContactViewController" customModule="Helpi" customModuleProvider="target">
+            <connections>
+                <outlet property="lblDescription" destination="h8y-LD-N5R" id="OzH-cm-0dm"/>
+                <outlet property="tblEmergencyContact" destination="1sV-WW-YS9" id="1MQ-0d-hRB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1sV-WW-YS9">
+                    <rect key="frame" x="0.0" y="74" width="414" height="193"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8y-LD-N5R">
+                    <rect key="frame" x="30" y="287" width="354" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="SKn-XI-5xE"/>
+                    </constraints>
+                    <string key="text">Kontak darurat akan menerima pemberitahuan saat pengguna dalam keadaan darurat. Kontak juga akan ditampilkan saat keadaan darurat agar dapat dihubungi oleh penolong.</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="h8y-LD-N5R" firstAttribute="top" secondItem="1sV-WW-YS9" secondAttribute="bottom" constant="20" id="BHk-Ah-J5C"/>
+                <constraint firstItem="1sV-WW-YS9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NHQ-z9-mOM"/>
+                <constraint firstItem="1sV-WW-YS9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZZj-BI-dwk"/>
+                <constraint firstItem="1sV-WW-YS9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Zsf-Rn-ApQ"/>
+                <constraint firstItem="h8y-LD-N5R" firstAttribute="centerX" secondItem="1sV-WW-YS9" secondAttribute="centerX" id="qGG-IB-uoq"/>
+                <constraint firstItem="h8y-LD-N5R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="u4t-q3-Hnc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h8y-LD-N5R" secondAttribute="bottom" constant="513" id="y5y-hM-iti"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
