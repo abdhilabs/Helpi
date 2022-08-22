@@ -1,20 +1,24 @@
 PODS:
-  - JWTDecode (2.6.3)
-  - lottie-ios (3.3.0)
+  - FSCalendar (2.8.4)
+  - JWTDecode (3.0.0)
+  - lottie-ios (3.4.2)
 
 DEPENDENCIES:
+  - FSCalendar
   - JWTDecode
   - lottie-ios
 
 SPEC REPOS:
   trunk:
+    - FSCalendar
     - JWTDecode
     - lottie-ios
 
 SPEC CHECKSUMS:
-  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
-  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  JWTDecode: 82480a7173f8a811954e7e14a2b59f688ca4222a
+  lottie-ios: 6bbc53eef6957e4744a50321507015fba72d8ca6
 
-PODFILE CHECKSUM: 02a268a746c12cfe88569e452d945dffdc7bf948
+PODFILE CHECKSUM: 96fb95c135a6b8a93157a6da31ff99d09dc0a9d3
 
 COCOAPODS: 1.11.2

@@ -1,7 +1,9 @@
 platform :ios, '15.5'
 
+use_frameworks!
 target 'Helpi' do
-pod 'lottie-ios'
-pod 'JWTDecode'
+  pod 'lottie-ios'
+  pod 'JWTDecode'
+  pod 'FSCalendar'
 
 end

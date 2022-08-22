@@ -23,23 +23,23 @@ extension UIFont {
   class func font(type: FontType, size: CGFloat) -> UIFont {
     switch type {
     case .sfBlack:
-      return UIFont(name: "SF-Black", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Black", size: size) ?? .systemFont(ofSize: size)
     case .sfBold:
-      return UIFont(name: "SF-Bold", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Bold", size: size) ?? .systemFont(ofSize: size)
     case .sfHeavy:
-      return UIFont(name: "SF-Heavy", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Heavy", size: size) ?? .systemFont(ofSize: size)
     case .sfLight:
-      return UIFont(name: "SF-Light", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Light", size: size) ?? .systemFont(ofSize: size)
     case .sfMedium:
-      return UIFont(name: "SF-Medium", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Medium", size: size) ?? .systemFont(ofSize: size)
     case .sfRegular:
-      return UIFont(name: "SF-Regular", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Regular", size: size) ?? .systemFont(ofSize: size)
     case .sfSemibold:
-      return UIFont(name: "SF-Semibold", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Semibold", size: size) ?? .systemFont(ofSize: size)
     case .sfThin:
-      return UIFont(name: "SF-Thin", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Thin", size: size) ?? .systemFont(ofSize: size)
     case .sfUltralight:
-      return UIFont(name: "SF-Ultralight", size: size) ?? .systemFont(ofSize: size)
+      return UIFont(name: "SF-Compact-Rounded-Ultralight", size: size) ?? .systemFont(ofSize: size)
     }
   }
 }
