@@ -5,5 +5,5 @@ target 'Helpi' do
   pod 'lottie-ios'
   pod 'JWTDecode'
   pod 'FSCalendar'
-
+  pod 'Charts'
 end

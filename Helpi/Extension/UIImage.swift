@@ -16,4 +16,8 @@ extension UIImage {
   static let iconSummaryActive = UIImage(named: "ic-summary-active")!
   static let iconMore = UIImage(named: "ic-more")!
   static let iconMoreActive = UIImage(named: "ic-more-active")!
+
+  static let iconHeartCardiogram = UIImage(named: "ic-heart-cardiogram")!
+  static let iconSaturation = UIImage(named: "ic-saturation")!
+  static let iconElectrocardiogram = UIImage(named: "ic-electrocardiogram")!
 }

@@ -39,6 +39,12 @@
 		9A4E0BEF28B3017E0099B8FD /* HistoryLogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E0BED28B3017E0099B8FD /* HistoryLogTableViewCell.xib */; };
 		9A4E0BF228B30D7D0099B8FD /* AddHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF028B30D7D0099B8FD /* AddHistoryViewController.swift */; };
 		9A4E0BF328B30D7D0099B8FD /* AddHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF128B30D7D0099B8FD /* AddHistoryViewController.xib */; };
+		9A4E0BF728B328AD0099B8FD /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF528B328AD0099B8FD /* SummaryViewController.swift */; };
+		9A4E0BF828B328AD0099B8FD /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF628B328AD0099B8FD /* SummaryViewController.xib */; };
+		9A4E0BFC28B32B610099B8FD /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BFA28B32B610099B8FD /* SummaryTableViewCell.swift */; };
+		9A4E0BFD28B32B610099B8FD /* SummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E0BFB28B32B610099B8FD /* SummaryTableViewCell.xib */; };
+		9A4E0C0028B332B20099B8FD /* DetailSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BFE28B332B20099B8FD /* DetailSummaryViewController.swift */; };
+		9A4E0C0128B332B20099B8FD /* DetailSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E0BFF28B332B20099B8FD /* DetailSummaryViewController.xib */; };
 		9A5679532887AD0D00891964 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5679522887AD0D00891964 /* ExtensionDelegate.swift */; };
 		9A5679552887AE7200891964 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5679542887AE7200891964 /* Notifications.swift */; };
 		9A705146288123090085DE71 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A705145288123090085DE71 /* CloudKit.framework */; };
@@ -203,6 +209,12 @@
 		9A4E0BED28B3017E0099B8FD /* HistoryLogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryLogTableViewCell.xib; sourceTree = "<group>"; };
 		9A4E0BF028B30D7D0099B8FD /* AddHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHistoryViewController.swift; sourceTree = "<group>"; };
 		9A4E0BF128B30D7D0099B8FD /* AddHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHistoryViewController.xib; sourceTree = "<group>"; };
+		9A4E0BF528B328AD0099B8FD /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		9A4E0BF628B328AD0099B8FD /* SummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
+		9A4E0BFA28B32B610099B8FD /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		9A4E0BFB28B32B610099B8FD /* SummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryTableViewCell.xib; sourceTree = "<group>"; };
+		9A4E0BFE28B332B20099B8FD /* DetailSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSummaryViewController.swift; sourceTree = "<group>"; };
+		9A4E0BFF28B332B20099B8FD /* DetailSummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSummaryViewController.xib; sourceTree = "<group>"; };
 		9A5679522887AD0D00891964 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		9A5679542887AE7200891964 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		9A705144288122FF0085DE71 /* WatchHelpi WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchHelpi WatchKit Extension.entitlements"; sourceTree = "<group>"; };
@@ -438,6 +450,27 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9A4E0BF428B3272A0099B8FD /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				9A4E0BFE28B332B20099B8FD /* DetailSummaryViewController.swift */,
+				9A4E0BFF28B332B20099B8FD /* DetailSummaryViewController.xib */,
+				9A4E0BF528B328AD0099B8FD /* SummaryViewController.swift */,
+				9A4E0BF628B328AD0099B8FD /* SummaryViewController.xib */,
+				9A4E0BF928B32B430099B8FD /* Views */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		9A4E0BF928B32B430099B8FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A4E0BFA28B32B610099B8FD /* SummaryTableViewCell.swift */,
+				9A4E0BFB28B32B610099B8FD /* SummaryTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9ABD8009288598AB009300BC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +577,7 @@
 		9AE05F962864B4C1000D3386 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				9A4E0BF428B3272A0099B8FD /* Summary */,
 				9ADBC7FC28B2781C0083F6D5 /* Log */,
 				9ADBC7B728AF053E0083F6D5 /* Home */,
 				A0802D6D286C8469004A22CB /* FirstAidScreen */,
@@ -798,6 +832,7 @@
 				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
 				9AF662DC28B2FE0E00C862B5 /* SF-Compact-Rounded-Black.ttf in Resources */,
 				EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */,
+				9A4E0BF828B328AD0099B8FD /* SummaryViewController.xib in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
 				9AF662F228B2FE7000C862B5 /* SF-Compact-Rounded-Semibold.ttf in Resources */,
 				EEE04201286D315500A2B04D /* ProfileSetupViewController.xib in Resources */,
@@ -805,11 +840,13 @@
 				9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */,
 				9AF662F028B2FE7000C862B5 /* SF-Compact-Rounded-Bold.ttf in Resources */,
 				A07BB7C3286B622000A3DE30 /* Podfile in Resources */,
+				9A4E0BFD28B32B610099B8FD /* SummaryTableViewCell.xib in Resources */,
 				A078FF46286C5B75006D686F /* AddNoteViewController.xib in Resources */,
 				A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */,
 				9AF662EC28B2FE7000C862B5 /* SF-Compact-Rounded-Regular.ttf in Resources */,
 				9A2130862889205B004A28AA /* Sound_Alert.mp3 in Resources */,
 				9A4E0BEF28B3017E0099B8FD /* HistoryLogTableViewCell.xib in Resources */,
+				9A4E0C0128B332B20099B8FD /* DetailSummaryViewController.xib in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
 				A0802D8B286C8653004A22CB /* FirstAidCollectionViewCell.xib in Resources */,
 				A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */,
@@ -901,6 +938,7 @@
 				EEE04200286D315500A2B04D /* ProfileSetupViewController.swift in Sources */,
 				EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */,
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
+				9A4E0C0028B332B20099B8FD /* DetailSummaryViewController.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
 				9ADBC7DB28AF36DA0083F6D5 /* UIImage.swift in Sources */,
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
@@ -915,6 +953,7 @@
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
 				9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */,
+				9A4E0BF728B328AD0099B8FD /* SummaryViewController.swift in Sources */,
 				9A1F8B93286DCF3B00F6E16C /* AddFriendViewController.swift in Sources */,
 				9AFC0848288456D2001F13CD /* WatchSessionManager.swift in Sources */,
 				9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */,
@@ -943,6 +982,7 @@
 				A07BB94E286B696B00A3DE30 /* OnboardingCollectionViewCell.swift in Sources */,
 				A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
 				A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */,
+				9A4E0BFC28B32B610099B8FD /* SummaryTableViewCell.swift in Sources */,
 				A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
