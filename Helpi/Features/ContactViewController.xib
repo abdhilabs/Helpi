@@ -10,18 +10,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
-                <outlet property="btnContact1" destination="HC7-Sh-XEU" id="6m5-CM-SDR"/>
-                <outlet property="btnContact2" destination="44L-vr-XTp" id="Ztc-oA-lyT"/>
+                <outlet property="btnFirstEmergencyContact" destination="HC7-Sh-XEU" id="6m5-CM-SDR"/>
                 <outlet property="btnSave" destination="RGw-Zw-rKs" id="6VT-L1-VEl"/>
+                <outlet property="btnSecondaryEmergencyContact" destination="44L-vr-XTp" id="Ztc-oA-lyT"/>
                 <outlet property="btnSkip" destination="9oe-AF-hCt" id="7xB-mQ-gV0"/>
-                <outlet property="descriptionText" destination="nc7-Ml-ppP" id="G2r-Zy-fZN"/>
-                <outlet property="fullName1" destination="x1u-y3-u1h" id="prk-Y7-MUl"/>
-                <outlet property="fullName2" destination="EOc-sW-tdm" id="Sho-kl-cyS"/>
-                <outlet property="phoneNumber1" destination="k20-Se-blV" id="mth-ER-SBU"/>
-                <outlet property="phoneNumber2" destination="X5B-3c-zZX" id="AWI-wM-m8L"/>
-                <outlet property="titleJudul1" destination="U9Z-oN-BVX" id="f4t-4V-heX"/>
-                <outlet property="titleJudul2" destination="ux2-Os-Hct" id="VqA-4v-7aE"/>
-                <outlet property="titleLabel" destination="dX1-yT-HJi" id="XqU-p7-vT1"/>
+                <outlet property="lblDescription" destination="nc7-Ml-ppP" id="G2r-Zy-fZN"/>
+                <outlet property="lblFirstEmergencyTitle" destination="U9Z-oN-BVX" id="f4t-4V-heX"/>
+                <outlet property="lblSecondaryEmergencyTitle" destination="ux2-Os-Hct" id="VqA-4v-7aE"/>
+                <outlet property="lblTitle" destination="dX1-yT-HJi" id="XqU-p7-vT1"/>
+                <outlet property="txtFirstEmergencyName" destination="x1u-y3-u1h" id="prk-Y7-MUl"/>
+                <outlet property="txtFirstEmergencyPhone" destination="k20-Se-blV" id="mth-ER-SBU"/>
+                <outlet property="txtSecondaryEmergencyName" destination="EOc-sW-tdm" id="Sho-kl-cyS"/>
+                <outlet property="txtSecondaryEmergencyPhone" destination="X5B-3c-zZX" id="AWI-wM-m8L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,25 +30,26 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-yT-HJi">
-                    <rect key="frame" x="20" y="64" width="374" height="30"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kontak Darurat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-yT-HJi">
+                    <rect key="frame" x="20" y="64" width="374" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding your family, relatives or friends as emergency contact can help first responders know who to reach out." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc7-Ml-ppP">
-                    <rect key="frame" x="30" y="114" width="354" height="54"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc7-Ml-ppP">
+                    <rect key="frame" x="30" y="117.5" width="354" height="72"/>
+                    <string key="text">Menambahkan setidaknya 1 keluarga, kerabat, atau teman Anda sebagai kontak darurat dapat membantu rpenolong mengetahui siapa yang harus dihubungi.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.24705882352941178" green="0.24705882352941178" blue="0.24705882352941178" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-a7-YMd">
-                    <rect key="frame" x="20" y="198" width="374" height="315"/>
+                    <rect key="frame" x="20" y="229.5" width="374" height="379"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v91-4H-W3z">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="147.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="179.5"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contact 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9Z-oN-BVX">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kontak Darurat 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9Z-oN-BVX">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -57,21 +58,27 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-Sh-XEU">
                                     <rect key="frame" x="0.0" y="30.5" width="374" height="31"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Add From Contact"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Tambahkan Dari Kontak"/>
                                     <connections>
-                                        <action selector="btnContact1:" destination="-1" eventType="touchUpInside" id="EYb-rB-m03"/>
+                                        <action selector="didTapFirstContactButton:" destination="-1" eventType="touchUpInside" id="UsD-FS-sEc"/>
                                     </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ifj-Ur-8xE">
-                                    <rect key="frame" x="0.0" y="71.5" width="374" height="76"/>
+                                    <rect key="frame" x="0.0" y="71.5" width="374" height="108"/>
                                     <subviews>
                                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-y3-u1h">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="CeR-13-98K"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="255" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k20-Se-blV">
-                                            <rect key="frame" x="0.0" y="42" width="374" height="34"/>
+                                            <rect key="frame" x="0.0" y="58" width="374" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="LXi-OS-8nj"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -80,9 +87,9 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qMa-0x-d2X">
-                            <rect key="frame" x="0.0" y="167.5" width="374" height="147.5"/>
+                            <rect key="frame" x="0.0" y="199.5" width="374" height="179.5"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contact 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-Os-Hct">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kontak Darurat 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-Os-Hct">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -91,21 +98,27 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44L-vr-XTp">
                                     <rect key="frame" x="0.0" y="30.5" width="374" height="31"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Add From Contact"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Tambahkan Dari Kontak"/>
                                     <connections>
                                         <action selector="btnContact2:" destination="-1" eventType="touchUpInside" id="5Kf-Uk-b5Y"/>
                                     </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6W4-yI-Mha">
-                                    <rect key="frame" x="0.0" y="71.5" width="374" height="76"/>
+                                    <rect key="frame" x="0.0" y="71.5" width="374" height="108"/>
                                     <subviews>
                                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EOc-sW-tdm">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="gFD-c9-IM7"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5B-3c-zZX">
-                                            <rect key="frame" x="0.0" y="42" width="374" height="34"/>
+                                            <rect key="frame" x="0.0" y="58" width="374" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="VJg-kw-A5a"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -116,21 +129,23 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oe-AF-hCt">
-                    <rect key="frame" x="20" y="811" width="374" height="31"/>
+                    <rect key="frame" x="20" y="835" width="374" height="31"/>
                     <color key="tintColor" red="0.1647058874" green="0.14901961389999999" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Skip"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Lewati">
+                        <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
                     <connections>
                         <action selector="btnSkip:" destination="-1" eventType="touchUpInside" id="f2f-9Q-G4C"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGw-Zw-rKs">
-                    <rect key="frame" x="20" y="760" width="374" height="46"/>
+                    <rect key="frame" x="20" y="770" width="374" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="46" id="nCY-hx-8vo"/>
+                        <constraint firstAttribute="height" constant="60" id="nCY-hx-8vo"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Save">
+                    <buttonConfiguration key="configuration" style="plain" title="Simpan">
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
@@ -150,11 +165,11 @@
                 <constraint firstItem="9oe-AF-hCt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WgA-9X-v2J"/>
                 <constraint firstItem="9oe-AF-hCt" firstAttribute="top" secondItem="RGw-Zw-rKs" secondAttribute="bottom" constant="5" id="YSu-tq-xQM"/>
                 <constraint firstItem="dX1-yT-HJi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="bry-gY-fcR"/>
-                <constraint firstItem="iiG-a7-YMd" firstAttribute="top" secondItem="nc7-Ml-ppP" secondAttribute="bottom" constant="30" id="cpk-rU-Xex"/>
+                <constraint firstItem="iiG-a7-YMd" firstAttribute="top" secondItem="nc7-Ml-ppP" secondAttribute="bottom" constant="40" id="cpk-rU-Xex"/>
                 <constraint firstItem="RGw-Zw-rKs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iiG-a7-YMd" secondAttribute="bottom" constant="20" id="ffo-1R-fQV"/>
                 <constraint firstItem="nc7-Ml-ppP" firstAttribute="top" secondItem="dX1-yT-HJi" secondAttribute="bottom" constant="20" id="fw9-bi-esS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9oe-AF-hCt" secondAttribute="trailing" constant="20" id="jha-ab-7oD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9oe-AF-hCt" secondAttribute="bottom" constant="20" id="vHC-Np-8Ax"/>
+                <constraint firstAttribute="bottom" secondItem="9oe-AF-hCt" secondAttribute="bottom" constant="30" id="vHC-Np-8Ax"/>
                 <constraint firstItem="dX1-yT-HJi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xmL-L0-KtU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dX1-yT-HJi" secondAttribute="trailing" constant="20" id="yOL-ev-WzZ"/>
             </constraints>

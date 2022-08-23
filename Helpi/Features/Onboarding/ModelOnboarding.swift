@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 struct Onboarding {
-    let animationName: String
-    let title: String
-    let description: String
+  let image: String
+  let title: String
+  let description: String
 }

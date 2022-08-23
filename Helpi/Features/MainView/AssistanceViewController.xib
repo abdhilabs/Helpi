@@ -10,9 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssistanceViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="btnStart" destination="eaB-1A-Uur" id="Qjk-yS-bMT"/>
-                <outlet property="descText" destination="e01-uU-fRu" id="Bw7-ym-deH"/>
-                <outlet property="titleLabel1" destination="exU-BA-bIV" id="3I6-qJ-wLP"/>
-                <outlet property="titleLabel2" destination="O8U-XF-QFW" id="jUs-mj-Yry"/>
+                <outlet property="lblDescription" destination="e01-uU-fRu" id="Bw7-ym-deH"/>
+                <outlet property="lblSubtitle" destination="O8U-XF-QFW" id="jUs-mj-Yry"/>
+                <outlet property="lblTitle" destination="exU-BA-bIV" id="3I6-qJ-wLP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,64 +21,67 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rmr-B1-X4R">
-                    <rect key="frame" x="20" y="286" width="374" height="324.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="rmr-B1-X4R">
+                    <rect key="frame" x="20" y="318" width="374" height="260.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y6X-7R-dif">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="104"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exU-BA-bIV">
-                                    <rect key="frame" x="120" y="0.0" width="134" height="60"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tolong!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exU-BA-bIV">
+                                    <rect key="frame" x="94.5" y="0.0" width="185.5" height="60"/>
                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
-                                    <color key="textColor" red="1" green="0.10588235294117647" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I fainted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8U-XF-QFW">
-                                    <rect key="frame" x="132.5" y="68" width="109.5" height="36"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aku Aritmia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8U-XF-QFW">
+                                    <rect key="frame" x="108" y="68" width="158.5" height="36"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                    <color key="textColor" red="1" green="0.1058823529" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                         </stackView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help! My name is - and I fainted. Please don’t panic and tap on Start Assistance to help me." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e01-uU-fRu">
-                            <rect key="frame" x="0.0" y="154" width="374" height="64.5"/>
+                            <rect key="frame" x="0.0" y="196" width="374" height="64.5"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaB-1A-Uur">
-                            <rect key="frame" x="0.0" y="268.5" width="374" height="56"/>
-                            <color key="backgroundColor" red="0.27058823529999998" green="0.79215686269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="56" id="l6q-VV-kBi"/>
-                            </constraints>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Start Assistance">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                    <integer key="value" value="8"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="didTapStartButton:" destination="-1" eventType="touchUpInside" id="sUi-q3-Fc2"/>
-                            </connections>
-                        </button>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaB-1A-Uur">
+                    <rect key="frame" x="20" y="772" width="374" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="l6q-VV-kBi"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Start Assistance">
+                        <color key="titleColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapStartButton:" destination="-1" eventType="touchUpInside" id="sUi-q3-Fc2"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.23921568630000001" green="0.23529411759999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="eaB-1A-Uur" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="14D-7g-B6Z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rmr-B1-X4R" secondAttribute="trailing" constant="20" id="1ne-xa-AvR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eaB-1A-Uur" secondAttribute="bottom" constant="30" id="FAx-Mv-aeP"/>
                 <constraint firstItem="rmr-B1-X4R" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="M1x-we-HeI"/>
                 <constraint firstItem="rmr-B1-X4R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nnt-1K-VXO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eaB-1A-Uur" secondAttribute="trailing" constant="20" id="P00-y8-pAg"/>
                 <constraint firstItem="rmr-B1-X4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mIU-Bw-Gyo"/>
             </constraints>
-            <point key="canvasLocation" x="306" y="11"/>
+            <point key="canvasLocation" x="280" y="-38"/>
         </view>
     </objects>
 </document>

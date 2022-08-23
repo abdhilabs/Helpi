@@ -23,7 +23,7 @@ struct UserAccount {
 
 extension UserAccount {
   static let recordType = "Helpi"
-
+  
   var record: CKRecord {
     let record = CKRecord(recordType: UserAccount.recordType)
     record["identityTokenString"] = identityTokenString
@@ -62,10 +62,10 @@ extension HistoryLog {
 }
 
 class CloudKitService {
-
+  
   private let publicDatabase: CKDatabase = CKContainer(identifier: "iCloud.com.mc2.helpi").publicCloudDatabase
   private let privateDatabase: CKDatabase = CKContainer(identifier: "iCloud.com.mc2.helpi").privateCloudDatabase
-
+  
   func register(by param: UserAccount, completion: @escaping (_ isSuccess: Bool) -> ()) {
     publicDatabase.save(param.record) { record, error in
       if error == nil {
@@ -77,12 +77,12 @@ class CloudKitService {
       }
     }
   }
-
+  
   func fetchAllAccount(filterBy userId: String, completion: @escaping (_ accounts: [UserAccount]) -> ()) {
     let query = CKQuery(recordType: UserAccount.recordType, predicate: NSPredicate(value: true))
-
+    
     let operation = CKQueryOperation(query: query)
-
+    
     var accounts: [UserAccount] = []
     operation.recordMatchedBlock = { (recordId, result) in
       switch result {
@@ -109,22 +109,22 @@ class CloudKitService {
         print("Error: \(error.localizedDescription)")
       }
     }
-
+    
     operation.queryResultBlock = { result in
       DispatchQueue.main.async {
         completion(accounts.filter { $0.userId == userId })
       }
     }
-
+    
     publicDatabase.add(operation)
   }
-
+  
   func fetchAccount(by name: String, completion: @escaping (_ accounts: [UserAccount]) -> ()) {
     let query = CKQuery(recordType: UserAccount.recordType, predicate: NSPredicate(value: true))
     //    query.sortDescriptors = [NSSortDescriptor(key: "recordName", ascending: false)]
-
+    
     let operation = CKQueryOperation(query: query)
-
+    
     var accounts: [UserAccount] = []
     operation.recordMatchedBlock = { (recordId, result) in
       switch result {
@@ -151,16 +151,16 @@ class CloudKitService {
         print("Error: \(error.localizedDescription)")
       }
     }
-
+    
     operation.queryResultBlock = { result in
       DispatchQueue.main.async {
         completion(accounts.filter { $0.name.lowercased().contains(name) })
       }
     }
-
+    
     publicDatabase.add(operation)
   }
-
+  
   func fetchAccount(by recordId: CKRecord.ID, completion: @escaping (_ account: UserAccount) -> ()) {
     publicDatabase.fetch(withRecordID: recordId) { record, error in
       if error == nil {
@@ -189,7 +189,7 @@ class CloudKitService {
       }
     }
   }
-
+  
   func updateDataFriend(by recordId: CKRecord.ID, completion: @escaping (_ name: String) -> ()) {
     let randomValue = Int.random(in: 1...1000)
     publicDatabase.fetch(withRecordID: recordId) { record, error in
@@ -208,19 +208,19 @@ class CloudKitService {
       }
     }
   }
-
+  
   func subscribeToDatabase(for appleId: String, completion: @escaping (_ isSuccess: Bool) -> ()) {
     let subscription = CKQuerySubscription(recordType: UserAccount.recordType, predicate: NSPredicate(format: "appleId == %@", appleId), options: .firesOnRecordUpdate)
-
+    
     let info = CKSubscription.NotificationInfo()
     info.titleLocalizationKey = "%1$@"
     info.titleLocalizationArgs = ["name"]
     info.alertBody = "Help, I fainted"
     info.shouldBadge = true
     info.soundName = "default"
-
+    
     subscription.notificationInfo = info
-
+    
     publicDatabase.save(subscription) { subscription, error in
       if error == nil {
         completion(true)

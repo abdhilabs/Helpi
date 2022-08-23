@@ -12,8 +12,8 @@
             <connections>
                 <outlet property="btnConnectHealth" destination="uV8-Zt-iFl" id="fbA-Mk-AGP"/>
                 <outlet property="btnSkip" destination="ffT-BE-skd" id="Xk7-hd-R5g"/>
-                <outlet property="collectionView" destination="fq2-cs-M9E" id="K8k-ag-Fva"/>
-                <outlet property="pageControl" destination="mA6-WZ-1eP" id="1gu-3b-tUj"/>
+                <outlet property="colOnboarding" destination="fq2-cs-M9E" id="K8k-ag-Fva"/>
+                <outlet property="pgOnboarding" destination="mA6-WZ-1eP" id="1gu-3b-tUj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fq2-cs-M9E">
-                    <rect key="frame" x="0.0" y="44" width="414" height="690"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="591.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YAw-Xk-eiS">
                         <size key="itemSize" width="128" height="128"/>
@@ -33,9 +33,9 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mA6-WZ-1eP">
-                    <rect key="frame" x="149" y="748" width="116" height="26"/>
+                    <rect key="frame" x="149" y="734" width="116" height="26"/>
                     <color key="pageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="currentPageIndicatorTintColor" systemColor="systemIndigoColor"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <action selector="pageChanged:" destination="-1" eventType="valueChanged" id="ODV-xO-C6y"/>
                     </connections>
@@ -44,21 +44,22 @@
                     <rect key="frame" x="30" y="835" width="354" height="31"/>
                     <color key="tintColor" systemColor="systemBlueColor"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Skip">
-                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Lewati">
+                        <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
                         <action selector="skipBtn:" destination="-1" eventType="touchUpInside" id="GH1-ve-hDf"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-Zt-iFl">
-                    <rect key="frame" x="20" y="784" width="374" height="46"/>
+                    <rect key="frame" x="20" y="770" width="374" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="46" id="M7D-it-O6o"/>
+                        <constraint firstAttribute="height" constant="60" id="M7D-it-O6o"/>
                         <constraint firstAttribute="width" constant="374" id="wox-wj-v1v"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Next">
+                    <buttonConfiguration key="configuration" style="plain" title="Selanjutnya">
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
@@ -73,7 +74,7 @@
                 <constraint firstItem="ffT-BE-skd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7iJ-DD-01n"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="COe-6J-dMe"/>
                 <constraint firstItem="ffT-BE-skd" firstAttribute="top" secondItem="uV8-Zt-iFl" secondAttribute="bottom" constant="5" id="Iwb-JS-R0K"/>
-                <constraint firstItem="fq2-cs-M9E" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.77" id="P6B-xL-LoM"/>
+                <constraint firstItem="fq2-cs-M9E" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.66" id="P6B-xL-LoM"/>
                 <constraint firstItem="uV8-Zt-iFl" firstAttribute="top" secondItem="mA6-WZ-1eP" secondAttribute="bottom" constant="10" id="QhA-Fc-KgX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fq2-cs-M9E" secondAttribute="trailing" id="VqW-Wf-NNo"/>
                 <constraint firstItem="fq2-cs-M9E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fca-Br-TQG"/>
@@ -91,9 +92,6 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

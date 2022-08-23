@@ -20,7 +20,7 @@ extension HKBloodType {
     case .oPositive: return "O+"
     case .oNegative: return "O-"
     @unknown default:
-        fatalError()
+      fatalError()
     }
-}
+  }
 }

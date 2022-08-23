@@ -10,7 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoneViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="btnHome" destination="U2o-S4-jYf" id="cmb-Jn-Ps3"/>
-                <outlet property="labelThankyou" destination="qh7-ZY-feE" id="vwQ-S1-PiO"/>
+                <outlet property="lblTitle" destination="1rS-y7-A7Q" id="rtf-1C-2Hv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,39 +19,52 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2o-S4-jYf">
-                    <rect key="frame" x="35" y="539.5" width="344" height="46"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageDone" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-bC-zRG">
+                    <rect key="frame" x="73" y="299" width="268" height="298"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="46" id="l0N-g3-e1y"/>
+                        <constraint firstAttribute="height" constant="298" id="Nxx-RY-VnY"/>
+                        <constraint firstAttribute="width" constant="268" id="rA2-X0-jeV"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2o-S4-jYf">
+                    <rect key="frame" x="20" y="782" width="374" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="RON-ED-qsh"/>
                     </constraints>
                     <color key="tintColor" red="0.23921568630000001" green="0.23529411759999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Home" cornerStyle="capsule">
                         <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
                         <action selector="btnHome:" destination="-1" eventType="touchUpInside" id="k0h-Z4-pTG"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for Saving me ! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh7-ZY-feE">
-                    <rect key="frame" x="40" y="244" width="334" height="95.5"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terima Kasih \nsudah membantu saya!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rS-y7-A7Q">
+                    <rect key="frame" x="60" y="60" width="294" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.23921568627450979" green="0.23529411764705882" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="qh7-ZY-feE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="3yt-gt-soQ"/>
-                <constraint firstItem="U2o-S4-jYf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="CT9-9I-ESe"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U2o-S4-jYf" secondAttribute="trailing" constant="35" id="Xeh-at-Zs4"/>
-                <constraint firstItem="qh7-ZY-feE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="ljT-az-VIc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qh7-ZY-feE" secondAttribute="trailing" constant="40" id="omy-Td-21C"/>
-                <constraint firstItem="U2o-S4-jYf" firstAttribute="top" secondItem="qh7-ZY-feE" secondAttribute="bottom" constant="200" id="tsW-2o-cSX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1rS-y7-A7Q" secondAttribute="trailing" constant="60" id="0AU-ap-IWC"/>
+                <constraint firstItem="hIW-bC-zRG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="68y-ex-XEO"/>
+                <constraint firstItem="1rS-y7-A7Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="KUU-Rm-Fpm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="U2o-S4-jYf" secondAttribute="bottom" constant="20" id="anZ-dQ-GjT"/>
+                <constraint firstItem="1rS-y7-A7Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="b9W-t8-McI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U2o-S4-jYf" secondAttribute="trailing" constant="20" id="e24-Y8-6jX"/>
+                <constraint firstItem="hIW-bC-zRG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vY2-ST-Pbu"/>
+                <constraint firstItem="U2o-S4-jYf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yLK-Bp-cKb"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="76.339285714285708"/>
         </view>
     </objects>
+    <resources>
+        <image name="imageDone" width="268" height="296"/>
+    </resources>
 </document>

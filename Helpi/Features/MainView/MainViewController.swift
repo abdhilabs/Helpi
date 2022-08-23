@@ -8,28 +8,28 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
-  @IBOutlet weak var viewHelpButton: UIView!
-  @IBOutlet weak var labelBtn: UILabel!
-  @IBOutlet weak var descText: UILabel!
-
+  
+  @IBOutlet weak var lblTitle: UILabel!
+  @IBOutlet weak var lblDescription: UILabel!
+  @IBOutlet weak var viewHelpButton: UIImageView!
+  
   private let cloudKitService = CloudKitService()
   private let connectivityHandler = WatchSessionManager.shared
-
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(false, animated: true)
     setNavigationBar()
-    getPersonalNotes()
+    //    getPersonalNotes()
   }
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     configureViews()
-    labelBtn.font = .rounded(ofSize: 48, weight: .semibold)
-    descText.font = .rounded(ofSize: 18, weight: .regular)
+    lblTitle.font = .rounded(ofSize: 34, weight: .bold)
+    lblDescription.font = .rounded(ofSize: 18, weight: .regular)
   }
-
+  
   private func getPersonalNotes() {
     let recordId = SessionManager.shared.getRecordId()
     cloudKitService.fetchAccount(by: .init(recordName: recordId)) { account in
@@ -41,21 +41,21 @@ class MainViewController: UIViewController {
       }
     }
   }
-
+  
   private func configureViews() {
     viewHelpButton.layer.cornerRadius = viewHelpButton.frame.size.width / 2
     viewHelpButton.clipsToBounds = true
     viewHelpButton.isUserInteractionEnabled = true
     viewHelpButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapHelpButton)))
   }
-
+  
   @objc func didTapHelpButton() {
     let nextViewController = HelpViewController()
     let navigation = UINavigationController(rootViewController: nextViewController)
     navigation.modalPresentationStyle = .fullScreen
     present(navigation, animated: true)
   }
-
+  
   override func leftNavigationBarButtonTapped(sender: UIBarButtonItem?) {
     let nextViewController = AddFriendViewController()
     let navigation = UINavigationController(rootViewController: nextViewController)
