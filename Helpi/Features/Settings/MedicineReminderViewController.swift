@@ -8,19 +8,19 @@
 import UIKit
 
 class MedicineReminderViewController: UIViewController {
-
+  
   @IBOutlet weak var dpTimePicker: UIDatePicker!
   @IBOutlet weak var lblTest: UILabel!
   
   override func viewDidLoad() {
-        super.viewDidLoad()
-
+    super.viewDidLoad()
+    
     dpTimePicker.locale = .current
     dpTimePicker.datePickerMode = .time
     dpTimePicker.preferredDatePickerStyle = .wheels
     dpTimePicker.addTarget(self, action: #selector(dateSelected), for: .valueChanged)
     
-    }
+  }
   
   @objc
   func dateSelected() {
@@ -29,5 +29,5 @@ class MedicineReminderViewController: UIViewController {
     let time = dateFormatter.string(from: dpTimePicker.date)
     lblTest.text = time
   }
-
+  
 }

@@ -8,14 +8,14 @@
 import UIKit
 
 class PersonalNoteSettingViewController: UIViewController {
-
+  
   @IBOutlet weak var lblDescription: UILabel!
   @IBOutlet weak var txtPersonalNote: UITextView!
   @IBOutlet weak var lblExample: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     lblDescription.font = UIFont.font(type: .sfRegular, size: 13)
     txtPersonalNote.font = UIFont.font(type: .sfRegular, size: 17)
     lblExample.font = UIFont.font(type: .sfRegular, size: 13)
@@ -35,7 +35,7 @@ class PersonalNoteSettingViewController: UIViewController {
       barButtonSystemItem: .save, target: self, action: nil
     )
   }
-
   
-
+  
+  
 }

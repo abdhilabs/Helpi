@@ -13,14 +13,14 @@ class TimeSettingViewController: UIViewController {
   
   let titlePerRow = ["Pengatur Waktu", "Jeda Waktu"]
   
-  private var selectedItem: Item?
-
+  private var selectedItem: PickerData?
+  
   private lazy var pickerViewPresenter: PickerViewPresenter = {
-      let pickerViewPresenter = PickerViewPresenter()
-      pickerViewPresenter.didSelectItem = { [weak self] item in
-          self?.selectedItem = item
-      }
-      return pickerViewPresenter
+    let pickerViewPresenter = PickerViewPresenter()
+    pickerViewPresenter.didSelectItem = { [weak self] item in
+      self?.selectedItem = item
+    }
+    return pickerViewPresenter
   }()
   
   override func viewDidLoad() {
@@ -41,7 +41,9 @@ extension TimeSettingViewController: UITableViewDelegate, UITableViewDataSource 
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: "TimeSettingTableViewCell", for: indexPath) as! TimeSettingTableViewCell
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "TimeSettingTableViewCell", for: indexPath) as? TimeSettingTableViewCell else {
+      return UITableViewCell()
+    }
     
     cell.lblTitle.text = titlePerRow[indexPath.row]
     
@@ -73,12 +75,12 @@ extension TimeSettingViewController: UITableViewDelegate, UITableViewDataSource 
   }
   
   @objc func switchChanged(_ sender : UISwitch!){
-
-        print("table row switch Changed \(sender.tag)")
-        print("The switch is \(sender.isOn ? "ON" : "OFF")")
+    
+    print("table row switch Changed \(sender.tag)")
+    print("The switch is \(sender.isOn ? "ON" : "OFF")")
   }
   
   @objc private func buttonTapped() {
-      pickerViewPresenter.showPicker()
+    pickerViewPresenter.showPicker()
   }
 }

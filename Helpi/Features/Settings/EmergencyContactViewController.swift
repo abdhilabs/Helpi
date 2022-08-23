@@ -9,7 +9,7 @@ import UIKit
 import ContactsUI
 
 class EmergencyContactViewController: UIViewController {
-
+  
   @IBOutlet weak var tblEmergencyContact: UITableView!
   @IBOutlet weak var lblDescription: UILabel!
   
@@ -21,20 +21,20 @@ class EmergencyContactViewController: UIViewController {
   }
   
   let cellData : [CellContent] = [
-  CellContent(name: "Ayah", number: "081234567890"),
-  CellContent(name: "Adik", number: "080987654321")
+    CellContent(name: "Ayah", number: "081234567890"),
+    CellContent(name: "Adik", number: "080987654321")
   ]
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-      
-      lblDescription.font = .font(type: .sfRegular, size: 13)
-      
-      tblEmergencyContact.delegate = self
-      tblEmergencyContact.dataSource = self
-      tblEmergencyContact.register(UINib(nibName: "EmergencyContactTableViewCell", bundle: nil), forCellReuseIdentifier: "EmergencyContactTableViewCell")
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    
+    lblDescription.font = .font(type: .sfRegular, size: 13)
+    
+    tblEmergencyContact.delegate = self
+    tblEmergencyContact.dataSource = self
+    tblEmergencyContact.register(UINib(nibName: "EmergencyContactTableViewCell", bundle: nil), forCellReuseIdentifier: "EmergencyContactTableViewCell")
+  }
 }
 
 extension EmergencyContactViewController: UITableViewDelegate, UITableViewDataSource {
@@ -61,22 +61,22 @@ extension EmergencyContactViewController: UITableViewDelegate, UITableViewDataSo
 
 extension EmergencyContactViewController: CNContactPickerDelegate {
   func didAddContact() {
-    let vc1 = CNContactPickerViewController()
-    vc1.delegate = self
-    present(vc1, animated: true)
+    let pickerController = CNContactPickerViewController()
+    pickerController.delegate = self
+    present(pickerController, animated: true)
   }
   
   func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
-    let name = contact.givenName + " " + contact.familyName
-    let number = ((contact.phoneNumbers.first?.value) as? CNPhoneNumber)?.stringValue
+        let name = contact.givenName + " " + contact.familyName
+        let number = ((contact.phoneNumbers.first?.value) as? CNPhoneNumber)?.stringValue
     
-//    switch contactFrom {
-//    case .contactPrimary:
-//      lblContactName.text = name
-//      lblContactNumber.text = number
-//    case .contactSecondary:
-//      lblContactName.text = name
-//      lblContactNumber.text = number
-//    }
+    //    switch contactFrom {
+    //    case .contactPrimary:
+    //      lblContactName.text = name
+    //      lblContactNumber.text = number
+    //    case .contactSecondary:
+    //      lblContactName.text = name
+    //      lblContactNumber.text = number
+    //    }
   }
 }

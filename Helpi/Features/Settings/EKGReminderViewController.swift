@@ -8,7 +8,7 @@
 import UIKit
 
 class EKGReminderViewController: UIViewController {
-
+  
   @IBOutlet weak var tblEKGReminder: UITableView!
   
   struct CellContent {
@@ -19,13 +19,13 @@ class EKGReminderViewController: UIViewController {
   var cellData : [CellContent] = []
   
   override func viewDidLoad() {
-        super.viewDidLoad()
-
+    super.viewDidLoad()
+    
     tblEKGReminder.delegate = self
     tblEKGReminder.dataSource = self
     tblEKGReminder.register(UINib(nibName: "EKGReminderTableViewCell", bundle: nil), forCellReuseIdentifier: "EKGReminderTableViewCell")
-    }
-
+  }
+  
 }
 
 extension EKGReminderViewController: UITableViewDelegate, UITableViewDataSource {
@@ -34,7 +34,10 @@ extension EKGReminderViewController: UITableViewDelegate, UITableViewDataSource 
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "EKGReminderTableViewCell", for: indexPath) as! EKGReminderTableViewCell
+    
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "EKGReminderTableViewCell", for: indexPath) as? EKGReminderTableViewCell else {
+      return UITableViewCell()
+    }
     
     let cellContent = cellData[indexPath.row]
     
@@ -55,8 +58,8 @@ extension EKGReminderViewController: UITableViewDelegate, UITableViewDataSource 
   }
   
   @objc func switchChanged(_ sender : UISwitch!){
-
-        print("table row switch Changed \(sender.tag)")
-        print("The switch is \(sender.isOn ? "ON" : "OFF")")
+    
+    print("table row switch Changed \(sender.tag)")
+    print("The switch is \(sender.isOn ? "ON" : "OFF")")
   }
 }

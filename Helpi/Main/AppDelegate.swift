@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    } else {
 //      window.rootViewController = UINavigationController(rootViewController: OnboardViewController())
 //    }
+
     window.makeKeyAndVisible()
     self.window = window
     

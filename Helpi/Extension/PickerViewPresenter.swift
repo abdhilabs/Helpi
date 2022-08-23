@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
-struct Item {
+struct PickerData {
   let label : String
   let value : Int
 }
@@ -34,15 +35,12 @@ class PickerViewPresenter: UITextField, UIPickerViewDataSource, UIPickerViewDele
     return pickerView
   }()
   
-  var items: [Item] = [
-    Item(label: "5 detik", value: 5),
-    Item(label: "15 detik", value: 15),
-    Item(label: "30 detik", value: 30),
-    Item(label: "60 detik", value: 60)
-  ]
-  var didSelectItem: ((Item) -> Void)?
   
-  private var selectedItem: Item?
+  var pickerData: [PickerData] = (1...60).map{PickerData(label: "\($0) Detik", value: $0)}
+  
+  var didSelectItem: ((PickerData) -> Void)?
+  
+  private var selectedItem: PickerData?
   
   init() {
     super.init(frame: .zero)
@@ -74,14 +72,14 @@ class PickerViewPresenter: UITextField, UIPickerViewDataSource, UIPickerViewDele
   }
   
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return items.count
+    return pickerData.count
   }
   
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return items[row].label
+    return pickerData[row].label
   }
   
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    selectedItem = items[row]
+    selectedItem = pickerData[row]
   }
 }
