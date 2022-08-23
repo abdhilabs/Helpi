@@ -30,7 +30,7 @@ class LogViewController: UIViewController {
     super.viewDidLoad()
 
     setupViews()
-    observeValues()
+    fetchHistory()
   }
 
   private func setupViews() {
@@ -74,8 +74,10 @@ class LogViewController: UIViewController {
     viewCalendar.placeholderType = .none
   }
 
-  private func observeValues() {
+  private func fetchHistory() {
+    showHelpiLoading()
     cloudKitService.fetchLogHistory { [weak self] logs in
+      self?.hideHelpiLoading()
       self?.historyLogs.append(contentsOf: logs.sorted { $0.date < $1.date })
       DispatchQueue.main.async {
         self?.viewCalendar.reloadData()
@@ -101,7 +103,9 @@ extension LogViewController: FSCalendarDelegate, FSCalendarDataSource {
     let nextViewController = AddHistoryViewController()
     nextViewController.historyDate = date
     let navigation = UINavigationController(rootViewController: nextViewController)
-    present(navigation, animated: true)
+    present(navigation, animated: true) {
+      self.fetchHistory()
+    }
   }
 
   func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at monthPosition: FSCalendarMonthPosition) {

@@ -45,12 +45,15 @@ class AddHistoryViewController: UIViewController {
     guard let additionalInfo = txtAdditionalInfo.text, let syptom = txtSymptom.text else { return }
     let time = pickerTime.date.string(format: "HH:mm a")
 
+    showHelpiLoading()
     cloudKitService.saveLogHistory(with: .init(additionalInfo: additionalInfo, symptom: syptom, time: time, date: historyDate.string())) { [weak self] isSuccess, isRegistered in
       if isSuccess {
+        self?.hideHelpiLoading()
         DispatchQueue.main.async {
           self?.dismiss(animated: true)
         }
       } else {
+        self?.hideHelpiLoading()
         if !isRegistered {
           let message = """
                             Sign in to your iCloud account to write records.

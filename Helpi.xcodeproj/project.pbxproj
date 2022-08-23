@@ -67,6 +67,10 @@
 		9ADF93F728B4FCB60082EED5 /* BacktapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF93F428B4FCB60082EED5 /* BacktapTutorialViewController.swift */; };
 		9ADF93F828B4FCB60082EED5 /* BacktapTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF93F528B4FCB60082EED5 /* BacktapTutorialViewController.xib */; };
 		9ADF93F928B51A1B0082EED5 /* GuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */; };
+		9ADF93FD28B529A10082EED5 /* HelpiLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF93FB28B529A10082EED5 /* HelpiLoadingViewController.swift */; };
+		9ADF93FE28B529A10082EED5 /* HelpiLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF93FC28B529A10082EED5 /* HelpiLoadingViewController.xib */; };
+		9ADF940028B52BC90082EED5 /* helpi-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF93FF28B52BC90082EED5 /* helpi-loading.json */; };
+		9ADF940228B52EE50082EED5 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF940128B52EE50082EED5 /* Notification.swift */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
 		9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F862864AB24000D3386 /* LaunchScreen.storyboard */; };
@@ -250,6 +254,10 @@
 		9ADF93F328B4FCB60082EED5 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		9ADF93F428B4FCB60082EED5 /* BacktapTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BacktapTutorialViewController.swift; sourceTree = "<group>"; };
 		9ADF93F528B4FCB60082EED5 /* BacktapTutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BacktapTutorialViewController.xib; sourceTree = "<group>"; };
+		9ADF93FB28B529A10082EED5 /* HelpiLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpiLoadingViewController.swift; sourceTree = "<group>"; };
+		9ADF93FC28B529A10082EED5 /* HelpiLoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpiLoadingViewController.xib; sourceTree = "<group>"; };
+		9ADF93FF28B52BC90082EED5 /* helpi-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "helpi-loading.json"; sourceTree = "<group>"; };
+		9ADF940128B52EE50082EED5 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		9AE05F752864AB21000D3386 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE05F782864AB21000D3386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE05F842864AB24000D3386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -389,6 +397,7 @@
 				9A163D6428B4958700C87F6C /* UIFont.swift */,
 				9A163D6628B4958700C87F6C /* UIImage.swift */,
 				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
+				9ADF940128B52EE50082EED5 /* Notification.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -563,6 +572,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9ADF93FA28B529740082EED5 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				9ADF93FB28B529A10082EED5 /* HelpiLoadingViewController.swift */,
+				9ADF93FC28B529A10082EED5 /* HelpiLoadingViewController.xib */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
 		9AE05F6C2864AB21000D3386 = {
 			isa = PBXGroup;
 			children = (
@@ -593,6 +611,7 @@
 				9AE05F962864B4C1000D3386 /* Features */,
 				9AE05F952864B484000D3386 /* Main */,
 				9AE05F942864B470000D3386 /* Resources */,
+				9ADF93FA28B529740082EED5 /* ReusableViews */,
 				9A1F8B95286DEE3200F6E16C /* Service */,
 			);
 			path = Helpi;
@@ -601,6 +620,7 @@
 		9AE05F942864B470000D3386 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9ADF93FF28B52BC90082EED5 /* helpi-loading.json */,
 				9ADBC7BA28AF1CEF0083F6D5 /* Fonts */,
 				9AE05F842864AB24000D3386 /* Assets.xcassets */,
 				9AE05F892864AB24000D3386 /* Info.plist */,
@@ -892,6 +912,7 @@
 				9A4E0BF828B328AD0099B8FD /* SummaryViewController.xib in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
 				EEE04201286D315500A2B04D /* LoginViewController.xib in Resources */,
+				9ADF93FE28B529A10082EED5 /* HelpiLoadingViewController.xib in Resources */,
 				9ADF93F928B51A1B0082EED5 /* GuideTableViewCell.xib in Resources */,
 				EE4275EF28B3AFE300112C94 /* EmergencyContactTableViewCell.xib in Resources */,
 				EE4275E128AFE07F00112C94 /* SettingTableViewCell.xib in Resources */,
@@ -917,6 +938,7 @@
 				9A4E0BF328B30D7D0099B8FD /* AddHistoryViewController.xib in Resources */,
 				9AF662F428B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf in Resources */,
 				EE4275D828AF4BBC00112C94 /* TimeSettingViewController.xib in Resources */,
+				9ADF940028B52BC90082EED5 /* helpi-loading.json in Resources */,
 				EE4275FB28B3BD2600112C94 /* EKGReminderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1046,11 +1068,13 @@
 				A0802D80286C854F004A22CB /* FirstAidViewController.swift in Sources */,
 				EE4275DB28AFB98700112C94 /* PersonalNoteSettingViewController.swift in Sources */,
 				A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */,
+				9ADF940228B52EE50082EED5 /* Notification.swift in Sources */,
 				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
 				A07BB94E286B696B00A3DE30 /* OnboardingCollectionViewCell.swift in Sources */,
 				A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
 				A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */,
 				9A4E0BFC28B32B610099B8FD /* SummaryTableViewCell.swift in Sources */,
+				9ADF93FD28B529A10082EED5 /* HelpiLoadingViewController.swift in Sources */,
 				A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

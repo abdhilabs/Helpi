@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpiLoadingViewController" customModule="Helpi" customModuleProvider="target">
+            <connections>
+                <outlet property="lblLoading" destination="s1F-KF-IS8" id="Cvb-42-okV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewAnimation" destination="Qp1-ed-anx" id="DUQ-gD-V8y"/>
+                <outlet property="viewContainer" destination="0ik-vh-W9Z" id="vnr-VM-7z3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ik-vh-W9Z">
+                    <rect key="frame" x="127" y="350" width="160" height="196.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qp1-ed-anx" customClass="AnimationView" customModule="Lottie">
+                            <rect key="frame" x="16" y="16" width="128" height="128"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="128" id="BFB-YC-5N3"/>
+                                <constraint firstAttribute="height" constant="128" id="fQe-zN-Jc9"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="helpi-loading"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memuat..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1F-KF-IS8">
+                            <rect key="frame" x="41.5" y="160" width="77" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.1843137255" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="s1F-KF-IS8" firstAttribute="centerX" secondItem="0ik-vh-W9Z" secondAttribute="centerX" id="JOA-Mp-z3o"/>
+                        <constraint firstItem="Qp1-ed-anx" firstAttribute="leading" secondItem="0ik-vh-W9Z" secondAttribute="leading" constant="16" id="c8n-OP-PpX"/>
+                        <constraint firstAttribute="trailing" secondItem="Qp1-ed-anx" secondAttribute="trailing" constant="16" id="dTf-gc-2eg"/>
+                        <constraint firstAttribute="bottom" secondItem="s1F-KF-IS8" secondAttribute="bottom" constant="16" id="ozN-v5-cP5"/>
+                        <constraint firstItem="s1F-KF-IS8" firstAttribute="top" secondItem="Qp1-ed-anx" secondAttribute="bottom" constant="16" id="vcA-c8-ErQ"/>
+                        <constraint firstItem="Qp1-ed-anx" firstAttribute="top" secondItem="0ik-vh-W9Z" secondAttribute="top" constant="16" id="zIp-9n-62X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0ik-vh-W9Z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4yH-6d-ZMb"/>
+                <constraint firstItem="0ik-vh-W9Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xUN-JG-Nvi"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

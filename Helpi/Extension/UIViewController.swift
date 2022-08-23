@@ -44,6 +44,17 @@ extension UIViewController {
     alert.addAction(UIAlertAction(title: "Ok", style: .default))
     self.present(alert, animated: true)
   }
+
+  func showHelpiLoading() {
+    let viewController: HelpiLoadingViewController = HelpiLoadingViewController()
+    viewController.modalPresentationStyle = .overCurrentContext
+    viewController.modalTransitionStyle = .crossDissolve
+    navigationController?.view.window?.rootViewController?.present(viewController, animated: true)
+  }
+
+  func hideHelpiLoading() {
+    Notifications.dismissLoading.post()
+  }
 }
 
 protocol NavigationBarButtonHandler {
