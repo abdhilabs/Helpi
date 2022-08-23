@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		621A9ACD1577FF09810FF3C2 /* libPods-Helpi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */; };
 		9A163D5128B4599400C87F6C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5028B4599400C87F6C /* UIButton.swift */; };
 		9A163D5528B4610C00C87F6C /* GuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5328B4610C00C87F6C /* GuideTableViewCell.swift */; };
 		9A163D5628B4610C00C87F6C /* GuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */; };
+		9A163D5D28B488D200C87F6C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5928B488D200C87F6C /* UIFont.swift */; };
+		9A163D5E28B488D200C87F6C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5A28B488D200C87F6C /* UIColor.swift */; };
+		9A163D5F28B488D200C87F6C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5B28B488D200C87F6C /* UIImage.swift */; };
+		9A163D6028B488D200C87F6C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5C28B488D200C87F6C /* Date.swift */; };
+		9A163D6128B4891C00C87F6C /* HistoryLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BEC28B3017E0099B8FD /* HistoryLogTableViewCell.swift */; };
+		9A163D6228B4893200C87F6C /* AddHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF028B30D7D0099B8FD /* AddHistoryViewController.swift */; };
 		9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */; };
 		9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */; };
 		9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */; };
@@ -38,9 +43,7 @@
 		9A3585C1287FA8820006EF21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3585C0287FA8820006EF21 /* Preview Assets.xcassets */; };
 		9A3585C6287FA8820006EF21 /* Helpi.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9A3585A6287FA87F0006EF21 /* Helpi.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9A35C2262887C4F7001B5877 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5477128713E5000E3B603 /* SessionManager.swift */; };
-		9A4E0BEE28B3017E0099B8FD /* HistoryLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BEC28B3017E0099B8FD /* HistoryLogTableViewCell.swift */; };
 		9A4E0BEF28B3017E0099B8FD /* HistoryLogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E0BED28B3017E0099B8FD /* HistoryLogTableViewCell.xib */; };
-		9A4E0BF228B30D7D0099B8FD /* AddHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF028B30D7D0099B8FD /* AddHistoryViewController.swift */; };
 		9A4E0BF328B30D7D0099B8FD /* AddHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF128B30D7D0099B8FD /* AddHistoryViewController.xib */; };
 		9A4E0BF728B328AD0099B8FD /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF528B328AD0099B8FD /* SummaryViewController.swift */; };
 		9A4E0BF828B328AD0099B8FD /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF628B328AD0099B8FD /* SummaryViewController.xib */; };
@@ -57,12 +60,8 @@
 		9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */; };
 		9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5476F2870B42100E3B603 /* TutorialViewController.swift */; };
 		9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5477128713E5000E3B603 /* SessionManager.swift */; };
-		9AB6973F28B3C9EC00673A58 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6973E28B3C9EC00673A58 /* Date.swift */; };
 		9ABD800B288598C5009300BC /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD800A288598C5009300BC /* RootPresentationMode.swift */; };
 		9ADBC7B928AF057F0083F6D5 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7B828AF057F0083F6D5 /* HomeTabBarViewController.swift */; };
-		9ADBC7D728AF1DE40083F6D5 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */; };
-		9ADBC7D928AF1F550083F6D5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7D828AF1F550083F6D5 /* UIColor.swift */; };
-		9ADBC7DB28AF36DA0083F6D5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */; };
 		9ADBC7FF28B2783C0083F6D5 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBC7FD28B2783C0083F6D5 /* LogViewController.swift */; };
 		9ADBC80028B2783C0083F6D5 /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBC7FE28B2783C0083F6D5 /* LogViewController.xib */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
@@ -80,7 +79,6 @@
 		9AF662EF28B2FE7000C862B5 /* SF-Compact-Rounded-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AF662E528B2FE7000C862B5 /* SF-Compact-Rounded-Light.ttf */; };
 		9AF662F028B2FE7000C862B5 /* SF-Compact-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AF662E628B2FE7000C862B5 /* SF-Compact-Rounded-Bold.ttf */; };
 		9AF662F128B2FE7000C862B5 /* SF-Compact-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AF662E628B2FE7000C862B5 /* SF-Compact-Rounded-Bold.ttf */; };
-		9AF662F228B2FE7000C862B5 /* SF-Compact-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AF662E728B2FE7000C862B5 /* SF-Compact-Rounded-Semibold.ttf */; };
 		9AF662F328B2FE7000C862B5 /* SF-Compact-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AF662E728B2FE7000C862B5 /* SF-Compact-Rounded-Semibold.ttf */; };
 		9AF662F428B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AF662E828B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf */; };
 		9AF662F528B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AF662E828B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf */; };
@@ -121,6 +119,7 @@
 		A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
 		A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
 		A0FA501328B28AEB00C60B41 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA501228B28AEB00C60B41 /* customButton.swift */; };
+		A3F591294BBCEC847ED0CE17 /* Pods_Helpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03D2C85F1E8C42D80CF76BF /* Pods_Helpi.framework */; };
 		EE2CDA992880EE8800C0FAFD /* HelpConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */; };
 		EE2CDA9B2880F3C800C0FAFD /* GratitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */; };
 		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
@@ -180,10 +179,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0B14154B70A04060AC6C4DE4 /* Pods-Helpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.debug.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.debug.xcconfig"; sourceTree = "<group>"; };
 		9A163D5028B4599400C87F6C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		9A163D5328B4610C00C87F6C /* GuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTableViewCell.swift; sourceTree = "<group>"; };
 		9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideTableViewCell.xib; sourceTree = "<group>"; };
+		9A163D5928B488D200C87F6C /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		9A163D5A28B488D200C87F6C /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9A163D5B28B488D200C87F6C /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		9A163D5C28B488D200C87F6C /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
 		9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistanceViewController.swift; sourceTree = "<group>"; };
@@ -233,7 +235,6 @@
 		9ABD800A288598C5009300BC /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
 		9ADBC7B828AF057F0083F6D5 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		9ADBC7D828AF1F550083F6D5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9ADBC7FD28B2783C0083F6D5 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		9ADBC7FE28B2783C0083F6D5 /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
@@ -285,11 +286,9 @@
 		A09E03B0286EC0CD005391F0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A0A3369C286A1DD100988028 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		A0E4C3AA28851CFF00D15760 /* AVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVService.swift; sourceTree = "<group>"; };
+		A0FA501228B28AEB00C60B41 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		A2A32FE3A867F8EE26DA796B /* Pods-Helpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.release.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.release.xcconfig"; sourceTree = "<group>"; };
 		E7442EA0904F85209C905669 /* Pods-Helpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.debug.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.debug.xcconfig"; sourceTree = "<group>"; };
-		A0FA501228B28AEB00C60B41 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
-		A38C454D9E81CC18B52A5DC2 /* Pods-Helpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.release.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.release.xcconfig"; sourceTree = "<group>"; };
-		E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Helpi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpConfirmationView.swift; sourceTree = "<group>"; };
 		EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeView.swift; sourceTree = "<group>"; };
 		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
@@ -304,6 +303,7 @@
 		EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktapTutorialViewController.swift; sourceTree = "<group>"; };
 		EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BacktapTutorialViewController.xib; sourceTree = "<group>"; };
 		EEE04210286F3BA900A2B04D /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		F03D2C85F1E8C42D80CF76BF /* Pods_Helpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Helpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,7 +322,7 @@
 				EEE04207286E585F00A2B04D /* AuthenticationServices.framework in Frameworks */,
 				9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */,
 				A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */,
-				2E7BC3E1B250FCF2A2720BCC /* Pods_Helpi.framework in Frameworks */,
+				A3F591294BBCEC847ED0CE17 /* Pods_Helpi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +348,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9A163D5828B4889A00C87F6C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */,
+				9AB6973E28B3C9EC00673A58 /* Date.swift */,
+				9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		9A1F8B832869F2B000F6E16C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,12 +371,16 @@
 		9A1F8B8A286D20F300F6E16C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9A163D5C28B488D200C87F6C /* Date.swift */,
 				A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */,
 				A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */,
-				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
-				9A9120C52872EE3E005B8C0B /* String.swift */,
 				9A21308328891BB8004A28AA /* JWT.swift */,
+				9A9120C52872EE3E005B8C0B /* String.swift */,
 				9A163D5028B4599400C87F6C /* UIButton.swift */,
+				9A163D5A28B488D200C87F6C /* UIColor.swift */,
+				9A163D5928B488D200C87F6C /* UIFont.swift */,
+				9A163D5B28B488D200C87F6C /* UIImage.swift */,
+				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -539,6 +553,7 @@
 				9AE05F762864AB21000D3386 /* Products */,
 				9AE05F972864B693000D3386 /* Frameworks */,
 				7DD0B9C8DAC59494BBB8837B /* Pods */,
+				9A163D5828B4889A00C87F6C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -628,7 +643,7 @@
 				A0A3369C286A1DD100988028 /* HealthKit.framework */,
 				9AE05F982864B693000D3386 /* CloudKit.framework */,
 				EEE04206286E579A00A2B04D /* AuthenticationServices.framework */,
-				7F1B58C40D9E215BF7D74F7B /* Pods_Helpi.framework */,
+				F03D2C85F1E8C42D80CF76BF /* Pods_Helpi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -955,17 +970,17 @@
 				9A4E0C0028B332B20099B8FD /* DetailSummaryViewController.swift in Sources */,
 				A0FA501328B28AEB00C60B41 /* customButton.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
-				9ADBC7DB28AF36DA0083F6D5 /* UIImage.swift in Sources */,
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
 				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
+				9A163D6128B4891C00C87F6C /* HistoryLogTableViewCell.swift in Sources */,
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
-				9AB6973F28B3C9EC00673A58 /* Date.swift in Sources */,
 				9A1F8B8F286D264F00F6E16C /* PersonalNoteViewController.swift in Sources */,
 				A087D41128AFE73500FFA26C /* CircularProgressView.swift in Sources */,
 				9A1F8B8C286D211400F6E16C /* UIViewController.swift in Sources */,
 				9A1F8B852869F2CA00F6E16C /* CircularProgressBarView.swift in Sources */,
+				9A163D5E28B488D200C87F6C /* UIColor.swift in Sources */,
+				9A163D6228B4893200C87F6C /* AddHistoryViewController.swift in Sources */,
 				9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */,
-				9ADBC7D728AF1DE40083F6D5 /* UIFont.swift in Sources */,
 				9ADBC7FF28B2783C0083F6D5 /* LogViewController.swift in Sources */,
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
@@ -979,6 +994,7 @@
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
 				EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */,
 				9ADBC7B928AF057F0083F6D5 /* HomeTabBarViewController.swift in Sources */,
+				9A163D5F28B488D200C87F6C /* UIImage.swift in Sources */,
 				9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */,
 				A09E03B1286EC0CD005391F0 /* HomeViewController.swift in Sources */,
 				A078FF45286C5B75006D686F /* AddNoteViewController.swift in Sources */,
@@ -986,6 +1002,7 @@
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */,
 				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
+				9A163D6028B488D200C87F6C /* Date.swift in Sources */,
 				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
 				A07BB950286B696B00A3DE30 /* OnboardViewController.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
@@ -995,6 +1012,7 @@
 				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
 				A07BB94E286B696B00A3DE30 /* OnboardingCollectionViewCell.swift in Sources */,
 				A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
+				9A163D5D28B488D200C87F6C /* UIFont.swift in Sources */,
 				A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */,
 				9A4E0BFC28B32B610099B8FD /* SummaryTableViewCell.swift in Sources */,
 				A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */,

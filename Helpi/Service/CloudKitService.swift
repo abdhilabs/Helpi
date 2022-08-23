@@ -64,6 +64,7 @@ extension HistoryLog {
 class CloudKitService {
   
   private let publicDatabase: CKDatabase = CKContainer(identifier: "iCloud.com.mc2.helpi").publicCloudDatabase
+  private let privateDatabase: CKDatabase = CKContainer(identifier: "iCloud.com.mc2.helpi").privateCloudDatabase
   
   func register(by param: UserAccount, completion: @escaping (_ isSuccess: Bool) -> ()) {
     publicDatabase.save(param.record) { record, error in
