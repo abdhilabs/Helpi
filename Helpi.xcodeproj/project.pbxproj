@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A163D5128B4599400C87F6C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5028B4599400C87F6C /* UIButton.swift */; };
+		85E206A7782B8528604C23FA /* Pods_Helpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EFD64E8D9A56A58527B08A /* Pods_Helpi.framework */; };
 		9A163D5528B4610C00C87F6C /* GuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5328B4610C00C87F6C /* GuideTableViewCell.swift */; };
-		9A163D5628B4610C00C87F6C /* GuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */; };
-		9A163D5D28B488D200C87F6C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5928B488D200C87F6C /* UIFont.swift */; };
-		9A163D5E28B488D200C87F6C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5A28B488D200C87F6C /* UIColor.swift */; };
-		9A163D5F28B488D200C87F6C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5B28B488D200C87F6C /* UIImage.swift */; };
 		9A163D6028B488D200C87F6C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5C28B488D200C87F6C /* Date.swift */; };
 		9A163D6128B4891C00C87F6C /* HistoryLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BEC28B3017E0099B8FD /* HistoryLogTableViewCell.swift */; };
 		9A163D6228B4893200C87F6C /* AddHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E0BF028B30D7D0099B8FD /* AddHistoryViewController.swift */; };
+		9A163D6728B4958700C87F6C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D6328B4958700C87F6C /* UIButton.swift */; };
+		9A163D6828B4958700C87F6C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D6428B4958700C87F6C /* UIFont.swift */; };
+		9A163D6928B4958700C87F6C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D6528B4958700C87F6C /* UIColor.swift */; };
+		9A163D6A28B4958700C87F6C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D6628B4958700C87F6C /* UIImage.swift */; };
+		9A163D6D28B4972D00C87F6C /* AddNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF44286C5B75006D686F /* AddNoteViewController.xib */; };
 		9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */; };
 		9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */; };
 		9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */; };
@@ -98,7 +99,6 @@
 		A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF3F286C4B6B006D686F /* ContactViewController.swift */; };
 		A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF40286C4B6B006D686F /* ContactViewController.xib */; };
 		A078FF45286C5B75006D686F /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF43286C5B75006D686F /* AddNoteViewController.swift */; };
-		A078FF46286C5B75006D686F /* AddNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF44286C5B75006D686F /* AddNoteViewController.xib */; };
 		A079C2DC2881632700F566E5 /* CancelConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079C2DB2881632700F566E5 /* CancelConfirmation.swift */; };
 		A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */; };
 		A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */; };
@@ -118,10 +118,32 @@
 		A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A3369C286A1DD100988028 /* HealthKit.framework */; };
 		A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
 		A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
-		A0FA501328B28AEB00C60B41 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA501228B28AEB00C60B41 /* customButton.swift */; };
-		A3F591294BBCEC847ED0CE17 /* Pods_Helpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03D2C85F1E8C42D80CF76BF /* Pods_Helpi.framework */; };
+		A3F591294BBCEC847ED0CE17 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		EE2CDA992880EE8800C0FAFD /* HelpConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */; };
 		EE2CDA9B2880F3C800C0FAFD /* GratitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */; };
+		EE4275C528AF365900112C94 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275C328AF365900112C94 /* SettingViewController.swift */; };
+		EE4275C628AF365900112C94 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275C428AF365900112C94 /* SettingViewController.xib */; };
+		EE4275D328AF4B8C00112C94 /* EmergencyContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275D128AF4B8C00112C94 /* EmergencyContactViewController.swift */; };
+		EE4275D428AF4B8C00112C94 /* EmergencyContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275D228AF4B8C00112C94 /* EmergencyContactViewController.xib */; };
+		EE4275D728AF4BBC00112C94 /* TimeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275D528AF4BBC00112C94 /* TimeSettingViewController.swift */; };
+		EE4275D828AF4BBC00112C94 /* TimeSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275D628AF4BBC00112C94 /* TimeSettingViewController.xib */; };
+		EE4275DB28AFB98700112C94 /* PersonalNoteSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275D928AFB98700112C94 /* PersonalNoteSettingViewController.swift */; };
+		EE4275DC28AFB98700112C94 /* PersonalNoteSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275DA28AFB98700112C94 /* PersonalNoteSettingViewController.xib */; };
+		EE4275E028AFE07F00112C94 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275DE28AFE07F00112C94 /* SettingTableViewCell.swift */; };
+		EE4275E128AFE07F00112C94 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275DF28AFE07F00112C94 /* SettingTableViewCell.xib */; };
+		EE4275E428B0FE3A00112C94 /* TimeSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275E228B0FE3A00112C94 /* TimeSettingTableViewCell.swift */; };
+		EE4275E528B0FE3A00112C94 /* TimeSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275E328B0FE3A00112C94 /* TimeSettingTableViewCell.xib */; };
+		EE4275E828B2606A00112C94 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275E628B2606A00112C94 /* ReminderViewController.swift */; };
+		EE4275E928B2606A00112C94 /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275E728B2606A00112C94 /* ReminderViewController.xib */; };
+		EE4275EB28B38F9F00112C94 /* PickerViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275EA28B38F9F00112C94 /* PickerViewPresenter.swift */; };
+		EE4275EE28B3AFE300112C94 /* EmergencyContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275EC28B3AFE300112C94 /* EmergencyContactTableViewCell.swift */; };
+		EE4275EF28B3AFE300112C94 /* EmergencyContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275ED28B3AFE300112C94 /* EmergencyContactTableViewCell.xib */; };
+		EE4275F228B3BCB000112C94 /* EKGReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275F028B3BCB000112C94 /* EKGReminderViewController.swift */; };
+		EE4275F328B3BCB000112C94 /* EKGReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275F128B3BCB000112C94 /* EKGReminderViewController.xib */; };
+		EE4275F628B3BCDA00112C94 /* MedicineReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275F428B3BCDA00112C94 /* MedicineReminderViewController.swift */; };
+		EE4275F728B3BCDA00112C94 /* MedicineReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275F528B3BCDA00112C94 /* MedicineReminderViewController.xib */; };
+		EE4275FA28B3BD2600112C94 /* EKGReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275F828B3BD2600112C94 /* EKGReminderTableViewCell.swift */; };
+		EE4275FB28B3BD2600112C94 /* EKGReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275F928B3BD2600112C94 /* EKGReminderTableViewCell.xib */; };
 		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
 		EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */; };
 		EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */; };
@@ -133,7 +155,6 @@
 		EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE04209286E9BD000A2B04D /* TutorialViewController.xib */; };
 		EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */; };
 		EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */; };
-		EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04210286F3BA900A2B04D /* PlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,13 +200,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9A163D5028B4599400C87F6C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		73EFD64E8D9A56A58527B08A /* Pods_Helpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Helpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A163D5328B4610C00C87F6C /* GuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTableViewCell.swift; sourceTree = "<group>"; };
 		9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideTableViewCell.xib; sourceTree = "<group>"; };
-		9A163D5928B488D200C87F6C /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		9A163D5A28B488D200C87F6C /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		9A163D5B28B488D200C87F6C /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9A163D5C28B488D200C87F6C /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		9A163D6328B4958700C87F6C /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		9A163D6428B4958700C87F6C /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		9A163D6528B4958700C87F6C /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9A163D6628B4958700C87F6C /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
 		9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistanceViewController.swift; sourceTree = "<group>"; };
@@ -231,11 +253,8 @@
 		9A92EA132881160C00C606FE /* ConfirmAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAlertView.swift; sourceTree = "<group>"; };
 		9AA5476F2870B42100E3B603 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		9AA5477128713E5000E3B603 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		9AB6973E28B3C9EC00673A58 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		9ABD800A288598C5009300BC /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
 		9ADBC7B828AF057F0083F6D5 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
-		9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9ADBC7FD28B2783C0083F6D5 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		9ADBC7FE28B2783C0083F6D5 /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
 		9AE05F752864AB21000D3386 /* Helpi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +310,29 @@
 		E7442EA0904F85209C905669 /* Pods-Helpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.debug.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.debug.xcconfig"; sourceTree = "<group>"; };
 		EE2CDA982880EE8800C0FAFD /* HelpConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpConfirmationView.swift; sourceTree = "<group>"; };
 		EE2CDA9A2880F3C800C0FAFD /* GratitudeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeView.swift; sourceTree = "<group>"; };
+		EE4275C328AF365900112C94 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EE4275C428AF365900112C94 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		EE4275D128AF4B8C00112C94 /* EmergencyContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactViewController.swift; sourceTree = "<group>"; };
+		EE4275D228AF4B8C00112C94 /* EmergencyContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmergencyContactViewController.xib; sourceTree = "<group>"; };
+		EE4275D528AF4BBC00112C94 /* TimeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSettingViewController.swift; sourceTree = "<group>"; };
+		EE4275D628AF4BBC00112C94 /* TimeSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSettingViewController.xib; sourceTree = "<group>"; };
+		EE4275D928AFB98700112C94 /* PersonalNoteSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalNoteSettingViewController.swift; sourceTree = "<group>"; };
+		EE4275DA28AFB98700112C94 /* PersonalNoteSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalNoteSettingViewController.xib; sourceTree = "<group>"; };
+		EE4275DE28AFE07F00112C94 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		EE4275DF28AFE07F00112C94 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		EE4275E228B0FE3A00112C94 /* TimeSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSettingTableViewCell.swift; sourceTree = "<group>"; };
+		EE4275E328B0FE3A00112C94 /* TimeSettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSettingTableViewCell.xib; sourceTree = "<group>"; };
+		EE4275E628B2606A00112C94 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		EE4275E728B2606A00112C94 /* ReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
+		EE4275EA28B38F9F00112C94 /* PickerViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewPresenter.swift; sourceTree = "<group>"; };
+		EE4275EC28B3AFE300112C94 /* EmergencyContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactTableViewCell.swift; sourceTree = "<group>"; };
+		EE4275ED28B3AFE300112C94 /* EmergencyContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmergencyContactTableViewCell.xib; sourceTree = "<group>"; };
+		EE4275F028B3BCB000112C94 /* EKGReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKGReminderViewController.swift; sourceTree = "<group>"; };
+		EE4275F128B3BCB000112C94 /* EKGReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EKGReminderViewController.xib; sourceTree = "<group>"; };
+		EE4275F428B3BCDA00112C94 /* MedicineReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineReminderViewController.swift; sourceTree = "<group>"; };
+		EE4275F528B3BCDA00112C94 /* MedicineReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicineReminderViewController.xib; sourceTree = "<group>"; };
+		EE4275F828B3BD2600112C94 /* EKGReminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKGReminderTableViewCell.swift; sourceTree = "<group>"; };
+		EE4275F928B3BD2600112C94 /* EKGReminderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EKGReminderTableViewCell.xib; sourceTree = "<group>"; };
 		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivationViewController.xib; sourceTree = "<group>"; };
 		EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
@@ -302,8 +344,6 @@
 		EEE04209286E9BD000A2B04D /* TutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
 		EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktapTutorialViewController.swift; sourceTree = "<group>"; };
 		EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BacktapTutorialViewController.xib; sourceTree = "<group>"; };
-		EEE04210286F3BA900A2B04D /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
-		F03D2C85F1E8C42D80CF76BF /* Pods_Helpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Helpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,7 +362,8 @@
 				EEE04207286E585F00A2B04D /* AuthenticationServices.framework in Frameworks */,
 				9AE05F992864B693000D3386 /* CloudKit.framework in Frameworks */,
 				A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */,
-				A3F591294BBCEC847ED0CE17 /* Pods_Helpi.framework in Frameworks */,
+				A3F591294BBCEC847ED0CE17 /* (null) in Frameworks */,
+				85E206A7782B8528604C23FA /* Pods_Helpi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,16 +389,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9A163D5828B4889A00C87F6C /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */,
-				9AB6973E28B3C9EC00673A58 /* Date.swift */,
-				9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		9A1F8B832869F2B000F6E16C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,11 +406,12 @@
 				A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */,
 				A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */,
 				9A21308328891BB8004A28AA /* JWT.swift */,
+				EE4275EA28B38F9F00112C94 /* PickerViewPresenter.swift */,
 				9A9120C52872EE3E005B8C0B /* String.swift */,
-				9A163D5028B4599400C87F6C /* UIButton.swift */,
-				9A163D5A28B488D200C87F6C /* UIColor.swift */,
-				9A163D5928B488D200C87F6C /* UIFont.swift */,
-				9A163D5B28B488D200C87F6C /* UIImage.swift */,
+				9A163D6328B4958700C87F6C /* UIButton.swift */,
+				9A163D6528B4958700C87F6C /* UIColor.swift */,
+				9A163D6428B4958700C87F6C /* UIFont.swift */,
+				9A163D6628B4958700C87F6C /* UIImage.swift */,
 				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
 			);
 			path = Extension;
@@ -553,7 +585,6 @@
 				9AE05F762864AB21000D3386 /* Products */,
 				9AE05F972864B693000D3386 /* Frameworks */,
 				7DD0B9C8DAC59494BBB8837B /* Pods */,
-				9A163D5828B4889A00C87F6C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -609,6 +640,7 @@
 			children = (
 				9A4E0BF428B3272A0099B8FD /* Summary */,
 				9ADBC7FC28B2781C0083F6D5 /* Log */,
+				EE4275C228AF361E00112C94 /* Settings */,
 				9ADBC7B728AF053E0083F6D5 /* Home */,
 				A0802D6D286C8469004A22CB /* FirstAidScreen */,
 				A0A3368E286A175D00988028 /* HealthKit */,
@@ -643,7 +675,7 @@
 				A0A3369C286A1DD100988028 /* HealthKit.framework */,
 				9AE05F982864B693000D3386 /* CloudKit.framework */,
 				EEE04206286E579A00A2B04D /* AuthenticationServices.framework */,
-				F03D2C85F1E8C42D80CF76BF /* Pods_Helpi.framework */,
+				73EFD64E8D9A56A58527B08A /* Pods_Helpi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -652,7 +684,6 @@
 			isa = PBXGroup;
 			children = (
 				9AE05F9B28652D31000D3386 /* Variables.swift */,
-				EEE04210286F3BA900A2B04D /* PlayView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -715,6 +746,43 @@
 				A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */,
 			);
 			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		EE4275C228AF361E00112C94 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EE4275DD28AFE05A00112C94 /* Cells */,
+				EE4275C328AF365900112C94 /* SettingViewController.swift */,
+				EE4275C428AF365900112C94 /* SettingViewController.xib */,
+				EE4275D128AF4B8C00112C94 /* EmergencyContactViewController.swift */,
+				EE4275D228AF4B8C00112C94 /* EmergencyContactViewController.xib */,
+				EE4275D528AF4BBC00112C94 /* TimeSettingViewController.swift */,
+				EE4275D628AF4BBC00112C94 /* TimeSettingViewController.xib */,
+				EE4275D928AFB98700112C94 /* PersonalNoteSettingViewController.swift */,
+				EE4275DA28AFB98700112C94 /* PersonalNoteSettingViewController.xib */,
+				EE4275E628B2606A00112C94 /* ReminderViewController.swift */,
+				EE4275E728B2606A00112C94 /* ReminderViewController.xib */,
+				EE4275F028B3BCB000112C94 /* EKGReminderViewController.swift */,
+				EE4275F128B3BCB000112C94 /* EKGReminderViewController.xib */,
+				EE4275F428B3BCDA00112C94 /* MedicineReminderViewController.swift */,
+				EE4275F528B3BCDA00112C94 /* MedicineReminderViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EE4275DD28AFE05A00112C94 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EE4275DE28AFE07F00112C94 /* SettingTableViewCell.swift */,
+				EE4275DF28AFE07F00112C94 /* SettingTableViewCell.xib */,
+				EE4275E228B0FE3A00112C94 /* TimeSettingTableViewCell.swift */,
+				EE4275E328B0FE3A00112C94 /* TimeSettingTableViewCell.xib */,
+				EE4275EC28B3AFE300112C94 /* EmergencyContactTableViewCell.swift */,
+				EE4275ED28B3AFE300112C94 /* EmergencyContactTableViewCell.xib */,
+				EE4275F828B3BD2600112C94 /* EKGReminderTableViewCell.swift */,
+				EE4275F928B3BD2600112C94 /* EKGReminderTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -851,6 +919,7 @@
 				9AF662FA28B2FE7000C862B5 /* SF-Compact-Rounded-Thin.ttf in Resources */,
 				A07BB951286B696B00A3DE30 /* OnboardViewController.xib in Resources */,
 				9AF662F828B2FE7000C862B5 /* SF-Compact-Rounded-Heavy.ttf in Resources */,
+				EE4275D428AF4B8C00112C94 /* EmergencyContactViewController.xib in Resources */,
 				9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */,
 				EEE0420F286F28CA00A2B04D /* BacktapTutorialViewController.xib in Resources */,
 				9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */,
@@ -861,29 +930,39 @@
 				9ADBC80028B2783C0083F6D5 /* LogViewController.xib in Resources */,
 				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
 				9AF662DC28B2FE0E00C862B5 /* SF-Compact-Rounded-Black.ttf in Resources */,
+				EE4275C628AF365900112C94 /* SettingViewController.xib in Resources */,
+				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
+				EE4275F328B3BCB000112C94 /* EKGReminderViewController.xib in Resources */,
 				EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */,
 				9A4E0BF828B328AD0099B8FD /* SummaryViewController.xib in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
 				EEE04201286D315500A2B04D /* LoginViewController.xib in Resources */,
+				EE4275EF28B3AFE300112C94 /* EmergencyContactTableViewCell.xib in Resources */,
+				EE4275E128AFE07F00112C94 /* SettingTableViewCell.xib in Resources */,
 				9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */,
 				9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */,
 				9AF662F028B2FE7000C862B5 /* SF-Compact-Rounded-Bold.ttf in Resources */,
+				EE4275F728B3BCDA00112C94 /* MedicineReminderViewController.xib in Resources */,
+				EE4275E528B0FE3A00112C94 /* TimeSettingTableViewCell.xib in Resources */,
 				A07BB7C3286B622000A3DE30 /* Podfile in Resources */,
 				9A4E0BFD28B32B610099B8FD /* SummaryTableViewCell.xib in Resources */,
-				A078FF46286C5B75006D686F /* AddNoteViewController.xib in Resources */,
 				A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */,
 				9AF662EC28B2FE7000C862B5 /* SF-Compact-Rounded-Regular.ttf in Resources */,
 				9A2130862889205B004A28AA /* Sound_Alert.mp3 in Resources */,
 				9A4E0BEF28B3017E0099B8FD /* HistoryLogTableViewCell.xib in Resources */,
 				9A4E0C0128B332B20099B8FD /* DetailSummaryViewController.xib in Resources */,
+				EE4275E928B2606A00112C94 /* ReminderViewController.xib in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
 				A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */,
+				9A163D6D28B4972D00C87F6C /* AddNoteViewController.xib in Resources */,
 				A0802D81286C854F004A22CB /* FirstAidViewController.xib in Resources */,
-				9A163D5628B4610C00C87F6C /* GuideTableViewCell.xib in Resources */,
+				EE4275DC28AFB98700112C94 /* PersonalNoteSettingViewController.xib in Resources */,
 				A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */,
 				9A4E0BF328B30D7D0099B8FD /* AddHistoryViewController.xib in Resources */,
 				9AF662F428B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf in Resources */,
+				EE4275D828AF4BBC00112C94 /* TimeSettingViewController.xib in Resources */,
 				A09E03B2286EC0CD005391F0 /* HomeViewController.xib in Resources */,
+				EE4275FB28B3BD2600112C94 /* EKGReminderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,51 +1047,61 @@
 				EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */,
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
 				9A4E0C0028B332B20099B8FD /* DetailSummaryViewController.swift in Sources */,
-				A0FA501328B28AEB00C60B41 /* customButton.swift in Sources */,
+				EE4275C528AF365900112C94 /* SettingViewController.swift in Sources */,
 				EEE0420E286F28CA00A2B04D /* BacktapTutorialViewController.swift in Sources */,
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
-				EEE04211286F3BA900A2B04D /* PlayView.swift in Sources */,
+				EE4275E428B0FE3A00112C94 /* TimeSettingTableViewCell.swift in Sources */,
 				9A163D6128B4891C00C87F6C /* HistoryLogTableViewCell.swift in Sources */,
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
+				EE4275E828B2606A00112C94 /* ReminderViewController.swift in Sources */,
 				9A1F8B8F286D264F00F6E16C /* PersonalNoteViewController.swift in Sources */,
 				A087D41128AFE73500FFA26C /* CircularProgressView.swift in Sources */,
 				9A1F8B8C286D211400F6E16C /* UIViewController.swift in Sources */,
+				EE4275F228B3BCB000112C94 /* EKGReminderViewController.swift in Sources */,
 				9A1F8B852869F2CA00F6E16C /* CircularProgressBarView.swift in Sources */,
-				9A163D5E28B488D200C87F6C /* UIColor.swift in Sources */,
+				EE4275EE28B3AFE300112C94 /* EmergencyContactTableViewCell.swift in Sources */,
+				EE4275FA28B3BD2600112C94 /* EKGReminderTableViewCell.swift in Sources */,
 				9A163D6228B4893200C87F6C /* AddHistoryViewController.swift in Sources */,
 				9AA547702870B42100E3B603 /* TutorialViewController.swift in Sources */,
+				9A163D6928B4958700C87F6C /* UIColor.swift in Sources */,
 				9ADBC7FF28B2783C0083F6D5 /* LogViewController.swift in Sources */,
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
+				EE4275E028AFE07F00112C94 /* SettingTableViewCell.swift in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
 				9A163D5528B4610C00C87F6C /* GuideTableViewCell.swift in Sources */,
 				9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */,
 				9A4E0BF728B328AD0099B8FD /* SummaryViewController.swift in Sources */,
+				EE4275EB28B38F9F00112C94 /* PickerViewPresenter.swift in Sources */,
 				9A1F8B93286DCF3B00F6E16C /* AddFriendViewController.swift in Sources */,
-				9A163D5128B4599400C87F6C /* UIButton.swift in Sources */,
+				9A163D6728B4958700C87F6C /* UIButton.swift in Sources */,
 				9AFC0848288456D2001F13CD /* WatchSessionManager.swift in Sources */,
 				9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
+				EE4275D728AF4BBC00112C94 /* TimeSettingViewController.swift in Sources */,
 				EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */,
 				9ADBC7B928AF057F0083F6D5 /* HomeTabBarViewController.swift in Sources */,
-				9A163D5F28B488D200C87F6C /* UIImage.swift in Sources */,
 				9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */,
 				A09E03B1286EC0CD005391F0 /* HomeViewController.swift in Sources */,
+				9A163D6A28B4958700C87F6C /* UIImage.swift in Sources */,
 				A078FF45286C5B75006D686F /* AddNoteViewController.swift in Sources */,
 				A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */,
+				EE4275F628B3BCDA00112C94 /* MedicineReminderViewController.swift in Sources */,
 				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
+				9A163D6828B4958700C87F6C /* UIFont.swift in Sources */,
 				9A163D6028B488D200C87F6C /* Date.swift in Sources */,
+				EE4275D328AF4B8C00112C94 /* EmergencyContactViewController.swift in Sources */,
 				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
 				A07BB950286B696B00A3DE30 /* OnboardViewController.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
 				A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */,
 				A0802D80286C854F004A22CB /* FirstAidViewController.swift in Sources */,
+				EE4275DB28AFB98700112C94 /* PersonalNoteSettingViewController.swift in Sources */,
 				A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */,
 				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
 				A07BB94E286B696B00A3DE30 /* OnboardingCollectionViewCell.swift in Sources */,
 				A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
-				9A163D5D28B488D200C87F6C /* UIFont.swift in Sources */,
 				A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */,
 				9A4E0BFC28B32B610099B8FD /* SummaryTableViewCell.swift in Sources */,
 				A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */,
@@ -1052,8 +1141,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1063,7 +1152,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp;
 				PRODUCT_NAME = Helpi;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1079,8 +1168,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1090,7 +1179,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp;
 				PRODUCT_NAME = Helpi;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1105,8 +1194,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchHelpi WatchKit Extension/WatchHelpi WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
@@ -1126,7 +1215,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1141,8 +1230,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchHelpi WatchKit Extension/WatchHelpi WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
@@ -1162,7 +1251,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1293,8 +1382,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1319,7 +1408,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1333,8 +1422,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1359,7 +1448,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Helpi App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
