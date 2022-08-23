@@ -12,30 +12,27 @@ class PersonalNoteSettingViewController: UIViewController {
   @IBOutlet weak var lblDescription: UILabel!
   @IBOutlet weak var txtPersonalNote: UITextView!
   @IBOutlet weak var lblExample: UILabel!
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(false, animated: true)
+    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: nil)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    lblDescription.font = UIFont.font(type: .sfRegular, size: 13)
-    txtPersonalNote.font = UIFont.font(type: .sfRegular, size: 17)
-    lblExample.font = UIFont.font(type: .sfRegular, size: 13)
-    
-    txtPersonalNote.backgroundColor = .white
-    txtPersonalNote.layer.cornerRadius = 10
-    txtPersonalNote.layer.shadowOffset = CGSize(width: 10, height: 10)
+    lblDescription.font = .rounded(ofSize: 14, weight: .regular)
+    txtPersonalNote.font = .rounded(ofSize: 17, weight: .regular)
+    lblExample.font = .rounded(ofSize: 14, weight: .regular)
+
+    txtPersonalNote.layer.cornerRadius = 8
+    txtPersonalNote.layer.masksToBounds = false
+    txtPersonalNote.layer.shadowColor = UIColor.black.cgColor
+    txtPersonalNote.layer.shadowOpacity = 0.25
+    txtPersonalNote.layer.shadowOffset = .zero
     txtPersonalNote.layer.shadowRadius = 5
-    txtPersonalNote.layer.shadowOpacity = 1
-    
-    configureItems()
-    
+    txtPersonalNote.layer.shouldRasterize = true
+
   }
-  
-  private func configureItems() {
-    navigationItem.rightBarButtonItem = UIBarButtonItem(
-      barButtonSystemItem: .save, target: self, action: nil
-    )
-  }
-  
-  
-  
 }

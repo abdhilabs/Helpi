@@ -11,9 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNoteViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="btnSave" destination="sPD-3A-F7w" id="QjO-gS-ixV"/>
-                <outlet property="notes" destination="Lvh-k2-LX7" id="C97-fq-1RX"/>
-                <outlet property="textNotes" destination="uxs-Vk-MzB" id="0ge-Cp-EFc"/>
-                <outlet property="titleLabel" destination="aL2-sS-up3" id="IqX-go-qNs"/>
+                <outlet property="lblDescription" destination="uxs-Vk-MzB" id="0ge-Cp-EFc"/>
+                <outlet property="lblTitle" destination="aL2-sS-up3" id="IqX-go-qNs"/>
+                <outlet property="txtNote" destination="Lvh-k2-LX7" id="C97-fq-1RX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,52 +28,18 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lvh-k2-LX7">
-                    <rect key="frame" x="20" y="427.5" width="374" height="317.5"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="317.5" id="Yhy-HW-ezc"/>
-                    </constraints>
-                    <color key="textColor" systemColor="labelColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5p-Po-vKP">
-                    <rect key="frame" x="20" y="840" width="374" height="31"/>
-                    <color key="tintColor" red="0.02745098248" green="0.035294115539999997" blue="0.05882352591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Lewati">
-                        <color key="baseForegroundColor" red="0.24705882352941178" green="0.24705882352941178" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="skipBtn:" destination="-1" eventType="touchUpInside" id="0uN-kk-rQl"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPD-3A-F7w">
-                    <rect key="frame" x="20" y="775" width="374" height="60"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="60" id="R1y-gm-h0C"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Simpan">
-                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="btnSave:" destination="-1" eventType="touchUpInside" id="eSv-1H-EWI"/>
-                    </connections>
-                </button>
-                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="k2z-TU-rui">
-                    <rect key="frame" x="40" y="137.5" width="334" height="143.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k2z-TU-rui">
+                    <rect key="frame" x="20" y="117.5" width="374" height="107.5"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_notes" translatesAutoresizingMaskIntoConstraints="NO" id="5lr-eu-2rC">
-                            <rect key="frame" x="0.0" y="27" width="90" height="90"/>
+                            <rect key="frame" x="0.0" y="9" width="90" height="90"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="90" id="3Nv-9U-fI7"/>
                                 <constraint firstAttribute="width" constant="90" id="aWM-kj-1NU"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxs-Vk-MzB">
-                            <rect key="frame" x="118" y="0.0" width="216" height="143.5"/>
+                            <rect key="frame" x="110" y="0.0" width="264" height="107.5"/>
                             <string key="text"> Catatan Pribadi akan ditunjukkan ke penolong saat keadaan darurat.  Tambahkan informasi tentang kondisi anda dan bagaimana cara menangani anda saat anda pingsan .</string>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" red="0.24705882352941178" green="0.24705882352941178" blue="0.24705882352941178" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,27 +47,62 @@
                         </label>
                     </subviews>
                 </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6pJ-Hp-XCZ">
+                    <rect key="frame" x="20" y="743" width="374" height="99"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPD-3A-F7w">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                            <color key="backgroundColor" red="1" green="0.1843137255" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="R1y-gm-h0C"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Simpan">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSave:" destination="-1" eventType="touchUpInside" id="eSv-1H-EWI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5p-Po-vKP">
+                            <rect key="frame" x="0.0" y="68" width="374" height="31"/>
+                            <color key="tintColor" red="0.02745098248" green="0.035294115539999997" blue="0.05882352591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Lewati">
+                                <color key="baseForegroundColor" red="0.24705882352941178" green="0.24705882352941178" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="skipBtn:" destination="-1" eventType="touchUpInside" id="0uN-kk-rQl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lvh-k2-LX7">
+                    <rect key="frame" x="20" y="245" width="374" height="478"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="sPD-3A-F7w" firstAttribute="top" secondItem="Lvh-k2-LX7" secondAttribute="bottom" constant="30" id="0Xa-35-Hrr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I5p-Po-vKP" secondAttribute="trailing" constant="20" id="6aK-b5-n6n"/>
-                <constraint firstItem="sPD-3A-F7w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9dN-60-ELB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sPD-3A-F7w" secondAttribute="trailing" constant="20" id="DdG-AF-Ri0"/>
-                <constraint firstItem="I5p-Po-vKP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="EfM-Go-TNP"/>
+                <constraint firstItem="6pJ-Hp-XCZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3B8-Vw-7Ux"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6pJ-Hp-XCZ" secondAttribute="bottom" constant="20" id="FgB-zg-3ku"/>
                 <constraint firstItem="aL2-sS-up3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="NPG-9C-5Hd"/>
                 <constraint firstItem="Lvh-k2-LX7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Sva-dw-Sji"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6pJ-Hp-XCZ" secondAttribute="trailing" constant="20" id="UGe-d3-vuc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lvh-k2-LX7" secondAttribute="trailing" constant="20" id="X20-9d-476"/>
-                <constraint firstAttribute="bottom" secondItem="I5p-Po-vKP" secondAttribute="bottom" constant="25" id="ZWa-PA-xFd"/>
-                <constraint firstItem="k2z-TU-rui" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ekg-7W-tAp"/>
-                <constraint firstAttribute="trailing" secondItem="k2z-TU-rui" secondAttribute="trailing" constant="40" id="fXE-zm-Wdy"/>
+                <constraint firstItem="6pJ-Hp-XCZ" firstAttribute="top" secondItem="Lvh-k2-LX7" secondAttribute="bottom" constant="20" id="Zxu-cF-OAe"/>
+                <constraint firstItem="Lvh-k2-LX7" firstAttribute="top" secondItem="k2z-TU-rui" secondAttribute="bottom" constant="20" id="cOp-ej-oJa"/>
+                <constraint firstItem="k2z-TU-rui" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ekg-7W-tAp"/>
+                <constraint firstAttribute="trailing" secondItem="k2z-TU-rui" secondAttribute="trailing" constant="20" id="fXE-zm-Wdy"/>
                 <constraint firstItem="aL2-sS-up3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fch-Oj-NyU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aL2-sS-up3" secondAttribute="trailing" constant="20" id="gCg-0z-gmE"/>
-                <constraint firstItem="I5p-Po-vKP" firstAttribute="top" secondItem="sPD-3A-F7w" secondAttribute="bottom" constant="5" id="uqd-IW-dfh"/>
-                <constraint firstItem="k2z-TU-rui" firstAttribute="top" secondItem="aL2-sS-up3" secondAttribute="bottom" constant="40" id="vH1-au-AAK"/>
+                <constraint firstItem="k2z-TU-rui" firstAttribute="top" secondItem="aL2-sS-up3" secondAttribute="bottom" constant="20" id="vH1-au-AAK"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="63.616071428571423"/>
+            <point key="canvasLocation" x="-209" y="-180"/>
         </view>
     </objects>
     <resources>

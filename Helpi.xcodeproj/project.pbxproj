@@ -638,16 +638,19 @@
 		9AE05F962864B4C1000D3386 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				9A4E0BF428B3272A0099B8FD /* Summary */,
-				9ADBC7FC28B2781C0083F6D5 /* Log */,
-				EE4275C228AF361E00112C94 /* Settings */,
-				9ADBC7B728AF053E0083F6D5 /* Home */,
 				A0802D6D286C8469004A22CB /* FirstAidScreen */,
 				A0A3368E286A175D00988028 /* HealthKit */,
+				9ADBC7B728AF053E0083F6D5 /* Home */,
+				9ADBC7FC28B2781C0083F6D5 /* Log */,
 				A054125C2871771800529401 /* MainView */,
 				A07BB947286B696B00A3DE30 /* Onboarding */,
+				EE4275C228AF361E00112C94 /* Settings */,
+				9A4E0BF428B3272A0099B8FD /* Summary */,
+				9A1F8B832869F2B000F6E16C /* Views */,
 				EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */,
 				EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */,
+				A078FF43286C5B75006D686F /* AddNoteViewController.swift */,
+				A078FF44286C5B75006D686F /* AddNoteViewController.xib */,
 				EEE0420C286F28CA00A2B04D /* BacktapTutorialViewController.swift */,
 				EEE0420D286F28CA00A2B04D /* BacktapTutorialViewController.xib */,
 				A078FF3F286C4B6B006D686F /* ContactViewController.swift */,
@@ -656,14 +659,11 @@
 				A04D66BF286DF36F00C43D83 /* DoneViewController.xib */,
 				A09E03AF286EC0CD005391F0 /* HomeViewController.swift */,
 				A09E03B0286EC0CD005391F0 /* HomeViewController.xib */,
-				A078FF43286C5B75006D686F /* AddNoteViewController.swift */,
-				A078FF44286C5B75006D686F /* AddNoteViewController.xib */,
 				EEE041FE286D315500A2B04D /* LoginViewController.swift */,
 				EEE041FF286D315500A2B04D /* LoginViewController.xib */,
 				EEE04204286D3A9500A2B04D /* ResultViewController.swift */,
 				9AA5476F2870B42100E3B603 /* TutorialViewController.swift */,
 				EEE04209286E9BD000A2B04D /* TutorialViewController.xib */,
-				9A1F8B832869F2B000F6E16C /* Views */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -751,38 +751,38 @@
 		EE4275C228AF361E00112C94 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				EE4275DD28AFE05A00112C94 /* Cells */,
-				EE4275C328AF365900112C94 /* SettingViewController.swift */,
-				EE4275C428AF365900112C94 /* SettingViewController.xib */,
+				EE4275F028B3BCB000112C94 /* EKGReminderViewController.swift */,
+				EE4275F128B3BCB000112C94 /* EKGReminderViewController.xib */,
 				EE4275D128AF4B8C00112C94 /* EmergencyContactViewController.swift */,
 				EE4275D228AF4B8C00112C94 /* EmergencyContactViewController.xib */,
-				EE4275D528AF4BBC00112C94 /* TimeSettingViewController.swift */,
-				EE4275D628AF4BBC00112C94 /* TimeSettingViewController.xib */,
+				EE4275F428B3BCDA00112C94 /* MedicineReminderViewController.swift */,
+				EE4275F528B3BCDA00112C94 /* MedicineReminderViewController.xib */,
 				EE4275D928AFB98700112C94 /* PersonalNoteSettingViewController.swift */,
 				EE4275DA28AFB98700112C94 /* PersonalNoteSettingViewController.xib */,
 				EE4275E628B2606A00112C94 /* ReminderViewController.swift */,
 				EE4275E728B2606A00112C94 /* ReminderViewController.xib */,
-				EE4275F028B3BCB000112C94 /* EKGReminderViewController.swift */,
-				EE4275F128B3BCB000112C94 /* EKGReminderViewController.xib */,
-				EE4275F428B3BCDA00112C94 /* MedicineReminderViewController.swift */,
-				EE4275F528B3BCDA00112C94 /* MedicineReminderViewController.xib */,
+				EE4275C328AF365900112C94 /* SettingViewController.swift */,
+				EE4275C428AF365900112C94 /* SettingViewController.xib */,
+				EE4275D528AF4BBC00112C94 /* TimeSettingViewController.swift */,
+				EE4275D628AF4BBC00112C94 /* TimeSettingViewController.xib */,
+				EE4275DD28AFE05A00112C94 /* Views */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		EE4275DD28AFE05A00112C94 /* Cells */ = {
+		EE4275DD28AFE05A00112C94 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE4275F828B3BD2600112C94 /* EKGReminderTableViewCell.swift */,
+				EE4275F928B3BD2600112C94 /* EKGReminderTableViewCell.xib */,
+				EE4275EC28B3AFE300112C94 /* EmergencyContactTableViewCell.swift */,
+				EE4275ED28B3AFE300112C94 /* EmergencyContactTableViewCell.xib */,
 				EE4275DE28AFE07F00112C94 /* SettingTableViewCell.swift */,
 				EE4275DF28AFE07F00112C94 /* SettingTableViewCell.xib */,
 				EE4275E228B0FE3A00112C94 /* TimeSettingTableViewCell.swift */,
 				EE4275E328B0FE3A00112C94 /* TimeSettingTableViewCell.xib */,
-				EE4275EC28B3AFE300112C94 /* EmergencyContactTableViewCell.swift */,
-				EE4275ED28B3AFE300112C94 /* EmergencyContactTableViewCell.xib */,
-				EE4275F828B3BD2600112C94 /* EKGReminderTableViewCell.swift */,
-				EE4275F928B3BD2600112C94 /* EKGReminderTableViewCell.xib */,
 			);
-			path = Cells;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

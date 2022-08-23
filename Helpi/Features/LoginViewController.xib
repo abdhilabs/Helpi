@@ -25,27 +25,27 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_signin" translatesAutoresizingMaskIntoConstraints="NO" id="H0J-Q2-tEn">
                     <rect key="frame" x="0.0" y="74" width="390" height="300"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="300" id="qaq-wO-Bo0"/>
+                        <constraint firstAttribute="height" constant="300" id="aPO-ar-Vmj"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siapkan Profil Anda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nss-o5-mrg">
-                    <rect key="frame" x="20" y="533" width="350" height="20.333333333333371"/>
+                    <rect key="frame" x="20" y="394" width="350" height="20.333333333333314"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7T-3E-5es">
-                    <rect key="frame" x="20" y="573.33333333333337" width="350" height="101.66666666666663"/>
+                    <rect key="frame" x="20" y="434.33333333333331" width="350" height="101.66666666666669"/>
                     <string key="text">Mendaftar menggunakan ID Apple untuk menambahkan helpee, sehingga Anda dapat mengirim dan menerima pemberitahuan dari helpee atau helper Anda setelah tombol peringatan ditekan</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.24705882352941178" green="0.24705882352941178" blue="0.24705882352941178" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-uq-ATo">
-                    <rect key="frame" x="20" y="715" width="350" height="99"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-uq-ATo">
+                    <rect key="frame" x="20" y="695" width="350" height="99"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExG-bt-r5v">
-                            <rect key="frame" x="5" y="0.0" width="340" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
                             <color key="backgroundColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="agh-nR-aYn"/>
@@ -60,7 +60,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gb-SA-Cms">
-                            <rect key="frame" x="142.33333333333334" y="68" width="65.666666666666657" height="31"/>
+                            <rect key="frame" x="0.0" y="68" width="350" height="31"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Lewati">
                                 <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,10 +70,6 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="ExG-bt-r5v" secondAttribute="trailing" constant="5" id="HeC-eL-Jqw"/>
-                        <constraint firstItem="ExG-bt-r5v" firstAttribute="leading" secondItem="MpA-uq-ATo" secondAttribute="leading" constant="5" id="gSz-af-INe"/>
-                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -81,14 +77,15 @@
             <constraints>
                 <constraint firstItem="nss-o5-mrg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1fa-d3-2H4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MpA-uq-ATo" secondAttribute="trailing" constant="20" id="7Fz-2d-FF3"/>
-                <constraint firstItem="MpA-uq-ATo" firstAttribute="top" secondItem="U7T-3E-5es" secondAttribute="bottom" constant="40" id="7Pu-8q-OWr"/>
                 <constraint firstItem="H0J-Q2-tEn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Dtz-bX-Oh7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U7T-3E-5es" secondAttribute="trailing" constant="20" id="OxQ-4Y-cdY"/>
-                <constraint firstAttribute="bottom" secondItem="MpA-uq-ATo" secondAttribute="bottom" constant="30" id="Ptj-D4-q4B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MpA-uq-ATo" secondAttribute="bottom" constant="16" id="RAV-qh-5fs"/>
                 <constraint firstItem="U7T-3E-5es" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="S3v-Hb-6gM"/>
                 <constraint firstItem="H0J-Q2-tEn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Sk6-p1-sw9"/>
+                <constraint firstItem="nss-o5-mrg" firstAttribute="top" secondItem="H0J-Q2-tEn" secondAttribute="bottom" constant="20" id="TT9-fb-EPD"/>
                 <constraint firstItem="MpA-uq-ATo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Tcc-Ja-rfJ"/>
                 <constraint firstItem="U7T-3E-5es" firstAttribute="top" secondItem="nss-o5-mrg" secondAttribute="bottom" constant="20" id="cAN-5X-x0Z"/>
+                <constraint firstItem="MpA-uq-ATo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="U7T-3E-5es" secondAttribute="bottom" constant="16" id="fpg-lm-U1E"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nss-o5-mrg" secondAttribute="trailing" constant="20" id="sbd-bV-jVM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H0J-Q2-tEn" secondAttribute="trailing" id="tHE-s0-H5I"/>
             </constraints>

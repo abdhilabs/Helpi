@@ -26,6 +26,11 @@ class SettingViewController: UIViewController {
     CellContent(icon: "phone", title: "Kontak Darurat"),
     CellContent(icon: "bell", title: "Pengingat")
   ]
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(true, animated: true)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -66,27 +71,33 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+
     let selectedIndex = indexPath.row
     
     switch selectedIndex {
     case 0:
       let intent = PersonalNoteSettingViewController(nibName: "PersonalNoteSettingViewController", bundle: nil)
-      self.navigationController?.pushViewController(intent, animated: true)
-      
+      intent.title = cellData[indexPath.row].title
+      intent.hidesBottomBarWhenPushed = true
+      self.navigationController?.pushViewController(intent, animated: true)      
     case 1:
       let intent = TimeSettingViewController(nibName: "TimeSettingViewController", bundle: nil)
+      intent.title = cellData[indexPath.row].title
+      intent.hidesBottomBarWhenPushed = true
       self.navigationController?.pushViewController(intent, animated: true)
-      
     case 2:
       let intent = EmergencyContactViewController(nibName: "EmergencyContactViewController", bundle: nil)
+      intent.title = cellData[indexPath.row].title
+      intent.hidesBottomBarWhenPushed = true
       self.navigationController?.pushViewController(intent, animated: true)
-      
     case 3:
       let intent = ReminderViewController(nibName: "ReminderViewController", bundle: nil)
+      intent.title = cellData[indexPath.row].title
+      intent.hidesBottomBarWhenPushed = true
       self.navigationController?.pushViewController(intent, animated: true)
-      
     default:
-      print("Intent Failed")
+      break
     }
   }
   

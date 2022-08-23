@@ -24,6 +24,11 @@ class EmergencyContactViewController: UIViewController {
     CellContent(name: "Ayah", number: "081234567890"),
     CellContent(name: "Adik", number: "080987654321")
   ]
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(false, animated: true)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -67,8 +72,8 @@ extension EmergencyContactViewController: CNContactPickerDelegate {
   }
   
   func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
-        let name = contact.givenName + " " + contact.familyName
-        let number = ((contact.phoneNumbers.first?.value) as? CNPhoneNumber)?.stringValue
+    let name = contact.givenName + " " + contact.familyName
+    let number = ((contact.phoneNumbers.first?.value) as? CNPhoneNumber)?.stringValue
     
     //    switch contactFrom {
     //    case .contactPrimary:

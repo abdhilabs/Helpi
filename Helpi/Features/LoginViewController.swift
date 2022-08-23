@@ -26,11 +26,7 @@ class LoginViewController: UIViewController {
     btnLogin.dropShadow()
     btnLogin.layer.cornerRadius = 10
     btnSkip.titleLabel?.font = .rounded(ofSize: 18, weight: .regular)
-  }
-  
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    //        performExistingAccountSetupFlows()
+    btnSkip.isHidden = false
   }
   
   override func viewWillAppear(_ animated: Bool) {

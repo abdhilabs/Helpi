@@ -20,9 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     WatchSessionManager.shared.startSession()
     
     let window = UIWindow(frame: UIScreen.main.bounds)
-    window.rootViewController = UINavigationController(rootViewController: FirstAidViewController())
+    window.rootViewController = HomeTabBarViewController()
 //    if SessionManager.shared.isLoggedIn() {
-//      window.rootViewController = UINavigationController(rootViewController: MainViewController())
+//      window.rootViewController = HomeTabBarViewController()
 //    } else if SessionManager.shared.isShowOnboard() {
 //      window.rootViewController = UINavigationController(rootViewController: LoginViewController())
 //    } else {

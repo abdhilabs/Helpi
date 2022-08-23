@@ -63,9 +63,7 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
     let pc = sender as! UIPageControl
     
     // scrolling the collectionView to the selected page
-    colOnboarding.scrollToItem(at: IndexPath(item: pc.currentPage, section: 0),
-                               at: .centeredHorizontally, animated: true)
-    
+    colOnboarding.scrollToItem(at: IndexPath(item: pc.currentPage, section: 0), at: .centeredHorizontally, animated: true)
   }
   
   @IBAction func skipBtn(_ sender: Any) {

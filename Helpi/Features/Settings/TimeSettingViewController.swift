@@ -22,6 +22,11 @@ class TimeSettingViewController: UIViewController {
     }
     return pickerViewPresenter
   }()
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(false, animated: true)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -53,6 +58,7 @@ extension TimeSettingViewController: UITableViewDelegate, UITableViewDataSource 
     switchView.addTarget(self, action: #selector(self.switchChanged(_:)), for: .valueChanged)
     
     if indexPath.row == 0 {
+      cell.lblValue.isHidden = true
       cell.accessoryView = switchView
     } else {
       cell.accessoryType = .disclosureIndicator
@@ -62,6 +68,7 @@ extension TimeSettingViewController: UITableViewDelegate, UITableViewDataSource 
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
     let selectedIndex = indexPath.row
     
     switch selectedIndex {

@@ -21,10 +21,10 @@ class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
 
     delegate = self
 
-    let alertTab = createTabController(vc: HomeViewController(), title: "Alert", active: UIImage.iconAlertActive, inactive: UIImage.iconAlert)
+    let alertTab = createTabController(vc: MainViewController(), title: "Alert", active: UIImage.iconAlertActive, inactive: UIImage.iconAlert)
     let logTab = createTabController(vc: LogViewController(), title: "Log", active: UIImage.iconLogActive, inactive: UIImage.iconLog)
     let summaryTab = createTabController(vc: SummaryViewController(), title: "Summary", active: UIImage.iconSummaryActive, inactive: UIImage.iconSummary)
-    let moreTab = createTabController(vc: HomeViewController(), title: "More", active: UIImage.iconMoreActive, inactive: UIImage.iconMore)
+    let moreTab = createTabController(vc: SettingViewController(), title: "More", active: UIImage.iconMoreActive, inactive: UIImage.iconMore)
 
     viewControllers = [alertTab, logTab, summaryTab, moreTab]
   }

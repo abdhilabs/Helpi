@@ -20,15 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonhelp" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-Zs-nmi">
-                    <rect key="frame" x="62" y="303" width="290" height="290"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="290" id="c9k-PS-WDB"/>
-                        <constraint firstAttribute="height" constant="290" id="y8g-M3-e7i"/>
-                    </constraints>
-                </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3dD-xw-g1W">
-                    <rect key="frame" x="20" y="94" width="374" height="46"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3dD-xw-g1W">
+                    <rect key="frame" x="20" y="64" width="374" height="41"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tombol Darurat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxt-g3-q0b">
                             <rect key="frame" x="128" y="0.0" width="118" height="20.5"/>
@@ -36,23 +29,30 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ketuk tombol Help! untuk meminta bantuan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-wn-Poy">
-                            <rect key="frame" x="22.5" y="25.5" width="329.5" height="20.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ketuk tombol Help! untuk meminta bantuan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-wn-Poy">
+                            <rect key="frame" x="22.5" y="20.5" width="329.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                 </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonhelp" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-Zs-nmi">
+                    <rect key="frame" x="82" y="323" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="c9k-PS-WDB"/>
+                        <constraint firstAttribute="height" constant="250" id="y8g-M3-e7i"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="3dD-xw-g1W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="FNa-QM-q8W"/>
                 <constraint firstItem="3dD-xw-g1W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Szo-Pt-tZW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3dD-xw-g1W" secondAttribute="trailing" constant="20" id="dLx-is-1Um"/>
                 <constraint firstItem="f8Z-Zs-nmi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f3F-kL-IHf"/>
                 <constraint firstItem="f8Z-Zs-nmi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tDe-c1-j6b"/>
-                <constraint firstItem="3dD-xw-g1W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="vY3-dR-Cp2"/>
             </constraints>
             <point key="canvasLocation" x="104" y="11"/>
         </view>

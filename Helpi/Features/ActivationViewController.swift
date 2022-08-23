@@ -228,7 +228,8 @@ class ActivationViewController: UIViewController {
   }
   
   @objc func buttonTapped() {
-    navigationController?.pushViewController(MainViewController(), animated: true)
+    let nextViewController = HomeTabBarViewController()
+    view.window?.rootViewController = nextViewController
   }
   
   override func viewWillAppear(_ animated: Bool) {

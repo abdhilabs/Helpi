@@ -9,10 +9,11 @@ import UIKit
 
 class AddNoteViewController: UIViewController {
   
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var textNotes: UILabel!
-  @IBOutlet weak var notes: UITextView!
+  @IBOutlet weak var lblTitle: UILabel!
+  @IBOutlet weak var lblDescription: UILabel!
+  @IBOutlet weak var txtNote: UITextView!
   @IBOutlet weak var btnSave: UIButton!
+  private var lblPlaceholder: UILabel!
   
   private let cloudKitService = CloudKitService()
   private let connectivityHandler = WatchSessionManager.shared
@@ -34,27 +35,39 @@ class AddNoteViewController: UIViewController {
     btnSave.backgroundColor = #colorLiteral(red: 1, green: 0.1843137255, blue: 0.02745098039, alpha: 1)
     btnSave.dropShadow()
     btnSave.layer.cornerRadius = 10
+
+    txtNote.delegate = self
+    lblPlaceholder = UILabel()
+    lblPlaceholder.numberOfLines = 0
+    lblPlaceholder.text = "Masukkan catatan anda di sini..."
+    lblPlaceholder.font = .rounded(ofSize: 15, weight: .regular)
+    lblPlaceholder.sizeToFit()
+    txtNote.addSubview(lblPlaceholder)
+    lblPlaceholder.frame.origin = CGPoint(x: 5, y: (txtNote.font?.pointSize)! / 2)
+    lblPlaceholder.textColor = .tertiaryLabel
+    lblPlaceholder.isHidden = !txtNote.text.isEmpty
     
     //add shadow
-    notes.layer.masksToBounds = false
-    notes.layer.shadowColor = UIColor.black.cgColor
-    notes.layer.shadowOpacity = 0.25
-    notes.layer.shadowOffset = .zero
-    notes.layer.shadowRadius = 5
-    notes.layer.shouldRasterize = true
-  
+    txtNote.layer.cornerRadius = 8
+    txtNote.layer.masksToBounds = false
+    txtNote.layer.shadowColor = UIColor.black.cgColor
+    txtNote.layer.shadowOpacity = 0.25
+    txtNote.layer.shadowOffset = .zero
+    txtNote.layer.shadowRadius = 5
+    txtNote.layer.shouldRasterize = true
+
     
     //Set Font Family
-    titleLabel.font = .rounded(ofSize: 24, weight: .semibold)
-    textNotes.font = .rounded(ofSize: 17, weight: .regular)
-    notes.font = .rounded(ofSize: 15, weight: .regular)
+    lblTitle.font = .rounded(ofSize: 24, weight: .semibold)
+    lblDescription.font = .rounded(ofSize: 17, weight: .regular)
+    txtNote.font = .rounded(ofSize: 15, weight: .regular)
     btnSave.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
     
     addTapGestureToHideKeyboard()
   }
   
   @IBAction func btnSave(_ sender: Any) {
-    let notes = notes.text ?? ""
+    let notes = txtNote.text ?? ""
     if notes.isEmpty == true {
       showAlert()
       return
@@ -109,4 +122,10 @@ class AddNoteViewController: UIViewController {
     self.navigationController?.pushViewController(nextFirstAid, animated: true)
   }
   
+}
+
+extension AddNoteViewController : UITextViewDelegate {
+  func textViewDidChange(_ textView: UITextView) {
+    lblPlaceholder.isHidden = !textView.text.isEmpty
+  }
 }

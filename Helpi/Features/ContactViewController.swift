@@ -40,10 +40,8 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
-    
-    //Sent Font Family
+
+    //Set Font Family
     lblTitle.font = .rounded(ofSize: 24, weight: .semibold)
     lblDescription.font = .rounded(ofSize: 17, weight: .regular)
     lblFirstEmergencyTitle.font = .rounded(ofSize: 17, weight: .semibold)
