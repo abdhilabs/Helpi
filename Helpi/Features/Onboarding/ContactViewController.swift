@@ -57,6 +57,7 @@ class ContactViewController: UIViewController, CNContactPickerDelegate  {
     btnSave.dropShadow()
     btnSave.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
     btnSkip.titleLabel?.font = .rounded(ofSize: 17, weight: .regular)
+    btnSkip.isHidden = true
   }
   
   override func viewWillAppear(_ animated: Bool) {

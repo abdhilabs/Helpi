@@ -13,6 +13,7 @@ class LogViewController: UIViewController {
   @IBOutlet weak var lblTitle: UILabel!
   @IBOutlet weak var viewCalendar: FSCalendar!
   @IBOutlet weak var constCalendarHeight: NSLayoutConstraint!
+  @IBOutlet weak var viewContainerHistory: UIView!
   @IBOutlet weak var lblHistory: UILabel!
   @IBOutlet weak var tblHistory: UITableView!
 
@@ -33,32 +34,39 @@ class LogViewController: UIViewController {
   }
 
   private func setupViews() {
-    lblTitle.font = .font(type: .sfBold, size: 34)
-    lblHistory.font = .font(type: .sfBold, size: 20)
+    lblTitle.font = .rounded(ofSize: 34, weight: .bold)
+    lblHistory.font = .rounded(ofSize: 20, weight: .bold)
 
     tblHistory.delegate = self
     tblHistory.dataSource = self
     tblHistory.register(UINib(nibName: String(describing: HistoryLogTableViewCell.self), bundle: nil), forCellReuseIdentifier: "HistoryLog")
 
+    viewContainerHistory.layer.cornerRadius = 30
+    viewContainerHistory.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    viewContainerHistory.layer.shadowColor = UIColor.black.cgColor
+    viewContainerHistory.layer.shadowOpacity = 0.25
+    viewContainerHistory.layer.shadowOffset = .zero
+    viewContainerHistory.layer.shadowRadius = 5
+
     setupCalendar()
   }
 
   private func setupCalendar() {
-    viewCalendar.locale = .current
+    viewCalendar.locale = .init(identifier: "id")
     viewCalendar.firstWeekday = 1
     viewCalendar.scrollDirection = .horizontal
     viewCalendar.scope = .month
     viewCalendar.delegate = self
     viewCalendar.dataSource = self
 
-    viewCalendar.appearance.headerTitleFont = UIFont.font(type: .sfBold, size: 20)
+    viewCalendar.appearance.headerTitleFont = .rounded(ofSize: 20, weight: .bold)
     viewCalendar.appearance.headerTitleAlignment = .center
-    viewCalendar.appearance.weekdayFont = UIFont.font(type: .sfRegular, size: 18)
-    viewCalendar.appearance.titleFont = UIFont.font(type: .sfRegular, size: 18)
+    viewCalendar.appearance.weekdayFont = .rounded(ofSize: 18, weight: .regular)
+    viewCalendar.appearance.titleFont = .rounded(ofSize: 18, weight: .regular)
     viewCalendar.appearance.todayColor = .systemBlue
     viewCalendar.appearance.titleTodayColor = .white
     viewCalendar.appearance.titleDefaultColor = .black
-    viewCalendar.appearance.headerTitleColor = .black
+    viewCalendar.appearance.headerTitleColor = #colorLiteral(red: 0.3147028089, green: 0.3147028089, blue: 0.3147028089, alpha: 1)
     viewCalendar.appearance.weekdayTextColor = .black
     viewCalendar.appearance.headerSeparatorColor = .none
     viewCalendar.appearance.selectionColor = .lightOrange

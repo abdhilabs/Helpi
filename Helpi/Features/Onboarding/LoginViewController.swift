@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
     btnLogin.dropShadow()
     btnLogin.layer.cornerRadius = 10
     btnSkip.titleLabel?.font = .rounded(ofSize: 18, weight: .regular)
-    btnSkip.isHidden = false
+    btnSkip.isHidden = true
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -111,7 +111,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
           SessionManager.shared.setPersonalNote(with: account.notes)
           
           DispatchQueue.main.async {
-            let nextViewController = MainViewController()
+            let nextViewController = EmergencyViewController()
             self.view.window?.rootViewController = nextViewController
           }
         } else {

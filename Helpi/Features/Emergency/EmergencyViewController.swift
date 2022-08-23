@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class EmergencyViewController: UIViewController {
   
   @IBOutlet weak var lblTitle: UILabel!
   @IBOutlet weak var lblDescription: UILabel!
@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(true, animated: true)
-    //    getPersonalNotes()
+    getPersonalNotes()
   }
   
   override func viewDidLoad() {

@@ -26,8 +26,8 @@ class PersonalNoteViewController: UIViewController {
     super.viewDidLoad()
     self.viewNotes.layer.cornerRadius = 10
     btnStart.dropShadow()
-    //    let notes = SessionManager.shared.getPersonalNote()
-    //    lblNote.text = notes
+    let notes = SessionManager.shared.getPersonalNote()
+    lblNote.text = notes
   }
   
   @IBAction func didTapStartButton(_ sender: Any) {

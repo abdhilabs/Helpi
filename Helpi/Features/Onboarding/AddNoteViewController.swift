@@ -75,11 +75,11 @@ class AddNoteViewController: UIViewController {
     
     account.notes = notes
     
-    //        do {
-    //            try connectivityHandler.updateApplicationContext(applicationContext: ["notes": account.notes, "recordName": account.recordId.recordName])
-    //        } catch {
-    //            print("Error: \(error)")
-    //        }
+    do {
+      try connectivityHandler.updateApplicationContext(applicationContext: ["notes": account.notes, "recordName": account.recordId.recordName])
+    } catch {
+      print("Error: \(error)")
+    }
     
     cloudKitService.register(by: account) { isSuccess in
       DispatchQueue.main.async {

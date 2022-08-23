@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Helpi" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmergencyViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="lblDescription" destination="1Qh-wn-Poy" id="MRT-Sl-PNV"/>
                 <outlet property="lblTitle" destination="Yxt-g3-q0b" id="hjV-SK-oEX"/>

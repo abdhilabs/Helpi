@@ -7,6 +7,12 @@
 
 import UIKit
 
+struct Onboarding {
+  let image: String
+  let title: String
+  let description: String
+}
+
 class OnboardViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
   
   private let authorizeHealthKitSection = 2
