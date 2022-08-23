@@ -66,6 +66,7 @@
 		9ADF93F628B4FCB60082EED5 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF93F328B4FCB60082EED5 /* CircularProgressBarView.swift */; };
 		9ADF93F728B4FCB60082EED5 /* BacktapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF93F428B4FCB60082EED5 /* BacktapTutorialViewController.swift */; };
 		9ADF93F828B4FCB60082EED5 /* BacktapTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF93F528B4FCB60082EED5 /* BacktapTutorialViewController.xib */; };
+		9ADF93F928B51A1B0082EED5 /* GuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */; };
 		9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE05F782864AB21000D3386 /* AppDelegate.swift */; };
 		9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F842864AB24000D3386 /* Assets.xcassets */; };
 		9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE05F862864AB24000D3386 /* LaunchScreen.storyboard */; };
@@ -891,6 +892,7 @@
 				9A4E0BF828B328AD0099B8FD /* SummaryViewController.xib in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
 				EEE04201286D315500A2B04D /* LoginViewController.xib in Resources */,
+				9ADF93F928B51A1B0082EED5 /* GuideTableViewCell.xib in Resources */,
 				EE4275EF28B3AFE300112C94 /* EmergencyContactTableViewCell.xib in Resources */,
 				EE4275E128AFE07F00112C94 /* SettingTableViewCell.xib in Resources */,
 				9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */,

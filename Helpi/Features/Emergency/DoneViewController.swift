@@ -11,6 +11,7 @@ class DoneViewController: UIViewController {
   
   @IBOutlet weak var lblTitle: UILabel!
   @IBOutlet weak var btnHome: UIButton!
+  @IBOutlet weak var lblNote: UILabel!
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -20,7 +21,18 @@ class DoneViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    lblTitle.font = .rounded(ofSize: 50, weight: .black)
+    let attributedString = NSMutableAttributedString(string: "Terima Kasih\nsudah membantu saya!")
+    attributedString.addAttribute(.font, value: UIFont.rounded(ofSize: 50, weight: .black), range: NSRange(location: 0, length: 12))
+    attributedString.addAttribute(.font, value: UIFont.rounded(ofSize: 24, weight: .semibold), range: NSRange(location: 13, length: 20))
+
+    lblTitle.attributedText = attributedString
+
+    lblNote.font = .rounded(ofSize: 17, weight: .regular)
+    let noteAttributedString = NSMutableAttributedString(string: lblNote.text ?? "")
+    noteAttributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 17, weight: .semibold), range: NSRange(location: 0, length: 28))
+    noteAttributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 17, weight: .semibold), range: NSRange(location: 52, length: 20))
+    lblNote.attributedText = noteAttributedString
+
     btnHome.layer.cornerRadius = 20
     btnHome.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
   }

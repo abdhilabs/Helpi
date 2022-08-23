@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalNoteViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="btnStart" destination="5La-2u-39W" id="r92-ji-IuP"/>
+                <outlet property="lblGuide" destination="npH-WI-chq" id="3Zz-WJ-Y2r"/>
                 <outlet property="lblNote" destination="lNs-er-QHF" id="Yr9-gj-eTq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewNotes" destination="UbS-OA-GAe" id="y6Y-MA-7Ft"/>
@@ -45,14 +46,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UbS-OA-GAe">
                             <rect key="frame" x="0.0" y="155" width="374" height="150"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNs-er-QHF">
-                                    <rect key="frame" x="166.5" y="65" width="41.5" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNs-er-QHF">
+                                    <rect key="frame" x="183" y="65" width="8" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="lNs-er-QHF" firstAttribute="centerX" secondItem="UbS-OA-GAe" secondAttribute="centerX" id="9Vd-Bx-Soa"/>
                                 <constraint firstItem="lNs-er-QHF" firstAttribute="centerY" secondItem="UbS-OA-GAe" secondAttribute="centerY" id="Dkb-F1-fKP"/>
@@ -69,7 +70,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Start Assistance Guide">
+                    <state key="normal" title="Mulai Bimbingan Bantuan">
                         <color key="titleColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -81,6 +82,12 @@
                         <action selector="didTapStartButton:" destination="-1" eventType="touchUpInside" id="yWp-oR-Nlo"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ketuk tombol “Mulai Bimbingan Bantuan” untuk memulai menolong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npH-WI-chq">
+                    <rect key="frame" x="16" y="656.5" width="382" height="99.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -89,10 +96,14 @@
                 <constraint firstItem="5La-2u-39W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="53C-KR-VLo"/>
                 <constraint firstItem="wq9-3p-FuC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Are-J7-VKa"/>
                 <constraint firstAttribute="trailing" secondItem="wq9-3p-FuC" secondAttribute="trailing" constant="20" id="BpY-W2-gHJ"/>
+                <constraint firstItem="npH-WI-chq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="EqO-1U-Kaw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5La-2u-39W" secondAttribute="trailing" constant="20" id="Jzn-we-GvN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="npH-WI-chq" secondAttribute="trailing" constant="16" id="WUI-2Q-5Vk"/>
                 <constraint firstItem="GPn-7J-7G6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="hTO-1Z-IHl"/>
                 <constraint firstItem="wq9-3p-FuC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="pgI-n9-Lku"/>
+                <constraint firstItem="npH-WI-chq" firstAttribute="top" secondItem="wq9-3p-FuC" secondAttribute="bottom" constant="16" id="rck-x5-3Eq"/>
                 <constraint firstItem="GPn-7J-7G6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tsS-Gk-ozV"/>
+                <constraint firstItem="5La-2u-39W" firstAttribute="top" secondItem="npH-WI-chq" secondAttribute="bottom" constant="16" id="u3X-OW-nXT"/>
                 <constraint firstItem="wq9-3p-FuC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="40" id="znW-Qx-M6V"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
@@ -102,9 +113,6 @@
         <image name="iconnotes" width="222" height="223"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

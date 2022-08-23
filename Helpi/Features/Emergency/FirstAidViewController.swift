@@ -83,11 +83,11 @@ class FirstAidViewController: UIViewController {
   }
 
   @IBAction func didTapEmergencyButton(_ sender: Any) {
-
+    showActionsheet()
   }
 
   @IBAction func didTapDoneButton(_ sender: Any) {
-
+    showAlert()
   }
 
   func showAlert(){

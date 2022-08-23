@@ -14,9 +14,7 @@ class AssistanceViewController: UIViewController {
   @IBOutlet weak var lblSubtitle: UILabel!
   @IBOutlet weak var lblDescription: UILabel!
   @IBOutlet weak var btnStart: UIButton!
-  
-  private let cloudKitService = CloudKitService()
-  
+
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(false, animated: true)
@@ -41,13 +39,10 @@ class AssistanceViewController: UIViewController {
     btnStart.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
     btnStart.layer.cornerRadius = 10
     btnStart.dropShadow()
-    
-    let recordId = SessionManager.shared.getRecordId()
-    cloudKitService.updateDataFriend(by: .init(recordName: recordId)) { name in
-      DispatchQueue.main.async {
-        self.lblDescription.text = "Help! My name is \(name) and I fainted. Please don’t panic and tap on Start Assistance to help me."
-      }
-    }
+
+    let attributedString = NSMutableAttributedString(string: "Jangan Panik\nKetuk tombol “Mulai Bantuan” untuk menolong")
+    attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 17, weight: .bold), range: NSRange(location: 27, length: 15))
+    lblDescription.attributedText = attributedString
   }
   
   @IBAction func didTapStartButton(_ sender: Any) {

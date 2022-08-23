@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="rmr-B1-X4R">
-                    <rect key="frame" x="20" y="318" width="374" height="260.5"/>
+                    <rect key="frame" x="20" y="328.5" width="374" height="239"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y6X-7R-dif">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="104"/>
@@ -41,8 +41,8 @@
                                 </label>
                             </subviews>
                         </stackView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help! My name is - and I fainted. Please don’t panic and tap on Start Assistance to help me." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e01-uU-fRu">
-                            <rect key="frame" x="0.0" y="196" width="374" height="64.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jangan Panik\nKetuk tombol “Mulai Bantuan” untuk menolong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e01-uU-fRu">
+                            <rect key="frame" x="0.0" y="196" width="374" height="43"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                     </constraints>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Start Assistance">
+                    <state key="normal" title="Mulai Bantuan">
                         <color key="titleColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -81,7 +81,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eaB-1A-Uur" secondAttribute="trailing" constant="20" id="P00-y8-pAg"/>
                 <constraint firstItem="rmr-B1-X4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mIU-Bw-Gyo"/>
             </constraints>
-            <point key="canvasLocation" x="280" y="-38"/>
+            <point key="canvasLocation" x="275" y="-50"/>
         </view>
     </objects>
 </document>

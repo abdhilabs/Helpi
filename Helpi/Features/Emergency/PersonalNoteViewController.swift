@@ -12,7 +12,8 @@ class PersonalNoteViewController: UIViewController {
   @IBOutlet weak var viewNotes: UIView!
   @IBOutlet weak var btnStart: UIButton!
   @IBOutlet weak var lblNote: UILabel!
-  
+  @IBOutlet weak var lblGuide: UILabel!
+
   private let cloudKitService = CloudKitService()
   
   private var account: UserAccount? = nil
@@ -24,10 +25,23 @@ class PersonalNoteViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.viewNotes.layer.cornerRadius = 10
+    configureViews()
+  }
+
+  private func configureViews() {
+    viewNotes.layer.cornerRadius = 10
+    viewNotes.layer.borderWidth = 1
+    viewNotes.layer.borderColor = #colorLiteral(red: 0.8117647059, green: 0.8549019608, blue: 0.8980392157, alpha: 1)
+
     btnStart.dropShadow()
     let notes = SessionManager.shared.getPersonalNote()
     lblNote.text = notes
+
+    let attributedText = NSMutableAttributedString(string: lblGuide.text ?? "")
+    attributedText.addAttribute(.font, value: UIFont.systemFont(ofSize: 17, weight: .bold),
+                                range: NSRange(location: 13, length: 25))
+
+    lblGuide.attributedText = attributedText
   }
   
   @IBAction func didTapStartButton(_ sender: Any) {

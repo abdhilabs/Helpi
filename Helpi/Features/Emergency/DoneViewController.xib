@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoneViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="btnHome" destination="U2o-S4-jYf" id="cmb-Jn-Ps3"/>
+                <outlet property="lblNote" destination="VDY-9g-yan" id="Ntw-I5-YmP"/>
                 <outlet property="lblTitle" destination="1rS-y7-A7Q" id="rtf-1C-2Hv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,13 +20,29 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageDone" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-bC-zRG">
-                    <rect key="frame" x="73" y="299" width="268" height="298"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="298" id="Nxx-RY-VnY"/>
-                        <constraint firstAttribute="width" constant="268" id="rA2-X0-jeV"/>
-                    </constraints>
-                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="f4s-VL-cBd">
+                    <rect key="frame" x="16" y="60" width="382" height="706"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Terima Kasih \nsudah membantu saya!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rS-y7-A7Q">
+                            <rect key="frame" x="45" y="0.0" width="292" height="276.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.1843137255" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageDone" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-bC-zRG">
+                            <rect key="frame" x="57" y="292.5" width="268" height="296"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDY-9g-yan">
+                            <rect key="frame" x="5.5" y="604.5" width="371.5" height="101.5"/>
+                            <string key="text">Mohon kembalikan ponsel saya jika saya sudah sadar. 
+Mohon tunggu bantuan jika sudah menghubungi nomor darurat atau rumah 
+sakit.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2o-S4-jYf">
                     <rect key="frame" x="20" y="782" width="374" height="60"/>
                     <color key="backgroundColor" red="1" green="0.18431372549019609" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,26 +56,19 @@
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="btnHome:" destination="-1" eventType="touchUpInside" id="k0h-Z4-pTG"/>
+                        <action selector="didTapHomeButton:" destination="-1" eventType="touchUpInside" id="0jm-I4-huj"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terima Kasih \nsudah membantu saya!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rS-y7-A7Q">
-                    <rect key="frame" x="60" y="60" width="294" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1rS-y7-A7Q" secondAttribute="trailing" constant="60" id="0AU-ap-IWC"/>
-                <constraint firstItem="hIW-bC-zRG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="68y-ex-XEO"/>
-                <constraint firstItem="1rS-y7-A7Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="KUU-Rm-Fpm"/>
+                <constraint firstItem="U2o-S4-jYf" firstAttribute="top" secondItem="f4s-VL-cBd" secondAttribute="bottom" constant="16" id="6nI-Qv-1RV"/>
+                <constraint firstItem="f4s-VL-cBd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="FiA-iq-ftr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="U2o-S4-jYf" secondAttribute="bottom" constant="20" id="anZ-dQ-GjT"/>
-                <constraint firstItem="1rS-y7-A7Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="b9W-t8-McI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U2o-S4-jYf" secondAttribute="trailing" constant="20" id="e24-Y8-6jX"/>
-                <constraint firstItem="hIW-bC-zRG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vY2-ST-Pbu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f4s-VL-cBd" secondAttribute="trailing" constant="16" id="o27-Qg-htc"/>
+                <constraint firstItem="f4s-VL-cBd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="sFP-Qk-eVf"/>
                 <constraint firstItem="U2o-S4-jYf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yLK-Bp-cKb"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="76.339285714285708"/>
