@@ -9,8 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
-                <outlet property="labelDesc" destination="1Qh-wn-Poy" id="MRT-Sl-PNV"/>
-                <outlet property="labelTitle" destination="Yxt-g3-q0b" id="hjV-SK-oEX"/>
+                <outlet property="lblDescription" destination="1Qh-wn-Poy" id="MRT-Sl-PNV"/>
+                <outlet property="lblTitle" destination="Yxt-g3-q0b" id="hjV-SK-oEX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="qpu-tO-h45"/>
                 <outlet property="viewHelpButton" destination="f8Z-Zs-nmi" id="b0A-qw-Kjb"/>
             </connections>
@@ -54,7 +54,7 @@
                 <constraint firstItem="f8Z-Zs-nmi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tDe-c1-j6b"/>
                 <constraint firstItem="3dD-xw-g1W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="vY3-dR-Cp2"/>
             </constraints>
-            <point key="canvasLocation" x="-42.028985507246382" y="10.714285714285714"/>
+            <point key="canvasLocation" x="104" y="11"/>
         </view>
     </objects>
     <resources>

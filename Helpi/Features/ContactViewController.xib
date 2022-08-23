@@ -10,18 +10,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
-                <outlet property="btnContact1" destination="HC7-Sh-XEU" id="6m5-CM-SDR"/>
-                <outlet property="btnContact2" destination="44L-vr-XTp" id="Ztc-oA-lyT"/>
+                <outlet property="btnFirstEmergencyContact" destination="HC7-Sh-XEU" id="6m5-CM-SDR"/>
                 <outlet property="btnSave" destination="RGw-Zw-rKs" id="6VT-L1-VEl"/>
+                <outlet property="btnSecondaryEmergencyContact" destination="44L-vr-XTp" id="Ztc-oA-lyT"/>
                 <outlet property="btnSkip" destination="9oe-AF-hCt" id="7xB-mQ-gV0"/>
-                <outlet property="descriptionText" destination="nc7-Ml-ppP" id="G2r-Zy-fZN"/>
-                <outlet property="fullName1" destination="x1u-y3-u1h" id="prk-Y7-MUl"/>
-                <outlet property="fullName2" destination="EOc-sW-tdm" id="Sho-kl-cyS"/>
-                <outlet property="phoneNumber1" destination="k20-Se-blV" id="mth-ER-SBU"/>
-                <outlet property="phoneNumber2" destination="X5B-3c-zZX" id="AWI-wM-m8L"/>
-                <outlet property="titleJudul1" destination="U9Z-oN-BVX" id="f4t-4V-heX"/>
-                <outlet property="titleJudul2" destination="ux2-Os-Hct" id="VqA-4v-7aE"/>
-                <outlet property="titleLabel" destination="dX1-yT-HJi" id="XqU-p7-vT1"/>
+                <outlet property="lblDescription" destination="nc7-Ml-ppP" id="G2r-Zy-fZN"/>
+                <outlet property="lblFirstEmergencyTitle" destination="U9Z-oN-BVX" id="f4t-4V-heX"/>
+                <outlet property="lblSecondaryEmergencyTitle" destination="ux2-Os-Hct" id="VqA-4v-7aE"/>
+                <outlet property="lblTitle" destination="dX1-yT-HJi" id="XqU-p7-vT1"/>
+                <outlet property="txtFirstEmergencyName" destination="x1u-y3-u1h" id="prk-Y7-MUl"/>
+                <outlet property="txtFirstEmergencyPhone" destination="k20-Se-blV" id="mth-ER-SBU"/>
+                <outlet property="txtSecondaryEmergencyName" destination="EOc-sW-tdm" id="Sho-kl-cyS"/>
+                <outlet property="txtSecondaryEmergencyPhone" destination="X5B-3c-zZX" id="AWI-wM-m8L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -60,7 +60,7 @@
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Tambahkan Dari Kontak"/>
                                     <connections>
-                                        <action selector="btnContact1:" destination="-1" eventType="touchUpInside" id="EYb-rB-m03"/>
+                                        <action selector="didTapFirstContactButton:" destination="-1" eventType="touchUpInside" id="UsD-FS-sEc"/>
                                     </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ifj-Ur-8xE">

@@ -9,8 +9,8 @@ import UIKit
 
 class MainViewController: UIViewController {
   
-  @IBOutlet weak var labelTitle: UILabel!
-  @IBOutlet weak var labelDesc: UILabel!
+  @IBOutlet weak var lblTitle: UILabel!
+  @IBOutlet weak var lblDescription: UILabel!
   @IBOutlet weak var viewHelpButton: UIImageView!
   
   private let cloudKitService = CloudKitService()
@@ -26,8 +26,8 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureViews()
-    labelTitle.font = .rounded(ofSize: 34, weight: .bold)
-    labelDesc.font = .rounded(ofSize: 18, weight: .regular)
+    lblTitle.font = .rounded(ofSize: 34, weight: .bold)
+    lblDescription.font = .rounded(ofSize: 18, weight: .regular)
   }
   
   private func getPersonalNotes() {

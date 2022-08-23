@@ -31,7 +31,7 @@ class PersonalNoteViewController: UIViewController {
   }
   
   @IBAction func didTapStartButton(_ sender: Any) {
-    let nextFirstScreenController = FirstAidScreen()
+    let nextFirstScreenController = FirstAidViewController()
     if let account = account {
       let emergencyPhonePrimary = account.emergencyPhonePrimary
         .trimmingAllSpaces()

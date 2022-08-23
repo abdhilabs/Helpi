@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E7BC3E1B250FCF2A2720BCC /* Pods_Helpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1B58C40D9E215BF7D74F7B /* Pods_Helpi.framework */; };
+		621A9ACD1577FF09810FF3C2 /* libPods-Helpi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8507AACF98522BAAAAD2562 /* libPods-Helpi.a */; };
+		9A163D5128B4599400C87F6C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5028B4599400C87F6C /* UIButton.swift */; };
+		9A163D5528B4610C00C87F6C /* GuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A163D5328B4610C00C87F6C /* GuideTableViewCell.swift */; };
+		9A163D5628B4610C00C87F6C /* GuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */; };
 		9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */; };
 		9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */; };
 		9A1F8B812869EF5000F6E16C /* AssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */; };
@@ -109,11 +112,8 @@
 		A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07BB949286B696B00A3DE30 /* OnboardingCollectionViewCell.xib */; };
 		A07BB950286B696B00A3DE30 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB94A286B696B00A3DE30 /* OnboardViewController.swift */; };
 		A07BB951286B696B00A3DE30 /* OnboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07BB94C286B696B00A3DE30 /* OnboardViewController.xib */; };
-		A0802D80286C854F004A22CB /* FirstAidScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D7E286C854F004A22CB /* FirstAidScreen.swift */; };
-		A0802D81286C854F004A22CB /* FirstAidScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0802D7F286C854F004A22CB /* FirstAidScreen.xib */; };
-		A0802D83286C8594004A22CB /* ModelFirstAid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D82286C8594004A22CB /* ModelFirstAid.swift */; };
-		A0802D8A286C8653004A22CB /* FirstAidCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D88286C8653004A22CB /* FirstAidCollectionViewCell.swift */; };
-		A0802D8B286C8653004A22CB /* FirstAidCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */; };
+		A0802D80286C854F004A22CB /* FirstAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D7E286C854F004A22CB /* FirstAidViewController.swift */; };
+		A0802D81286C854F004A22CB /* FirstAidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0802D7F286C854F004A22CB /* FirstAidViewController.xib */; };
 		A087D41128AFE73500FFA26C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087D41028AFE73500FFA26C /* CircularProgressView.swift */; };
 		A09E03B1286EC0CD005391F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E03AF286EC0CD005391F0 /* HomeViewController.swift */; };
 		A09E03B2286EC0CD005391F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09E03B0286EC0CD005391F0 /* HomeViewController.xib */; };
@@ -126,8 +126,8 @@
 		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
 		EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */; };
 		EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */; };
-		EEE04200286D315500A2B04D /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041FE286D315500A2B04D /* ProfileSetupViewController.swift */; };
-		EEE04201286D315500A2B04D /* ProfileSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041FF286D315500A2B04D /* ProfileSetupViewController.xib */; };
+		EEE04200286D315500A2B04D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041FE286D315500A2B04D /* LoginViewController.swift */; };
+		EEE04201286D315500A2B04D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041FF286D315500A2B04D /* LoginViewController.xib */; };
 		EEE04203286D398700A2B04D /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04202286D398700A2B04D /* KeychainItem.swift */; };
 		EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE04204286D3A9500A2B04D /* ResultViewController.swift */; };
 		EEE04207286E585F00A2B04D /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE04206286E579A00A2B04D /* AuthenticationServices.framework */; };
@@ -180,7 +180,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7F1B58C40D9E215BF7D74F7B /* Pods_Helpi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Helpi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B14154B70A04060AC6C4DE4 /* Pods-Helpi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.debug.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.debug.xcconfig"; sourceTree = "<group>"; };
+		9A163D5028B4599400C87F6C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		9A163D5328B4610C00C87F6C /* GuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTableViewCell.swift; sourceTree = "<group>"; };
+		9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideTableViewCell.xib; sourceTree = "<group>"; };
 		9A1F8B7B2869E2F600F6E16C /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		9A1F8B7C2869E2F600F6E16C /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
 		9A1F8B7F2869EF5000F6E16C /* AssistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistanceViewController.swift; sourceTree = "<group>"; };
@@ -275,11 +278,8 @@
 		A07BB94A286B696B00A3DE30 /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		A07BB94C286B696B00A3DE30 /* OnboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardViewController.xib; sourceTree = "<group>"; };
 		A07BB94D286B696B00A3DE30 /* ModelOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelOnboarding.swift; sourceTree = "<group>"; };
-		A0802D7E286C854F004A22CB /* FirstAidScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidScreen.swift; sourceTree = "<group>"; };
-		A0802D7F286C854F004A22CB /* FirstAidScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAidScreen.xib; sourceTree = "<group>"; };
-		A0802D82286C8594004A22CB /* ModelFirstAid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFirstAid.swift; sourceTree = "<group>"; };
-		A0802D88286C8653004A22CB /* FirstAidCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidCollectionViewCell.swift; sourceTree = "<group>"; };
-		A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAidCollectionViewCell.xib; sourceTree = "<group>"; };
+		A0802D7E286C854F004A22CB /* FirstAidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidViewController.swift; sourceTree = "<group>"; };
+		A0802D7F286C854F004A22CB /* FirstAidViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAidViewController.xib; sourceTree = "<group>"; };
 		A087D41028AFE73500FFA26C /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		A09E03AF286EC0CD005391F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A09E03B0286EC0CD005391F0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -295,8 +295,8 @@
 		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivationViewController.xib; sourceTree = "<group>"; };
 		EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
-		EEE041FE286D315500A2B04D /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
-		EEE041FF286D315500A2B04D /* ProfileSetupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileSetupViewController.xib; sourceTree = "<group>"; };
+		EEE041FE286D315500A2B04D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EEE041FF286D315500A2B04D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		EEE04202286D398700A2B04D /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
 		EEE04204286D3A9500A2B04D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		EEE04206286E579A00A2B04D /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
@@ -339,6 +339,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9A163D5228B460ED00C87F6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A163D5328B4610C00C87F6C /* GuideTableViewCell.swift */,
+				9A163D5428B4610C00C87F6C /* GuideTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9A1F8B832869F2B000F6E16C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,10 +366,7 @@
 				9A1F8B8B286D211400F6E16C /* UIViewController.swift */,
 				9A9120C52872EE3E005B8C0B /* String.swift */,
 				9A21308328891BB8004A28AA /* JWT.swift */,
-				9ADBC7D628AF1DE40083F6D5 /* UIFont.swift */,
-				9ADBC7D828AF1F550083F6D5 /* UIColor.swift */,
-				9ADBC7DA28AF36DA0083F6D5 /* UIImage.swift */,
-				9AB6973E28B3C9EC00673A58 /* Date.swift */,
+				9A163D5028B4599400C87F6C /* UIButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -605,8 +611,8 @@
 				A09E03B0286EC0CD005391F0 /* HomeViewController.xib */,
 				A078FF43286C5B75006D686F /* AddNoteViewController.swift */,
 				A078FF44286C5B75006D686F /* AddNoteViewController.xib */,
-				EEE041FE286D315500A2B04D /* ProfileSetupViewController.swift */,
-				EEE041FF286D315500A2B04D /* ProfileSetupViewController.xib */,
+				EEE041FE286D315500A2B04D /* LoginViewController.swift */,
+				EEE041FF286D315500A2B04D /* LoginViewController.xib */,
 				EEE04204286D3A9500A2B04D /* ResultViewController.swift */,
 				9AA5476F2870B42100E3B603 /* TutorialViewController.swift */,
 				EEE04209286E9BD000A2B04D /* TutorialViewController.xib */,
@@ -678,11 +684,9 @@
 		A0802D6D286C8469004A22CB /* FirstAidScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A0802D7E286C854F004A22CB /* FirstAidScreen.swift */,
-				A0802D7F286C854F004A22CB /* FirstAidScreen.xib */,
-				A0802D82286C8594004A22CB /* ModelFirstAid.swift */,
-				A0802D88286C8653004A22CB /* FirstAidCollectionViewCell.swift */,
-				A0802D89286C8653004A22CB /* FirstAidCollectionViewCell.xib */,
+				9A163D5228B460ED00C87F6C /* Views */,
+				A0802D7E286C854F004A22CB /* FirstAidViewController.swift */,
+				A0802D7F286C854F004A22CB /* FirstAidViewController.xib */,
 			);
 			name = FirstAidScreen;
 			path = ..;
@@ -845,8 +849,7 @@
 				EEE0420B286E9BD000A2B04D /* TutorialViewController.xib in Resources */,
 				9A4E0BF828B328AD0099B8FD /* SummaryViewController.xib in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
-				9AF662F228B2FE7000C862B5 /* SF-Compact-Rounded-Semibold.ttf in Resources */,
-				EEE04201286D315500A2B04D /* ProfileSetupViewController.xib in Resources */,
+				EEE04201286D315500A2B04D /* LoginViewController.xib in Resources */,
 				9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */,
 				9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */,
 				9AF662F028B2FE7000C862B5 /* SF-Compact-Rounded-Bold.ttf in Resources */,
@@ -859,9 +862,9 @@
 				9A4E0BEF28B3017E0099B8FD /* HistoryLogTableViewCell.xib in Resources */,
 				9A4E0C0128B332B20099B8FD /* DetailSummaryViewController.xib in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
-				A0802D8B286C8653004A22CB /* FirstAidCollectionViewCell.xib in Resources */,
 				A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */,
-				A0802D81286C854F004A22CB /* FirstAidScreen.xib in Resources */,
+				A0802D81286C854F004A22CB /* FirstAidViewController.xib in Resources */,
+				9A163D5628B4610C00C87F6C /* GuideTableViewCell.xib in Resources */,
 				A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */,
 				9A4E0BF328B30D7D0099B8FD /* AddHistoryViewController.xib in Resources */,
 				9AF662F428B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf in Resources */,
@@ -946,7 +949,7 @@
 			files = (
 				9A21308428891BB8004A28AA /* JWT.swift in Sources */,
 				9A9120C62872EE3E005B8C0B /* String.swift in Sources */,
-				EEE04200286D315500A2B04D /* ProfileSetupViewController.swift in Sources */,
+				EEE04200286D315500A2B04D /* LoginViewController.swift in Sources */,
 				EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */,
 				EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */,
 				9A4E0C0028B332B20099B8FD /* DetailSummaryViewController.swift in Sources */,
@@ -966,9 +969,11 @@
 				9ADBC7FF28B2783C0083F6D5 /* LogViewController.swift in Sources */,
 				9AE05F832864AB21000D3386 /* Helpi.xcdatamodeld in Sources */,
 				EEE04205286D3A9500A2B04D /* ResultViewController.swift in Sources */,
+				9A163D5528B4610C00C87F6C /* GuideTableViewCell.swift in Sources */,
 				9A1F8B9A286EA03B00F6E16C /* FriendTableViewCell.swift in Sources */,
 				9A4E0BF728B328AD0099B8FD /* SummaryViewController.swift in Sources */,
 				9A1F8B93286DCF3B00F6E16C /* AddFriendViewController.swift in Sources */,
+				9A163D5128B4599400C87F6C /* UIButton.swift in Sources */,
 				9AFC0848288456D2001F13CD /* WatchSessionManager.swift in Sources */,
 				9AA5476C2870AD6200E3B603 /* ModelOnboarding.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
@@ -979,18 +984,13 @@
 				A078FF45286C5B75006D686F /* AddNoteViewController.swift in Sources */,
 				A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
-				A0802D83286C8594004A22CB /* ModelFirstAid.swift in Sources */,
-				9A4E0BEE28B3017E0099B8FD /* HistoryLogTableViewCell.swift in Sources */,
-				9ADBC7D928AF1F550083F6D5 /* UIColor.swift in Sources */,
 				9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */,
 				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
-				9A4E0BF228B30D7D0099B8FD /* AddHistoryViewController.swift in Sources */,
-				A0802D8A286C8653004A22CB /* FirstAidCollectionViewCell.swift in Sources */,
 				9AE05F922864B427000D3386 /* MainViewController.swift in Sources */,
 				A07BB950286B696B00A3DE30 /* OnboardViewController.swift in Sources */,
 				9AE05F9C28652D31000D3386 /* Variables.swift in Sources */,
 				A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */,
-				A0802D80286C854F004A22CB /* FirstAidScreen.swift in Sources */,
+				A0802D80286C854F004A22CB /* FirstAidViewController.swift in Sources */,
 				A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */,
 				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
 				A07BB94E286B696B00A3DE30 /* OnboardingCollectionViewCell.swift in Sources */,

@@ -10,8 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoneViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="btnHome" destination="U2o-S4-jYf" id="cmb-Jn-Ps3"/>
-                <outlet property="labelDesc" destination="uaR-DC-sDo" id="Ehq-i1-YBj"/>
-                <outlet property="labelTerimakasih" destination="1rS-y7-A7Q" id="rtf-1C-2Hv"/>
+                <outlet property="lblTitle" destination="1rS-y7-A7Q" id="rtf-1C-2Hv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,23 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QdY-OP-Qun">
-                    <rect key="frame" x="20" y="74" width="374" height="49"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terima Kasih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rS-y7-A7Q">
-                            <rect key="frame" x="138.5" y="0.0" width="97" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sudah membantu saya!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaR-DC-sDo">
-                            <rect key="frame" x="99" y="28.5" width="176.5" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                </stackView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageDone" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-bC-zRG">
                     <rect key="frame" x="73" y="299" width="268" height="298"/>
                     <constraints>
@@ -60,17 +42,22 @@
                         <action selector="btnHome:" destination="-1" eventType="touchUpInside" id="k0h-Z4-pTG"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terima Kasih \nsudah membantu saya!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rS-y7-A7Q">
+                    <rect key="frame" x="60" y="60" width="294" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QdY-OP-Qun" secondAttribute="trailing" constant="20" id="2Ez-Sm-yOV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1rS-y7-A7Q" secondAttribute="trailing" constant="60" id="0AU-ap-IWC"/>
                 <constraint firstItem="hIW-bC-zRG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="68y-ex-XEO"/>
+                <constraint firstItem="1rS-y7-A7Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="KUU-Rm-Fpm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="U2o-S4-jYf" secondAttribute="bottom" constant="20" id="anZ-dQ-GjT"/>
-                <constraint firstItem="QdY-OP-Qun" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="cIx-Am-PRQ"/>
+                <constraint firstItem="1rS-y7-A7Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="b9W-t8-McI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U2o-S4-jYf" secondAttribute="trailing" constant="20" id="e24-Y8-6jX"/>
-                <constraint firstItem="QdY-OP-Qun" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="f2z-eD-3qS"/>
-                <constraint firstItem="QdY-OP-Qun" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rpT-TQ-lK0"/>
                 <constraint firstItem="hIW-bC-zRG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vY2-ST-Pbu"/>
                 <constraint firstItem="U2o-S4-jYf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yLK-Bp-cKb"/>
             </constraints>

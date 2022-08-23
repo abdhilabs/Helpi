@@ -9,25 +9,23 @@ import AuthenticationServices
 import JWTDecode
 import UIKit
 
-class ProfileSetupViewController: UIViewController {
-  
-  @IBOutlet weak var loginLabel: UILabel!
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var skipButton: UIButton!
-  @IBOutlet weak var loginProviderStackView: UIButton!
+class LoginViewController: UIViewController {
+
+  @IBOutlet weak var lblTitle: UILabel!
+  @IBOutlet weak var lblDescription: UILabel!
+  @IBOutlet weak var btnLogin: UIButton!
+  @IBOutlet weak var btnSkip: UIButton!
   
   private let cloudKitService = CloudKitService()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    
-    loginProviderStackView.dropShadow()
-    loginProviderStackView.layer.cornerRadius = 10
-    titleLabel.font = .rounded(ofSize: 24, weight: .bold)
-    loginLabel.font = .rounded(ofSize: 17, weight: .light)
-    skipButton.titleLabel?.font = .rounded(ofSize: 18, weight: .regular)
-    
+
+    lblTitle.font = .rounded(ofSize: 24, weight: .bold)
+    lblDescription.font = .rounded(ofSize: 17, weight: .light)
+    btnLogin.dropShadow()
+    btnLogin.layer.cornerRadius = 10
+    btnSkip.titleLabel?.font = .rounded(ofSize: 18, weight: .regular)
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -73,7 +71,7 @@ class ProfileSetupViewController: UIViewController {
   
 }
 
-extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
+extension LoginViewController: ASAuthorizationControllerDelegate {
   func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
     switch authorization.credential {
     case let appleIDCredential as ASAuthorizationAppleIDCredential:
@@ -137,7 +135,7 @@ extension ProfileSetupViewController: ASAuthorizationControllerDelegate {
   }
 }
 
-extension ProfileSetupViewController: ASAuthorizationControllerPresentationContextProviding {
+extension LoginViewController: ASAuthorizationControllerPresentationContextProviding {
   /// - Tag: provide_presentation_anchor
   func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
     return self.view.window!

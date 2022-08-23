@@ -10,12 +10,12 @@ import AVFoundation
 
 class AssistanceViewController: UIViewController {
   
-  @IBOutlet weak var titleLabel1: UILabel!
-  @IBOutlet weak var titleLabel2: UILabel!
+  @IBOutlet weak var lblTitle: UILabel!
+  @IBOutlet weak var lblSubtitle: UILabel!
+  @IBOutlet weak var lblDescription: UILabel!
   @IBOutlet weak var btnStart: UIButton!
-  @IBOutlet weak var descText: UILabel!
   
-  //  private let cloudKitService = CloudKitService()
+  private let cloudKitService = CloudKitService()
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -35,19 +35,19 @@ class AssistanceViewController: UIViewController {
     super.viewDidLoad()
     AVService.shared.playSoundTimer()
     
-    titleLabel1.font = .rounded(ofSize: 90, weight: .black)
-    titleLabel2.font = .rounded(ofSize: 60, weight: .semibold)
-    descText.font = .rounded(ofSize: 18, weight: .medium)
+    lblTitle.font = .rounded(ofSize: 90, weight: .black)
+    lblSubtitle.font = .rounded(ofSize: 60, weight: .semibold)
+    lblDescription.font = .rounded(ofSize: 18, weight: .medium)
     btnStart.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
     btnStart.layer.cornerRadius = 10
     btnStart.dropShadow()
     
-    //    let recordId = SessionManager.shared.getRecordId()
-    //    cloudKitService.updateDataFriend(by: .init(recordName: recordId)) { name in
-    //      DispatchQueue.main.async {
-    //        self.descText.text = "Help! My name is \(name) and I fainted. Please don’t panic and tap on Start Assistance to help me."
-    //      }
-    //    }
+    let recordId = SessionManager.shared.getRecordId()
+    cloudKitService.updateDataFriend(by: .init(recordName: recordId)) { name in
+      DispatchQueue.main.async {
+        self.lblDescription.text = "Help! My name is \(name) and I fainted. Please don’t panic and tap on Start Assistance to help me."
+      }
+    }
   }
   
   @IBAction func didTapStartButton(_ sender: Any) {

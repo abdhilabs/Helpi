@@ -50,9 +50,9 @@
             </constraints>
             <size key="customSize" width="300" height="380"/>
             <connections>
-                <outlet property="descriptionText" destination="GHb-7r-18P" id="B1W-Fe-b2A"/>
-                <outlet property="imageOnboarding" destination="Obp-yd-b9G" id="SSR-Gp-BG4"/>
-                <outlet property="title" destination="CjT-7w-Unn" id="vJQ-Go-nGb"/>
+                <outlet property="imgIllustration" destination="Obp-yd-b9G" id="SSR-Gp-BG4"/>
+                <outlet property="lblDescription" destination="GHb-7r-18P" id="B1W-Fe-b2A"/>
+                <outlet property="lblTitle" destination="CjT-7w-Unn" id="vJQ-Go-nGb"/>
             </connections>
             <point key="canvasLocation" x="-315.94202898550725" y="-4.0178571428571423"/>
         </collectionViewCell>

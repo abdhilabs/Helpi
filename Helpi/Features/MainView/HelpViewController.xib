@@ -10,9 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="btnCancel" destination="AGd-Ht-hAz" id="H4o-I2-Ytf"/>
-                <outlet property="descLabel" destination="PGO-Ud-wpz" id="wFa-7g-wZX"/>
+                <outlet property="lblDescription" destination="PGO-Ud-wpz" id="wFa-7g-wZX"/>
                 <outlet property="lblHelpAndCount" destination="dsL-In-fU3" id="Den-fK-Z6Z"/>
-                <outlet property="titleLabel" destination="Qwb-jg-aRW" id="cZj-RM-fVg"/>
+                <outlet property="lblTitle" destination="Qwb-jg-aRW" id="cZj-RM-fVg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewHelpButton" destination="pCy-DA-DHH" id="aSd-QD-Efq"/>
             </connections>

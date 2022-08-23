@@ -10,9 +10,9 @@ import Lottie
 
 class OnboardingCollectionViewCell: UICollectionViewCell {
   
-  @IBOutlet weak var imageOnboarding: UIImageView!
-  @IBOutlet weak var title: UILabel!
-  @IBOutlet weak var descriptionText: UILabel!
+  @IBOutlet weak var imgIllustration: UIImageView!
+  @IBOutlet weak var lblTitle: UILabel!
+  @IBOutlet weak var lblDescription: UILabel!
   
   static let identifier = "OnboardingCollectionViewCell"
   
@@ -22,21 +22,21 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
   // Instance of the Lottie AnimationView
   func configureCell(onboarding: Onboarding){
     animation = AnimationView(name: onboarding.image)
-    animation.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: imageOnboarding.frame.height)
+    animation.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: imgIllustration.frame.height)
     
     //Customize the animation
     animation.animationSpeed = 1
     animation.loopMode = .loop
     animation.play()
-    imageOnboarding.addSubview(animation)
+    imgIllustration.addSubview(animation)
     
-    self.imageOnboarding.image = UIImage(named: onboarding.image)
+    self.imgIllustration.image = UIImage(named: onboarding.image)
     
     //Set Title
-    self.descriptionText.text = onboarding.description
-    self.title.text = onboarding.title
-    self.title.font = .rounded(ofSize:24, weight: .semibold)
-    self.descriptionText.font = .rounded(ofSize: 17, weight: .regular)
+    self.lblTitle.text = onboarding.title
+    self.lblTitle.font = .rounded(ofSize:24, weight: .semibold)
+    self.lblDescription.text = onboarding.description
+    self.lblDescription.font = .rounded(ofSize: 17, weight: .regular)
     
   }
   

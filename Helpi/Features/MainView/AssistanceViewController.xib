@@ -10,9 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssistanceViewController" customModule="Helpi" customModuleProvider="target">
             <connections>
                 <outlet property="btnStart" destination="eaB-1A-Uur" id="Qjk-yS-bMT"/>
-                <outlet property="descText" destination="e01-uU-fRu" id="Bw7-ym-deH"/>
-                <outlet property="titleLabel1" destination="exU-BA-bIV" id="3I6-qJ-wLP"/>
-                <outlet property="titleLabel2" destination="O8U-XF-QFW" id="jUs-mj-Yry"/>
+                <outlet property="lblDescription" destination="e01-uU-fRu" id="Bw7-ym-deH"/>
+                <outlet property="lblSubtitle" destination="O8U-XF-QFW" id="jUs-mj-Yry"/>
+                <outlet property="lblTitle" destination="exU-BA-bIV" id="3I6-qJ-wLP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -81,7 +81,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eaB-1A-Uur" secondAttribute="trailing" constant="20" id="P00-y8-pAg"/>
                 <constraint firstItem="rmr-B1-X4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mIU-Bw-Gyo"/>
             </constraints>
-            <point key="canvasLocation" x="306" y="11"/>
+            <point key="canvasLocation" x="280" y="-38"/>
         </view>
     </objects>
 </document>

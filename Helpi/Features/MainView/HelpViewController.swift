@@ -9,9 +9,9 @@ import UIKit
 
 class HelpViewController: UIViewController {
   
-  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var lblTitle: UILabel!
   
-  @IBOutlet weak var descLabel: UILabel!
+  @IBOutlet weak var lblDescription: UILabel!
   @IBOutlet weak var viewHelpButton: UIView!
   @IBOutlet weak var lblHelpAndCount: UILabel!
   @IBOutlet weak var btnCancel: UIButton!
@@ -28,16 +28,15 @@ class HelpViewController: UIViewController {
     super.viewDidLoad()
     configureViews()
     
-    titleLabel.font = .rounded(ofSize: 36, weight: .bold)
-    descLabel.font = .rounded(ofSize: 18, weight: .regular)
+    lblTitle.font = .rounded(ofSize: 36, weight: .bold)
+    lblDescription.font = .rounded(ofSize: 18, weight: .regular)
     btnCancel.layer.borderWidth = 1
     btnCancel.layer.borderColor = #colorLiteral(red: 1, green: 0.1843137255, blue: 0.02745098039, alpha: 1)
     btnCancel.titleLabel?.font = .rounded(ofSize: 17, weight: .semibold)
     btnCancel.layer.cornerRadius = 10
     btnCancel.dropShadow()
   }
-  
-  
+
   private func configureViews() {
     viewHelpButton.layer.cornerRadius = viewHelpButton.frame.size.width / 2
     viewHelpButton.clipsToBounds = true

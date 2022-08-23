@@ -12,8 +12,8 @@
             <connections>
                 <outlet property="btnConnectHealth" destination="uV8-Zt-iFl" id="fbA-Mk-AGP"/>
                 <outlet property="btnSkip" destination="ffT-BE-skd" id="Xk7-hd-R5g"/>
-                <outlet property="collectionView" destination="fq2-cs-M9E" id="K8k-ag-Fva"/>
-                <outlet property="pageControl" destination="mA6-WZ-1eP" id="1gu-3b-tUj"/>
+                <outlet property="colOnboarding" destination="fq2-cs-M9E" id="K8k-ag-Fva"/>
+                <outlet property="pgOnboarding" destination="mA6-WZ-1eP" id="1gu-3b-tUj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
