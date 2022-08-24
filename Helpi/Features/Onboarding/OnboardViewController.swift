@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HealthKit
 
 struct Onboarding {
   let image: String
@@ -16,17 +17,18 @@ struct Onboarding {
 class OnboardViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
   
   private let authorizeHealthKitSection = 2
+  private var healthStore: HKHealthStore!
   
   private func authorizeHealthKit() {
-    HealthKitSetupAssistant.authorizeHealthKit { (authorized, error) in
-      if authorized {
+    healthStore = HKHealthStore()
+    let sampleTypes = HKSampleType.quantityType(forIdentifier: .heartRate)!
+    healthStore?.requestAuthorization(toShare: [], read: [sampleTypes], completion: { (success, error) in
+      if success {
         DispatchQueue.main.async {
           self.navigateToProfileSetup()
         }
-      } else {
-        print("HealthKit Authorization Failed. Reason: \(error?.localizedDescription)")
       }
-    }
+    })
   }
   
   //Set IBoutlet
@@ -78,8 +80,9 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
   
   func navigateToProfileSetup() {
     SessionManager.shared.setShowOnboard()
-    let nextContactController = LoginViewController()
-    self.navigationController?.pushViewController(nextContactController, animated: true)
+//    let nextContactController = LoginViewController()
+//    self.navigationController?.pushViewController(nextContactController, animated: true)
+    view.window?.rootViewController = HomeTabBarViewController()
   }
   
   @IBAction func btnConnectHealth(_ sender: Any) {
