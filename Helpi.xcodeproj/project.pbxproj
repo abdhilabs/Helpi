@@ -959,7 +959,6 @@
 				9AF662F428B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf in Resources */,
 				EE4275D828AF4BBC00112C94 /* TimeSettingViewController.xib in Resources */,
 				9ADF940028B52BC90082EED5 /* helpi-loading.json in Resources */,
-				EE4275FB28B3BD2600112C94 /* EKGReminderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1076,8 +1075,6 @@
 				EE4A6AA728B53B36008F01D8 /* ReminderScheduleTableViewCell.swift in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */,
-				EE4275F628B3BCDA00112C94 /* MedicineReminderViewController.swift in Sources */,
-				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
 				9A163D6828B4958700C87F6C /* UIFont.swift in Sources */,
 				9ADF93F228B4FB8E0082EED5 /* CustomButton.swift in Sources */,
 				9A163D6028B488D200C87F6C /* Date.swift in Sources */,
@@ -1093,13 +1090,11 @@
 				EE4A6A9F28B535F3008F01D8 /* TimeSelectionTableViewCell.swift in Sources */,
 				A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */,
 				9ADF940228B52EE50082EED5 /* Notification.swift in Sources */,
-				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
 				A07BB94E286B696B00A3DE30 /* OnboardingCollectionViewCell.swift in Sources */,
 				A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
 				A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */,
 				9A4E0BFC28B32B610099B8FD /* SummaryTableViewCell.swift in Sources */,
 				9ADF93FD28B529A10082EED5 /* HelpiLoadingViewController.swift in Sources */,
-				A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */,
 				EE4A6AAF28B66A64008F01D8 /* ReminderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1139,7 +1134,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchHelpi_WatchKit_Extension;
@@ -1166,7 +1161,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchHelpi_WatchKit_Extension;
@@ -1192,14 +1187,14 @@
 				CODE_SIGN_ENTITLEMENTS = "WatchHelpi WatchKit Extension/WatchHelpi WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "AppExamples wants to acces your health data in order to analyze your health and best device";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AppExamples wants to acces your health data in order to analyze your health and best device";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -1230,14 +1225,14 @@
 				CODE_SIGN_ENTITLEMENTS = "WatchHelpi WatchKit Extension/WatchHelpi WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "AppExamples wants to acces your health data in order to analyze your health and best device";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AppExamples wants to acces your health data in order to analyze your health and best device";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -1382,9 +1377,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1408,7 +1403,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Helpi App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1422,9 +1417,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Helpi/Helpi.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1448,7 +1443,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Helpi App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

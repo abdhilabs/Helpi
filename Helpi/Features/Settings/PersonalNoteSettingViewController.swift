@@ -21,6 +21,8 @@ class PersonalNoteSettingViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    addTapGestureToHideKeyboard()
     
     lblDescription.font = .rounded(ofSize: 14, weight: .regular)
     txtPersonalNote.font = .rounded(ofSize: 17, weight: .regular)

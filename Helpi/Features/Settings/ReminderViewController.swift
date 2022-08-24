@@ -25,13 +25,13 @@ class ReminderViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    lblEKGTitle.font = .font(type: .sfSemibold, size: 18)
-    lblEKGDescription.font = .font(type: .sfRegular, size: 15)
+    lblEKGTitle.font = .rounded(ofSize: 18, weight: .semibold)
+    lblEKGDescription.font = .rounded(ofSize: 15, weight: .regular)
     lblEKGDescription.textColor = #colorLiteral(red: 0.5137254902, green: 0.5137254902, blue: 0.5137254902, alpha: 1)
-    lblMedicineTitle.font = .font(type: .sfSemibold, size: 18)
-    lblMedicineDescription.font = .font(type: .sfRegular, size: 15)
+    lblMedicineTitle.font = .rounded(ofSize: 18, weight: .semibold)
+    lblMedicineDescription.font = .rounded(ofSize: 15, weight: .regular)
     lblMedicineDescription.textColor = #colorLiteral(red: 0.5137254902, green: 0.5137254902, blue: 0.5137254902, alpha: 1)
-    lblReminderDescription.font = .font(type: .sfRegular, size: 13)
+    lblReminderDescription.font = .rounded(ofSize: 13, weight: .regular)
     
     viewEKG.isUserInteractionEnabled = true
     

@@ -97,8 +97,12 @@ extension SummaryViewController: UITableViewDelegate, UITableViewDataSource {
       }
       cell.imgUnit.image = .iconHeartCardiogram
     case .saturation:
+      cell.lblUnit.text = "Tidak ada data"
+      cell.lblDate.text = "-"
       cell.imgUnit.image = .iconSaturation
     case .elektro:
+      cell.lblUnit.text = "Tidak ada data"
+      cell.lblDate.text = "-"
       cell.imgUnit.image = .iconElectrocardiogram
     }
     
@@ -111,6 +115,8 @@ extension SummaryViewController: UITableViewDelegate, UITableViewDataSource {
     let nextViewController = DetailSummaryViewController()
     nextViewController.title = summaries[indexPath.row].rawValue
     let navigation = UINavigationController(rootViewController: nextViewController)
-    present(navigation, animated: true)
+    if indexPath.row == 0 {
+      present(navigation, animated: true)
+    }
   }
 }

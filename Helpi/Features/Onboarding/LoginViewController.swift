@@ -111,7 +111,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
           SessionManager.shared.setPersonalNote(with: account.notes)
           
           DispatchQueue.main.async {
-            let nextViewController = EmergencyViewController()
+            let nextViewController = HomeTabBarViewController()
             self.view.window?.rootViewController = nextViewController
           }
         } else {

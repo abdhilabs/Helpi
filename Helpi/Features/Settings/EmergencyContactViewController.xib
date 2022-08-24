@@ -20,15 +20,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1sV-WW-YS9">
-                    <rect key="frame" x="0.0" y="74" width="414" height="193"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1sV-WW-YS9">
+                    <rect key="frame" x="0.0" y="64" width="414" height="100"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="ZUj-dI-5EJ"/>
+                    </constraints>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8y-LD-N5R">
-                    <rect key="frame" x="30" y="287" width="354" height="62"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="62" id="SKn-XI-5xE"/>
-                    </constraints>
+                    <rect key="frame" x="20" y="184" width="374" height="46.5"/>
                     <string key="text">Kontak darurat akan menerima pemberitahuan saat pengguna dalam keadaan darurat. Kontak juga akan ditampilkan saat keadaan darurat agar dapat dihubungi oleh penolong.</string>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                     <nil key="textColor"/>
@@ -41,10 +41,10 @@
                 <constraint firstItem="h8y-LD-N5R" firstAttribute="top" secondItem="1sV-WW-YS9" secondAttribute="bottom" constant="20" id="BHk-Ah-J5C"/>
                 <constraint firstItem="1sV-WW-YS9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NHQ-z9-mOM"/>
                 <constraint firstItem="1sV-WW-YS9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZZj-BI-dwk"/>
-                <constraint firstItem="1sV-WW-YS9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Zsf-Rn-ApQ"/>
+                <constraint firstItem="1sV-WW-YS9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Zsf-Rn-ApQ"/>
+                <constraint firstAttribute="trailing" secondItem="h8y-LD-N5R" secondAttribute="trailing" constant="20" id="llw-pc-4BL"/>
                 <constraint firstItem="h8y-LD-N5R" firstAttribute="centerX" secondItem="1sV-WW-YS9" secondAttribute="centerX" id="qGG-IB-uoq"/>
-                <constraint firstItem="h8y-LD-N5R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="u4t-q3-Hnc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h8y-LD-N5R" secondAttribute="bottom" constant="513" id="y5y-hM-iti"/>
+                <constraint firstItem="h8y-LD-N5R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="v1V-uA-eh9"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </view>

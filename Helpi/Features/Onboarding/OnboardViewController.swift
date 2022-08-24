@@ -80,9 +80,8 @@ class OnboardViewController: UIViewController, UICollectionViewDataSource, UICol
   
   func navigateToProfileSetup() {
     SessionManager.shared.setShowOnboard()
-//    let nextContactController = LoginViewController()
-//    self.navigationController?.pushViewController(nextContactController, animated: true)
-    view.window?.rootViewController = HomeTabBarViewController()
+    let nextContactController = LoginViewController()
+    self.navigationController?.pushViewController(nextContactController, animated: true)
   }
   
   @IBAction func btnConnectHealth(_ sender: Any) {

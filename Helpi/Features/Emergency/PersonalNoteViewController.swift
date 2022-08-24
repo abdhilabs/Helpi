@@ -41,6 +41,13 @@ class PersonalNoteViewController: UIViewController {
     attributedText.addAttribute(.font, value: UIFont.systemFont(ofSize: 17, weight: .bold),
                                 range: NSRange(location: 13, length: 25))
 
+    showLoading()
+    let recordId = SessionManager.shared.getRecordId()
+    cloudKitService.fetchAccount(by: .init(recordName: recordId)) { account in
+      self.hideLoading()
+      self.account = account
+    }
+
     lblGuide.attributedText = attributedText
   }
   

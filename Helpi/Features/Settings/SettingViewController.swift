@@ -41,6 +41,8 @@ class SettingViewController: UIViewController {
     imgUser.layer.borderColor = UIColor.black.cgColor
     imgUser.layer.cornerRadius = imgUser.frame.size.height/2
     imgUser.clipsToBounds = true
+
+    lblTitlePengaturan.font = .rounded(ofSize: 28, weight: .bold)
     
     lblUsername.text = "Miftakhul Huda"
     tblSettings.delegate = self
@@ -65,6 +67,7 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     cell.imgCellsIcon.image = UIImage(systemName: cellContent.icon)
     cell.imgCellsIcon.tintColor = #colorLiteral(red: 1, green: 0.1843137255, blue: 0.02745098039, alpha: 1)
     cell.lblCellsTitle.text = cellContent.title
+    cell.lblCellsTitle.font = .rounded(ofSize: 18, weight: .regular)
     cell.accessoryType = .disclosureIndicator
     
     return cell
