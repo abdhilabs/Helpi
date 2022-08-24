@@ -133,17 +133,23 @@
 		EE4275E128AFE07F00112C94 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275DF28AFE07F00112C94 /* SettingTableViewCell.xib */; };
 		EE4275E428B0FE3A00112C94 /* TimeSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275E228B0FE3A00112C94 /* TimeSettingTableViewCell.swift */; };
 		EE4275E528B0FE3A00112C94 /* TimeSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275E328B0FE3A00112C94 /* TimeSettingTableViewCell.xib */; };
-		EE4275E828B2606A00112C94 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275E628B2606A00112C94 /* ReminderViewController.swift */; };
-		EE4275E928B2606A00112C94 /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275E728B2606A00112C94 /* ReminderViewController.xib */; };
 		EE4275EB28B38F9F00112C94 /* PickerViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275EA28B38F9F00112C94 /* PickerViewPresenter.swift */; };
 		EE4275EE28B3AFE300112C94 /* EmergencyContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275EC28B3AFE300112C94 /* EmergencyContactTableViewCell.swift */; };
 		EE4275EF28B3AFE300112C94 /* EmergencyContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275ED28B3AFE300112C94 /* EmergencyContactTableViewCell.xib */; };
-		EE4275F228B3BCB000112C94 /* EKGReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275F028B3BCB000112C94 /* EKGReminderViewController.swift */; };
-		EE4275F328B3BCB000112C94 /* EKGReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275F128B3BCB000112C94 /* EKGReminderViewController.xib */; };
-		EE4275F628B3BCDA00112C94 /* MedicineReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275F428B3BCDA00112C94 /* MedicineReminderViewController.swift */; };
-		EE4275F728B3BCDA00112C94 /* MedicineReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275F528B3BCDA00112C94 /* MedicineReminderViewController.xib */; };
-		EE4275FA28B3BD2600112C94 /* EKGReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4275F828B3BD2600112C94 /* EKGReminderTableViewCell.swift */; };
-		EE4275FB28B3BD2600112C94 /* EKGReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4275F928B3BD2600112C94 /* EKGReminderTableViewCell.xib */; };
+		EE4A6A9328B5323A008F01D8 /* DaySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A6A9128B5323A008F01D8 /* DaySelectionViewController.swift */; };
+		EE4A6A9428B5323A008F01D8 /* DaySelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4A6A9228B5323A008F01D8 /* DaySelectionViewController.xib */; };
+		EE4A6A9728B533FD008F01D8 /* DaySelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A6A9528B533FD008F01D8 /* DaySelectionTableViewCell.swift */; };
+		EE4A6A9828B533FD008F01D8 /* DaySelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4A6A9628B533FD008F01D8 /* DaySelectionTableViewCell.xib */; };
+		EE4A6A9B28B534B3008F01D8 /* TimeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A6A9928B534B3008F01D8 /* TimeSelectionViewController.swift */; };
+		EE4A6A9C28B534B3008F01D8 /* TimeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4A6A9A28B534B3008F01D8 /* TimeSelectionViewController.xib */; };
+		EE4A6A9F28B535F3008F01D8 /* TimeSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A6A9D28B535F3008F01D8 /* TimeSelectionTableViewCell.swift */; };
+		EE4A6AA028B535F3008F01D8 /* TimeSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4A6A9E28B535F3008F01D8 /* TimeSelectionTableViewCell.xib */; };
+		EE4A6AA728B53B36008F01D8 /* ReminderScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A6AA528B53B36008F01D8 /* ReminderScheduleTableViewCell.swift */; };
+		EE4A6AA828B53B36008F01D8 /* ReminderScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4A6AA628B53B36008F01D8 /* ReminderScheduleTableViewCell.xib */; };
+		EE4A6AAB28B53B4E008F01D8 /* ReminderScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A6AA928B53B4E008F01D8 /* ReminderScheduleViewController.swift */; };
+		EE4A6AAC28B53B4E008F01D8 /* ReminderScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4A6AAA28B53B4E008F01D8 /* ReminderScheduleViewController.xib */; };
+		EE4A6AAF28B66A64008F01D8 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A6AAD28B66A64008F01D8 /* ReminderViewController.swift */; };
+		EE4A6AB028B66A64008F01D8 /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4A6AAE28B66A64008F01D8 /* ReminderViewController.xib */; };
 		EEE041D6286A8C9D00A2B04D /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */; };
 		EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */; };
 		EEE041D9286A8D4200A2B04D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */; };
@@ -315,17 +321,23 @@
 		EE4275DF28AFE07F00112C94 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		EE4275E228B0FE3A00112C94 /* TimeSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSettingTableViewCell.swift; sourceTree = "<group>"; };
 		EE4275E328B0FE3A00112C94 /* TimeSettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSettingTableViewCell.xib; sourceTree = "<group>"; };
-		EE4275E628B2606A00112C94 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
-		EE4275E728B2606A00112C94 /* ReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
 		EE4275EA28B38F9F00112C94 /* PickerViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewPresenter.swift; sourceTree = "<group>"; };
 		EE4275EC28B3AFE300112C94 /* EmergencyContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactTableViewCell.swift; sourceTree = "<group>"; };
 		EE4275ED28B3AFE300112C94 /* EmergencyContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmergencyContactTableViewCell.xib; sourceTree = "<group>"; };
-		EE4275F028B3BCB000112C94 /* EKGReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKGReminderViewController.swift; sourceTree = "<group>"; };
-		EE4275F128B3BCB000112C94 /* EKGReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EKGReminderViewController.xib; sourceTree = "<group>"; };
-		EE4275F428B3BCDA00112C94 /* MedicineReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineReminderViewController.swift; sourceTree = "<group>"; };
-		EE4275F528B3BCDA00112C94 /* MedicineReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicineReminderViewController.xib; sourceTree = "<group>"; };
-		EE4275F828B3BD2600112C94 /* EKGReminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKGReminderTableViewCell.swift; sourceTree = "<group>"; };
-		EE4275F928B3BD2600112C94 /* EKGReminderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EKGReminderTableViewCell.xib; sourceTree = "<group>"; };
+		EE4A6A9128B5323A008F01D8 /* DaySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectionViewController.swift; sourceTree = "<group>"; };
+		EE4A6A9228B5323A008F01D8 /* DaySelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaySelectionViewController.xib; sourceTree = "<group>"; };
+		EE4A6A9528B533FD008F01D8 /* DaySelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectionTableViewCell.swift; sourceTree = "<group>"; };
+		EE4A6A9628B533FD008F01D8 /* DaySelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaySelectionTableViewCell.xib; sourceTree = "<group>"; };
+		EE4A6A9928B534B3008F01D8 /* TimeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectionViewController.swift; sourceTree = "<group>"; };
+		EE4A6A9A28B534B3008F01D8 /* TimeSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSelectionViewController.xib; sourceTree = "<group>"; };
+		EE4A6A9D28B535F3008F01D8 /* TimeSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		EE4A6A9E28B535F3008F01D8 /* TimeSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		EE4A6AA528B53B36008F01D8 /* ReminderScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		EE4A6AA628B53B36008F01D8 /* ReminderScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		EE4A6AA928B53B4E008F01D8 /* ReminderScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderScheduleViewController.swift; sourceTree = "<group>"; };
+		EE4A6AAA28B53B4E008F01D8 /* ReminderScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderScheduleViewController.xib; sourceTree = "<group>"; };
+		EE4A6AAD28B66A64008F01D8 /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		EE4A6AAE28B66A64008F01D8 /* ReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
 		EEE041D4286A8C9D00A2B04D /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		EEE041D5286A8C9D00A2B04D /* ActivationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivationViewController.xib; sourceTree = "<group>"; };
 		EEE041D8286A8D4200A2B04D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
@@ -725,21 +737,23 @@
 		EE4275C228AF361E00112C94 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				EE4275F028B3BCB000112C94 /* EKGReminderViewController.swift */,
-				EE4275F128B3BCB000112C94 /* EKGReminderViewController.xib */,
+				EE4275DD28AFE05A00112C94 /* Views */,
+				EE4A6AAD28B66A64008F01D8 /* ReminderViewController.swift */,
+				EE4A6AAE28B66A64008F01D8 /* ReminderViewController.xib */,
 				EE4275D128AF4B8C00112C94 /* EmergencyContactViewController.swift */,
 				EE4275D228AF4B8C00112C94 /* EmergencyContactViewController.xib */,
-				EE4275F428B3BCDA00112C94 /* MedicineReminderViewController.swift */,
-				EE4275F528B3BCDA00112C94 /* MedicineReminderViewController.xib */,
 				EE4275D928AFB98700112C94 /* PersonalNoteSettingViewController.swift */,
 				EE4275DA28AFB98700112C94 /* PersonalNoteSettingViewController.xib */,
-				EE4275E628B2606A00112C94 /* ReminderViewController.swift */,
-				EE4275E728B2606A00112C94 /* ReminderViewController.xib */,
 				EE4275C328AF365900112C94 /* SettingViewController.swift */,
 				EE4275C428AF365900112C94 /* SettingViewController.xib */,
 				EE4275D528AF4BBC00112C94 /* TimeSettingViewController.swift */,
 				EE4275D628AF4BBC00112C94 /* TimeSettingViewController.xib */,
-				EE4275DD28AFE05A00112C94 /* Views */,
+				EE4A6A9128B5323A008F01D8 /* DaySelectionViewController.swift */,
+				EE4A6A9228B5323A008F01D8 /* DaySelectionViewController.xib */,
+				EE4A6A9928B534B3008F01D8 /* TimeSelectionViewController.swift */,
+				EE4A6A9A28B534B3008F01D8 /* TimeSelectionViewController.xib */,
+				EE4A6AA928B53B4E008F01D8 /* ReminderScheduleViewController.swift */,
+				EE4A6AAA28B53B4E008F01D8 /* ReminderScheduleViewController.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -747,14 +761,18 @@
 		EE4275DD28AFE05A00112C94 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE4275F828B3BD2600112C94 /* EKGReminderTableViewCell.swift */,
-				EE4275F928B3BD2600112C94 /* EKGReminderTableViewCell.xib */,
 				EE4275EC28B3AFE300112C94 /* EmergencyContactTableViewCell.swift */,
 				EE4275ED28B3AFE300112C94 /* EmergencyContactTableViewCell.xib */,
 				EE4275DE28AFE07F00112C94 /* SettingTableViewCell.swift */,
 				EE4275DF28AFE07F00112C94 /* SettingTableViewCell.xib */,
 				EE4275E228B0FE3A00112C94 /* TimeSettingTableViewCell.swift */,
 				EE4275E328B0FE3A00112C94 /* TimeSettingTableViewCell.xib */,
+				EE4A6A9528B533FD008F01D8 /* DaySelectionTableViewCell.swift */,
+				EE4A6A9628B533FD008F01D8 /* DaySelectionTableViewCell.xib */,
+				EE4A6A9D28B535F3008F01D8 /* TimeSelectionTableViewCell.swift */,
+				EE4A6A9E28B535F3008F01D8 /* TimeSelectionTableViewCell.xib */,
+				EE4A6AA528B53B36008F01D8 /* ReminderScheduleTableViewCell.swift */,
+				EE4A6AA628B53B36008F01D8 /* ReminderScheduleTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -892,8 +910,10 @@
 			files = (
 				9AF662FA28B2FE7000C862B5 /* SF-Compact-Rounded-Thin.ttf in Resources */,
 				A07BB951286B696B00A3DE30 /* OnboardViewController.xib in Resources */,
+				EE4A6A9428B5323A008F01D8 /* DaySelectionViewController.xib in Resources */,
 				9ADF93F828B4FCB60082EED5 /* BacktapTutorialViewController.xib in Resources */,
 				9AF662F828B2FE7000C862B5 /* SF-Compact-Rounded-Heavy.ttf in Resources */,
+				EE4A6A9828B533FD008F01D8 /* DaySelectionTableViewCell.xib in Resources */,
 				EE4275D428AF4B8C00112C94 /* EmergencyContactViewController.xib in Resources */,
 				9AE05F882864AB24000D3386 /* LaunchScreen.storyboard in Resources */,
 				9A1F8B7E2869E2F600F6E16C /* HelpViewController.xib in Resources */,
@@ -906,7 +926,7 @@
 				9AF662DC28B2FE0E00C862B5 /* SF-Compact-Rounded-Black.ttf in Resources */,
 				EE4275C628AF365900112C94 /* SettingViewController.xib in Resources */,
 				9A1F8B94286DCF3B00F6E16C /* AddFriendViewController.xib in Resources */,
-				EE4275F328B3BCB000112C94 /* EKGReminderViewController.xib in Resources */,
+				EE4A6AA028B535F3008F01D8 /* TimeSelectionTableViewCell.xib in Resources */,
 				9A4E0BF828B328AD0099B8FD /* SummaryViewController.xib in Resources */,
 				EEE041D7286A8C9D00A2B04D /* ActivationViewController.xib in Resources */,
 				EEE04201286D315500A2B04D /* LoginViewController.xib in Resources */,
@@ -916,22 +936,24 @@
 				EE4275E128AFE07F00112C94 /* SettingTableViewCell.xib in Resources */,
 				9A1F8B90286D264F00F6E16C /* PersonalNoteViewController.xib in Resources */,
 				9A1F8B9B286EA03B00F6E16C /* FriendTableViewCell.xib in Resources */,
+				EE4A6AA828B53B36008F01D8 /* ReminderScheduleTableViewCell.xib in Resources */,
 				9AF662F028B2FE7000C862B5 /* SF-Compact-Rounded-Bold.ttf in Resources */,
-				EE4275F728B3BCDA00112C94 /* MedicineReminderViewController.xib in Resources */,
 				EE4275E528B0FE3A00112C94 /* TimeSettingTableViewCell.xib in Resources */,
 				A07BB7C3286B622000A3DE30 /* Podfile in Resources */,
+				EE4A6A9C28B534B3008F01D8 /* TimeSelectionViewController.xib in Resources */,
+				EE4A6AAC28B53B4E008F01D8 /* ReminderScheduleViewController.xib in Resources */,
 				9A4E0BFD28B32B610099B8FD /* SummaryTableViewCell.xib in Resources */,
 				A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */,
 				9AF662EC28B2FE7000C862B5 /* SF-Compact-Rounded-Regular.ttf in Resources */,
 				9A2130862889205B004A28AA /* Sound_Alert.mp3 in Resources */,
 				9A4E0BEF28B3017E0099B8FD /* HistoryLogTableViewCell.xib in Resources */,
 				9A4E0C0128B332B20099B8FD /* DetailSummaryViewController.xib in Resources */,
-				EE4275E928B2606A00112C94 /* ReminderViewController.xib in Resources */,
 				9AE05F852864AB24000D3386 /* Assets.xcassets in Resources */,
 				A07BB94F286B696B00A3DE30 /* OnboardingCollectionViewCell.xib in Resources */,
 				9A163D6D28B4972D00C87F6C /* AddNoteViewController.xib in Resources */,
 				A0802D81286C854F004A22CB /* FirstAidViewController.xib in Resources */,
 				EE4275DC28AFB98700112C94 /* PersonalNoteSettingViewController.xib in Resources */,
+				EE4A6AB028B66A64008F01D8 /* ReminderViewController.xib in Resources */,
 				A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */,
 				9A4E0BF328B30D7D0099B8FD /* AddHistoryViewController.xib in Resources */,
 				9AF662F428B2FE7000C862B5 /* SF-Compact-Rounded-Medium.ttf in Resources */,
@@ -1026,13 +1048,12 @@
 				9A1F8B97286DEE4C00F6E16C /* CloudKitService.swift in Sources */,
 				EE4275E428B0FE3A00112C94 /* TimeSettingTableViewCell.swift in Sources */,
 				9A163D6128B4891C00C87F6C /* HistoryLogTableViewCell.swift in Sources */,
+				EE4A6A9328B5323A008F01D8 /* DaySelectionViewController.swift in Sources */,
 				9A1F8B7D2869E2F600F6E16C /* HelpViewController.swift in Sources */,
-				EE4275E828B2606A00112C94 /* ReminderViewController.swift in Sources */,
+				EE4A6AAB28B53B4E008F01D8 /* ReminderScheduleViewController.swift in Sources */,
 				9A1F8B8F286D264F00F6E16C /* PersonalNoteViewController.swift in Sources */,
 				9A1F8B8C286D211400F6E16C /* UIViewController.swift in Sources */,
-				EE4275F228B3BCB000112C94 /* EKGReminderViewController.swift in Sources */,
 				EE4275EE28B3AFE300112C94 /* EmergencyContactTableViewCell.swift in Sources */,
-				EE4275FA28B3BD2600112C94 /* EKGReminderTableViewCell.swift in Sources */,
 				9A163D6228B4893200C87F6C /* AddHistoryViewController.swift in Sources */,
 				9A163D6928B4958700C87F6C /* UIColor.swift in Sources */,
 				9ADBC7FF28B2783C0083F6D5 /* LogViewController.swift in Sources */,
@@ -1052,19 +1073,24 @@
 				9A163D6A28B4958700C87F6C /* UIImage.swift in Sources */,
 				A078FF45286C5B75006D686F /* AddNoteViewController.swift in Sources */,
 				A078FF41286C4B6B006D686F /* ContactViewController.swift in Sources */,
+				EE4A6AA728B53B36008F01D8 /* ReminderScheduleTableViewCell.swift in Sources */,
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */,
 				EE4275F628B3BCDA00112C94 /* MedicineReminderViewController.swift in Sources */,
+				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
 				9A163D6828B4958700C87F6C /* UIFont.swift in Sources */,
 				9ADF93F228B4FB8E0082EED5 /* CustomButton.swift in Sources */,
 				9A163D6028B488D200C87F6C /* Date.swift in Sources */,
 				EE4275D328AF4B8C00112C94 /* EmergencyContactViewController.swift in Sources */,
 				9AE05F922864B427000D3386 /* EmergencyViewController.swift in Sources */,
+				EE4A6A9B28B534B3008F01D8 /* TimeSelectionViewController.swift in Sources */,
 				A07BB950286B696B00A3DE30 /* OnboardViewController.swift in Sources */,
 				9ADF93F628B4FCB60082EED5 /* CircularProgressBarView.swift in Sources */,
+				EE4A6A9728B533FD008F01D8 /* DaySelectionTableViewCell.swift in Sources */,
 				A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */,
 				A0802D80286C854F004A22CB /* FirstAidViewController.swift in Sources */,
 				EE4275DB28AFB98700112C94 /* PersonalNoteSettingViewController.swift in Sources */,
+				EE4A6A9F28B535F3008F01D8 /* TimeSelectionTableViewCell.swift in Sources */,
 				A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */,
 				9ADF940228B52EE50082EED5 /* Notification.swift in Sources */,
 				A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */,
@@ -1074,6 +1100,7 @@
 				9A4E0BFC28B32B610099B8FD /* SummaryTableViewCell.swift in Sources */,
 				9ADF93FD28B529A10082EED5 /* HelpiLoadingViewController.swift in Sources */,
 				A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */,
+				EE4A6AAF28B66A64008F01D8 /* ReminderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

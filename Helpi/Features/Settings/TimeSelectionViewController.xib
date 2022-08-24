@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeSelectionViewController" customModule="Helpi" customModuleProvider="target">
+            <connections>
+                <outlet property="dpTimePicker" destination="aoZ-WX-C5i" id="y7p-h4-J2L"/>
+                <outlet property="tblRepeat" destination="LrG-94-ngg" id="dte-Q0-zGf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aoZ-WX-C5i">
+                    <rect key="frame" x="0.0" y="64" width="414" height="216"/>
+                </datePicker>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-94-ngg">
+                    <rect key="frame" x="0.0" y="300" width="414" height="562"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="LrG-94-ngg" firstAttribute="top" secondItem="aoZ-WX-C5i" secondAttribute="bottom" constant="20" id="4j8-G5-pm0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LrG-94-ngg" secondAttribute="bottom" id="MPy-1w-ejI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LrG-94-ngg" secondAttribute="trailing" id="YPq-Vr-bBX"/>
+                <constraint firstItem="LrG-94-ngg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a1u-r9-Ojt"/>
+                <constraint firstItem="aoZ-WX-C5i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="djb-bD-DVJ"/>
+                <constraint firstItem="aoZ-WX-C5i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qfa-ER-AgU"/>
+                <constraint firstItem="aoZ-WX-C5i" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="rAp-t7-PPW"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

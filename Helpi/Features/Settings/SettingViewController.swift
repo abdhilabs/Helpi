@@ -26,7 +26,7 @@ class SettingViewController: UIViewController {
     CellContent(icon: "phone", title: "Kontak Darurat"),
     CellContent(icon: "bell", title: "Pengingat")
   ]
-
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(true, animated: true)
@@ -72,7 +72,7 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
-
+    
     let selectedIndex = indexPath.row
     
     switch selectedIndex {
