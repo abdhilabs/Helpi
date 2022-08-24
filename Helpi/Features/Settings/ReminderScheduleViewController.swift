@@ -1,15 +1,15 @@
 //
-//  EKGReminderViewController.swift
+//  ReminderScheduleViewController.swift
 //  Helpi
 //
-//  Created by Miftakhul Huda on 22/08/22.
+//  Created by Miftakhul Huda on 23/08/22.
 //
 
 import UIKit
 
-class EKGReminderViewController: UIViewController {
+class ReminderScheduleViewController: UIViewController {
   
-  @IBOutlet weak var tblEKGReminder: UITableView!
+  @IBOutlet weak var tblSchedule: UITableView!
   
   struct CellContent {
     let time : String
@@ -21,21 +21,23 @@ class EKGReminderViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tblEKGReminder.delegate = self
-    tblEKGReminder.dataSource = self
-    tblEKGReminder.register(UINib(nibName: "EKGReminderTableViewCell", bundle: nil), forCellReuseIdentifier: "EKGReminderTableViewCell")
+    tblSchedule.delegate = self
+    tblSchedule.dataSource = self
+    tblSchedule.register(UINib(nibName: "ReminderScheduleTableViewCell", bundle: nil), forCellReuseIdentifier: "ReminderScheduleTableViewCell")
+    
+    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onClickAdd))
   }
   
 }
 
-extension EKGReminderViewController: UITableViewDelegate, UITableViewDataSource {
+extension ReminderScheduleViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return cellData.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: "EKGReminderTableViewCell", for: indexPath) as? EKGReminderTableViewCell else {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderScheduleTableViewCell", for: indexPath) as? ReminderScheduleTableViewCell else {
       return UITableViewCell()
     }
     
@@ -61,5 +63,9 @@ extension EKGReminderViewController: UITableViewDelegate, UITableViewDataSource 
     
     print("table row switch Changed \(sender.tag)")
     print("The switch is \(sender.isOn ? "ON" : "OFF")")
+  }
+  
+  @objc func onClickAdd() {
+    self.navigationController?.pushViewController(TimeSelectionViewController(nibName: "TimeSelectionViewController", bundle: nil), animated: true)
   }
 }
