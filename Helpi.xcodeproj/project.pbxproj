@@ -97,6 +97,7 @@
 		9AFC0848288456D2001F13CD /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC0847288456D2001F13CD /* WatchSessionManager.swift */; };
 		9AFC084A28845987001F13CD /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC084928845987001F13CD /* NotesView.swift */; };
 		9AFC084E2884E3F2001F13CD /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC0847288456D2001F13CD /* WatchSessionManager.swift */; };
+		A02DBC6028B5325500C603C8 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02DBC5F28B5325500C603C8 /* HealthKitSetupAssistant.swift */; };
 		A039CAFF28806F57009F1F40 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039CAFE28806F57009F1F40 /* CircleProgressView.swift */; };
 		A04D66C0286DF36F00C43D83 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D66BE286DF36F00C43D83 /* DoneViewController.swift */; };
 		A04D66C1286DF36F00C43D83 /* DoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04D66BF286DF36F00C43D83 /* DoneViewController.xib */; };
@@ -104,9 +105,6 @@
 		A078FF42286C4B6B006D686F /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A078FF40286C4B6B006D686F /* ContactViewController.xib */; };
 		A078FF45286C5B75006D686F /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078FF43286C5B75006D686F /* AddNoteViewController.swift */; };
 		A079C2DC2881632700F566E5 /* CancelConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079C2DB2881632700F566E5 /* CancelConfirmation.swift */; };
-		A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */; };
-		A07BB7A6286AF65B00A3DE30 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */; };
-		A07BB7A8286AF67200A3DE30 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */; };
 		A07BB7AB286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */; };
 		A07BB7AD286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */; };
 		A07BB7C3286B622000A3DE30 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A07BB7C2286B622000A3DE30 /* Podfile */; };
@@ -117,6 +115,7 @@
 		A0802D80286C854F004A22CB /* FirstAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0802D7E286C854F004A22CB /* FirstAidViewController.swift */; };
 		A0802D81286C854F004A22CB /* FirstAidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0802D7F286C854F004A22CB /* FirstAidViewController.xib */; };
 		A0A3369D286A1DD100988028 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A3369C286A1DD100988028 /* HealthKit.framework */; };
+		A0C8C08728B5D46C0016AB8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C8C08628B5D46C0016AB8F /* HealthKit.framework */; };
 		A0E4C3AB28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
 		A0E4C3AC28851CFF00D15760 /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E4C3AA28851CFF00D15760 /* AVService.swift */; };
 		A3F591294BBCEC847ED0CE17 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
@@ -278,6 +277,7 @@
 		9AF662EB28B2FE7000C862B5 /* SF-Compact-Rounded-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Thin.ttf"; sourceTree = "<group>"; };
 		9AFC0847288456D2001F13CD /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		9AFC084928845987001F13CD /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		A02DBC5F28B5325500C603C8 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
 		A039CAFE28806F57009F1F40 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		A04D66BE286DF36F00C43D83 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		A04D66BF286DF36F00C43D83 /* DoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneViewController.xib; sourceTree = "<group>"; };
@@ -286,9 +286,6 @@
 		A078FF43286C5B75006D686F /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		A078FF44286C5B75006D686F /* AddNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNoteViewController.xib; sourceTree = "<group>"; };
 		A079C2DB2881632700F566E5 /* CancelConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelConfirmation.swift; sourceTree = "<group>"; };
-		A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
-		A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
-		A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
 		A07BB7AA286AF69700A3DE30 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
 		A07BB7AC286AF6C800A3DE30 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
 		A07BB7C2286B622000A3DE30 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -299,6 +296,7 @@
 		A0802D7E286C854F004A22CB /* FirstAidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidViewController.swift; sourceTree = "<group>"; };
 		A0802D7F286C854F004A22CB /* FirstAidViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAidViewController.xib; sourceTree = "<group>"; };
 		A0A3369C286A1DD100988028 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		A0C8C08628B5D46C0016AB8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		A0E4C3AA28851CFF00D15760 /* AVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVService.swift; sourceTree = "<group>"; };
 		A0FA501228B28AEB00C60B41 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A2A32FE3A867F8EE26DA796B /* Pods-Helpi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpi.release.xcconfig"; path = "Target Support Files/Pods-Helpi/Pods-Helpi.release.xcconfig"; sourceTree = "<group>"; };
@@ -342,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A705146288123090085DE71 /* CloudKit.framework in Frameworks */,
+				A0C8C08728B5D46C0016AB8F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +404,6 @@
 		9A1F8B95286DEE3200F6E16C /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				A0A3368E286A175D00988028 /* HealthKit */,
 				A0E4C3AA28851CFF00D15760 /* AVService.swift */,
 				9A1F8B96286DEE4C00F6E16C /* CloudKitService.swift */,
 				9AA5477128713E5000E3B603 /* SessionManager.swift */,
@@ -500,6 +498,7 @@
 		9A4E0BF428B3272A0099B8FD /* Summary */ = {
 			isa = PBXGroup;
 			children = (
+				A02DBC5E28B5324800C603C8 /* HealthKit */,
 				9A4E0BFE28B332B20099B8FD /* DetailSummaryViewController.swift */,
 				9A4E0BFF28B332B20099B8FD /* DetailSummaryViewController.xib */,
 				9A4E0BF528B328AD0099B8FD /* SummaryViewController.swift */,
@@ -655,6 +654,7 @@
 		9AE05F972864B693000D3386 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0C8C08628B5D46C0016AB8F /* HealthKit.framework */,
 				9A705145288123090085DE71 /* CloudKit.framework */,
 				A0A3369C286A1DD100988028 /* HealthKit.framework */,
 				9AE05F982864B693000D3386 /* CloudKit.framework */,
@@ -662,6 +662,14 @@
 				73EFD64E8D9A56A58527B08A /* Pods_Helpi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A02DBC5E28B5324800C603C8 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				A02DBC5F28B5325500C603C8 /* HealthKitSetupAssistant.swift */,
+			);
+			path = HealthKit;
 			sourceTree = "<group>";
 		};
 		A054125C2871771800529401 /* Emergency */ = {
@@ -712,16 +720,6 @@
 				EEE041FF286D315500A2B04D /* LoginViewController.xib */,
 			);
 			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		A0A3368E286A175D00988028 /* HealthKit */ = {
-			isa = PBXGroup;
-			children = (
-				A07BB7A3286AF64C00A3DE30 /* UserHealthProfile.swift */,
-				A07BB7A5286AF65B00A3DE30 /* ProfileDataSource.swift */,
-				A07BB7A7286AF67200A3DE30 /* HealthKitSetupAssistant.swift */,
-			);
-			path = HealthKit;
 			sourceTree = "<group>";
 		};
 		EE4275C228AF361E00112C94 /* Settings */ = {
@@ -1045,6 +1043,7 @@
 				EE4275EB28B38F9F00112C94 /* PickerViewPresenter.swift in Sources */,
 				9A1F8B93286DCF3B00F6E16C /* AddFriendViewController.swift in Sources */,
 				9A163D6728B4958700C87F6C /* UIButton.swift in Sources */,
+				A02DBC6028B5325500C603C8 /* HealthKitSetupAssistant.swift in Sources */,
 				9AFC0848288456D2001F13CD /* WatchSessionManager.swift in Sources */,
 				EE4275D728AF4BBC00112C94 /* TimeSettingViewController.swift in Sources */,
 				9ADF93F728B4FCB60082EED5 /* BacktapTutorialViewController.swift in Sources */,
@@ -1056,7 +1055,6 @@
 				9AE05F792864AB21000D3386 /* AppDelegate.swift in Sources */,
 				9AA5477228713E5000E3B603 /* SessionManager.swift in Sources */,
 				EE4275F628B3BCDA00112C94 /* MedicineReminderViewController.swift in Sources */,
-				A07BB7A4286AF64C00A3DE30 /* UserHealthProfile.swift in Sources */,
 				9A163D6828B4958700C87F6C /* UIFont.swift in Sources */,
 				9ADF93F228B4FB8E0082EED5 /* CustomButton.swift in Sources */,
 				9A163D6028B488D200C87F6C /* Date.swift in Sources */,
@@ -1112,8 +1110,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1123,7 +1121,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp;
 				PRODUCT_NAME = Helpi;
-				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1139,8 +1137,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1150,7 +1148,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp;
 				PRODUCT_NAME = Helpi;
-				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1165,8 +1163,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchHelpi WatchKit Extension/WatchHelpi WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
@@ -1175,6 +1173,8 @@
 				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "AppExamples wants to acces your health data in order to analyze your health and best device";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AppExamples wants to acces your health data in order to analyze your health and best device";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKExtensionDelegateClassName = WatchHelpi_WatchKit_Extension.ExtensionDelegate;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
@@ -1186,7 +1186,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1201,8 +1201,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchHelpi WatchKit Extension/WatchHelpi WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchHelpi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H53AFJYM7;
@@ -1211,6 +1211,8 @@
 				INFOPLIST_FILE = "WatchHelpi WatchKit Extension/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchHelpi WatchKit Extension";
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchHelpi_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "AppExamples wants to acces your health data in order to analyze your health and best device";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AppExamples wants to acces your health data in order to analyze your health and best device";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKExtensionDelegateClassName = WatchHelpi_WatchKit_Extension.ExtensionDelegate;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
@@ -1222,7 +1224,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc2.Helpi.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = "Helpi Watchkit Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

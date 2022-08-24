@@ -20,15 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     WatchSessionManager.shared.startSession()
     
     let window = UIWindow(frame: UIScreen.main.bounds)
-//    window.rootViewController = DoneViewController()
-    if SessionManager.shared.isLoggedIn() {
-      window.rootViewController = HomeTabBarViewController()
-    } else if SessionManager.shared.isShowOnboard() {
-      window.rootViewController = UINavigationController(rootViewController: LoginViewController())
-    } else {
-      window.rootViewController = UINavigationController(rootViewController: OnboardViewController())
-    }
-
+    window.rootViewController = OnboardViewController()
+//    if SessionManager.shared.isLoggedIn() {
+//      window.rootViewController = HomeTabBarViewController()
+//    } else if SessionManager.shared.isShowOnboard() {
+//      window.rootViewController = UINavigationController(rootViewController: LoginViewController())
+//    } else {
+//      window.rootViewController = UINavigationController(rootViewController: OnboardViewController())
+//    }
+   
     window.makeKeyAndVisible()
     self.window = window
     

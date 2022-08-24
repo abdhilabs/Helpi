@@ -8,41 +8,41 @@
 import SwiftUI
 
 struct NotesView: View {
-
+  
   var cloudKitService = CloudKitService()
   var connectivityHandler = WatchSessionManager.shared
-
+  
   @State private var notesCoordinator: NotesCoordinator! = nil
   @State private var notes = ""
-
+  
   var body: some View {
     ZStack {
       ScrollView {
         VStack(alignment: .leading, spacing: 8) {
-          Text("Help, this person fainted!")
+          Text("Tolong, orang ini penderita Aritmia!")
             .font(.system(size: 27, weight: .semibold, design: .rounded))
             .foregroundColor(.white)
-
+          
           VStack {
-            Text("Personal notes:\n")
+            Text("Catatan Pribadi :\n")
               .font(.system(size: 16, weight: .semibold, design: .rounded))
               .foregroundColor(.white)
-
+            
             +
-
+            
             Text(notes)
               .font(.system(size: 16, weight: .regular, design: .rounded))
               .foregroundColor(.gray)
           }
-
+          
           NavigationLink {
             ConfirmAlertView()
           } label: {
-            Text("Continue")
+            Text("Selanjutnya")
               .font(.system(size: 16, weight: .semibold, design: .rounded))
               .foregroundColor(.black)
           }
-          .background(Color(UIColor(red: 1.00, green: 0.11, blue: 0.42, alpha: 1.00)))
+          .background(Color(UIColor(red: 1.00, green: 0.18, blue: 0.03, alpha: 1.00)))
           .cornerRadius(9)
         }
       }
@@ -55,7 +55,7 @@ struct NotesView: View {
         self.sendPushNotif(by: recordName)
       })
       connectivityHandler.watchOSDelegate = notesCoordinator
-      connectivityHandler.sendMessage(message: ["notes": "wiuwiu"]) { replyHandler in
+      connectivityHandler.sendMessage(message: ["notes": "Bawa aku kerumah sakit."]) { replyHandler in
         DispatchQueue.main.async {
           if let notes = replyHandler["notes"] as? String, let recordName = replyHandler["recordName"] as? String {
             self.notes = notes
@@ -65,13 +65,13 @@ struct NotesView: View {
       } errorHandler: { error in
         print("Error: \(error.localizedDescription)")
       }
-
+      
     }
     .onDisappear {
       AVService.shared.audioPlayer?.stop()
     }
   }
-
+  
   private func sendPushNotif(by recordName: String) {
     cloudKitService.updateDataFriend(by: .init(recordName: recordName)) { name in
       print("Success push notif...")
@@ -80,17 +80,17 @@ struct NotesView: View {
 }
 
 class NotesCoordinator: NSObject, WatchOSDelegate {
-
+  
   private let notesHandler: (String, String) -> Void
-
+  
   init(notesHandler: @escaping (String, String) -> Void) {
     self.notesHandler = notesHandler
   }
   
   func messageReceived(tuple: MessageReceived) {
-
+    
   }
-
+  
   func applicationContextReceived(tuple: ApplicationContextReceived) {
     DispatchQueue.main.async {
       if let notes = tuple.applicationContext["notes"] as? String, let recordName = tuple.applicationContext["recordName"] as? String {

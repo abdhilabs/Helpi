@@ -91,11 +91,11 @@ class FirstAidViewController: UIViewController {
   }
 
   func showAlert(){
-    let alert = UIAlertController(title: "Am I safe?", message: "If I am still unconscious, please call my emergency contact or call nearby emergency number to get help. \n\n Tap Done if I am awake or after emergency comes.", preferredStyle: .alert)
+    let alert = UIAlertController(title: "Apakah saya aman?", message: "Jika saya masih terkena serangan aritmia, silakan hubungi kontak darurat saya atau hubungi nomor darurat terdekat untuk mendapatkan bantuan. \n\n Ketuk Selesai jika saya sudah aman atau setelah keadaan darurat datang.", preferredStyle: .alert)
 
-    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+    alert.addAction(UIAlertAction(title: "Batal", style: .cancel))
 
-    alert.addAction(UIAlertAction(title: "Done", style: .destructive , handler: {  action in
+    alert.addAction(UIAlertAction(title: "Selesai", style: .destructive , handler: {  action in
       let nextDoneController = DoneViewController()
       self.navigationController?.pushViewController(nextDoneController, animated: true)
     }))
@@ -103,16 +103,16 @@ class FirstAidViewController: UIViewController {
   }
 
   func showActionsheet(){
-    let actionSheet = UIAlertController(title: "Make a call", message: "Kamu bisa memilih contact emergency mana.", preferredStyle: .actionSheet)
-    actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-    actionSheet.addAction(UIAlertAction(title: "Emergency Contact 1", style: .default , handler: { action in
+    let actionSheet = UIAlertController(title: "Buat Panggilan", message: "Kamu bisa memilih kontak darurat yang mana.", preferredStyle: .actionSheet)
+    actionSheet.addAction(UIAlertAction(title: "Batal", style: .cancel))
+    actionSheet.addAction(UIAlertAction(title: "Kontak Darurat 1", style: .default , handler: { action in
       if let urlDial = URL(string: "tel://\(self.emergencyPhonePrimary)") {
         if UIApplication.shared.canOpenURL(urlDial) {
           UIApplication.shared.open(urlDial)
         }
       }
     }))
-    actionSheet.addAction(UIAlertAction(title: "Emergency Contact 2", style: .default , handler: { action in
+    actionSheet.addAction(UIAlertAction(title: "Kontak Darurat 2", style: .default , handler: { action in
       if let urlDial = URL(string: "tel://\(self.emergencyPhoneSecondary)") {
         if UIApplication.shared.canOpenURL(urlDial) {
           UIApplication.shared.open(urlDial)
