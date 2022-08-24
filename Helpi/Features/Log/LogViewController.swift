@@ -75,10 +75,10 @@ class LogViewController: UIViewController {
   }
 
   private func fetchHistory() {
-    showHelpiLoading()
+    showLoading()
     cloudKitService.fetchLogHistory { [weak self] logs in
-      self?.hideHelpiLoading()
-      self?.historyLogs.append(contentsOf: logs.sorted { $0.date < $1.date })
+      self?.hideLoading()
+      self?.historyLogs = logs.sorted { $0.date < $1.date }
       DispatchQueue.main.async {
         self?.viewCalendar.reloadData()
         self?.tblHistory.reloadData()
@@ -102,10 +102,11 @@ extension LogViewController: FSCalendarDelegate, FSCalendarDataSource {
   func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
     let nextViewController = AddHistoryViewController()
     nextViewController.historyDate = date
-    let navigation = UINavigationController(rootViewController: nextViewController)
-    present(navigation, animated: true) {
+    nextViewController.onDismiss = {
       self.fetchHistory()
     }
+    let navigation = UINavigationController(rootViewController: nextViewController)
+    present(navigation, animated: true)
   }
 
   func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at monthPosition: FSCalendarMonthPosition) {

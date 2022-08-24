@@ -9,7 +9,7 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>hRTJf1</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>21F79</string>
+	<string>21G83</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
 	<string>13F100</string>
 	<key>INIntentDefinitionToolsVersion</key>
@@ -21,22 +21,16 @@
 			<string>generic</string>
 			<key>INIntentConfigurable</key>
 			<true/>
-			<key>INIntentDescription</key>
-			<string>Method description</string>
 			<key>INIntentDescriptionID</key>
-			<string>caaCBW</string>
+			<string>YuZhuq</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>1</integer>
+			<integer>4</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
 				<key></key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Helpi Emergency Shortcut</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>IoEqzt</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
 					<true/>
 				</dict>
@@ -51,10 +45,6 @@
 					<true/>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Helpi Emergency Shortcut</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>cmKps9</string>
 				</dict>
 			</dict>
 			<key>INIntentResponse</key>
@@ -76,11 +66,11 @@
 			<key>INIntentTitle</key>
 			<string>Helpi Emergency</string>
 			<key>INIntentTitleID</key>
-			<string>ERJNX9</string>
+			<string>6meRuj</string>
 			<key>INIntentType</key>
 			<string>Custom</string>
 			<key>INIntentVerb</key>
-			<string>Do</string>
+			<string>Run</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

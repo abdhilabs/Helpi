@@ -17,6 +17,7 @@ class AddHistoryViewController: UIViewController {
   private let cloudKitService = CloudKitService()
 
   var historyDate: Date = .now
+  var onDismiss: (() -> Void)? = nil
 
   override func viewWillAppear(_ animated: Bool) {
     navigationItem.title = "Riwayat Baru"
@@ -45,15 +46,17 @@ class AddHistoryViewController: UIViewController {
     guard let additionalInfo = txtAdditionalInfo.text, let syptom = txtSymptom.text else { return }
     let time = pickerTime.date.string(format: "HH:mm a")
 
-    showHelpiLoading()
+    showLoading()
     cloudKitService.saveLogHistory(with: .init(additionalInfo: additionalInfo, symptom: syptom, time: time, date: historyDate.string())) { [weak self] isSuccess, isRegistered in
       if isSuccess {
-        self?.hideHelpiLoading()
+        self?.hideLoading()
         DispatchQueue.main.async {
-          self?.dismiss(animated: true)
+          self?.dismiss(animated: true) {
+            self?.onDismiss?()
+          }
         }
       } else {
-        self?.hideHelpiLoading()
+        self?.hideLoading()
         if !isRegistered {
           let message = """
                             Sign in to your iCloud account to write records.

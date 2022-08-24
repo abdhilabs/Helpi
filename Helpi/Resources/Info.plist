@@ -19,6 +19,10 @@
 			<string>Editor</string>
 		</dict>
 	</array>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>HelpiEmergencyIntent</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>SF-Compact-Rounded-Black.ttf</string>

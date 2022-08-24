@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Lottie
 
 class OnboardingCollectionViewCell: UICollectionViewCell {
   
@@ -16,20 +15,10 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
   
   static let identifier = "OnboardingCollectionViewCell"
   
-  var animation = AnimationView()
   var image = UIImageView()
   
   // Instance of the Lottie AnimationView
   func configureCell(onboarding: Onboarding){
-    animation = AnimationView(name: onboarding.image)
-    animation.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: imgIllustration.frame.height)
-    
-    //Customize the animation
-    animation.animationSpeed = 1
-    animation.loopMode = .loop
-    animation.play()
-    imgIllustration.addSubview(animation)
-    
     self.imgIllustration.image = UIImage(named: onboarding.image)
     
     //Set Title

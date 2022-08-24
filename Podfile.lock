@@ -5,30 +5,30 @@ PODS:
     - SwiftAlgorithms (~> 1.0)
   - FSCalendar (2.8.4)
   - JWTDecode (3.0.0)
-  - lottie-ios (3.4.2)
+  - SVProgressHUD (2.2.5)
   - SwiftAlgorithms (1.0.0)
 
 DEPENDENCIES:
   - Charts
   - FSCalendar
   - JWTDecode
-  - lottie-ios
+  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
     - Charts
     - FSCalendar
     - JWTDecode
-    - lottie-ios
+    - SVProgressHUD
     - SwiftAlgorithms
 
 SPEC CHECKSUMS:
   Charts: d959d6723c8eedfdd0735dfc28cb0a71762ac4d9
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
   JWTDecode: 82480a7173f8a811954e7e14a2b59f688ca4222a
-  lottie-ios: 6bbc53eef6957e4744a50321507015fba72d8ca6
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
 
-PODFILE CHECKSUM: 73a712d04cbc2d6176a0be356a8b8c9a2bf393f4
+PODFILE CHECKSUM: d3eecdd5379da52b05f0307f8a9cc9cbb7ede388
 
 COCOAPODS: 1.11.2

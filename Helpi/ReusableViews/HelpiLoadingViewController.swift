@@ -6,13 +6,11 @@
 //
 
 import UIKit
-import Lottie
 import Combine
 
 class HelpiLoadingViewController: UIViewController {
 
   @IBOutlet weak var viewContainer: UIView!
-  @IBOutlet weak var viewAnimation: AnimationView!
   @IBOutlet weak var lblLoading: UILabel!
 
   private let dismissLoading = createPublisher(for: Notifications.dismissLoading)
@@ -22,11 +20,6 @@ class HelpiLoadingViewController: UIViewController {
     super.viewDidLoad()
 
     viewContainer.layer.cornerRadius = 10
-
-    viewAnimation.contentMode = .scaleAspectFill
-    viewAnimation.loopMode = .loop
-    viewAnimation.animationSpeed = 0.5
-    viewAnimation.play()
 
     lblLoading.font = .rounded(ofSize: 20, weight: .bold)
 

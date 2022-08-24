@@ -296,13 +296,3 @@ extension ActivationViewController: INUIEditVoiceShortcutViewControllerDelegate 
     controller.dismiss(animated: true, completion: nil)
   }
 }
-
-//extension UIColor {
-//   convenience init(rgb: Int) {
-//       self.init(
-//        red: CGFloat((rgb >> 16) & 0xFF),
-//        green: CGFloat((rgb >> 8) & 0xFF),
-//        blue: CGFloat(rgb & 0xFF)
-//       )
-//   }
-//}

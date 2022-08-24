@@ -51,9 +51,8 @@ class HelpViewController: UIViewController {
       count -= 1
       
       if count < 0 {
-        //              let url = URL(string: "shortcuts://run-shortcut?name=Send%20Helpi&input=text&text=test-shortcut-automatically")
-        //        let url = URL(string: "shortcuts://x-callback-url/run-shortcut?name=Send%20Helpi&input=text&text=test-shortcut-automatically&x-success=helpiapp://")
-        //        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        let url = URL(string: "shortcuts://x-callback-url/run-shortcut?name=Help%20Me&input=text&text=Tolong,%20aku%20mengalami%20gejala%20aritmia,%20dan%20mungkin%20pingsan.&x-success=helpiapp://")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         
         self.timer?.invalidate()
         let nextViewController = AssistanceViewController()

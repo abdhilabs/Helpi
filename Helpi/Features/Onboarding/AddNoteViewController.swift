@@ -73,7 +73,7 @@ class AddNoteViewController: UIViewController {
       return
     }
 
-    showHelpiLoading()
+    showLoading()
     
     account.notes = notes
     
@@ -86,7 +86,7 @@ class AddNoteViewController: UIViewController {
     cloudKitService.register(by: account) { isSuccess in
       DispatchQueue.main.async {
         if isSuccess {
-          self.hideHelpiLoading()
+          self.hideLoading()
           SessionManager.shared.setPersonalNote(with: notes)
           
           do {
@@ -101,7 +101,7 @@ class AddNoteViewController: UIViewController {
           let nextFirstAid = ActivationViewController()
           self.navigationController?.pushViewController(nextFirstAid, animated: true)
         } else {
-          self.hideHelpiLoading()
+          self.hideLoading()
           self.showGeneralAlert(message: "Gagal mendaftar akun")
         }
       }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 extension UIViewController {
   
@@ -45,15 +46,12 @@ extension UIViewController {
     self.present(alert, animated: true)
   }
 
-  func showHelpiLoading() {
-    let viewController: HelpiLoadingViewController = HelpiLoadingViewController()
-    viewController.modalPresentationStyle = .overCurrentContext
-    viewController.modalTransitionStyle = .crossDissolve
-    navigationController?.view.window?.rootViewController?.present(viewController, animated: true)
+  func showLoading() {
+    SVProgressHUD.show()
   }
 
-  func hideHelpiLoading() {
-    Notifications.dismissLoading.post()
+  func hideLoading() {
+    SVProgressHUD.dismiss()
   }
 }
 
