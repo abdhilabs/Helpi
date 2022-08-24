@@ -8,33 +8,33 @@
 import SwiftUI
 
 struct ConfirmAlertView: View {
-
+  
   @Environment(\.presentationMode) var presentationMode
-
+  
   var body: some View {
     VStack(alignment: .center, spacing: 20) {
-      Text("Has this person got help?")
+      Text("Apakah sudah mendapat bantuan?")
         .font(.system(size: 19, weight: .medium, design: .rounded))
         .foregroundColor(.white)
         .fontWeight(.semibold)
         .multilineTextAlignment(.center)
-
+      
       VStack {
         NavigationLink {
           GratitudeView()
         } label: {
-          Text("Yes")
+          Text("Iya")
             .font(.system(size: 17, weight: .medium, design: .rounded))
             .foregroundColor(Color.black)
             .fontWeight(.semibold)
         }
-        .background(Color(UIColor(red: 1.00, green: 0.11, blue: 0.42, alpha: 1.00)))
+        .background(Color(UIColor(red: 1.00, green: 0.18, blue: 0.03, alpha: 1.00)))
         .cornerRadius(20)
-
+        
         Button(action: {
           self.presentationMode.wrappedValue.dismiss()
         }, label: {
-          Text("No")
+          Text("Tidak")
             .fontWeight(.semibold)
             .foregroundColor(.white)
         })

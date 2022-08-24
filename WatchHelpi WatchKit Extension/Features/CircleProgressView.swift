@@ -18,21 +18,21 @@ struct LockView: View {
   @State var thirdScreenShown = false
   var body: some View {
     VStack {
-      Text("Alert start in")
+      Text("Memulai Alert")
         .fontWeight(.semibold)
       Spacer()
       Text(counterToMinutes())
         .font(.system(size: 30, weight: .bold, design: .default))
-        .padding(.bottom, 30)
+        .padding(.bottom, 33)
     }
   }
-
+  
   func counterToMinutes() -> String {
     let currentTime = countTo - counter
     let seconds = currentTime % 60
     return "\(seconds)"
   }
-
+  
 }
 
 struct ProgressTrack: View {
@@ -54,31 +54,31 @@ struct ProgressBar: View {
       .stroke(style: StrokeStyle(lineWidth: 6, lineCap: .round, lineJoin: .round))
       .rotation(Angle(degrees: 90))
       .rotation3DEffect(Angle(degrees: 180), axis: (x: 1, y: 0, z: 0))
-      .foregroundColor(Color(UIColor(red: 1.00, green: 0.11, blue: 0.42, alpha: 1.00)))
+      .foregroundColor(Color(UIColor(red: 1.00, green: 0.18, blue: 0.03, alpha: 1.00)))
       .padding(.top,30)
       .padding(.bottom,10)
   }
-
+  
   func completed() -> Bool {
     return progress() == 1
   }
-
+  
   func progress() -> CGFloat {
     return (CGFloat(counter) / CGFloat(countTo))
   }
 }
 
 struct CircleProgressView: View {
-
+  
   @Environment(\.dismiss) var dismiss
-
+  
   @State var counter: Int = 0
   @State var jump = false
-
+  
   let countTo: Int = 5
-
+  
   var body: some View {
-
+    
     if #available(watchOSApplicationExtension 7.0, *) {
       VStack {
         NavigationView{
@@ -95,22 +95,22 @@ struct CircleProgressView: View {
             }
           }
         }
-
+        
         NavigationLink(isActive: $jump) {
           NotesView()
         } label: {
           EmptyView()
         }
         .buttonStyle(.plain)
-
+        
         NavigationLink{
           CancelConfirmation()
         } label: {
-          Text("Cancel")
+          Text("Batal")
             .font(.system(size: 17, weight: .semibold, design: .rounded))
             .foregroundColor(.black)
         }
-        .background(Color(UIColor(red: 1.00, green: 0.11, blue: 0.42, alpha: 1.00)))
+        .background(Color(UIColor(red: 1.00, green: 0.18, blue: 0.03, alpha: 1.00)))
         .cornerRadius(20)
       }
       .onAppear {
@@ -122,7 +122,7 @@ struct CircleProgressView: View {
       .navigationBarHidden(true)
     }
   }
-
+  
 }
 
 struct CircleProgress_Previews: PreviewProvider {

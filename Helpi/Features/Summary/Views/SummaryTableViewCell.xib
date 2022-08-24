@@ -31,7 +31,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hPq-hY-dTB">
                                         <rect key="frame" x="0.0" y="0.0" width="456" height="32"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wHZ-Xr-uYs">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-electrocardiogram" translatesAutoresizingMaskIntoConstraints="NO" id="wHZ-Xr-uYs">
                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="ooU-Os-KoE"/>
@@ -91,10 +91,11 @@
                 <outlet property="lblTitle" destination="JzX-vO-erU" id="7S0-vd-89N"/>
                 <outlet property="lblUnit" destination="tsi-AH-qmq" id="ueP-Lu-ZNm"/>
             </connections>
-            <point key="canvasLocation" x="290.57971014492756" y="150"/>
+            <point key="canvasLocation" x="580" y="127"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="ic-electrocardiogram" width="29" height="25"/>
     </resources>
 </document>
